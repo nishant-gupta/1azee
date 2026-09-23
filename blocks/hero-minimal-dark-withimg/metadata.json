@@ -1,0 +1,17 @@
+{
+  "variantName": "hero-minimal-dark-withimg",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": true,
+    "hasGrid": false,
+    "imagePattern": "background",
+    "structure": "full-bleed background image with heading + short text overlay"
+  },
+  "contentPattern": "Two rows: a background image, then a content overlay with an H1 heading and a short supporting paragraph.",
+  "usage": "Homepage/landing hero on content-landing pages: dark full-bleed banner with a background illustration and a minimal heading + intro overlay.",
+  "options": [],
+  "memberVariantIds": ["v_b26d6cceada2"]
+}

@@ -1,0 +1,58 @@
+/* hero-minimal-dark-withimg — structural/functional CSS only (no brand tokens). */
+
+.hero-minimal-dark-withimg-container .hero-minimal-dark-withimg-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-minimal-dark-withimg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--spacing-lg) var(--spacing-x-big);
+  min-height: 300px;
+  background-color: var(--background-core-1);
+  color: var(--text-body-2);
+}
+
+/* Background image fills the block behind the content. */
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-image picture,
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content overlay sits above the image. */
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Heading and copy render light against the dark brand background. */
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-content h1,
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-content h2,
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-content h3 {
+  color: var(--icon-light);
+}
+
+.hero-minimal-dark-withimg .hero-minimal-dark-withimg-content p {
+  color: var(--text-body-2);
+  font-size: var(--oneaz-body-large-font-size);
+  line-height: calc(var(--oneaz-body-large-line-height) / var(--oneaz-body-large-font-size));
+}
+
+@media (width >= 900px) {
+  .hero-minimal-dark-withimg {
+    padding: var(--spacing-lg) var(--spacing-xxx-big);
+    min-height: 360px;
+  }
+}

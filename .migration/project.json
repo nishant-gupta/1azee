@@ -1,0 +1,12 @@
+{
+  "type": "da",
+  "sites": {
+    "1azee": {
+      "previewOrg": "nishant-gupta",
+      "previewSite": "1azee",
+      "contentHostUrl": "https://content.da.live/nishant-gupta/1azee/",
+      "botProtected": true,
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

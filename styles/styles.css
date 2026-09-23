@@ -11,17 +11,18 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* colors — mapped to OneAZ / AstraZeneca brand tokens (defined below) */
+  --background-color: #fff;
+  --light-color: var(--background-supporting-1); /* Platinum-3 #EBEFEE */
+  --dark-color: var(--background-secondary-3);   /* Graphite-12 #3C4242 */
+  --text-color: var(--text-body-1);              /* Graphite-12 #3C4242 */
+  --heading-color: var(--text-title-1);          /* Mulberry-12 #830051 */
+  --link-color: var(--text-interaction);         /* Magenta-11 #D0006F */
+  --link-hover-color: var(--background-core-1);   /* Mulberry-12 #830051 */
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* fonts — OneAZ: Lexia for headings, Inter for body */
+  --body-font-family: var(--oneaz-body-font-family);
+  --heading-font-family: var(--oneaz-heading-font-family);
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -38,6 +39,138 @@
 
   /* nav height */
   --nav-height: 64px;
+
+  /* ===================================================================== */
+
+  /* OneAZ design tokens (source: oneAZ Figma foundation)                  */
+
+  /* ===================================================================== */
+
+  /* OneAZ font families */
+  --oneaz-heading-font-family: lexia, lexia-fallback, 'Times New Roman', serif; /* headers/headings */
+  --oneaz-body-font-family: inter, inter-fallback, -apple-system, system-ui, sans-serif; /* body text */
+
+  /* OneAZ typography — responsive type scale (mobile-first; px).
+     Bumped up at 768px, with H3/H5 font-size reaching their desktop value at 1440px. */
+  --oneaz-h1-font-size: 36px;
+  --oneaz-h1-line-height: 40px;
+  --oneaz-h1-paragraph-spacing: 40px;
+  --oneaz-h2-font-size: 36px;
+  --oneaz-h2-line-height: 40px;
+  --oneaz-h2-paragraph-spacing: 40px;
+  --oneaz-h3-font-size: 26px;
+  --oneaz-h3-line-height: 34px;
+  --oneaz-h3-paragraph-spacing: 34px;
+  --oneaz-h4-font-size: 26px; /* spec-table value; preview showed 36px — confirm with design */
+  --oneaz-h4-line-height: 34px;
+  --oneaz-h4-paragraph-spacing: 34px;
+  --oneaz-h5-font-size: 19px;
+  --oneaz-h5-line-height: 28px;
+  --oneaz-h5-paragraph-spacing: 28px;
+  --oneaz-h6-font-size: 14px;
+  --oneaz-h6-line-height: 16px;
+  --oneaz-h6-paragraph-spacing: 16px;
+  --oneaz-body-font-size: 16px;
+  --oneaz-body-line-height: 24px;
+  --oneaz-body-paragraph-spacing: 24px;
+  --oneaz-body-large-font-size: 18px;
+  --oneaz-body-large-line-height: 28px;
+  --oneaz-body-large-paragraph-spacing: 28px;
+  --oneaz-link-font-size: 16px;
+  --oneaz-link-line-height: 24px;
+  --oneaz-link-paragraph-spacing: 24px;
+  --oneaz-details-font-size: 12px;
+  --oneaz-details-line-height: 16px;
+  --oneaz-details-paragraph-spacing: 16px;
+
+  /* OneAZ colors — Standard Palette: Background */
+  --background-supporting-1: #ebefee; /* Platinum-3 */
+  --background-supporting-2: #fff;     /* White */
+
+  /* OneAZ colors — Standard Palette: Text */
+  --text-body-1: #3c4242;        /* Graphite-12 */
+  --text-body-2: #d8dfde;        /* White */
+  --text-label-1: #8d8f8f;       /* Graphite-9 */
+  --text-label-2: #656969;       /* Graphite-10 */
+  --text-placeholder-1: #b2b4b4; /* Graphite-8 */
+  --text-warning: #d0006f;       /* Magenta-11 */
+
+  /* OneAZ colors — Standard Palette: Button / Tertiary */
+  --button-tertiary-background: #d8dfde; /* White */
+  --button-tertiary-border: #3c4242;     /* Graphite-12 */
+  --button-tertiary-text: #3c4242;       /* Graphite-12 */
+
+  /* OneAZ colors — Standard Palette: Table */
+  --table-header: #d8dfde;      /* Platinum-5 */
+  --table-row-bg-1: #fff;       /* White */
+  --table-row-bg-2: #ebefee;    /* Platinum-3 */
+  --table-highlight: #f6cee7;   /* Mulberry-5 */
+  --table-tabs-on: #d0006f;     /* Magenta-11 */
+  --table-tabs-off: #ebefee;    /* Platinum-3 */
+  --table-background-1: #c4cfcd; /* Platinum-7 */
+
+  /* OneAZ colors — Standard Palette: Forms */
+  --forms-border-1: #ebefee; /* Platinum-3 */
+  --forms-border-2: #d8dfde; /* Platinum-5 */
+  --forms-border-3: #d8dada; /* Graphite-6 */
+  --forms-border-4: #3c4242; /* Graphite-12 */
+  --forms-border-5: #fff;    /* White */
+  --forms-border-6: #d0006f; /* Magenta-11 */
+  --forms-border-7: #b2b4b4; /* Graphite-8 */
+  --forms-border-8: #656969; /* Graphite-10 */
+
+  /* OneAZ colors — Standard Palette: Pop-up */
+  --popup-backdrop: #3c4242; /* Graphite-12 */
+
+  /* OneAZ colors — Standard Palette: Icon */
+  --icon-light: #fff;    /* White */
+  --icon-dark: #3c4242;  /* Graphite-12 */
+
+  /* OneAZ colors — Standard Palette: Inpage */
+  --inpage-text-1: #e366a9; /* Magenta-8 */
+
+  /* OneAZ colors — AstraZeneca brand override: Background */
+  --background-core-1: #830051;      /* Mulberry-12 */
+  --background-core-2: #4f0031;      /* Mulberry-13 */
+  --background-core-3: #d0006f;      /* Magenta-11 */
+  --background-secondary-1: #f0ab00; /* Gold-10 */
+  --background-secondary-2: #9db0ac; /* Platinum-8 */
+  --background-secondary-3: #3c4242; /* Graphite-12 */
+
+  /* OneAZ colors — AstraZeneca brand override: Text */
+  --text-title-1: #830051;     /* Mulberry-12 */
+  --text-title-2: #d0006f;     /* Magenta-11 */
+  --text-interaction: #d0006f; /* Magenta-11 */
+
+  /* OneAZ colors — AstraZeneca brand override: Button / Primary */
+  --button-primary-background: #d0006f; /* Magenta-11 */
+  --button-primary-border: #d0006f;     /* Magenta-11 */
+  --button-primary-text: #fff;          /* White */
+
+  /* OneAZ colors — AstraZeneca brand override: Button / Secondary */
+  --button-secondary-background: #fff;    /* White */
+  --button-secondary-border: #d0006f;     /* Magenta-11 */
+  --button-secondary-text: #d0006f;       /* Magenta-11 */
+
+  /* OneAZ spacing — proportional to a 4px scale (xxx-sm is a 2px half-step) */
+  --spacing-none: 0;
+  --spacing-xxx-sm: 2px;
+  --spacing-xx-sm: 4px;
+  --spacing-x-sm: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-big: 20px;
+  --spacing-x-big: 24px;
+  --spacing-xx-big: 28px;
+  --spacing-xxx-big: 32px;
+  --spacing-lg: 40px;
+  --spacing-x-lg: 48px;
+  --spacing-xx-lg: 64px;
+  --spacing-xxx-lg: 80px;
+  --spacing-huge: 96px;
+  --spacing-x-huge: 128px;
+  --spacing-xx-huge: 160px;
+  --spacing-xxx-huge: 192px;
 }
 
 /* fallback fonts */
@@ -50,6 +183,19 @@
 @font-face {
   font-family: roboto-fallback;
   size-adjust: 99.529%;
+  src: local('Arial');
+}
+
+/* OneAZ fallback fonts (reduce layout shift while Lexia/Inter load) */
+@font-face {
+  font-family: lexia-fallback;
+  size-adjust: 100%;
+  src: local('Times New Roman'), local('Georgia');
+}
+
+@font-face {
+  font-family: inter-fallback;
+  size-adjust: 100%;
   src: local('Arial');
 }
 
@@ -70,14 +216,36 @@
   }
 }
 
+/* OneAZ type scale — Tablet tier (>= 768px): most styles reach their upper value here. */
+@media (width >= 768px) {
+  :root {
+    --oneaz-h1-font-size: 56px;
+    --oneaz-h1-line-height: 60px;
+    --oneaz-h1-paragraph-spacing: 60px;
+    --oneaz-h2-font-size: 46px;
+    --oneaz-h2-line-height: 50px;
+    --oneaz-h2-paragraph-spacing: 50px;
+    --oneaz-h3-line-height: 40px;
+    --oneaz-h3-paragraph-spacing: 40px;
+  }
+}
+
+/* OneAZ type scale — Desktop tier (>= 1440px): H3/H5 font-size reach their largest value. */
+@media (width >= 1440px) {
+  :root {
+    --oneaz-h3-font-size: 36px;
+    --oneaz-h5-font-size: 24px;
+  }
+}
+
 body {
   display: none;
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  font-size: var(--oneaz-body-font-size);
+  line-height: calc(var(--oneaz-body-line-height) / var(--oneaz-body-font-size));
 }
 
 body.appear {
@@ -106,18 +274,42 @@ h5,
 h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
+  color: var(--heading-color);
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--oneaz-h1-font-size);
+  line-height: calc(var(--oneaz-h1-line-height) / var(--oneaz-h1-font-size));
+}
+
+h2 {
+  font-size: var(--oneaz-h2-font-size);
+  line-height: calc(var(--oneaz-h2-line-height) / var(--oneaz-h2-font-size));
+}
+
+h3 {
+  font-size: var(--oneaz-h3-font-size);
+  line-height: calc(var(--oneaz-h3-line-height) / var(--oneaz-h3-font-size));
+}
+
+h4 {
+  font-size: var(--oneaz-h4-font-size);
+  line-height: calc(var(--oneaz-h4-line-height) / var(--oneaz-h4-font-size));
+}
+
+h5 {
+  font-size: var(--oneaz-h5-font-size);
+  line-height: calc(var(--oneaz-h5-line-height) / var(--oneaz-h5-font-size));
+}
+
+h6 {
+  font-size: var(--oneaz-h6-font-size);
+  line-height: calc(var(--oneaz-h6-line-height) / var(--oneaz-h6-font-size));
+}
 
 p,
 dl,
@@ -199,18 +391,18 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--button-primary-border);
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-text);
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  border-color: var(--background-core-1);
+  background-color: var(--background-core-1);
+  color: var(--button-primary-text);
 }
 
 a.button.primary[aria-disabled="true"],
@@ -226,18 +418,18 @@ button.button.primary:disabled:focus-visible {
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
-  background-color: transparent;
-  color: var(--text-color);
+  border-color: var(--button-secondary-border);
+  background-color: var(--button-secondary-background);
+  color: var(--button-secondary-text);
 }
 
 a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
+  border-color: var(--background-core-1);
+  background-color: var(--button-secondary-background);
+  color: var(--background-core-1);
 }
 
 a.button.secondary[aria-disabled="true"],
@@ -322,4 +514,26 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+/* dark section — AstraZeneca core brand surface (used by the hero) */
+main .section.dark {
+  background-color: var(--background-core-1);
+  color: var(--text-body-2);
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6 {
+  color: var(--icon-light);
+}
+
+main .section.dark a:any-link {
+  color: var(--icon-light);
+  text-decoration: underline;
 }

@@ -1,0 +1,69 @@
+/* cards-light-withimg — layout + OneAZ brand tokens. */
+
+.cards-light-withimg > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-x-big);
+}
+
+.cards-light-withimg > ul > li {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--forms-border-2);
+  background-color: var(--background-supporting-2);
+  overflow: hidden;
+}
+
+/* Colored image header sits at the top of each card. */
+.cards-light-withimg .cards-light-withimg-card-image {
+  line-height: 0;
+}
+
+.cards-light-withimg .cards-light-withimg-card-image img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+/* Card body: title, description, and link list stacked. */
+.cards-light-withimg .cards-light-withimg-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-x-big);
+  color: var(--text-body-1);
+}
+
+.cards-light-withimg .cards-light-withimg-card-body h4 {
+  color: var(--text-title-1);
+}
+
+.cards-light-withimg .cards-light-withimg-card-body a:any-link {
+  color: var(--text-interaction);
+}
+
+.cards-light-withimg .cards-light-withimg-card-body ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.cards-light-withimg .cards-light-withimg-card-body > *:first-child {
+  margin-top: 0;
+}
+
+/* Tablet: two columns. */
+@media (width >= 600px) {
+  .cards-light-withimg > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop: three columns to match the source's 3-up therapy-area grid. */
+@media (width >= 900px) {
+  .cards-light-withimg > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

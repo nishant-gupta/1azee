@@ -34,3 +34,40 @@
   src: url('../fonts/roboto-regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* OneAZ brand fonts — Lexia (headings) and Inter (body). */
+
+/* Lexia — headings/heading text (only Regular supplied; heavier weights
+   synthesized by the browser until the additional weights are provided). */
+@font-face {
+  font-family: lexia;
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('../fonts/lexia-regular.woff') format('woff');
+}
+
+/* Inter — body text */
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter-medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: inter;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/inter-bold.woff2') format('woff2');
+}

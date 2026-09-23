@@ -1,0 +1,81 @@
+{
+  "templates": [
+    {
+      "name": "content-landing",
+      "urls": [
+        "https://www.myastrazeneca.ch/en/startseite.html"
+      ],
+      "coverageGaps": [],
+      "description": "General landing/overview layout: header, hero region and stacked content sections, footer. Covers homepage, section overviews and therapy-area landing pages.",
+      "blocks": [
+        {
+          "name": "hero-minimal-dark-withimg",
+          "instances": [
+            ".teaser--home-hero"
+          ]
+        },
+        {
+          "name": "cards-light-withimg",
+          "instances": [
+            ".container--3-column-wrap"
+          ]
+        }
+      ],
+      "representativeUrl": "https://www.myastrazeneca.ch/en/startseite.html",
+      "sections": [
+        {
+          "id": "1",
+          "name": "Hero banner",
+          "selector": [
+            ".teaser--home-hero"
+          ],
+          "style": "dark",
+          "blocks": [
+            "hero-minimal-dark-withimg"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "2",
+          "name": "Introduction text",
+          "selector": [
+            ".container--fixed.aem-GridColumn:nth-of-type(4) .container--tb-space-md:nth-of-type(1)"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".text"
+          ]
+        },
+        {
+          "id": "3",
+          "name": "Our therapy areas",
+          "selector": [
+            ".container--3-column-wrap"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-light-withimg"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "4",
+          "name": "Useful product information",
+          "selector": [
+            ".container--fixed.container--tb-space-md"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".text",
+            ".button"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "projectType": "da"
+  }
+}
