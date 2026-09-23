@@ -1,20 +1,94 @@
+/* AstraZeneca footer — mobile-first. Uses OneAZ brand tokens from styles.css. */
+/* stylelint-disable no-descending-specificity */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--background-supporting-2);
+  color: var(--text-body-1);
+  font-size: var(--oneaz-body-font-size);
+  border-top: 1px solid var(--forms-border-1);
 }
 
-footer .footer > div {
-  margin: auto;
+footer .footer {
   max-width: 1200px;
+  margin: auto;
   padding: 40px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 footer .footer p {
   margin: 0;
 }
 
+/* brand block: logo + notice */
+footer .footer .footer-brand img {
+  width: 150px;
+  height: auto;
+}
+
+footer .footer .footer-brand p:last-child {
+  margin-top: 12px;
+  color: var(--text-label-2);
+  font-size: var(--oneaz-details-font-size);
+  max-width: 320px;
+}
+
+/* link columns */
+footer .footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .footer .footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer .footer-links a:any-link {
+  color: var(--text-body-1);
+  text-decoration: none;
+}
+
+footer .footer .footer-links a:hover {
+  color: var(--text-interaction);
+  text-decoration: underline;
+}
+
+/* legal / revision-date */
+footer .footer .footer-legal p {
+  color: var(--text-label-1);
+  font-size: var(--oneaz-details-font-size);
+}
+
+/* ===== Desktop (>= 900px) ===== */
 @media (width >= 900px) {
-  footer .footer > div {
+  footer .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
     padding: 40px 32px 24px;
+    align-items: start;
+  }
+
+  footer .footer .footer-brand {
+    grid-column: 1;
+  }
+
+  footer .footer .footer-links {
+    grid-column: 2 / 4;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  footer .footer .footer-legal {
+    grid-column: 1 / 4;
+    border-top: 1px solid var(--forms-border-1);
+    padding-top: 16px;
   }
 }
