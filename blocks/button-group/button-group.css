@@ -1,0 +1,8 @@
+/* button-group block — layout lives with the button system in styles/styles.css
+   (.button-group, .align-left/right/center, and the mobile full-width stacking).
+   This file exists so EDS resolves the block's CSS without a 404; block-specific
+   spacing tweaks can go here. */
+
+.button-group.block {
+  margin: 16px 0;
+}

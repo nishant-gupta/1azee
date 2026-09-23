@@ -126,6 +126,12 @@ var CustomImportScript = (() => {
         el.removeAttribute("data-asset-id");
         el.removeAttribute("onclick");
       });
+      element.querySelectorAll("a.cmp-teaser__action-link, a.cmp-button__link").forEach((a) => {
+        if (a.closest("strong, em")) return;
+        const strong = element.ownerDocument.createElement("strong");
+        a.replaceWith(strong);
+        strong.appendChild(a);
+      });
     }
   }
 

@@ -39,5 +39,15 @@ export default function transform(hookName, element, payload) {
       el.removeAttribute('data-asset-id');
       el.removeAttribute('onclick');
     });
+
+    // Buttonize source CTA links so they import as oneAZ buttons.
+    // A cmp-teaser action link (e.g. "Discover now") is a styled CTA in the source;
+    // wrapping it in <strong> makes scripts.js decorateButtons render it as a Primary button.
+    element.querySelectorAll('a.cmp-teaser__action-link, a.cmp-button__link').forEach((a) => {
+      if (a.closest('strong, em')) return;
+      const strong = element.ownerDocument.createElement('strong');
+      a.replaceWith(strong);
+      strong.appendChild(a);
+    });
   }
 }

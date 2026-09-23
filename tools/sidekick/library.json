@@ -1,0 +1,31 @@
+{
+  "blocks": {
+    "total": 5,
+    "offset": 0,
+    "limit": 5,
+    "data": [
+      { "name": "Hero", "path": "/block-library/hero" },
+      { "name": "Cards", "path": "/block-library/cards" },
+      { "name": "Columns", "path": "/block-library/columns" },
+      { "name": "Buttons", "path": "/block-library/buttons" },
+      { "name": "Fragment", "path": "/block-library/fragment" }
+    ]
+  },
+  "templates": {
+    "total": 7,
+    "offset": 0,
+    "limit": 7,
+    "data": [
+      { "name": "Content Landing", "path": "/block-library/templates/content-landing" },
+      { "name": "Resource Detail", "path": "/block-library/templates/resource-detail" },
+      { "name": "Product Detail", "path": "/block-library/templates/product-detail" },
+      { "name": "Product Overview", "path": "/block-library/templates/product-overview" },
+      { "name": "Campaign Landing", "path": "/block-library/templates/campaign-landing" },
+      { "name": "Campaign Subpage", "path": "/block-library/templates/campaign-subpage" },
+      { "name": "Campaign Landing Alt", "path": "/block-library/templates/campaign-landing-alt" }
+    ]
+  },
+  ":names": ["blocks", "templates"],
+  ":version": 3,
+  ":type": "multi-sheet"
+}

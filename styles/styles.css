@@ -40,6 +40,9 @@
   /* nav height */
   --nav-height: 64px;
 
+  /* button shape (oneAZ buttons are rectangular with a small radius) */
+  --button-radius: 4px;
+
   /* ===================================================================== */
 
   /* OneAZ design tokens (source: oneAZ Figma foundation)                  */
@@ -357,23 +360,31 @@ a:hover {
   text-decoration: underline;
 }
 
-/* buttons */
+/* oneAZ Button component.
+   Style variants: primary, secondary, tertiary, link, icon-only.
+   Sizes: medium (default), small. Optional leading/trailing icons.
+   Groups (2+ buttons) align left/right/center; always stack full-width on mobile. */
+/* stylelint-disable no-descending-specificity */
+
 p.button-wrapper {
   margin: 12px 0;
 }
 
+/* Base: medium size. Rectangular with a small radius (not a pill). */
 a.button:any-link,
 button.button {
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   max-width: 100%;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font: inherit;
+  border-radius: var(--button-radius);
+  padding: 12px 20px;
+  font-family: var(--body-font-family);
+  font-size: var(--oneaz-body-font-size);
   font-weight: 500;
   line-height: 1.25;
   text-decoration: none;
@@ -387,8 +398,25 @@ a.button[aria-disabled="true"],
 button.button:disabled {
   cursor: not-allowed;
   pointer-events: none;
+  opacity: 0.5;
 }
 
+/* Leading / trailing icons inside a button */
+a.button .icon,
+button.button .icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+}
+
+a.button .icon img,
+button.button .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Primary --- */
 a.button.primary,
 button.button.primary {
   border-color: var(--button-primary-border);
@@ -405,17 +433,7 @@ button.button.primary:focus-visible {
   color: var(--button-primary-text);
 }
 
-a.button.primary[aria-disabled="true"],
-a.button.primary[aria-disabled="true"]:hover,
-a.button.primary[aria-disabled="true"]:focus-visible,
-button.button.primary:disabled,
-button.button.primary:disabled:hover,
-button.button.primary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
-}
-
+/* --- Secondary (outlined) --- */
 a.button.secondary,
 button.button.secondary {
   border-color: var(--button-secondary-border);
@@ -432,42 +450,114 @@ button.button.secondary:focus-visible {
   color: var(--background-core-1);
 }
 
-a.button.secondary[aria-disabled="true"],
-a.button.secondary[aria-disabled="true"]:hover,
-a.button.secondary[aria-disabled="true"]:focus-visible,
-button.button.secondary:disabled,
-button.button.secondary:disabled:hover,
-button.button.secondary:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+/* --- Tertiary (neutral outline, dark label) --- */
+a.button.tertiary,
+button.button.tertiary {
+  border-color: var(--button-tertiary-border);
+  background-color: var(--background-supporting-2);
+  color: var(--button-tertiary-text);
 }
 
-/* high-impact call-to-action */
-a.button.accent,
-button.button.accent {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
+a.button.tertiary:hover,
+a.button.tertiary:focus-visible,
+button.button.tertiary:hover,
+button.button.tertiary:focus-visible {
+  background-color: var(--background-supporting-1);
+  color: var(--background-core-1);
 }
 
-a.button.accent:hover,
-a.button.accent:focus-visible,
-button.button.accent:hover,
-button.button.accent:focus-visible {
-  border-color: var(--link-hover-color);
-  background-color: var(--link-hover-color);
+/* --- Link (text-only, underlined) --- */
+a.button.link,
+button.button.link {
+  border-color: transparent;
+  background-color: transparent;
+  padding-inline: 4px;
+  color: var(--text-body-1);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-a.button.accent[aria-disabled="true"],
-a.button.accent[aria-disabled="true"]:hover,
-a.button.accent[aria-disabled="true"]:focus-visible,
-button.button.accent:disabled,
-button.button.accent:disabled:hover,
-button.button.accent:disabled:focus-visible {
-  background-color: var(--light-color);
-  border-color: var(--light-color);
-  color: var(--dark-color);
+a.button.link:hover,
+a.button.link:focus-visible,
+button.button.link:hover,
+button.button.link:focus-visible {
+  color: var(--text-interaction);
+}
+
+/* --- Icon Only (square; label visually hidden, kept for a11y) --- */
+a.button.icon-only,
+button.button.icon-only {
+  gap: 0;
+  padding: 12px;
+  aspect-ratio: 1 / 1;
+}
+
+a.button.icon-only span:not(.icon),
+button.button.icon-only span:not(.icon) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- Size: Small --- */
+a.button.small,
+button.button.small {
+  padding: 8px 16px;
+  font-size: var(--oneaz-details-font-size);
+}
+
+a.button.small.icon-only,
+button.button.small.icon-only {
+  padding: 8px;
+}
+
+/* --- Disabled state (all variants) --- */
+a.button[aria-disabled="true"],
+a.button[aria-disabled="true"]:hover,
+a.button[aria-disabled="true"]:focus-visible,
+button.button:disabled,
+button.button:disabled:hover,
+button.button:disabled:focus-visible {
+  border-color: var(--forms-border-2);
+  background-color: var(--background-supporting-1);
+  color: var(--text-placeholder-1);
+}
+
+a.button.link[aria-disabled="true"],
+button.button.link:disabled {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* --- Button groups (2+ buttons). Align left/right/center on desktop. --- */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.button-group.align-left { justify-content: flex-start; }
+.button-group.align-right { justify-content: flex-end; }
+.button-group.align-center { justify-content: center; }
+
+/* Mobile: groups always stack vertically, full width. */
+@media (width < 600px) {
+  .button-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button-group a.button,
+  .button-group button.button {
+    width: 100%;
+  }
 }
 
 main img {

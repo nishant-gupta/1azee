@@ -1,0 +1,13 @@
+{
+  "project": "myAstraZeneca CH",
+  "plugins": [
+    {
+      "id": "library",
+      "title": "Library",
+      "environments": ["edit"],
+      "url": "/tools/sidekick/library.html",
+      "includePaths": ["**.docx**"]
+    }
+  ],
+  "library": "/tools/sidekick/library.json"
+}
