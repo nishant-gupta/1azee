@@ -107,7 +107,50 @@ const fragment = `
 </div>
 `;
 
+/* ---- In-Page Nav (Links) demo ---- */
+const inPageNav = `
+<div>
+  <h1>Links (In-Page Nav)</h1>
+  <div class="in-page-nav">
+    <ul>
+      <li><a href="#section-1">In-Page Nav item</a>
+        <ul>
+          <li><a href="#sub-1">In-Page Nav item</a></li>
+          <li><a href="#sub-2">In-Page Nav item</a></li>
+        </ul>
+      </li>
+      <li><a href="#section-2">In-Page Nav item</a>
+        <ul>
+          <li><a href="#sub-3">In-Page Nav item</a></li>
+        </ul>
+      </li>
+      <li><a href="#section-3">In-Page Nav item</a></li>
+    </ul>
+  </div>
+</div>
+`;
+
+/* ---- Accordion demo ---- */
+const dcm = "One of the biggest challenges with DCM is that it's highly heterogeneous, both in its presentation and its underlying aetiology. While environmental factors, such as infections or exposure to certain toxins, are linked with DCM, genetics also play a role: up to 35% of DCM cases have an identifiable genetic cause.";
+const accordion = `
+<div>
+  <h1>Accordion</h1>
+  <div class="accordion">
+    <div>
+      <div>Accordion title</div>
+      <div><h3>The most inspiring heading</h3><p>${dcm}</p></div>
+    </div>
+    <div>
+      <div>Accordion title</div>
+      <div><h3>The most inspiring heading</h3><p>${dcm}</p></div>
+    </div>
+  </div>
+</div>
+`;
+
 write('buttons.plain.html', buttons);
+write('in-page-nav.plain.html', inPageNav);
+write('accordion.plain.html', accordion);
 write('hero.plain.html', hero);
 write('cards.plain.html', cards);
 write('columns.plain.html', columns);
@@ -133,3 +176,17 @@ Object.entries(templates).forEach(([name, desc]) => {
 </div>
 `);
 });
+
+/* ---- blocks.json: per-block detail sheet for the DA Library panel ---- */
+const blockDetails = [
+  { name: 'Hero', path: '/block-library/hero', description: 'Full-bleed banner with a background image and a heading + intro overlay. Used at the top of landing pages.', variants: 'hero-minimal-dark-withimg', options: 'minimal-dark-withimg', baseBlock: 'hero', model: 'standalone' },
+  { name: 'Cards', path: '/block-library/cards', description: 'Responsive grid of cards. Each card has an image, heading, description, and an optional list of links.', variants: 'cards-light-withimg', options: 'light-withimg', baseBlock: 'cards', model: 'collection' },
+  { name: 'Columns', path: '/block-library/columns', description: 'Multi-column layout for placing content side by side. Column count follows the number of cells authored per row.', variants: '', options: '', baseBlock: 'columns', model: 'standalone' },
+  { name: 'Button Group', path: '/block-library/buttons', description: 'Groups two or more buttons with left, right, or center alignment. Stacks full-width on mobile. Individual buttons are authored as formatted links (bold=Primary, italic=Secondary, bold+italic=Tertiary).', variants: 'button-group', options: 'align-left, align-right, align-center', baseBlock: 'button-group', model: 'standalone' },
+  { name: 'Fragment', path: '/block-library/fragment', description: 'Embeds another authored document (a reusable content fragment) inline by its path.', variants: '', options: '', baseBlock: 'fragment', model: 'reference' },
+  { name: 'In-Page Nav', path: '/block-library/in-page-nav', description: 'Links / In-Page Nav: a vertical list of anchor links with a left accent bar. Bold Magenta labels; nested sub-items indented with an em-dash prefix. The item matching the current page renders in Graphite.', variants: '', options: 'gold', baseBlock: 'in-page-nav', model: 'collection' },
+  { name: 'Accordion', path: '/block-library/accordion', description: 'Collapsible sections. Each authored row is a [title, content] pair: the Magenta title toggles its content panel; a right-side chevron flips when open. Items expand independently.', variants: '', options: '', baseBlock: 'accordion', model: 'collection' },
+];
+write('blocks.json', JSON.stringify({
+  total: blockDetails.length, offset: 0, limit: blockDetails.length, data: blockDetails, ':type': 'sheet',
+}, null, 2));

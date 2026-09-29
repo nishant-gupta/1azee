@@ -1,0 +1,90 @@
+/* accordion — oneAZ Accordion. Uses OneAZ brand tokens from styles.css. */
+
+.accordion {
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid var(--forms-border-2);
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid var(--forms-border-2);
+}
+
+/* Title row — Magenta heading-font label with a right-aligned chevron. */
+.accordion .accordion-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 8px;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-title-2); /* Magenta-11 #D0006F */
+  font-family: var(--heading-font-family);
+  font-size: var(--oneaz-h5-font-size);
+  line-height: calc(var(--oneaz-h5-line-height) / var(--oneaz-h5-font-size));
+  font-weight: 400;
+}
+
+/* Remove the native disclosure triangle (all engines). */
+.accordion .accordion-item-title::-webkit-details-marker {
+  display: none;
+}
+
+.accordion .accordion-item-title::marker {
+  content: '';
+}
+
+.accordion .accordion-item-title:hover {
+  color: var(--background-core-1); /* Mulberry-12 #830051 */
+}
+
+/* Chevron (down by default, flips up when open). */
+.accordion .accordion-item-title::after {
+  content: '';
+  flex: 0 0 auto;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border: solid currentcolor;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.accordion .accordion-item[open] > .accordion-item-title::after {
+  transform: rotate(-135deg);
+}
+
+/* Content panel. */
+.accordion .accordion-item-body {
+  padding: 0 8px 24px;
+}
+
+.accordion .accordion-item-body > *:first-child {
+  margin-top: 0;
+}
+
+/* Heading inside the panel (e.g. "The most inspiring heading"). */
+.accordion .accordion-item-body h1,
+.accordion .accordion-item-body h2,
+.accordion .accordion-item-body h3,
+.accordion .accordion-item-body h4 {
+  color: var(--text-title-1); /* Mulberry-12 #830051 */
+  margin-bottom: 0.4em;
+}
+
+.accordion .accordion-item-body p {
+  color: var(--text-body-1); /* Graphite-12 #3C4242 */
+  font-size: var(--oneaz-body-font-size);
+  line-height: calc(var(--oneaz-body-line-height) / var(--oneaz-body-font-size));
+}
+
+@media (width >= 900px) {
+  .accordion .accordion-item-title {
+    font-size: var(--oneaz-h4-font-size);
+    line-height: calc(var(--oneaz-h4-line-height) / var(--oneaz-h4-font-size));
+    padding: 24px 8px;
+  }
+}

@@ -1,14 +1,16 @@
 {
   "blocks": {
-    "total": 5,
+    "total": 7,
     "offset": 0,
-    "limit": 5,
+    "limit": 7,
     "data": [
-      { "name": "Hero", "path": "/block-library/hero" },
-      { "name": "Cards", "path": "/block-library/cards" },
-      { "name": "Columns", "path": "/block-library/columns" },
-      { "name": "Buttons", "path": "/block-library/buttons" },
-      { "name": "Fragment", "path": "/block-library/fragment" }
+      { "name": "Hero", "path": "/block-library/hero", "description": "Full-bleed banner with background image and heading + intro overlay." },
+      { "name": "Cards", "path": "/block-library/cards", "description": "Responsive grid of cards (image, heading, description, links)." },
+      { "name": "Columns", "path": "/block-library/columns", "description": "Multi-column side-by-side content layout." },
+      { "name": "Button Group", "path": "/block-library/buttons", "description": "Aligned group of buttons; stacks full-width on mobile." },
+      { "name": "Fragment", "path": "/block-library/fragment", "description": "Embeds a reusable content fragment by path." },
+      { "name": "In-Page Nav", "path": "/block-library/in-page-nav", "description": "Links / In-Page Nav: vertical anchor list with left accent bar; bold Magenta labels, em-dash sub-items." },
+      { "name": "Accordion", "path": "/block-library/accordion", "description": "Collapsible content sections with Magenta titles and a flip chevron." }
     ]
   },
   "templates": {
