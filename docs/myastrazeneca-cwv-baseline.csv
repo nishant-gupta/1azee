@@ -1,0 +1,127 @@
+url,locale,section,mobile_perf,mobile_seo,mobile_lcp_ms,mobile_cls,mobile_tbt_ms,mobile_fcp_ms,mobile_ttfb_ms,desktop_perf,desktop_seo,desktop_lcp_ms,desktop_cls,desktop_tbt_ms,desktop_fcp_ms,desktop_ttfb_ms
+https://www.myastrazeneca.ch/de/startseite/contact-us.html,de,General,73,85,2368,0.7363375415889729,71,1918,5,75,85,662,0.8740903605368826,34,520,146
+https://www.myastrazeneca.ch/en/startseite/contact-us.html,en,General,70,85,2728,0.7191442206875323,122,1938,151,75,85,713,0.8831878983367445,16,468,13
+https://www.myastrazeneca.ch/fr/startseite/contact-us.html,fr,General,69,85,2729,0.8004297625192707,158,1927,2,100,82,243,0,0,243,1
+https://www.myastrazeneca.ch/it/startseite/contact-us.html,it,General,68,85,3035,0.7160362203410435,120,1933,150,55,85,716,0.8766517602650636,440,666,3
+https://www.myastrazeneca.ch/de/startseite.html,de,Home,50,85,5870,0.9446072492025966,96,1760,3,80,92,1077,0.018466994139527352,342,541,3
+https://www.myastrazeneca.ch/en/startseite.html,en,Home,47,85,8325,0.6676520292364266,185,2034,45,64,92,1493,0.024564146166924393,717,634,2
+https://www.myastrazeneca.ch/fr/startseite.html,fr,Home,70,85,2816,0.7582001253210121,98,1983,2,96,92,1178,0.03548181624287475,7,602,3
+https://www.myastrazeneca.ch/it/startseite.html,it,Home,49,85,4765,0.00693178217288591,1407,1850,2,97,92,1204,0.03628648550677598,1,601,2
+https://www.myastrazeneca.ch/de/startseite/produkte.html,de,Products,84,85,2527,0.2182965272299158,30,2077,3,73,92,1587,0.44225607865295385,57,580,4
+https://www.myastrazeneca.ch/en/startseite/produkte.html,en,Products,64,77,7810,0.09392051512962388,5,3487,175,67,85,1727,0.8958971415198489,0,587,146
+https://www.myastrazeneca.ch/fr/startseite/produkte.html,fr,Products,92,85,2930,0,74,2108,3,74,92,1382,0.4477983791179028,0,622,145
+https://www.myastrazeneca.ch/it/startseite/produkte.html,it,Products,48,85,10358,0.8323361177266544,53,2089,152,71,92,1643,0.5002368183223843,47,669,4
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html,de,Products / Trixeo,56,85,6712,0.41386534505889766,58,1951,2,77,92,1070,0.4889516181680173,19,522,3
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/copd-management.html,de,Products / Trixeo,57,85,5613,0.5073786552091025,45,1938,3,77,92,760,0.5201918577770644,13,617,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/events.html,de,Products / Trixeo,77,85,5455,0.08267540087895506,35,1917,2,78,92,972,0.4539528153010984,82,560,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen.html,de,Products / Trixeo,55,85,5701,0.54012954421022,66,1964,2,77,92,1097,0.4749603811765743,30,537,3
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html,de,Products / Trixeo,96,92,2265,0.01514159981367131,73,1965,3,98,92,652,0.05830019372747966,5,558,3
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html,de,Products / Trixeo,95,92,2575,0.05381320262154226,58,1905,86,98,92,634,0.052929664880335736,26,526,145
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html,de,Products / Trixeo,93,92,3032,0.029925426525810903,34,1931,3,98,92,953,0.05051443147170209,18,531,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html,de,Products / Trixeo,95,92,2580,0.007713679805716592,35,1916,142,99,92,629,0.021738455628468236,0,584,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-datenblatt-de.html,de,Products / Trixeo,94,92,2458,0.018682585983404512,154,1858,3,99,92,627,0.05273860857759678,6,581,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de.html,de,Products / Trixeo,96,92,2426,0.006875614949394242,83,1972,2,98,92,658,0.022270549138388746,40,538,146
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de.html,de,Products / Trixeo,94,92,2579,0.05815876975476216,35,1918,147,96,92,945,0.0851369545613405,0,576,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de.html,de,Products / Trixeo,95,92,2576,0.016362156510050678,41,1915,146,99,92,605,0.02229332335596521,34,596,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de.html,de,Products / Trixeo,95,92,2576,0.05815876975476216,41,1849,3,97,92,957,0.06297835909265641,15,594,147
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de.html,de,Products / Trixeo,95,92,2449,0.0078017748025593445,126,1994,2,98,92,622,0.04208030582849312,1,521,148
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patient-poster-copd-de.html,de,Products / Trixeo,96,92,2576,0.019099299909996273,31,1850,2,94,92,1230,0.01925472927024938,126,590,5
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de.html,de,Products / Trixeo,100,82,792,0,0,792,1,99,92,592,0.02769337589905995,1,548,3
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-de.html,de,Products / Trixeo,95,92,2578,0.007713679805716592,35,1918,3,98,92,601,0.02807164715812143,0,557,144
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de.html,de,Products / Trixeo,94,92,2728,0.008442730518935694,46,1942,3,97,92,932,0.06749426696786798,0,561,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html,de,Products / Trixeo,92,92,2881,0.042826816303737435,69,1960,146,100,82,234,0,0,234,
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html,de,Products / Trixeo,94,92,2297,0.0078017748025593445,142,1992,148,97,92,1181,0.024108867919403882,30,535,2
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html,de,Products / Trixeo,96,92,2402,0.008923076025694702,76,1952,151,99,92,649,0.03230746596935517,21,528,4
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/sicherheit.html,de,Products / Trixeo,100,80,787,0,0,787,,78,92,958,0.4521585906001284,0,575,143
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/succinct-statement.html,de,Products / Trixeo,100,80,790,0,0,790,1,72,92,1229,0.8196661821427793,26,585,149
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/uberblick.html,de,Products / Trixeo,73,85,5157,0.07884607392111163,16,3033,150,78,92,665,0.5165283187377391,15,574,3
+https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/wirksamkeit.html,de,Products / Trixeo,87,85,2879,0.14064123421428318,65,1955,144,76,92,1048,0.473988934537661,28,528,143
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/aerosphere-technologie.html,fr,Products / Trixeo,59,85,4543,0.4514204144432284,33,2725,2,77,92,1085,0.4768341738027382,0,557,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html,fr,Products / Trixeo,52,85,6533,0.6942583492072453,48,1922,149,77,92,1112,0.48371207576972425,19,615,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html,fr,Products / Trixeo,,85,,0,,3481,2,74,92,1220,0.6164408072322787,3,602,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html,fr,Products / Trixeo,77,85,2736,0.3212359920757845,96,1993,3,54,92,976,0.4583738889620105,466,537,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html,fr,Products / Trixeo,77,92,2728,0.35117129910924966,39,1931,2,99,92,915,0.03894972734036136,0,556,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html,fr,Products / Trixeo,81,92,2579,0.28174504331061273,39,1932,45,99,92,667,0.02246501784167114,16,627,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html,fr,Products / Trixeo,80,92,2729,0.28365099247562753,60,1953,3,98,92,955,0.022315080120011953,11,570,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html,fr,Products / Trixeo,79,92,2877,0.29125964183099734,37,1918,2,61,92,889,0.0162916513335142,1762,663,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html,fr,Products / Trixeo,79,92,2807,0.29664420584527,86,1955,3,99,92,664,0.022739279869354083,0,553,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html,fr,Products / Trixeo,79,92,2728,0.29028677420490917,66,1958,3,97,92,924,0.04109412417928462,45,631,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html,fr,Products / Trixeo,82,92,2420,0.2615978209492226,104,1970,3,98,92,957,0.021928424834946638,6,589,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html,fr,Products / Trixeo,79,92,2431,0.3086938231190714,92,1977,3,98,92,957,0.03081328683135144,26,632,4
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html,fr,Products / Trixeo,33,92,5376,0.2808667632472479,1405,1868,3,98,92,955,0.02225337984091127,14,576,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html,fr,Products / Trixeo,81,92,2423,0.286681765521422,95,1973,2,98,92,653,0.05944385866019437,12,608,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html,fr,Products / Trixeo,81,92,2432,0.2815363481578491,97,1976,3,98,92,969,0.04856955051740249,5,593,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html,fr,Products / Trixeo,81,92,2425,0.28810823201075353,101,1975,2,99,92,930,0.022418268561396632,2,577,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html,fr,Products / Trixeo,82,92,2278,0.2815363481578491,80,1978,3,98,92,977,0.022501469268557145,0,592,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html,fr,Products / Trixeo,78,92,2353,0.28182292476156384,197,2039,3,99,92,914,0.03855810112001404,0,558,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html,fr,Products / Trixeo,95,92,2449,0,99,1978,2,98,92,967,0.029685822997072453,11,628,3
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html,fr,Products / Trixeo,82,92,2414,0.28172824268496277,70,1847,2,98,92,950,0.0224682893618812,9,606,1
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html,fr,Products / Trixeo,81,92,2577,0.2815363481578491,44,1936,2,99,92,872,0.017726841934376344,0,616,2
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html,fr,Products / Trixeo,94,85,2436,0.030377398160194826,112,1986,144,99,83,655,0.004863661721333273,25,608,150
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html,fr,Products / Trixeo,93,85,2510,0.042957518246249,150,2044,3,77,92,875,0.5084827186138203,0,666,145
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html,fr,Products / Trixeo,52,85,6533,0.7026552537654975,59,1931,146,100,82,237,0,0,237,1
+https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html,fr,Products / Trixeo,94,85,2564,0.04290251872827874,82,1987,3,100,80,236,0,0,236,2
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html,de,Therapy Areas / CVRM,70,83,4351,0.19238804185262992,166,2198,153,96,92,1216,0.0059247282581120966,24,632,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html,de,Therapy Areas / CVRM,100,82,793,0,0,793,,99,92,631,0.002840811686727355,0,631,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html,de,Therapy Areas / CVRM,76,83,2533,0.3465383421498268,108,2154,146,89,83,1556,0.12358706679740512,26,560,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html,de,Therapy Areas / CVRM,83,85,3452,0.1176465331872465,112,2129,142,98,92,660,0.002840811686727355,3,653,2
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html,de,Therapy Areas / CVRM,81,92,3901,0,157,2156,5,94,92,1241,0.07140217315943093,16,548,6
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html,de,Therapy Areas / CVRM,84,92,3302,0.000101870730472193,222,2184,3,92,92,1323,0.012335234569062586,133,563,4
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html,de,Therapy Areas / CVRM,88,92,3501,0.0003894625744896569,93,1998,3,95,92,1129,0.09014634447819475,26,529,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html,de,Therapy Areas / CVRM,93,92,2582,0.000101870730472193,92,1993,4,88,92,1342,0.15757328439520482,44,531,4
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html,de,Therapy Areas / CVRM,95,92,2389,0.000101870730472193,69,1939,4,95,92,1286,0.026142843800985808,8,632,3
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html,en,Therapy Areas / CVRM,77,85,5702,0.045776064970907214,54,1978,147,75,92,1297,0.48319166632717353,3,647,3
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html,en,Therapy Areas / CVRM,95,85,2529,0.059670824943427486,56,2079,3,68,92,1887,0.7275406064762198,0,507,3
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html,en,Therapy Areas / CVRM,57,85,5016,0.48802170464527533,98,1985,148,71,92,1861,0.4812547772898396,0,460,2
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html,en,Therapy Areas / CVRM,77,85,5259,0.08216476641797256,25,1899,4,69,92,1671,0.7147859266208298,27,628,151
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html,fr,Therapy Areas / CVRM,100,82,826,0,0,826,1,98,92,782,0,19,683,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html,fr,Therapy Areas / CVRM,63,85,4804,0.28717854961192735,64,2111,147,77,92,1055,0.004863661721333273,377,836,5
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html,fr,Therapy Areas / CVRM,100,82,787,0,0,787,1,99,85,670,0.0052588836871822016,4,630,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html,fr,Therapy Areas / CVRM,48,83,6992,1.0083759216375208,52,2100,145,96,85,1121,0.01100070540809715,9,632,5
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html,fr,Therapy Areas / CVRM,69,83,6155,0.07360972289684925,209,2030,62,69,77,1500,0,495,603,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html,fr,Therapy Areas / CVRM,55,92,5916,0.41623782805041315,121,1996,146,99,92,652,0.004863661721333273,24,625,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html,fr,Therapy Areas / CVRM,100,82,798,0,0,798,1,95,85,1018,0.11076690636748884,21,476,152
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html,fr,Therapy Areas / CVRM,61,83,6051,0.28116580963572696,61,1697,4,79,83,1681,0.26294935179561163,0,568,4
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html,it,Therapy Areas / CVRM,80,85,4652,0.03987170508854977,127,2175,3,68,92,1860,0.7532944800669763,3,634,3
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html,it,Therapy Areas / CVRM,79,85,4810,0.01784259400703251,132,2152,3,70,92,2307,0.353838638769818,14,621,57
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html,it,Therapy Areas / CVRM,92,83,3075,0.008058057916728225,48,1846,2,71,92,1526,0.6451001546130181,13,674,3
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html,it,Therapy Areas / CVRM,76,83,5401,0.002516360269368027,50,2077,149,82,83,1365,0.2492626823532603,6,651,56
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html,it,Therapy Areas / CVRM,72,83,6453,0.00955805317938808,117,2145,148,85,83,1471,0.17708610972559924,9,641,3
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html,it,Therapy Areas / CVRM,55,77,6018,0.48409360508603705,54,1958,3,100,80,235,0,0,235,
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html,it,Therapy Areas / CVRM,56,83,4098,0.7463128590927124,10,2883,147,88,83,1338,0.010276488482436268,151,744,151
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html,it,Therapy Areas / CVRM,72,82,5763,0,62,2801,3,100,82,238,0,0,238,1
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html,de,Therapy Areas / Oncology,72,85,2851,0.5565397562118175,33,2057,3,76,92,2066,0.25000438429297234,10,558,146
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html,de,Therapy Areas / Oncology,93,85,2702,0.005182936125518271,110,2156,2,96,92,1001,0.06480537951343093,10,547,146
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html,de,Therapy Areas / Oncology,70,92,2428,0.5920895383142383,193,2195,3,80,92,1042,0.38567730758535157,0,541,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/leberkrebs.html,de,Therapy Areas / Oncology,82,69,4552,0.009810454505573841,85,1862,2,90,77,1172,0.1660266253137495,0,578,2
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html,de,Therapy Areas / Oncology,70,92,2852,0.6593832732342131,37,2063,4,80,92,1072,0.3684631120446054,13,561,3
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html,de,Therapy Areas / Oncology,96,85,2378,0.007713679805716592,39,1928,2,93,92,1410,0.030176705713519773,119,556,2
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html,en,Therapy Areas / Oncology,94,83,2494,0.04290251872827874,98,2119,4,100,80,233,0,0,233,2
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html,en,Therapy Areas / Oncology,86,83,3998,0.01867142349130444,51,1694,3,100,80,261,0,0,261,1
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/haematologie.html,en,Therapy Areas / Oncology,87,85,3828,0,52,1692,144,97,92,1082,0.02018942528982693,11,479,144
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/leberkrebs.html,en,Therapy Areas / Oncology,100,80,784,0,0,784,,100,80,238,0,0,238,1
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html,en,Therapy Areas / Oncology,100,82,793,0,0,793,,99,85,634,0,66,496,149
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html,fr,Therapy Areas / Oncology,62,85,5402,0.28898904401579556,103,2123,3,67,92,2427,0.4159162722763472,30,673,5
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html,fr,Therapy Areas / Oncology,63,85,4803,0.28127762985554616,190,2163,3,69,92,1152,0.3050882162988501,286,593,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html,fr,Therapy Areas / Oncology,55,85,5552,0.5633908931867115,91,2131,3,70,92,1744,0.5995030059575833,45,521,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/leberkrebs.html,fr,Therapy Areas / Oncology,81,69,4703,0.007713679805716592,101,1861,2,90,77,1076,0.16542765576204654,32,644,3
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html,fr,Therapy Areas / Oncology,55,85,5406,0.5250265668095865,130,2008,4,69,92,1153,0.34313988509611615,235,590,148
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html,fr,Therapy Areas / Oncology,59,85,8948,0.28182338781237476,42,1920,2,68,92,1945,0.6141621710124776,0,594,3
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html,it,Therapy Areas / Oncology,100,80,805,0,0,805,1,99,83,620,0.004863661721333273,0,613,143
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html,it,Therapy Areas / Oncology,89,83,3527,0.002796233834650947,51,1828,150,100,82,235,0,0,235,1
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html,it,Therapy Areas / Oncology,90,85,2403,0.1386983620383059,34,2103,3,74,85,1042,0.8096791623560514,9,625,5
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/leberkrebs.html,it,Therapy Areas / Oncology,58,69,5318,0.4493023700894836,100,1991,2,90,77,1157,0.16524694424379066,18,463,2
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html,it,Therapy Areas / Oncology,92,85,2935,0.04722899456212119,83,2118,3,91,92,1044,0.11950040085600609,55,777,143
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html,it,Therapy Areas / Oncology,100,82,790,0,0,790,1,100,80,240,0,0,240,1
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html,de,Therapy Areas / RI,77,85,5027,0.09180284883138992,56,2095,4,90,92,1037,0.17449261750678913,20,541,2
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html,de,Therapy Areas / RI,68,85,3310,0.4093870704748293,72,2119,7,62,92,2528,0.529163025622249,0,502,6
+https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html,de,Therapy Areas / RI,72,85,2554,0.5969792689865248,64,2104,56,71,92,1402,0.6322076399745209,92,675,151
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html,en,Therapy Areas / RI,50,85,7598,0.6753134206950697,95,1962,148,100,80,235,0,0,235,1
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html,en,Therapy Areas / RI,100,80,797,0,0,797,1,78,92,1673,0.225634704969676,43,771,150
+https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html,en,Therapy Areas / RI,100,82,789,0,0,789,2,67,92,1809,0.7516521990631928,12,722,144
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html,fr,Therapy Areas / RI,62,85,4952,0.34904440762944267,96,2123,3,79,92,1042,0.35759450110062935,45,640,146
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html,fr,Therapy Areas / RI,48,85,9910,0.6720809351011707,106,2132,7,88,92,1721,0.08058639068372578,1,721,147
+https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html,fr,Therapy Areas / RI,65,85,4651,0.29347877583192394,116,2131,143,70,92,1749,0.628640342525838,6,618,2
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html,it,Therapy Areas / RI,75,85,5402,0.07082224290619864,83,2109,149,97,92,1148,0,0,521,4
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/copd.html,it,Therapy Areas / RI,100,82,787,0,0,787,1,100,80,236,0,0,236,
+https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html,it,Therapy Areas / RI,71,85,2630,0.3540771453016185,243,2180,143,100,82,244,0,0,244,1
