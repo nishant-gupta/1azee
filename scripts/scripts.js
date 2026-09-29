@@ -143,10 +143,28 @@ function decorateButtons(main) {
 }
 
 /**
+ * Rebases relative image URLs in a fetched fragment against the fragment's own URL.
+ * Fragments (nav, footer) are injected into pages at any depth, so a relative
+ * src such as "./media_abc.svg" would otherwise resolve against the current page.
+ * @param {Element} root Element holding the fragment markup
+ * @param {string} fragmentUrl Absolute URL the fragment was fetched from
+ */
+export function rebaseFragmentMedia(root, fragmentUrl) {
+  const isRelative = (value) => value && !/^([a-z]+:|\/|#)/i.test(value);
+  root.querySelectorAll('img[src]').forEach((img) => {
+    const src = img.getAttribute('src');
+    if (isRelative(src)) img.src = new URL(src, fragmentUrl).href;
+  });
+  root.querySelectorAll('source[srcset]').forEach((source) => {
+    const srcset = source.getAttribute('srcset');
+    if (isRelative(srcset)) source.srcset = new URL(srcset, fragmentUrl).href;
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
-// eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
