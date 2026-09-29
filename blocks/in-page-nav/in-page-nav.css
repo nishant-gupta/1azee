@@ -1,0 +1,80 @@
+/* in-page-nav — oneAZ Links / In-Page Nav. Uses OneAZ brand tokens from styles.css. */
+/* stylelint-disable no-descending-specificity */
+
+.in-page-nav {
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Left accent bar spanning the list (Magenta by default). */
+.in-page-nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background-color: var(--text-interaction); /* Magenta-11 #D0006F */
+}
+
+/* Gold accent-bar option (matches the second swatch in the design). */
+.in-page-nav.gold::before {
+  background-color: var(--background-secondary-1); /* Gold-10 #F0AB00 */
+}
+
+.in-page-nav ul,
+.in-page-nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.in-page-nav li {
+  margin: 0;
+}
+
+/* Top-level nav items: bold, Magenta. */
+.in-page-nav > ul > li > a,
+.in-page-nav > ol > li > a {
+  display: inline-block;
+  padding: 6px 0;
+  color: var(--text-interaction);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.in-page-nav a:hover {
+  color: var(--background-core-1); /* Mulberry-12 #830051 */
+  text-decoration: underline;
+}
+
+/* Active item — Graphite label (current location), per the design's dark variant. */
+.in-page-nav .in-page-nav-active > a {
+  color: var(--text-body-1); /* Graphite-12 #3C4242 */
+}
+
+/* Nested (sub) items: indented, em-dash prefix, regular weight. */
+.in-page-nav-sublist {
+  padding-left: 0;
+}
+
+.in-page-nav-sublist > li > a {
+  display: inline-block;
+  padding: 4px 0;
+  padding-left: 18px;
+  position: relative;
+  color: var(--text-interaction);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.in-page-nav-sublist > li > a::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: currentcolor;
+}
+
+.in-page-nav-sublist .in-page-nav-active > a {
+  color: var(--text-body-1);
+}
