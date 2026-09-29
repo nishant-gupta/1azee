@@ -912,6 +912,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 | Pages | 4 |
 | Note | Each tab holds a product card grid. DA blocks can't nest, so tabs must be built from sections (one section per tab) rather than one table |
 
+**Source component on the live site** (Tab, [example page](https://www.myastrazeneca.ch/de/startseite/produkte.html)):
+
+![source component Tab](../catalog/component-shots/src-tab.jpg)
+
 #### D.6.1 `v_8ab7ece34e9a`
 
 | Field | Value |
@@ -973,6 +977,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 | Catalog variants | 3 (1 after merging duplicates) |
 | Pages | 4 |
 | Note | Source is Dynamic Form V2: fields are generated client-side from an AstraZeneca form service (form id per locale) and posted there. Needs a decision on the submission backend |
+
+**Source component on the live site** (Dynamic Form V2, [example page](https://www.myastrazeneca.ch/de/startseite/contact-us.html)):
+
+![source component Dynamic Form V2](../catalog/component-shots/src-dynamic-form-v2.jpg)
 
 #### D.7.1 `v_6e8c2538dd7e`
 
@@ -1197,6 +1205,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 | Pages | 122 |
 | Note | The header has the search field; results need the Search block and a query index |
 
+**Source component on the live site** (Search, [example page](https://www.myastrazeneca.ch/de/startseite.html)):
+
+![source component Search](../catalog/component-shots/src-search.jpg)
+
 ### D.15 Default content
 
 | Field | Value |
@@ -1208,6 +1220,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 | Catalog variants | 11 |
 | Pages | 28 |
 | Note | Headings, paragraphs, images, links and buttons. Centering and background come from section styles |
+
+**EDS rendering today** (demo page `/en/startseite`):
+
+![EDS Default content](../catalog/component-shots/eds-default-content.jpg)
 
 #### D.15.1 `v_cc344b0787bb`
 
@@ -1413,31 +1429,49 @@ Every AEM component on the 122 source pages, identified by its component name in
 | Self-certification |  | 15 | 15 | · | Modal (HCP self-certification) | ❌ to build | "I am a healthcare professional / I am a patient" interstitial on the 15 campaign pages → Modal |
 | Social Features |  | 98 | 98 | 96 | Drop | - | Login-only bookmarking; anonymous visitors get unfilled placeholders ("errorMessage requestToSignInContent") |
 
-### E.1 List
+### E.1 Tab
+
+4 pages (product-overview 4) → **Tabs**. Tabs block, one section per tab (the panels contain card grids). Example: [/…/produkte](https://www.myastrazeneca.ch/de/startseite/produkte.html)
+
+![source component Tab](../catalog/component-shots/src-tab.jpg)
+
+### E.2 List
 
 31 pages (product-detail 16, campaign-subpage 12, campaign-landing 3) → **In-Page Nav**. Horizontal section sub-navigation on campaign and Trixeo pages (Home · About ATTR · Symptoms · …, active item underlined) → horizontal In-Page Nav option. Example: [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html)
 
 ![source component List](../catalog/component-shots/src-list.jpg)
 
-### E.2 Embed
+### E.3 Dynamic Form V2
+
+4 pages (contact 4) → **Form**. Form block; fields and submission come from the AstraZeneca form service today. Example: [/…/contact-us](https://www.myastrazeneca.ch/de/startseite/contact-us.html)
+
+![source component Dynamic Form V2](../catalog/component-shots/src-dynamic-form-v2.jpg)
+
+### E.4 Search
+
+122 pages (content-landing 49, resource-detail 34, product-detail 16, campaign-subpage 12, contact 4, product-overview 4, campaign-landing 3) → **Search**. Search field is in the header; results page needs the Search block and a query index. Example: [/de/startseite](https://www.myastrazeneca.ch/de/startseite.html)
+
+![source component Search](../catalog/component-shots/src-search.jpg)
+
+### E.5 Embed
 
 3 pages (campaign-subpage 3) → **Embed (Kaltura video)**. The source 'Video' component (class dyamic-embed) embeds Kaltura players → Embed block with a Kaltura handler. Example: [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html)
 
 ![source component Embed](../catalog/component-shots/src-embed.jpg)
 
-### E.3 Breadcrumb
+### E.6 Breadcrumb
 
 122 pages (content-landing 49, resource-detail 34, product-detail 16, campaign-subpage 12, contact 4, product-overview 4, campaign-landing 3) → **Breadcrumbs**. Visible under the header on every page. Example: [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html)
 
 ![source component Breadcrumb](../catalog/component-shots/src-breadcrumb.jpg)
 
-### E.4 Content Paywall
+### E.7 Content Paywall
 
 50 pages (resource-detail 34, product-detail 16) → **Blocked: content not public**. "Register or log in" wall on all 50 Trixeo pages. The product content behind it is NOT in the public HTML, so it can't be migrated from the public site. Example: [/…/produkte/trixeo/aerosphere-technologie](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html)
 
 ![source component Content Paywall](../catalog/component-shots/src-content-paywall.jpg)
 
-### E.5 Self-certification
+### E.8 Self-certification
 
 15 pages (campaign-subpage 12, campaign-landing 3) → **Modal (HCP self-certification)**. "I am a healthcare professional / I am a patient" interstitial on the 15 campaign pages → Modal. Example: [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html)
 
