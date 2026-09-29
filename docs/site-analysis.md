@@ -104,8 +104,9 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 |---|---|---|
 | `hero-minimal-dark-withimg` | ✅ Built | Homepage hero |
 | `cards-light-withimg` | ✅ Built | Therapy-area grid |
-| `accordion` | ✅ Built | oneAZ design; native `<details>` |
-| `in-page-nav` | ✅ Built | oneAZ "Links" component |
+| `accordion` | ✅ Built (feature branch only) | oneAZ design; native `<details>`. Not on `main` yet, see issue 2 |
+| `in-page-nav` | ✅ Built (feature branch only) | oneAZ "Links" component. Not on `main` yet, see issue 2 |
+| `table` | ✅ Built (feature branch only) | Data tables, used by this report. Not on `main` yet |
 | `button-group` | ✅ Built | oneAZ button groups |
 | `hero`, `cards`, `columns`, `fragment` | Boilerplate | Available, not re-styled beyond the design tokens |
 | `header`, `footer` | ✅ Migrated | Full 4-level megamenu (70 items); mobile drawer |
@@ -141,19 +142,20 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 | # | Issue | Impact | Status |
 |---|---|---|---|
 | 1 | **Images broken on the live site.** Only page HTML was uploaded to DA, not the media files, so every image on published pages is `about:error`. This includes the header/footer logo, the homepage hero, the 3 therapy cards, and the product image. | High: visible on every published page | **Open.** Upload media to DA and re-publish |
-| 2 | `section-metadata` renders as visible "style / dark" text. The vendored `aem.js` in this project does not process section metadata. | Medium: visible on the homepage | Open. Fix in `scripts/scripts.js` (not `aem.js`) |
-| 3 | Homepage metadata image URL is malformed (`https://content/dam/...`) | Low: social preview image | Open. Importer fix |
-| 4 | Importer completeness score is 32% | None: false alarm. The metric counts cookie banner, megamenu, and footer text that is deliberately stripped | Known |
-| 5 | Sidekick Library panel is not visible in the DA editor | Authors can't browse blocks yet | Needs the Library plugin enabled in the project config at tools.aem.live |
-| 6 | Template grouping ambiguities (Section 3.1) | Could cause duplicate parsers | Verify before migrating those templates |
-| 7 | `tabs`, `form`, `breadcrumbs` blocks not built | Blocks the products index and contact pages | Pending |
+| 2 | **`accordion`, `in-page-nav`, `table` code is not on `main`.** It exists only on the `oneaz-design-nav-footer-buttons` branch. The published `/block-library/accordion` and `/block-library/in-page-nav` demo pages therefore render without their block code on the live site. | High: broken demo pages; unstyled tables on this report's live URL | **Open.** Merge the branch to `main` (via PR) |
+| 3 | `section-metadata` renders as visible "style / dark" text. The vendored `aem.js` in this project does not process section metadata. | Medium: visible on the homepage | Open. Fix in `scripts/scripts.js` (not `aem.js`) |
+| 4 | Homepage metadata image URL is malformed (`https://content/dam/...`) | Low: social preview image | Open. Importer fix |
+| 5 | Importer completeness score is 32% | None: false alarm. The metric counts cookie banner, megamenu, and footer text that is deliberately stripped | Known |
+| 6 | Sidekick Library panel is not visible in the DA editor | Authors can't browse blocks yet | Needs the Library plugin enabled in the project config at tools.aem.live |
+| 7 | Template grouping ambiguities (Section 3.1) | Could cause duplicate parsers | Verify before migrating those templates |
+| 8 | `tabs`, `form`, `breadcrumbs` blocks not built | Blocks the products index and contact pages | Pending |
 
 ---
 
 ## 8. Recommended next steps
 
-1. **Fix live images (issue 1).** This is a prerequisite for anything else looking right.
-2. Fix the section-metadata rendering (issue 2).
+1. **Fix live images (issue 1)** and **merge the feature branch to `main` (issue 2).** These are prerequisites for anything else looking right on the live site.
+2. Fix the section-metadata rendering (issue 3).
 3. Resolve the template caveats in Section 3.1, then migrate **content-landing** across all 4 locales. At 48 pages it gives the widest coverage, and all of its blocks already exist.
 4. Build `tabs`, then migrate the products index. Decide how to handle the contact form.
 5. Migrate Trixeo (*product-detail* + *resource-detail*, DE/FR, ~50 pages).
