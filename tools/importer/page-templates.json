@@ -6,7 +6,7 @@
         "https://www.myastrazeneca.ch/en/startseite.html"
       ],
       "coverageGaps": [],
-      "description": "General landing/overview layout: header, hero region and stacked content sections, footer. Covers homepage, section overviews and therapy-area landing pages.",
+      "description": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.",
       "blocks": [
         {
           "name": "hero-minimal-dark-withimg",

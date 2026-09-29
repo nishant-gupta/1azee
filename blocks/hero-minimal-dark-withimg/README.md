@@ -1,17 +1,23 @@
 # hero-minimal-dark-withimg
 
-Custom **hero** block. 
+Custom **hero** block: a full-bleed dark banner with a background image behind a heading and a short intro.
 
 ## Authoring (Document Authoring)
 
-Model: `standalone`
+Model: `standalone`. Two rows: the background image, then the text.
 
-Single block table. Content: one row, one cell of content.
+| Hero Minimal Dark Withimg |
+|---|
+| (background image) |
+| **Welcome to myAstraZeneca!** (Heading 1)<br>Discover comprehensive information about our therapy areas and products. |
+
+- The first row that contains only an image becomes the background.
+- The remaining row becomes the overlay. Use one Heading 1 and a short paragraph.
 
 ## Supported variations
 
-No variations.
+None.
 
-## Universal Editor fields
+## Source mapping
 
-N/A (Document Authoring project)
+Implements source variant `v_b26d6cceada2` (the homepage hero). See `metadata.json`.

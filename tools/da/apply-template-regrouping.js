@@ -6,10 +6,16 @@
  *
  * Idempotent: running it twice changes nothing. Templates emptied by the rules are removed;
  * templates named by a rule but missing are created. Prints every move.
+ * When anything moved, it also rebuilds the catalog's visual report
+ * (catalog/template-catalog-report-bundle.zip) via tools/da/rebuild_catalog_report.py.
  *   node tools/da/apply-template-regrouping.js [--dry-run]
+ *
+ * Re-run this after any catalog rebuild (site catalog / apply_naming.py regenerates
+ * template-catalog.json from the raw clustering and would drop these corrections).
  */
 const fs = require('node:fs');
 const path = require('node:path');
+const { execFileSync } = require('node:child_process');
 
 const ROOT = process.cwd();
 const RULES = path.join(ROOT, 'tools/importer/template-regrouping.json');
@@ -57,8 +63,10 @@ function regroup(file) {
   };
 }
 
+let moved = 0;
 TARGETS.forEach((rel) => {
   const res = regroup(path.join(ROOT, rel));
+  moved += res.moves.length;
   console.log(`\n${dryRun ? '[dry run] ' : ''}${rel}: ${res.moves.length} page(s) moved`);
   const tally = {};
   res.moves.forEach((m) => { const k = `${m.from} -> ${m.to}`; tally[k] = (tally[k] || 0) + 1; });
@@ -66,3 +74,10 @@ TARGETS.forEach((rel) => {
   if (res.removed.length) console.log(`  removed empty: ${res.removed.join(', ')}`);
   console.log(`  now: ${res.counts.join(' | ')}`);
 });
+
+if (moved && !dryRun) {
+  console.log('\nRebuilding the catalog visual report...');
+  execFileSync('python3', [path.join(ROOT, 'tools/da/rebuild_catalog_report.py')], {
+    stdio: 'inherit', env: { ...process.env, TMPDIR: path.join(ROOT, 'migration-work/da-publish') },
+  });
+}

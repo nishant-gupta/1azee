@@ -1,16 +1,21 @@
 /**
  * button-group — groups 2+ buttons with left/right/center alignment.
  * Layout is handled by CSS in styles/styles.css (.button-group + .align-*).
- * This decorator normalizes authored content: it unwraps the button-wrapper
- * paragraphs EDS creates so the buttons become direct flex children, and
- * carries any alignment option class through from the block's classList.
+ *
+ * Authored as a block table whose cells hold one link per paragraph:
+ *   bold link = Primary, italic = Secondary, bold+italic = Tertiary (see decorateButtons
+ *   in scripts.js), and a plain link = Link variant.
+ * Block options: align-left | align-right | align-center, small.
+ *
+ * The decorator flattens the rows/cells so the buttons become direct flex children.
  */
 export default function decorate(block) {
-  // Move each decorated button up to be a direct child of the group.
-  block.querySelectorAll(':scope p.button-wrapper').forEach((p) => {
-    const a = p.querySelector('a.button');
-    if (a) p.replaceWith(a);
+  const small = block.classList.contains('small');
+  const links = [...block.querySelectorAll('a[href]')];
+  links.forEach((a) => {
+    // Formatted links were already turned into buttons; a plain link is the Link variant.
+    if (!a.classList.contains('button')) a.classList.add('button', 'link');
+    if (small) a.classList.add('small');
   });
-  // Alignment options authored as classes (align-left/right/center) already
-  // sit on the block element; nothing else to do — CSS does the layout.
+  block.replaceChildren(...links);
 }
