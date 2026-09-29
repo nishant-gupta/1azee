@@ -1,0 +1,45 @@
+{
+  "reviewed": "2026-09-29",
+  "note": "Manual corrections to the automatic template grouping. Applied by tools/da/apply-template-regrouping.js to catalog/template-catalog.json and tools/importer/page-templates.full-catalog.json. Rules run in order; a URL matched by a rule is moved to that rule's template.",
+  "rules": [
+    {
+      "match": "/produkte/trixeo/ressourcen/[^/]+-(de|fr)\\.html$",
+      "template": "resource-detail",
+      "reason": "Trixeo resource documents share one layout in both languages (breadcrumb, title, short paragraphs, revision code) and have no product tab row. The 17 FR copies had been grouped with product pages because they render in a narrower column."
+    },
+    {
+      "match": "/startseite/produkte\\.html$",
+      "template": "product-overview",
+      "reason": "The products index is the same page in every locale: hero, therapy-area tabs, product card grid, contact banner. DE/EN/IT had been grouped with landing pages; FR became its own template only because its capture was unstyled (CSS failed to load)."
+    },
+    {
+      "match": "/see-the-pattrns/home\\.html$",
+      "template": "campaign-landing",
+      "reason": "Campaign home page in every locale: banner, section tabs, key visual, two teaser cards, questions band. FR had become a separate 'alt' template because of a narrower content column."
+    },
+    {
+      "match": "/see-the-pattrns/(?!home\\.html)[^/]+\\.html$",
+      "template": "campaign-subpage",
+      "reason": "Campaign interior pages (about, symptoms, diagnosis, treatment) are identical across locales. FR/IT diagnosis and symptoms had been grouped with the home page."
+    },
+    {
+      "match": "/contact-us\\.html$",
+      "template": "contact",
+      "reason": "Contact pages are a form (name, email, area of interest, enquiry), not a text document, so they need their own import and a form block."
+    },
+    {
+      "match": "/therapiegebiete/onkologie/brustkrebs\\.html$",
+      "template": "content-landing",
+      "reason": "Breast cancer is a therapy-area article like its sibling oncology pages (card grid, text and image sections), not a single-column document. Its build differs: no hero banner, a key-figures card row, and stacked large images."
+    }
+  ],
+  "descriptions": {
+    "content-landing": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.",
+    "product-overview": "Products index: hero banner, therapy-area tabs, product card grid, contact banner.",
+    "product-detail": "Trixeo product page: breadcrumb, product sub-navigation tabs, title, text and media sections. Includes the resources index.",
+    "resource-detail": "Trixeo resource document page: breadcrumb, share icons, title, short paragraphs, revision code.",
+    "contact": "Contact page: title and enquiry form.",
+    "campaign-landing": "See the pATTRns home: campaign banner, section tabs, key visual, two teaser cards, questions band.",
+    "campaign-subpage": "See the pATTRns interior page: campaign banner, section tabs, stat boxes, diagrams, download CTAs."
+  }
+}
