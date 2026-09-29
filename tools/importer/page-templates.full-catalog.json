@@ -5,11 +5,11 @@
       "urls": [
         "https://www.myastrazeneca.ch/",
         "https://www.myastrazeneca.ch/de/startseite.html",
-        "https://www.myastrazeneca.ch/de/startseite/produkte.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html",
@@ -18,11 +18,11 @@
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html",
         "https://www.myastrazeneca.ch/en/startseite.html",
-        "https://www.myastrazeneca.ch/en/startseite/produkte.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html",
         "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html",
@@ -32,6 +32,7 @@
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
@@ -40,10 +41,10 @@
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
         "https://www.myastrazeneca.ch/it/startseite.html",
-        "https://www.myastrazeneca.ch/it/startseite/produkte.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html",
@@ -53,13 +54,12 @@
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html"
       ],
       "coverageGaps": [],
-      "description": "General landing/overview layout: header, hero region and stacked content sections, footer. Covers homepage, section overviews and therapy-area landing pages.",
+      "description": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.",
       "blocks": []
     },
     {
       "name": "resource-detail",
       "urls": [
-        "https://www.myastrazeneca.ch/de/startseite/contact-us.html",
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html",
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html",
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html",
@@ -77,16 +77,26 @@
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html",
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html",
         "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html",
-        "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html",
-        "https://www.myastrazeneca.ch/en/startseite/contact-us.html",
-        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
-        "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
-        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
-        "https://www.myastrazeneca.ch/it/startseite/contact-us.html",
-        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html"
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html"
       ],
       "coverageGaps": [],
-      "description": "Simple single-column content page for resource/document detail and contact pages: heading, body copy and an optional embedded form or download link.",
+      "description": "Trixeo resource document page: breadcrumb, share icons, title, short paragraphs, revision code.",
       "blocks": []
     },
     {
@@ -104,30 +114,13 @@
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html",
-        "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html",
         "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html"
       ],
       "coverageGaps": [],
-      "description": "Product sub-page layout with hero, alternating text/media columns and supporting content sections.",
+      "description": "Trixeo product page: breadcrumb, product sub-navigation tabs, title, text and media sections. Includes the resources index.",
       "blocks": []
     },
     {
@@ -138,45 +131,52 @@
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
         "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
         "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html"
       ],
       "coverageGaps": [],
-      "description": "Campaign micro-site interior page: hero banner followed by multiple stacked feature/content blocks.",
+      "description": "See the pATTRns interior page: campaign banner, section tabs, stat boxes, diagrams, download CTAs.",
       "blocks": []
     },
     {
       "name": "campaign-landing",
       "urls": [
         "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
-        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
-        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
-        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
-        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
-        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html"
+        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
       ],
       "coverageGaps": [],
-      "description": "Campaign micro-site landing page: hero banner with a small number of introductory content blocks.",
+      "description": "See the pATTRns home: campaign banner, section tabs, key visual, two teaser cards, questions band.",
       "blocks": []
     },
     {
       "name": "product-overview",
       "urls": [
-        "https://www.myastrazeneca.ch/fr/startseite/produkte.html"
+        "https://www.myastrazeneca.ch/de/startseite/produkte.html",
+        "https://www.myastrazeneca.ch/en/startseite/produkte.html",
+        "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+        "https://www.myastrazeneca.ch/it/startseite/produkte.html"
       ],
       "coverageGaps": [],
-      "description": "Product overview/index layout with hero, tabbed navigation and a grid of column-based promo cards.",
+      "description": "Products index: hero banner, therapy-area tabs, product card grid, contact banner.",
       "blocks": []
     },
     {
-      "name": "campaign-landing-alt",
+      "name": "contact",
+      "description": "Contact page: title and enquiry form.",
       "urls": [
-        "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html"
+        "https://www.myastrazeneca.ch/de/startseite/contact-us.html",
+        "https://www.myastrazeneca.ch/en/startseite/contact-us.html",
+        "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+        "https://www.myastrazeneca.ch/it/startseite/contact-us.html"
       ],
-      "coverageGaps": [],
-      "description": "Campaign landing variant with hero banner and introductory content blocks in an alternate arrangement.",
-      "blocks": []
+      "blocks": [],
+      "coverageGaps": []
     }
   ]
 }

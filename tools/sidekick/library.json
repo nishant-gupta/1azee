@@ -1,16 +1,49 @@
 {
   "blocks": {
-    "total": 7,
+    "total": 8,
     "offset": 0,
-    "limit": 7,
+    "limit": 8,
     "data": [
-      { "name": "Hero", "path": "/block-library/hero", "description": "Full-bleed banner with background image and heading + intro overlay." },
-      { "name": "Cards", "path": "/block-library/cards", "description": "Responsive grid of cards (image, heading, description, links)." },
-      { "name": "Columns", "path": "/block-library/columns", "description": "Multi-column side-by-side content layout." },
-      { "name": "Button Group", "path": "/block-library/buttons", "description": "Aligned group of buttons; stacks full-width on mobile." },
-      { "name": "Fragment", "path": "/block-library/fragment", "description": "Embeds a reusable content fragment by path." },
-      { "name": "In-Page Nav", "path": "/block-library/in-page-nav", "description": "Links / In-Page Nav: vertical anchor list with left accent bar; bold Magenta labels, em-dash sub-items." },
-      { "name": "Accordion", "path": "/block-library/accordion", "description": "Collapsible content sections with Magenta titles and a flip chevron." }
+      {
+        "name": "Hero",
+        "path": "/block-library/hero",
+        "description": "Full-bleed banner with background image and heading + intro overlay."
+      },
+      {
+        "name": "Cards",
+        "path": "/block-library/cards",
+        "description": "Responsive grid of cards (image, heading, description, links)."
+      },
+      {
+        "name": "Columns",
+        "path": "/block-library/columns",
+        "description": "Multi-column side-by-side content layout."
+      },
+      {
+        "name": "Button Group",
+        "path": "/block-library/buttons",
+        "description": "Aligned group of buttons; stacks full-width on mobile."
+      },
+      {
+        "name": "Fragment",
+        "path": "/block-library/fragment",
+        "description": "Embeds a reusable content fragment by path."
+      },
+      {
+        "name": "In-Page Nav",
+        "path": "/block-library/in-page-nav",
+        "description": "Links / In-Page Nav: vertical anchor list with left accent bar; bold Magenta labels, em-dash sub-items."
+      },
+      {
+        "name": "Accordion",
+        "path": "/block-library/accordion",
+        "description": "Collapsible content sections with Magenta titles and a flip chevron."
+      },
+      {
+        "name": "Table",
+        "path": "/block-library/table",
+        "description": "Data table; the first row is the header."
+      }
     ]
   },
   "templates": {
@@ -18,16 +51,47 @@
     "offset": 0,
     "limit": 7,
     "data": [
-      { "name": "Content Landing", "path": "/block-library/templates/content-landing" },
-      { "name": "Resource Detail", "path": "/block-library/templates/resource-detail" },
-      { "name": "Product Detail", "path": "/block-library/templates/product-detail" },
-      { "name": "Product Overview", "path": "/block-library/templates/product-overview" },
-      { "name": "Campaign Landing", "path": "/block-library/templates/campaign-landing" },
-      { "name": "Campaign Subpage", "path": "/block-library/templates/campaign-subpage" },
-      { "name": "Campaign Landing Alt", "path": "/block-library/templates/campaign-landing-alt" }
+      {
+        "name": "Content Landing",
+        "path": "/block-library/templates/content-landing",
+        "description": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections."
+      },
+      {
+        "name": "Product Overview",
+        "path": "/block-library/templates/product-overview",
+        "description": "Products index: hero banner, therapy-area tabs, product card grid, contact banner."
+      },
+      {
+        "name": "Product Detail",
+        "path": "/block-library/templates/product-detail",
+        "description": "Trixeo product page: breadcrumb, product sub-navigation tabs, title, text and media sections. Includes the resources index."
+      },
+      {
+        "name": "Resource Detail",
+        "path": "/block-library/templates/resource-detail",
+        "description": "Trixeo resource document page: breadcrumb, share icons, title, short paragraphs, revision code."
+      },
+      {
+        "name": "Contact",
+        "path": "/block-library/templates/contact",
+        "description": "Contact page: title and enquiry form."
+      },
+      {
+        "name": "Campaign Landing",
+        "path": "/block-library/templates/campaign-landing",
+        "description": "See the pATTRns home: campaign banner, section tabs, key visual, two teaser cards, questions band."
+      },
+      {
+        "name": "Campaign Subpage",
+        "path": "/block-library/templates/campaign-subpage",
+        "description": "See the pATTRns interior page: campaign banner, section tabs, stat boxes, diagrams, download CTAs."
+      }
     ]
   },
-  ":names": ["blocks", "templates"],
+  ":names": [
+    "blocks",
+    "templates"
+  ],
   ":version": 3,
   ":type": "multi-sheet"
 }

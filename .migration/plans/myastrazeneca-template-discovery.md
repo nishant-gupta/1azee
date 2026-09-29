@@ -1,54 +1,63 @@
-I'll help you migrate myastrazeneca.ch to AEM Edge Delivery Services. Let me clarify a couple of things to build the right plan.# AztraZeneca CH — AEM Edge Delivery Migration Plan
+# AstraZeneca CH: AEM Edge Delivery Migration Plan
+
+**Status as of 2026-09-29.** Details, evidence, and open issues: `docs/site-analysis.md` (published at `/docs/site-analysis`).
 
 ## Objective
-Migrate **https://www.myastrazeneca.ch/** to AEM Edge Delivery Services. Starting with **template discovery** to understand the site's structure before committing to full page migration, and including **header/navigation and footer** in the overall scope.
+Migrate **https://www.myastrazeneca.ch/** to AEM Edge Delivery Services (Document Authoring). Start with template discovery to understand the site's structure before committing to full page migration. Header/navigation and footer are in scope.
 
 ## Approach
-This is a phased migration. Phase 1 (template discovery) is the current focus and produces a site catalog that tells us how many distinct page types exist and which pages represent each. Later phases (content import, nav, footer, design, validation) execute against that catalog once we've reviewed it together.
+Phased migration. Phase 1 produced the site catalog: templates, representative pages, block variants. Later phases run against that catalog.
 
 ---
 
-## Phase 1 — Site Analysis & Template Discovery (current focus)
-- [ ] Confirm project type and the correct Block Library endpoint for this project (doc / da / xwalk)
-- [ ] Discover all site URLs via sitemap, with crawl fallback if no sitemap is available
-- [ ] Analyze representative pages and group similar pages into page templates
-- [ ] Produce a site catalog: template count, representative URL per template, and detected block variants
-- [ ] Review the catalog together and decide which templates/pages to migrate
+## Phase 1: Site Analysis & Template Discovery ✅
+- [x] Confirm project type: **Document Authoring (da)**
+- [x] Discover all site URLs: 126 from the sitemap, 4 locales (DE 46, FR 45, IT 20, EN 16)
+- [x] Analyze pages and group them into templates: 122 analyzed; 5 dead sitemap links (404) excluded
+- [x] Produce the site catalog: 7 templates, 37 block variants (18 known types, 19 default-content patterns)
+- [x] Review the catalog: **templates regrouped 2026-09-29.** 33 pages moved so that translated pages share a template (21 of 46 groups were split before, 0 after). Rules: `tools/importer/template-regrouping.json`
 
-## Phase 2 — Migration Scope Decision (checkpoint)
-- [ ] Present discovered templates and confirm which to migrate (all vs. subset)
-- [ ] Confirm one representative URL per template to migrate first
-- [ ] Identify any special pages (product/PDP, listing/PLP, forms) that may need dedicated handling
+Templates: content-landing 49 · resource-detail 34 · product-detail 16 · campaign-subpage 12 · campaign-landing 3 · product-overview 4 · contact 4
 
-## Phase 3 — Import Infrastructure & Content Import
-- [ ] Generate block parsers and page transformers for the confirmed templates
-- [ ] Build and bundle the import script
-- [ ] Run bulk import for the selected pages
-- [ ] Preview imported pages locally and verify content completeness
+## Phase 2: Migration Scope Decision ✅ (first wave)
+- [x] Present templates and confirm scope: **first wave = English homepage** (`/en/startseite`, content-landing)
+- [x] Representative URL chosen for the first wave
+- [x] Identify special pages: contact form (4 pages, *contact* template; form approach undecided); no commerce PDP/PLP
 
-## Phase 4 — Navigation & Footer
-- [ ] Migrate the site header/navigation (desktop, mobile, and any megamenu behavior)
-- [ ] Migrate the footer (desktop, mobile, validation)
+## Phase 3: Import Infrastructure & Content Import (in progress)
+- [x] Parsers and transformers for content-landing (`hero-minimal-dark-withimg`, `cards-light-withimg`)
+- [x] Import script built and bundled (`tools/importer/import-content-landing.js`)
+- [x] English homepage imported and published (CTA imported as a Primary button)
+- [x] Content published to DA with media, images verified: `tools/da/publish-content.js`
+- [ ] Remaining templates and locales (see "Next")
 
-## Phase 5 — Design & Styling
-- [ ] Extract design tokens and apply site-level styling
-- [ ] Style each migrated block variant to match the original
+## Phase 4: Navigation & Footer ✅
+- [x] Header/navigation: 4-level megamenu (70 items), search, language switcher, login; desktop and mobile
+- [x] Footer: brand block, legal and reporting link columns, revision code; desktop and mobile
 
-## Phase 6 — Validation
-- [ ] Run post-import validation (content completeness scoring per page)
+## Phase 5: Design & Styling ✅ (for built components)
+- [x] oneAZ design tokens (color, type scale, spacing) and brand fonts (Lexia, Inter)
+- [x] Styled blocks and components: hero, cards, buttons (5 styles, 2 sizes, groups), in-page nav, accordion, table
+- [ ] Style remaining source variants as their templates are migrated
+
+## Phase 6: Validation (partial)
+- [x] Post-import completeness check (32% score is a known false alarm: the metric counts stripped site chrome)
+- [x] Live image verification of every published page
 - [ ] Visual critique of migrated pages vs. the original site
 - [ ] Address flagged issues and re-verify
 
 ---
 
+## Next
+1. Decide on the 19 block variants with no EDS block (report Appendix D): default content, an existing block, or a new block.
+2. Migrate **content-landing** across all locales (49 pages). The breast cancer pages need extra handling.
+3. Build `tabs`; re-capture FR `/produkte.html` (its analysis capture is unstyled); migrate **product-overview**.
+4. Migrate Trixeo: **product-detail** 16 + **resource-detail** 34 (DE/FR). Decide on the **contact** form.
+5. Migrate the See the pATTRns campaign: **campaign-landing** 3 + **campaign-subpage** 12 (DE/FR/IT).
+
 ## Notes & Considerations
-- **Pharma content**: myastrazeneca.ch is an AstraZeneca Switzerland site — likely multilingual (DE/FR/IT) and possibly gated/regulated content. Language variants may create additional templates worth confirming during discovery.
-- **Commerce/Forms plugins**: If discovery surfaces product pages, listing pages, or complex forms, dedicated commerce or forms workflows are available but not currently enabled. I can offer to enable them if needed.
-- Each migrated page will get a preview link in the form `{branch}--1azee--nishant-gupta.aem.page/{path}` for review before any PR.
-
-## Checklist (immediate next steps)
-- [ ] Approve this plan (exit plan mode to begin execution)
-- [ ] Run template discovery (URL discovery → page analysis → catalog)
-- [ ] Reconvene to review the catalog and lock migration scope
-
-> **Execution note:** Running discovery, analysis, and any file/script generation requires **Execute mode** — plan mode is read-only. Approve the plan to proceed.
+- **Regulated content:** every page carries a revision code and the "healthcare professionals in Switzerland only" notice. Both must survive migration verbatim.
+- **Uneven locales:** Trixeo exists in DE/FR only, and the campaign has no EN version. Plan migration waves per locale.
+- **Cross-locale links:** the EN navigation links to DE product pages where no EN page exists.
+- **Bot protection:** the source is behind CloudFront. Imports use saved snapshots, and assets are fetched through a browser session.
+- Each migrated page gets a preview link `{branch}--1azee--nishant-gupta.aem.page/{path}` for review before any PR.

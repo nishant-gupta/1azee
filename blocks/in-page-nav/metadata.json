@@ -1,0 +1,18 @@
+{
+  "variantName": "in-page-nav",
+  "baseBlock": "in-page-nav",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "none",
+    "structure": "vertical link list with a left accent bar; nested items prefixed with an em-dash"
+  },
+  "contentPattern": "One cell holding a (nested) bulleted list of links. Nested lists become indented sub-items.",
+  "usage": "oneAZ Links / In-Page Nav, built from the design system spec.",
+  "options": ["gold"],
+  "memberVariantIds": [],
+  "notes": "No matching variant was detected on the source site."
+}

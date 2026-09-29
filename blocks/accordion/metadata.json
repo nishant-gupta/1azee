@@ -1,0 +1,19 @@
+{
+  "variantName": "accordion",
+  "baseBlock": "accordion",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "none",
+    "structure": "stacked collapsible items: Magenta title row with chevron, content panel"
+  },
+  "contentPattern": "One row per item: a title cell and a content cell (heading and rich text).",
+  "usage": "oneAZ Accordion, built from the design system spec. Collapsible sections that expand independently.",
+  "options": [],
+  "memberVariantIds": [],
+  "sourceVariantCandidates": ["v_4ecd3661fdd5"],
+  "notes": "Not yet checked against source variant v_4ecd3661fdd5 (4 pages, heading + text + 6 CTAs). Add it to memberVariantIds once confirmed."
+}
