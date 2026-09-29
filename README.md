@@ -1,9 +1,58 @@
-# Your Project's Title...
-Your project's description...
+# myAstraZeneca CH on AEM Edge Delivery Services
+
+Migration of **https://www.myastrazeneca.ch/** (AstraZeneca Switzerland's portal for healthcare professionals) to AEM Edge Delivery Services, authored in **Document Authoring** (`nishant-gupta/1azee`). Styling follows the **oneAZ** design system.
 
 ## Environments
 - Preview: https://main--1azee--nishant-gupta.aem.page/
 - Live: https://main--1azee--nishant-gupta.aem.live/
+- Site analysis report: https://main--1azee--nishant-gupta.aem.live/docs/site-analysis (source: `docs/site-analysis.md`)
+- Migration plan and status: `.migration/plans/myastrazeneca-template-discovery.md`
+
+## Templates
+
+7 page templates cover the 122 source pages (details and per-page lists in the site analysis report):
+
+| Template | Pages | What it is |
+|---|---:|---|
+| content-landing | 49 | Homepage and therapy-area pages |
+| resource-detail | 34 | Trixeo resource documents (DE/FR) |
+| product-detail | 16 | Trixeo product pages with product tabs (DE/FR) |
+| campaign-subpage | 12 | See the pATTRns interior pages |
+| campaign-landing | 3 | See the pATTRns home |
+| product-overview | 4 | Products index |
+| contact | 4 | Contact form |
+
+## Blocks
+
+Each block with an authoring guide has a `README.md` in its folder; `metadata.json` records the source variant it implements.
+
+| Block | Purpose |
+|---|---|
+| `header`, `footer` | Global navigation (4-level megamenu, search, language switcher) and footer, loaded from `/nav` and `/footer` |
+| `hero-minimal-dark-withimg` | Dark full-bleed hero with background image |
+| `cards-light-withimg` | Therapy-area card grid |
+| `accordion` | oneAZ collapsible sections |
+| `in-page-nav` | oneAZ Links / In-Page Nav |
+| `button-group` | oneAZ button groups (buttons themselves are styled in `styles/styles.css`) |
+| `table` | Data tables |
+| `hero`, `cards`, `columns`, `fragment` | Boilerplate blocks |
+
+Design tokens (color, type scale, spacing) are in `styles/styles.css`; fonts in `styles/fonts.css` and `fonts/`.
+
+## Migration tooling
+
+Not served (`tools/da/*` is in `.hlxignore`). Run from the repo root.
+
+| Command | What it does |
+|---|---|
+| `node tools/da/publish-content.js [page …]` | Uploads pages to Document Authoring with their images, previews, publishes, and verifies that every image loads |
+| `node tools/da/build-site-analysis.js --publish` | Regenerates the report appendices from `catalog/` and publishes `/docs/site-analysis` |
+| `node tools/da/apply-template-regrouping.js` | Applies the reviewed template grouping (`tools/importer/template-regrouping.json`) to the catalogs and rebuilds the catalog report. Re-run it after any catalog rebuild |
+| `node tools/sidekick/build-block-library.js` | Regenerates the Sidekick block library: demo pages, `blocks.json`, `library.json` |
+
+The block library (`/tools/sidekick/library.json`, `/block-library/…`) is Document Authoring content. Publish it with `publish-content.js` after regenerating it.
+
+Pages are imported with the importer in `tools/importer/`: parsers, transformers, and `import-content-landing.js`.
 
 ## Documentation
 

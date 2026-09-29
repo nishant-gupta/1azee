@@ -17,38 +17,42 @@ const write = (rel, html) => {
   console.log('wrote', path.relative(process.cwd(), p));
 };
 
-/* ---- Buttons showcase (also the standalone /buttons page) ---- */
+/*
+ * ---- Buttons showcase (also the standalone /buttons page) ----
+ * Everything here must survive Document Authoring, which keeps only semantic markup and
+ * block tables (div.block > row div > cell div). Class attributes on links or on bare
+ * wrapper divs are stripped, so variants are expressed through formatting and block options.
+ */
+const link = (fmt, text, href = '/en/startseite/produkte.html') => {
+  const a = `<a href="${href}">${text}</a>`;
+  if (fmt === 'primary') return `<p><strong>${a}</strong></p>`;
+  if (fmt === 'secondary') return `<p><em>${a}</em></p>`;
+  if (fmt === 'tertiary') return `<p><strong><em>${a}</em></strong></p>`;
+  return `<p>${a}</p>`; // plain link = Link variant inside a Button Group
+};
+const group = (options, items) => `
+  <div class="button-group${options ? ` ${options}` : ''}">
+    <div><div>${items.map(([fmt, text]) => link(fmt, text, '#')).join('')}</div></div>
+  </div>`;
 const buttons = `
 <div>
   <h1>Buttons</h1>
-  <p>The oneAZ button component. Author a link as <strong>bold</strong> for Primary, <em>italic</em> for Secondary, or <strong><em>bold italic</em></strong> for Tertiary. Link, Icon Only, Small, and group alignment use block classes.</p>
+  <p>The oneAZ button component. Author a link on its own line as <strong>bold</strong> for Primary, <em>italic</em> for Secondary, or <strong><em>bold italic</em></strong> for Tertiary. Inside a <strong>Button Group</strong> block, a plain link becomes the Link variant, and the block options set alignment (<code>align-left</code>, <code>align-center</code>, <code>align-right</code>) and size (<code>small</code>).</p>
 
   <h2>Style variants</h2>
-  <p><strong><a href="/en/startseite/produkte.html">Primary</a></strong></p>
-  <p><em><a href="/en/startseite/produkte.html">Secondary</a></em></p>
-  <p><strong><em><a href="/en/startseite/produkte.html">Tertiary</a></em></strong></p>
-  <p><a class="button link" href="/en/startseite/produkte.html">Link</a></p>
+  ${link('primary', 'Primary')}
+  ${link('secondary', 'Secondary')}
+  ${link('tertiary', 'Tertiary')}
+  ${group('', [['link', 'Link']])}
 
   <h2>Size variants</h2>
-  <p><strong><a href="/en/startseite/produkte.html">Medium (default)</a></strong></p>
-  <p><a class="button primary small" href="/en/startseite/produkte.html">Small</a></p>
+  ${group('', [['primary', 'Medium (default)']])}
+  ${group('small', [['primary', 'Small'], ['secondary', 'Small'], ['link', 'Small']])}
 
   <h2>Group alignment (2+ buttons; stacks full-width on mobile)</h2>
-  <div class="button-group align-left">
-    <a class="button primary" href="#">Button text</a>
-    <a class="button secondary" href="#">Button text</a>
-    <a class="button link" href="#">Button text</a>
-  </div>
-  <div class="button-group align-center">
-    <a class="button primary" href="#">Button text</a>
-    <a class="button secondary" href="#">Button text</a>
-    <a class="button link" href="#">Button text</a>
-  </div>
-  <div class="button-group align-right">
-    <a class="button link" href="#">Button text</a>
-    <a class="button secondary" href="#">Button text</a>
-    <a class="button primary" href="#">Button text</a>
-  </div>
+  ${group('align-left', [['primary', 'Button text'], ['secondary', 'Button text'], ['link', 'Button text']])}
+  ${group('align-center', [['primary', 'Button text'], ['secondary', 'Button text'], ['link', 'Button text']])}
+  ${group('align-right', [['link', 'Button text'], ['secondary', 'Button text'], ['primary', 'Button text']])}
 </div>
 `;
 
@@ -112,6 +116,7 @@ const inPageNav = `
 <div>
   <h1>Links (In-Page Nav)</h1>
   <div class="in-page-nav">
+    <div><div>
     <ul>
       <li><a href="#section-1">In-Page Nav item</a>
         <ul>
@@ -126,6 +131,7 @@ const inPageNav = `
       </li>
       <li><a href="#section-3">In-Page Nav item</a></li>
     </ul>
+    </div></div>
   </div>
 </div>
 `;
@@ -148,45 +154,111 @@ const accordion = `
 </div>
 `;
 
+/* ---- Table demo ---- */
+const table = `
+<div>
+  <h1>Table</h1>
+  <div class="table">
+    <div><div>Product</div><div>Active substance</div><div>Therapy area</div></div>
+    <div><div>Forxiga®</div><div>Dapagliflozin</div><div>Cardiovascular, Renal &amp; Metabolism</div></div>
+    <div><div>Trixeo®</div><div>Formoterol/Glycopyrronium/Budesonid</div><div>Respiratory &amp; Immunology</div></div>
+    <div><div>Lynparza®</div><div>Olaparib</div><div>Oncology &amp; Hematology</div></div>
+  </div>
+</div>
+`;
+
 write('buttons.plain.html', buttons);
+write('../buttons.plain.html', buttons); // standalone /buttons showcase page
 write('in-page-nav.plain.html', inPageNav);
 write('accordion.plain.html', accordion);
+write('table.plain.html', table);
 write('hero.plain.html', hero);
 write('cards.plain.html', cards);
 write('columns.plain.html', columns);
 write('fragment.plain.html', fragment);
 
-/* ---- Template skeletons (structure references, one per discovered template) ---- */
-const templates = {
-  'content-landing': 'General landing/overview: hero, intro copy, a cards grid, and closing content.',
-  'resource-detail': 'Single-column resource/document detail page: heading, body copy, optional download link.',
-  'product-detail': 'Product sub-page: hero, alternating text/media sections.',
-  'product-overview': 'Product index: hero, tabs, and a grid of promo cards.',
-  'campaign-landing': 'Campaign landing: hero banner with a few introductory content blocks.',
-  'campaign-subpage': 'Campaign interior page: hero followed by stacked content blocks.',
-  'campaign-landing-alt': 'Campaign landing variant.',
-};
-Object.entries(templates).forEach(([name, desc]) => {
-  const title = name.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
+/*
+ * ---- Template skeletons: one per template ----
+ * Names and descriptions come from the reviewed template grouping, so the library
+ * cannot drift from the catalog. The representative source page is the first URL of
+ * each template in the full-site import templates.
+ */
+const readJson = (rel) => JSON.parse(fs.readFileSync(path.join(__dirname, rel), 'utf8'));
+const regrouping = readJson('../importer/template-regrouping.json');
+const fullCatalog = readJson('../importer/page-templates.full-catalog.json');
+
+const templateNames = Object.keys(regrouping.descriptions);
+const titleOf = (name) => name.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
+templateNames.forEach((name) => {
+  const tpl = fullCatalog.templates.find((t) => t.name === name);
+  const example = tpl?.urls?.[0];
   write(`templates/${name}.plain.html`, `
 <div>
-  <h1>${title}</h1>
-  <p>${desc}</p>
+  <h1>${titleOf(name)}</h1>
+  <p>${regrouping.descriptions[name]}</p>
+  ${example ? `<p>Source example (${tpl.urls.length} pages): <a href="${example}">${example}</a></p>` : ''}
   <p><strong><a href="#">Primary CTA</a></strong></p>
 </div>
 `);
 });
 
-/* ---- blocks.json: per-block detail sheet for the DA Library panel ---- */
+// Remove skeletons of templates that no longer exist.
+fs.readdirSync(path.join(OUT, 'templates'))
+  .filter((f) => f.endsWith('.plain.html') && !templateNames.includes(f.replace('.plain.html', '')))
+  .forEach((f) => {
+    fs.unlinkSync(path.join(OUT, 'templates', f));
+    // eslint-disable-next-line no-console
+    console.log('removed stale', path.join('content/block-library/templates', f));
+  });
+
+/* ---- Block details: drive both blocks.json and the library's blocks sheet ---- */
 const blockDetails = [
-  { name: 'Hero', path: '/block-library/hero', description: 'Full-bleed banner with a background image and a heading + intro overlay. Used at the top of landing pages.', variants: 'hero-minimal-dark-withimg', options: 'minimal-dark-withimg', baseBlock: 'hero', model: 'standalone' },
-  { name: 'Cards', path: '/block-library/cards', description: 'Responsive grid of cards. Each card has an image, heading, description, and an optional list of links.', variants: 'cards-light-withimg', options: 'light-withimg', baseBlock: 'cards', model: 'collection' },
-  { name: 'Columns', path: '/block-library/columns', description: 'Multi-column layout for placing content side by side. Column count follows the number of cells authored per row.', variants: '', options: '', baseBlock: 'columns', model: 'standalone' },
-  { name: 'Button Group', path: '/block-library/buttons', description: 'Groups two or more buttons with left, right, or center alignment. Stacks full-width on mobile. Individual buttons are authored as formatted links (bold=Primary, italic=Secondary, bold+italic=Tertiary).', variants: 'button-group', options: 'align-left, align-right, align-center', baseBlock: 'button-group', model: 'standalone' },
-  { name: 'Fragment', path: '/block-library/fragment', description: 'Embeds another authored document (a reusable content fragment) inline by its path.', variants: '', options: '', baseBlock: 'fragment', model: 'reference' },
-  { name: 'In-Page Nav', path: '/block-library/in-page-nav', description: 'Links / In-Page Nav: a vertical list of anchor links with a left accent bar. Bold Magenta labels; nested sub-items indented with an em-dash prefix. The item matching the current page renders in Graphite.', variants: '', options: 'gold', baseBlock: 'in-page-nav', model: 'collection' },
-  { name: 'Accordion', path: '/block-library/accordion', description: 'Collapsible sections. Each authored row is a [title, content] pair: the Magenta title toggles its content panel; a right-side chevron flips when open. Items expand independently.', variants: '', options: '', baseBlock: 'accordion', model: 'collection' },
+  {
+    name: 'Hero', path: '/block-library/hero', short: 'Full-bleed banner with background image and heading + intro overlay.', description: 'Full-bleed banner with a background image and a heading + intro overlay. Used at the top of landing pages.', variants: 'hero-minimal-dark-withimg', options: 'minimal-dark-withimg', baseBlock: 'hero', model: 'standalone',
+  },
+  {
+    name: 'Cards', path: '/block-library/cards', short: 'Responsive grid of cards (image, heading, description, links).', description: 'Responsive grid of cards. Each card has an image, heading, description, and an optional list of links. Implements source variant v_5d7c92bb4412 (therapy card grid, 46 pages).', variants: 'cards-light-withimg', options: 'light-withimg', baseBlock: 'cards', model: 'collection',
+  },
+  {
+    name: 'Columns', path: '/block-library/columns', short: 'Multi-column side-by-side content layout.', description: 'Multi-column layout for placing content side by side. Column count follows the number of cells authored per row.', variants: '', options: '', baseBlock: 'columns', model: 'standalone',
+  },
+  {
+    name: 'Button Group', path: '/block-library/buttons', short: 'Aligned group of buttons; stacks full-width on mobile.', description: 'Groups two or more buttons with left, right, or center alignment. Stacks full-width on mobile. Individual buttons are authored as formatted links (bold=Primary, italic=Secondary, bold+italic=Tertiary).', variants: 'button-group', options: 'align-left, align-right, align-center', baseBlock: 'button-group', model: 'standalone',
+  },
+  {
+    name: 'Fragment', path: '/block-library/fragment', short: 'Embeds a reusable content fragment by path.', description: 'Embeds another authored document (a reusable content fragment) inline by its path.', variants: '', options: '', baseBlock: 'fragment', model: 'reference',
+  },
+  {
+    name: 'In-Page Nav', path: '/block-library/in-page-nav', short: 'Links / In-Page Nav: vertical anchor list with left accent bar; bold Magenta labels, em-dash sub-items.', description: 'Links / In-Page Nav: a vertical list of anchor links with a left accent bar. Bold Magenta labels; nested sub-items indented with an em-dash prefix. The item matching the current page renders in Graphite.', variants: '', options: 'gold', baseBlock: 'in-page-nav', model: 'collection',
+  },
+  {
+    name: 'Accordion', path: '/block-library/accordion', short: 'Collapsible content sections with Magenta titles and a flip chevron.', description: 'Collapsible sections. Each authored row is a [title, content] pair: the Magenta title toggles its content panel; a right-side chevron flips when open. Items expand independently.', variants: '', options: '', baseBlock: 'accordion', model: 'collection',
+  },
+  {
+    name: 'Table', path: '/block-library/table', short: 'Data table; the first row is the header.', description: 'Data table. The first authored row becomes the header row; short rows are padded so columns stay aligned. Scrolls horizontally on narrow screens.', variants: '', options: '', baseBlock: 'table', model: 'collection',
+  },
 ];
 write('blocks.json', JSON.stringify({
-  total: blockDetails.length, offset: 0, limit: blockDetails.length, data: blockDetails, ':type': 'sheet',
+  total: blockDetails.length,
+  offset: 0,
+  limit: blockDetails.length,
+  data: blockDetails.map(({ short, ...rest }) => rest),
+  ':type': 'sheet',
 }, null, 2));
+
+/* ---- Sidekick library (published to DA at /tools/sidekick/library.json) ---- */
+const sheet = (data) => ({
+  total: data.length, offset: 0, limit: data.length, data,
+});
+const libraryPath = path.join(process.cwd(), 'tools', 'sidekick', 'library.json');
+fs.writeFileSync(libraryPath, `${JSON.stringify({
+  blocks: sheet(blockDetails.map((b) => ({ name: b.name, path: b.path, description: b.short }))),
+  templates: sheet(templateNames.map((n) => ({
+    name: titleOf(n), path: `/block-library/templates/${n}`, description: regrouping.descriptions[n],
+  }))),
+  ':names': ['blocks', 'templates'],
+  ':version': 3,
+  ':type': 'multi-sheet',
+}, null, 2)}\n`);
+// eslint-disable-next-line no-console
+console.log('wrote', path.relative(process.cwd(), libraryPath));

@@ -1,0 +1,18 @@
+{
+  "variantName": "button-group",
+  "baseBlock": "button-group",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "none",
+    "structure": "row of buttons aligned left, center, or right; stacked full-width on mobile"
+  },
+  "contentPattern": "One cell holding one link per paragraph. Bold = Primary, italic = Secondary, bold+italic = Tertiary, plain = Link.",
+  "usage": "oneAZ button groups, built from the design system spec.",
+  "options": ["align-left", "align-center", "align-right", "small"],
+  "memberVariantIds": [],
+  "notes": "Source CTAs are single teaser action links, imported as default-content buttons. No group variant was detected on the source site."
+}

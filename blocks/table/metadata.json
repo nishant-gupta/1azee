@@ -1,0 +1,18 @@
+{
+  "variantName": "table",
+  "baseBlock": "table",
+  "canonicalModel": "collection",
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": true,
+    "imagePattern": "none",
+    "structure": "data table with a header row and zebra-striped body rows"
+  },
+  "contentPattern": "One row per table row; the first row is the header. Short rows are padded to the widest row.",
+  "usage": "Data tables in authored content (used by the site analysis report).",
+  "options": [],
+  "memberVariantIds": [],
+  "notes": "Added for authored data tables; not a source-site variant."
+}
