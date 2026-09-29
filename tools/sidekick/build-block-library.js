@@ -57,7 +57,7 @@ const hero = `
 <div>
   <h1>Hero</h1>
   <div class="hero-minimal-dark-withimg">
-    <div><div><picture><img src="/content/en/media_hero.jpg" alt=""></picture></div></div>
+    <div><div><picture><img src="/media-da/bd29eaf8be6f754b81bee5c8a0697af0.jpg" alt=""></picture></div></div>
     <div><div><h1>Welcome to myAstraZeneca!</h1><p>Discover comprehensive information about our therapy areas and products.</p></div></div>
   </div>
 </div>
@@ -69,15 +69,15 @@ const cards = `
   <h1>Cards</h1>
   <div class="cards-light-withimg">
     <div>
-      <div><picture><img src="/content/en/media_card1.jpg" alt=""></picture></div>
+      <div><picture><img src="/media-da/d008c3e74962f38051bd94dae1f3a50a.jpg" alt=""></picture></div>
       <div><h4>Cardiovascular, Renal and Metabolism (CVRM)</h4><p>Short description of the therapy area.</p><p><a href="#">Learn more</a></p></div>
     </div>
     <div>
-      <div><picture><img src="/content/en/media_card2.jpg" alt=""></picture></div>
+      <div><picture><img src="/media-da/b86df053a0e671904b69d6f3e48d91b4.jpg" alt=""></picture></div>
       <div><h4>Respiratory &amp; Immunology</h4><p>Short description of the therapy area.</p><p><a href="#">Learn more</a></p></div>
     </div>
     <div>
-      <div><picture><img src="/content/en/media_card3.jpg" alt=""></picture></div>
+      <div><picture><img src="/media-da/aa3335511b0bc42bb80d61d3f85cda09.jpg" alt=""></picture></div>
       <div><h4>Oncology &amp; Hematology</h4><p>Short description of the therapy area.</p><p><a href="#">Learn more</a></p></div>
     </div>
   </div>

@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-cycle
+import { rebaseFragmentMedia } from '../../scripts/scripts.js';
+
 /**
  * loads and decorates the footer
  * @param {Element} block The footer block element
@@ -11,6 +14,7 @@ export default async function decorate(block) {
 
   const fragment = document.createElement('div');
   fragment.innerHTML = html;
+  rebaseFragmentMedia(fragment, resp.url);
 
   block.textContent = '';
   const footer = document.createElement('div');

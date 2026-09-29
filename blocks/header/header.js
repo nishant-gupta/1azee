@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/no-cycle
+import { rebaseFragmentMedia } from '../../scripts/scripts.js';
+
 // media query match that indicates desktop width
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
@@ -126,6 +129,7 @@ export default async function decorate(block) {
   const html = await resp.text();
   const fragment = document.createElement('div');
   fragment.innerHTML = html;
+  rebaseFragmentMedia(fragment, resp.url);
 
   block.textContent = '';
   const nav = document.createElement('nav');
