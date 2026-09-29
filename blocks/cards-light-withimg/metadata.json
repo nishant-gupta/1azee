@@ -13,5 +13,7 @@
   "contentPattern": "Repeating card items. Each card: an image cell (colored header illustration) followed by a body cell with a title, a description paragraph, and an optional list of indication/product links.",
   "usage": "Used for the 'Our therapy areas' grid on content-landing pages: a 3-up responsive grid of therapy-area cards with colored image headers.",
   "options": [],
-  "memberVariantIds": ["v_f2575cbf84b3"]
+  "memberVariantIds": [
+    "v_5d7c92bb4412"
+  ]
 }

@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, max-len -- tooling script */
 /*
  * Publishes local content (content/**\/*.plain.html) to Document Authoring.
  *
@@ -49,14 +49,32 @@ function curl(args) {
 }
 
 function listPages() {
+  // content/ may be a symlink: walk and relativize against the SAME resolved root,
+  // otherwise page paths come out as "../../…" and URLs escape the DA org/repo.
+  const root = fs.realpathSync(CONTENT);
   const pages = [];
   const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).forEach((d) => {
     const p = path.join(dir, d.name);
     if (d.isDirectory()) walk(p);
-    else if (d.name.endsWith('.plain.html')) pages.push(path.relative(CONTENT, p).replace(/\.plain\.html$/, ''));
+    else if (d.name.endsWith('.plain.html')) pages.push(path.relative(root, p).replace(/\.plain\.html$/, ''));
   });
-  walk(fs.realpathSync(CONTENT));
+  walk(root);
   return pages.sort();
+}
+
+/** Guards every page path before it is put into a DA / admin URL. */
+function assertSafePage(page) {
+  if (!page || page.startsWith('/') || page.split('/').some((seg) => seg === '..' || seg === '.' || seg === '')) {
+    throw new Error(`refusing unsafe page path: "${page}"`);
+  }
+}
+
+/** True when a remote URL serves an image (so it can be left as-is). */
+function isRemoteImage(url) {
+  try {
+    const res = curl(['-L', '--max-time', '20', url]);
+    return res.status === 200 && res.type.startsWith('image/');
+  } catch { return false; }
 }
 
 /** Resolves an <img src> from a content page to a local file path, or null. */
@@ -78,9 +96,14 @@ function resolveImage(src, page) {
 
 const uploaded = new Map(); // local file -> DA content URL
 
-function uploadImage(file) {
+/**
+ * Uploads a local image to DA under /media/ and returns its DA content URL.
+ * @param {string} file local image path
+ * @param {string} [name] target path under /media/ (default: the file's basename)
+ */
+function uploadImage(file, name = path.basename(file)) {
   if (uploaded.has(file)) return uploaded.get(file);
-  const name = path.basename(file);
+  assertSafePage(name);
   const mime = MIME[path.extname(name).toLowerCase()] || 'application/octet-stream';
   const res = curl(['-X', 'POST', '-F', `data=@${file};type=${mime}`, `${DA_SOURCE}/media/${name}`]);
   if (res.status >= 300) throw new Error(`image upload ${name} -> HTTP ${res.status}`);
@@ -96,8 +119,11 @@ function rewriteImages(html, page) {
     const src = (tag.match(/\ssrc="([^"]*)"/i) || [])[1];
     if (!src) return tag;
     const file = resolveImage(src, page);
-    if (!file) { dropped.push(src); return ''; }
-    return tag.replace(/\ssrc="[^"]*"/i, ` src="${uploadImage(file)}"`);
+    if (file) return tag.replace(/\ssrc="[^"]*"/i, ` src="${uploadImage(file)}"`);
+    // No local copy: keep a working public image URL, drop anything that is broken.
+    if (/^https?:\/\//i.test(src) && isRemoteImage(src)) return tag;
+    dropped.push(src);
+    return '';
   });
   // Clean up wrappers emptied by dropped images.
   let prev;
@@ -121,31 +147,49 @@ function verifyImages(page, live) {
   });
 }
 
-function publish(page, live) {
-  const src = path.join(CONTENT, `${page}.plain.html`);
-  const { html, dropped } = rewriteImages(fs.readFileSync(src, 'utf8'), page);
+/**
+ * Uploads a page body (the inner HTML of <main>) to DA, previews, optionally
+ * publishes, then verifies its images. Image srcs must already be DA URLs.
+ */
+function publishDoc(page, mainHtml, live) {
+  assertSafePage(page);
   const doc = path.join(STAGE, 'pages', `${page.replace(/\//g, '__')}.html`);
-  fs.writeFileSync(doc, `<body><header></header><main>${html}</main><footer></footer></body>\n`);
+  fs.writeFileSync(doc, `<body><header></header><main>${mainHtml}</main><footer></footer></body>\n`);
 
   const up = curl(['-X', 'POST', '-F', `data=@${doc};type=text/html`, `${DA_SOURCE}/${page}.html`]);
   const pv = curl(['-X', 'POST', `${ADMIN}/preview/${ORG}/${REPO}/${BRANCH}/${page}`]);
   const lv = live ? curl(['-X', 'POST', `${ADMIN}/live/${ORG}/${REPO}/${BRANCH}/${page}`]) : { status: '-' };
   const failures = (up.status < 300 && pv.status === 200) ? verifyImages(page, live) : ['upload/preview failed'];
   return {
-    page, upload: up.status, preview: pv.status, live: lv.status, dropped, failures,
+    page, upload: up.status, preview: pv.status, live: lv.status, failures,
   };
 }
 
-const args = process.argv.slice(2);
-const live = !args.includes('--no-live');
-const pages = args.filter((a) => !a.startsWith('--'));
-const results = (pages.length ? pages : listPages()).map((p) => publish(p, live));
+function publish(page, live) {
+  assertSafePage(page);
+  const src = path.join(CONTENT, `${page}.plain.html`);
+  const { html, dropped } = rewriteImages(fs.readFileSync(src, 'utf8'), page);
+  return { ...publishDoc(page, html, live), dropped };
+}
 
-results.forEach((r) => {
-  const ok = r.failures.length === 0;
-  console.log(`${ok ? 'OK  ' : 'FAIL'} ${r.page}  (upload ${r.upload}, preview ${r.preview}, live ${r.live})`);
-  r.dropped.forEach((d) => console.log(`       dropped unresolvable image: ${d}`));
-  r.failures.forEach((f) => console.log(`       broken: ${f}`));
-});
-console.log(`\n${uploaded.size} image(s) uploaded to DA /media/.`);
-process.exitCode = results.some((r) => r.failures.length) ? 1 : 0;
+function report(results) {
+  results.forEach((r) => {
+    const ok = r.failures.length === 0;
+    console.log(`${ok ? 'OK  ' : 'FAIL'} ${r.page}  (upload ${r.upload}, preview ${r.preview}, live ${r.live})`);
+    (r.dropped || []).forEach((d) => console.log(`       dropped unresolvable image: ${d}`));
+    r.failures.forEach((f) => console.log(`       broken: ${f}`));
+  });
+  console.log(`\n${uploaded.size} image(s) uploaded to DA /media/.`);
+  return results.some((r) => r.failures.length) ? 1 : 0;
+}
+
+module.exports = {
+  STAGE, curl, assertSafePage, uploadImage, publishDoc, report,
+};
+
+if (require.main === module) {
+  const args = process.argv.slice(2);
+  const live = !args.includes('--no-live');
+  const pages = args.filter((a) => !a.startsWith('--'));
+  process.exitCode = report((pages.length ? pages : listPages()).map((p) => publish(p, live)));
+}
