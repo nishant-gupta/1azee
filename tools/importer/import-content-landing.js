@@ -4,6 +4,7 @@
 // PARSER IMPORTS
 import heroMinimalDarkWithimgParser from './parsers/hero-minimal-dark-withimg.js';
 import cardsLightWithimgParser from './parsers/cards-light-withimg.js';
+import columnsParser from './parsers/columns.js';
 
 // TRANSFORMER IMPORTS
 import cleanupTransformer from './transformers/myastrazeneca-cleanup.js';
@@ -15,6 +16,7 @@ const PAGE_TEMPLATE = {
   description: 'General landing/overview layout: header, hero region and stacked content sections, footer.',
   urls: [
     'https://www.myastrazeneca.ch/en/startseite.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html',
   ],
   blocks: [
     {
@@ -24,6 +26,13 @@ const PAGE_TEMPLATE = {
     {
       name: 'cards-light-withimg',
       instances: ['.container--3-column-wrap'],
+    },
+    {
+      name: 'columns',
+      instances: [
+        '.teaser.teaser--text-image:not(.teaser--image-top-text-bottom):not(.teaser--home-hero)',
+        '.teaser.teaser--text-left:not(.teaser--image-top-text-bottom):not(.teaser--home-hero):not(.teaser--text-image)',
+      ],
     },
   ],
   sections: [
@@ -46,6 +55,7 @@ const PAGE_TEMPLATE = {
 const parsers = {
   'hero-minimal-dark-withimg': heroMinimalDarkWithimgParser,
   'cards-light-withimg': cardsLightWithimgParser,
+  columns: columnsParser,
 };
 
 // TRANSFORMER REGISTRY - cleanup runs first; section transformer after (adds breaks/metadata)

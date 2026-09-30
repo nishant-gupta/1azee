@@ -17,7 +17,12 @@ Phased migration. Phase 1 produced the site catalog: templates, representative p
 - [x] Produce the site catalog: 7 templates, 37 block variants (18 known types, 19 default-content patterns)
 - [x] Review the catalog: **templates regrouped 2026-09-29.** 33 pages moved so that translated pages share a template (21 of 46 groups were split before, 0 after). Rules: `tools/importer/template-regrouping.json`
 
+- [x] Map blocks to EDS: **reviewed 2026-09-29.** 21 source AEM components inventoried; all 430 catalogued block instances resolved in the source HTML. Result: 37 variants → 14 EDS blocks + default content (29 after merging 8 duplicates; 17 discrepancies flagged). Mapping: `tools/importer/block-mapping.json`; report Section 4, Appendices D–E
+- [x] Apply the reviewed mapping to the catalog: **done 2026-09-30** (`tools/da/apply-block-mapping.js`). 41 type/block/class changes, catch-all split into a default-content variant (38 variants), duplicates merged by shared block + class; placement check passes
+
 Templates: content-landing 49 · resource-detail 34 · product-detail 16 · campaign-subpage 12 · campaign-landing 3 · product-overview 4 · contact 4
+
+**Blocker:** the 50 Trixeo pages (product-detail, resource-detail) hide their content behind a login paywall, so it isn't in the public HTML. Decide the source: an AEM export, a capture with an HCP login, or defer.
 
 ## Phase 2: Migration Scope Decision ✅ (first wave)
 - [x] Present templates and confirm scope: **first wave = English homepage** (`/en/startseite`, content-landing)
@@ -38,7 +43,7 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 ## Phase 5: Design & Styling ✅ (for built components)
 - [x] oneAZ design tokens (color, type scale, spacing) and brand fonts (Lexia, Inter)
 - [x] Styled blocks and components: hero, cards, buttons (5 styles, 2 sizes, groups), in-page nav, accordion, table
-- [ ] Style remaining source variants as their templates are migrated
+- [ ] Build: tabs, form, embed (Kaltura), breadcrumbs, modal, search; style columns; add hero, cards and in-page-nav options (report Section 4.4)
 
 ## Phase 6: Validation (partial)
 - [x] Post-import completeness check (32% score is a known false alarm: the metric counts stripped site chrome)
@@ -49,11 +54,14 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 ---
 
 ## Next
-1. Decide on the 19 block variants with no EDS block (report Appendix D): default content, an existing block, or a new block.
-2. Migrate **content-landing** across all locales (49 pages). The breast cancer pages need extra handling.
-3. Build `tabs`; re-capture FR `/produkte.html` (its analysis capture is unstyled); migrate **product-overview**.
-4. Migrate Trixeo: **product-detail** 16 + **resource-detail** 34 (DE/FR). Decide on the **contact** form.
-5. Migrate the See the pATTRns campaign: **campaign-landing** 3 + **campaign-subpage** 12 (DE/FR/IT).
+The full pending list (P1–P15) is in Section 7.1 of the site analysis report.
+1. Decide how to source the Trixeo content (P1).
+2. Generate the missing block variants from the catalog (P3); the catalog now names each variant's block and class.
+3. Fix section-metadata processing and add Breadcrumbs (every page).
+4. Migrate **content-landing** across all locales (49 pages): style Columns, check Accordion against the source. The breast cancer pages need extra handling.
+5. Build Tabs (sections-based) and product Cards; re-capture FR `/produkte.html`; migrate **product-overview**.
+6. Migrate the See the pATTRns campaign (15 pages): Modal (self-certification), horizontal In-Page Nav, icon Cards, Kaltura Embed.
+7. Decide the contact form backend; migrate **contact**. Migrate Trixeo once P1 is resolved.
 
 ## Notes & Considerations
 - **Regulated content:** every page carries a revision code and the "healthcare professionals in Switzerland only" notice. Both must survive migration verbatim.

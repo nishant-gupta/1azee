@@ -24,7 +24,7 @@ Migration of **https://www.myastrazeneca.ch/** (AstraZeneca Switzerland's portal
 
 ## Blocks
 
-Each block with an authoring guide has a `README.md` in its folder; `metadata.json` records the source variant it implements.
+Each block with an authoring guide has a `README.md` in its folder; `metadata.json` records the source variant it implements. The reviewed mapping of every source component and catalog variant to an EDS block (including blocks still to build: tabs, form, embed, breadcrumbs, modal, search) is in `tools/importer/block-mapping.json`, and is explained in Section 4 of the site analysis report.
 
 | Block | Purpose |
 |---|---|
@@ -46,7 +46,10 @@ Not served (`tools/da/*` is in `.hlxignore`). Run from the repo root.
 | Command | What it does |
 |---|---|
 | `node tools/da/publish-content.js [page …]` | Uploads pages to Document Authoring with their images, previews, publishes, and verifies that every image loads |
-| `node tools/da/build-site-analysis.js --publish` | Regenerates the report appendices from `catalog/` and publishes `/docs/site-analysis` |
+| `node tools/da/inventory-source-components.js` | Inventories the AEM components on every source page and ties each catalogued block variant to them (`catalog/source-components.json`) |
+| `node tools/da/apply-block-mapping.js [--dry-run]` | Applies `tools/importer/block-mapping.json` to `catalog/block-catalog.json` (type, block, variant class; splits). Re-run after any catalog rebuild |
+| `node tools/da/capture-component-shots.js` | Screenshots source components and the built EDS blocks for the report (`catalog/component-shots/`) |
+| `node tools/da/build-site-analysis.js --publish` | Regenerates the report appendices from `catalog/` and `tools/importer/block-mapping.json`, and publishes `/docs/site-analysis` |
 | `node tools/da/apply-template-regrouping.js` | Applies the reviewed template grouping (`tools/importer/template-regrouping.json`) to the catalogs and rebuilds the catalog report. Re-run it after any catalog rebuild |
 | `node tools/sidekick/build-block-library.js` | Regenerates the Sidekick block library: demo pages, `blocks.json`, `library.json` |
 

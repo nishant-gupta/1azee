@@ -6,9 +6,11 @@
  *   node tools/da/build-site-analysis.js --publish  ...then publish it to DA as /docs/site-analysis
  *   add --no-live to preview only
  *
- * The appendices (every URL per template, template screenshots, template x block matrix,
- * and one screenshot per block variant) are generated from catalog/ and written between
- * the APPENDIX markers, so hand-written sections above them are preserved.
+ * The appendices (every URL per template, template screenshots, template x block matrices,
+ * blocks and variants by EDS target, source components -> EDS) are generated from catalog/
+ * and tools/importer/block-mapping.json and written between the APPENDIX markers, so
+ * hand-written sections above them are preserved. Run inventory-source-components.js and
+ * capture-component-shots.js first when the catalog or the mapping changes.
  * Screenshots are shrunk into migration-work/da-publish/analysis-images/ before upload.
  */
 const fs = require('node:fs');
@@ -73,8 +75,19 @@ function loadData() {
     return v;
   });
 
+  // Reviewed block mapping + source-component evidence (tools/da/inventory-source-components.js).
+  const mapping = readJson(path.join(ROOT, 'tools', 'importer', 'block-mapping.json'));
+  const sourcePath = path.join(CATALOG, 'source-components.json');
+  if (!fs.existsSync(sourcePath)) throw new Error('catalog/source-components.json missing: run node tools/da/inventory-source-components.js');
+  const source = readJson(sourcePath);
+  const unmapped = Object.keys(variants).filter((id) => !mapping.variants[id]);
+  if (unmapped.length) throw new Error(`variants missing from tools/importer/block-mapping.json: ${unmapped.join(', ')}`);
+  Object.entries(mapping.variants).forEach(([id, m]) => {
+    if (!mapping.targets[m.target]) throw new Error(`${id}: unknown target ${m.target}`);
+  });
+
   return {
-    templates, variants, pages, templateOf, instances, edsBlocks, failedUrls: [...failedUrls].sort(),
+    templates, variants, pages, templateOf, instances, edsBlocks, failedUrls: [...failedUrls].sort(), mapping, source,
   };
 }
 
@@ -97,6 +110,15 @@ function shortPath(u) {
 }
 const TYPE_ORDER = ['header', 'footer', 'hero', 'cards', 'columns', 'accordion', 'tabs', 'form', 'breadcrumbs', 'unknown'];
 const vType = (v) => v.name || v.type || 'unknown';
+const SHOTS = path.join(CATALOG, 'component-shots');
+const shotFile = (name) => { const f = path.join(SHOTS, `${name}.jpg`); return fs.existsSync(f) ? f : null; };
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const STATUS = {
+  built: '✅ built', partial: '🟡 partial', 'to build': '❌ to build', blocked: '⛔ blocked', 'n/a': '-',
+};
+// Source component marker -> readable name, e.g. cmp-container -> Container.
+const componentName = (d, marker) => (d.mapping.components.find((c) => c.marker === marker) || {}).name || marker;
+const top = (o, k) => Object.entries(o || {}).sort((a, b) => b[1] - a[1]).slice(0, k);
 
 /* ------------------------------------------------------------ appendices */
 
@@ -108,7 +130,7 @@ function buildAppendix(d) {
   w();
   w('## Appendix A: Every page, by template');
   w();
-  w('Each row is one analyzed page with the block variants detected on it. Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template.');
+  w('Each row is one analyzed page with the block variants detected on it and the EDS target each maps to (→). Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template.');
   d.templates.forEach((t, ti) => {
     w();
     w(`### A.${ti + 1} ${t.name} (${t.urls.length} pages)`);
@@ -119,7 +141,8 @@ function buildAppendix(d) {
     w('|---:|---|---|---|---|---|');
     [...t.urls].sort().forEach((u, i) => {
       const p = d.pages[u] || {};
-      const vs = [...new Set((p.blocks || []).map((b) => `${b.type} \`${b.variantId}\``))].join(', ') || '(none)';
+      const vs = [...new Set((p.blocks || []).map((b) => `\`${b.variantId}\` → ${d.mapping.targets[d.mapping.variants[b.variantId].target].label}`))].join(', ')
+        || (d.source.components.ContentPaywall?.templates[t.name] ? '(none: content is behind the login paywall)' : '(none)');
       w(`| ${i + 1} | ${locale(u)} | ${section(u)} | ${esc(p.title)} | ${esc(vs)} | [${esc(shortPath(u))}](${u}) |`);
     });
   });
@@ -150,9 +173,25 @@ function buildAppendix(d) {
   w();
   w('---');
   w();
-  w('## Appendix C: Template × block type matrix');
+  w('## Appendix C: Template × block matrices');
   w();
-  w('Number of pages in each template that contain at least one block of that type. "unknown" means content the detector could not map to a named block (mostly default content).');
+  w('### C.1 By EDS target (after the block mapping review)');
+  w();
+  w('Number of pages in each template that contain at least one variant mapped to that EDS block (Appendix D). Header and footer are on every page.');
+  w();
+  const targetOf = (b) => d.mapping.variants[b.variantId].target;
+  const targets = Object.keys(d.mapping.targets).filter((k) => !['header', 'footer'].includes(k)
+    && Object.values(d.mapping.variants).some((m) => m.target === k));
+  w(`| Template | Pages | ${targets.map((k) => d.mapping.targets[k].label).join(' | ')} |`);
+  w(`|---|---:|${targets.map(() => '---:').join('|')}|`);
+  d.templates.forEach((t) => {
+    const counts = targets.map((k) => t.urls.filter((u) => (d.pages[u]?.blocks || []).some((b) => targetOf(b) === k)).length);
+    w(`| ${t.name} | ${t.urls.length} | ${counts.map((c) => c || '·').join(' | ')} |`);
+  });
+  w();
+  w('### C.2 By originally detected block type');
+  w();
+  w('The same count by the type the automatic detector first assigned (kept in each page\'s own catalog record; the corrected types are in C.1 and in `catalog/block-catalog.json`). "unknown" means content the detector could not map to a named block.');
   w();
   const types = TYPE_ORDER.filter((ty) => !['header', 'footer'].includes(ty));
   w(`| Template | Pages | ${types.join(' | ')} |`);
@@ -165,44 +204,120 @@ function buildAppendix(d) {
   w();
   w('---');
   w();
-  w('## Appendix D: Block variant catalog');
+  w('## Appendix D: Blocks and their variants, by EDS target');
   w();
-  w('One entry per detected variant: its structure, how many pages use it, which templates it appears in, which EDS block implements it today (from each block\'s `metadata.json`), and an example screenshot. Variants with no EDS block are candidates for default content or a new block.');
-  const vids = Object.keys(d.variants).sort((a, b) => {
-    const ta = TYPE_ORDER.indexOf(vType(d.variants[a])); const tb = TYPE_ORDER.indexOf(vType(d.variants[b]));
-    return (ta - tb) || ((d.instances[b] || []).length - (d.instances[a] || []).length) || a.localeCompare(b);
-  });
-  vids.forEach((id, i) => {
-    const v = d.variants[id];
-    const inst = d.instances[id] || [];
-    const pageSet = [...new Set(inst.map((x) => x.url))];
-    const byTpl = {};
-    pageSet.forEach((u) => { const t = d.templateOf[u] || '(none)'; byTpl[t] = (byTpl[t] || 0) + 1; });
-    const isGlobal = id.endsWith('-global');
-    const eds = d.edsBlocks[id]?.map((b) => `\`${b}\``).join(', ') || (isGlobal ? `\`${vType(v)}\` (global)` : 'none yet');
-    const examples = pageSet.sort((a, b) => (locale(a) === 'EN' ? -1 : 0) - (locale(b) === 'EN' ? -1 : 0)).slice(0, 3);
+  w('Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `tools/importer/block-mapping.json`). For each block: its status, the standard block it is based on, how the EDS block renders today (where it is built), and then every source variant with its evidence and a source screenshot. "Source components" come from resolving each block instance in the source HTML (`catalog/source-components.json`). A variant marked *merge into* is a duplicate of another and needs no separate implementation.');
+  const pagesOf = (id) => [...new Set((d.instances[id] || []).map((x) => x.url))];
+  // Every EDS block, plus default content; blocks without catalog variants (Buttons, Modal, Search) come from source components.
+  const targetKeys = Object.keys(d.mapping.targets).filter((k) => d.mapping.targets[k].block || Object.values(d.mapping.variants).some((m) => m.target === k));
+  targetKeys.forEach((key, ti) => {
+    const t = d.mapping.targets[key];
+    const ids = Object.keys(d.mapping.variants).filter((id) => d.mapping.variants[id].target === key && d.variants[id])
+      .sort((a, b) => pagesOf(b).length - pagesOf(a).length || a.localeCompare(b));
+    const isGlobal = ['header', 'footer'].includes(key);
+    const allPages = new Set(ids.flatMap(pagesOf));
+    const comps = d.mapping.components.filter((c) => c.target === key || (c.alsoTargets || []).includes(key)).map((c) => c.name);
+    const own = ids.filter((id) => !d.mapping.variants[id].merge).length;
 
     w();
-    w(`### D.${i + 1} ${vType(v)}: \`${id}\``);
+    w(`### D.${ti + 1} ${t.label}`);
     w();
     w('| Field | Value |');
     w('|---|---|');
-    w(`| Detected type | ${vType(v)} |`);
-    w(`| Structure | ${esc(v.description)} |`);
-    w(`| Pages using it | ${isGlobal ? 'every page (global)' : pageSet.length} |`);
-    w(`| Templates | ${isGlobal ? 'all' : esc(Object.entries(byTpl).sort((a, b) => b[1] - a[1]).map(([t, n]) => `${t} (${n})`).join(', ')) || '-'} |`);
-    w(`| EDS block today | ${eds} |`);
-    if (examples.length) w(`| Example pages | ${examples.map((u) => `[${esc(shortPath(u))}](${u})`).join('<br>')} |`);
-
-    let shot = null;
-    if (isGlobal) {
-      const g = path.join(CATALOG, '.pages', '_global', `${vType(v)}.jpg`);
-      if (fs.existsSync(g)) shot = g;
-    } else {
-      const withShot = inst.filter((x) => x.shot && fs.existsSync(x.shot));
-      shot = (withShot.find((x) => locale(x.url) === 'EN') || withShot[0])?.shot || null;
+    w(`| EDS block | ${t.block ? `\`${t.block}\`` : '-'} |`);
+    w(`| Status | ${STATUS[t.status] || t.status} |`);
+    w(`| Standard block | ${esc(t.standard)} |`);
+    if (t.options) w(`| Options | ${esc(t.options)} |`);
+    w(`| Source components | ${esc(comps.join(', ')) || '-'} |`);
+    w(`| Catalog variants | ${ids.length ? `${ids.length}${own !== ids.length ? ` (${own} after merging duplicates)` : ''}` : 'none: mapped from source components (Appendix E)'} |`);
+    const compPages = Math.max(0, ...d.mapping.components.filter((c) => c.target === key).map((c) => d.source.components[c.marker]?.pages || 0));
+    w(`| Pages | ${isGlobal ? 'every page' : (allPages.size || compPages)} |`);
+    if (t.note) w(`| Note | ${esc(t.note)} |`);
+    const eds = shotFile(`eds-${key}`);
+    if (eds) {
+      w();
+      w(`**EDS rendering today** (${key === 'columns' ? 'boilerplate demo, not yet styled' : `demo page \`${t.demo.path}\``}):`);
+      w();
+      w(`![EDS ${t.label}](${rel(eds)})`);
     }
-    if (shot) { w(); w(`![${vType(v)} ${id}](${rel(shot)})`); }
+    d.mapping.components.filter((c) => c.target === key && shotFile(`src-${slug(c.name)}`)).forEach((c) => {
+      w();
+      w(`**Source component on the live site** (${c.name}, [example page](${c.shot.url})):`);
+      w();
+      w(`![source component ${c.name}](${rel(shotFile(`src-${slug(c.name)}`))})`);
+    });
+
+    ids.forEach((id, vi) => {
+      const v = d.variants[id];
+      const m = d.mapping.variants[id];
+      const inst = d.instances[id] || [];
+      const pageSet = pagesOf(id);
+      const byTpl = {};
+      pageSet.forEach((u) => { const tp = d.templateOf[u] || '(none)'; byTpl[tp] = (byTpl[tp] || 0) + 1; });
+      const ev = d.source.variants[id];
+      const examples = [...pageSet].sort((a, b) => (locale(a) === 'EN' ? -1 : 0) - (locale(b) === 'EN' ? -1 : 0)).slice(0, 3);
+
+      w();
+      w(`#### D.${ti + 1}.${vi + 1} \`${id}\`${m.option ? `: ${esc(m.option)}` : ''}`);
+      w();
+      w('| Field | Value |');
+      w('|---|---|');
+      w(`| Catalog | type \`${v.type}\` · block ${v.type === 'unknown' ? '(default content, not generated)' : `\`${v.name}\` · ${v.variant ? `class \`${v.variant}\`` : 'default'}`} |`);
+      w(`| Structure | ${esc(v.description.replace('Block variant: ', ''))} |`);
+      if (ev) {
+        w(`| Source components | ${esc(top(ev.comps, 8).map(([c, n]) => `${componentName(d, c)} ${n}/${ev.instances.length}`).join(', '))} |`);
+        const st = top(ev.styles, 5);
+        if (st.length) w(`| Source styles | ${st.map(([s]) => `\`${s}\``).join(' ')} |`);
+      }
+      w(`| Uses | ${isGlobal ? 'every page (global)' : `${inst.length} on ${pageSet.length} pages`} |`);
+      if (!isGlobal) w(`| Templates | ${esc(Object.entries(byTpl).sort((a, b) => b[1] - a[1]).map(([tp, n]) => `${tp} (${n})`).join(', '))} |`);
+      w(`| EDS target | ${t.label}${m.option ? ` (${esc(m.option)})` : ''}${d.edsBlocks[id] ? `: implemented by ${d.edsBlocks[id].map((b) => `\`${b}\``).join(', ')}` : ''} |`);
+      if (m.merge) w(`| Merge into | \`${m.merge}\` |`);
+      if (m.note) w(`| Note | ${esc(m.note)} |`);
+      if (m.discrepancy) w(`| ⚠️ Discrepancy | ${esc(m.discrepancy)} |`);
+      if (examples.length) w(`| Example pages | ${examples.map((u) => `[${esc(shortPath(u))}](${u})`).join('<br>')} |`);
+
+      let shot = null;
+      if (isGlobal) {
+        const g = path.join(CATALOG, '.pages', '_global', `${vType(v)}.jpg`);
+        if (fs.existsSync(g)) shot = g;
+      } else {
+        const withShot = inst.filter((x) => x.shot && fs.existsSync(x.shot));
+        shot = (withShot.find((x) => locale(x.url) === 'EN') || withShot[0])?.shot || null;
+      }
+      if (shot) { w(); w(`![source ${id}](${rel(shot)})`); }
+      // Catch-all variants: also show an instance that lacks the component the variant maps on.
+      if (m.altShot && ev) {
+        const alt = ev.instances.find((x) => x.shot && !x.comps.includes(m.altShot.without) && fs.existsSync(path.join(ROOT, x.shot)));
+        if (alt) { w(); w(`*${esc(m.altShot.caption)}* ([page](${alt.url})):`); w(); w(`![source ${id}, instance without ${m.altShot.without}](${rel(path.join(ROOT, alt.shot))})`); }
+      }
+    });
+  });
+
+  w();
+  w('---');
+  w();
+  w('## Appendix E: Source components (AEM) → EDS');
+  w();
+  w(`Every AEM component on the ${d.templates.reduce((s, t) => s + t.urls.length, 0)} source pages, identified by its component name in the served HTML. "Outside catalog" counts instances that sit outside every catalogued block (header/footer chrome excluded). Those are content the automatic catalog did not capture. Source: \`catalog/source-components.json\`.`);
+  w();
+  w('| Component | On your list | Pages | Uses | Outside catalog | EDS target | Status | Treatment |');
+  w('|---|:---:|---:|---:|---:|---|---|---|');
+  d.mapping.components.forEach((c) => {
+    const s = d.source.components[c.marker] || {};
+    const t = d.mapping.targets[c.target];
+    const also = (c.alsoTargets || []).map((k) => d.mapping.targets[k].label);
+    w(`| ${c.name} | ${c.onList ? '✔' : ''} | ${s.pages || 0} | ${s.instances || 0} | ${s.outsideBlocks || '·'} | ${esc([t.label, ...also].join(' / '))} | ${STATUS[c.status || t.status] || c.status || t.status} | ${esc(c.treatment)} |`);
+  });
+  const withShots = d.mapping.components.filter((c) => shotFile(`src-${slug(c.name)}`));
+  withShots.forEach((c, i) => {
+    const s = d.source.components[c.marker] || {};
+    w();
+    w(`### E.${i + 1} ${c.name}`);
+    w();
+    w(`${s.pages} pages (${esc(top(s.templates, 7).map(([tp, n]) => `${tp} ${n}`).join(', '))}) → **${d.mapping.targets[c.target].label}**. ${esc(c.treatment)}. Example: [${esc(shortPath(c.shot.url))}](${c.shot.url})`);
+    w();
+    w(`![source component ${c.name}](${rel(shotFile(`src-${slug(c.name)}`))})`);
   });
   return out.join('\n');
 }

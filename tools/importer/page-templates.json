@@ -3,7 +3,8 @@
     {
       "name": "content-landing",
       "urls": [
-        "https://www.myastrazeneca.ch/en/startseite.html"
+        "https://www.myastrazeneca.ch/en/startseite.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html"
       ],
       "coverageGaps": [],
       "description": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.",
@@ -18,6 +19,13 @@
           "name": "cards-light-withimg",
           "instances": [
             ".container--3-column-wrap"
+          ]
+        },
+        {
+          "name": "columns",
+          "instances": [
+            ".teaser.teaser--text-image:not(.teaser--image-top-text-bottom):not(.teaser--home-hero)",
+            ".teaser.teaser--text-left:not(.teaser--image-top-text-bottom):not(.teaser--home-hero):not(.teaser--text-image)"
           ]
         }
       ],

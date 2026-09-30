@@ -90,6 +90,31 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
+  // tools/importer/parsers/columns.js
+  function parse3(element, { document: document2 }) {
+    const teaser = element.querySelector(".cmp-teaser") || element;
+    const image = teaser.querySelector(".cmp-teaser__image-desktop img") || teaser.querySelector(".cmp-teaser__image img") || teaser.querySelector("img");
+    const text = [];
+    const title = teaser.querySelector(".cmp-teaser__title");
+    if (title) {
+      const heading = document2.createElement(/^H[1-6]$/.test(title.tagName) ? title.tagName : "h3");
+      heading.innerHTML = title.querySelector("p") ? title.querySelector("p").innerHTML : title.innerHTML;
+      text.push(heading);
+    }
+    const description = teaser.querySelector(".cmp-teaser__description");
+    if (description) text.push(...Array.from(description.childNodes));
+    const actions = teaser.querySelector(".cmp-teaser__action-container");
+    if (actions) text.push(actions);
+    if (!text.length && !image) {
+      element.replaceWith(...element.childNodes);
+      return;
+    }
+    const textFirst = element.classList.contains("teaser--text-image");
+    const cells = [textFirst ? [text, image || ""] : [image || "", text]];
+    const block = WebImporter.Blocks.createBlock(document2, { name: "columns", cells });
+    element.replaceWith(block);
+  }
+
   // tools/importer/transformers/myastrazeneca-cleanup.js
   var TransformHook = { beforeTransform: "beforeTransform", afterTransform: "afterTransform" };
   function transform(hookName, element, payload) {
@@ -97,8 +122,11 @@ var CustomImportScript = (() => {
       WebImporter.DOMUtils.remove(element, [
         "#CookieReportsPanel",
         // cookie consent banner/preferences modal (cleaned.html L966)
-        ".megamenu-overlay"
+        ".megamenu-overlay",
         // mobile hamburger menu overlay (cleaned.html L565)
+        ".socialFeatures"
+        // login-only bookmark/like widget; anonymous visitors get
+        // "errorMessage requestToSignInContent" placeholders (block-mapping.json: drop)
       ]);
     }
     if (hookName === TransformHook.afterTransform) {
@@ -182,7 +210,8 @@ var CustomImportScript = (() => {
     name: "content-landing",
     description: "General landing/overview layout: header, hero region and stacked content sections, footer.",
     urls: [
-      "https://www.myastrazeneca.ch/en/startseite.html"
+      "https://www.myastrazeneca.ch/en/startseite.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html"
     ],
     blocks: [
       {
@@ -192,6 +221,13 @@ var CustomImportScript = (() => {
       {
         name: "cards-light-withimg",
         instances: [".container--3-column-wrap"]
+      },
+      {
+        name: "columns",
+        instances: [
+          ".teaser.teaser--text-image:not(.teaser--image-top-text-bottom):not(.teaser--home-hero)",
+          ".teaser.teaser--text-left:not(.teaser--image-top-text-bottom):not(.teaser--home-hero):not(.teaser--text-image)"
+        ]
       }
     ],
     sections: [
@@ -231,7 +267,8 @@ var CustomImportScript = (() => {
   };
   var parsers = {
     "hero-minimal-dark-withimg": parse,
-    "cards-light-withimg": parse2
+    "cards-light-withimg": parse2,
+    columns: parse3
   };
   var transformers = [
     transform,
