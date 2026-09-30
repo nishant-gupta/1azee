@@ -4,7 +4,9 @@
  *
  * For each page it:
  *   1. finds every <img>, resolves it to a real local file, uploads the file to DA
- *      under /media/, and rewrites the src to the DA content URL
+ *      under /media/, and rewrites the src to the DA content URL. Remote (source-site)
+ *      images are downloaded to migration-work/da-publish/src-images/ under
+ *      "<hash of URL path>-<file name>", so same-named images never collide
  *   2. drops (and reports) any image it cannot resolve, rather than publishing a
  *      broken reference
  *   3. uploads the page, previews it, and (unless --no-live) publishes it
@@ -20,6 +22,7 @@
  */
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const { execFileSync } = require('node:child_process');
 
 const ORG = 'nishant-gupta';
@@ -77,13 +80,45 @@ function isRemoteImage(url) {
   } catch { return false; }
 }
 
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36';
+
+/**
+ * Local (and DA /media/) file name for a remote image: a short hash of its URL path plus its
+ * file name. Different source images often share a file name (banner-header.jpeg, one per
+ * therapy page), so the bare name would make pages overwrite each other's images.
+ */
+function remoteImageFile(src) {
+  const { pathname } = new URL(src);
+  const hash = crypto.createHash('sha1').update(pathname).digest('hex').slice(0, 8);
+  return path.join(EXTRA_IMAGES, `${hash}-${path.basename(pathname)}`);
+}
+
+/** Downloads a remote image to `file`; true when the URL served an image. */
+function downloadImage(src, file) {
+  fs.mkdirSync(EXTRA_IMAGES, { recursive: true });
+  try {
+    const out = execFileSync('curl', ['-s', '-L', '--max-time', '30', '-A', UA, '-o', file, '-w', '%{http_code} %{content_type}', src]).toString();
+    const [status, type = ''] = out.split(' ');
+    if (Number(status) === 200 && type.startsWith('image/')) return true;
+  } catch { /* network error: treated as not an image */ }
+  fs.rmSync(file, { force: true });
+  return false;
+}
+
 /** Resolves an <img src> from a content page to a local file path, or null. */
 function resolveImage(src, page) {
   const candidates = [];
   if (/^https?:\/\//i.test(src)) {
-    let base = '';
-    try { base = path.basename(new URL(src).pathname); } catch { /* malformed */ }
-    if (base) candidates.push(path.join(EXTRA_IMAGES, base));
+    let url = null;
+    try { url = new URL(src); } catch { /* malformed */ }
+    const base = url ? path.basename(url.pathname) : '';
+    if (url && base.includes('.')) {
+      const file = remoteImageFile(src);
+      if (fs.existsSync(file) || downloadImage(src, file)) return file;
+    }
+    // A hand-staged copy under the plain name, only for malformed source URLs with no real
+    // host (e.g. https://content/dam/…): for real URLs it could be another page's image.
+    if (base && url && !url.hostname.includes('.')) candidates.push(path.join(EXTRA_IMAGES, base));
   } else if (src.startsWith('/content/')) {
     candidates.push(path.join(ROOT, src));
   } else if (src.startsWith('/')) {

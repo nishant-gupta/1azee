@@ -30,17 +30,27 @@ export default function parse(element, { document }) {
     // Text content cell: title, description, CTA links.
     const contentCell = [];
 
-    const title = card.querySelector('.cmp-teaser__title, h1, h2, h3, h4, h5, h6, [class*="title"]');
-    if (title) contentCell.push(title);
+    // Look in the content area only: the mobile image link (a.cmp-teaser__title-link) also
+    // matches a loose [class*="title"] and comes first in the DOM.
+    const contentWrap = card.querySelector('.cmp-teaser__content') || card;
+    const title = contentWrap.querySelector('.cmp-teaser__title, h1, h2, h3, h4, h5, h6');
+    if (title) {
+      // Unwrap the <p> AEM puts inside the title (keeps the heading level and any link).
+      title.querySelectorAll('p').forEach((p) => p.replaceWith(...p.childNodes));
+      contentCell.push(title);
+    }
 
-    const description = card.querySelector('.cmp-teaser__description, [class*="description"]');
+    const description = contentWrap.querySelector('.cmp-teaser__description, [class*="description"]');
     if (description) {
       contentCell.push(description);
     } else {
       // Fallback: pull loose paragraphs / links from the content wrapper.
-      const contentWrap = card.querySelector('.cmp-teaser__content') || card;
       Array.from(contentWrap.querySelectorAll(':scope > p, :scope > a')).forEach((n) => contentCell.push(n));
     }
+
+    // CTA (e.g. "PDF Download" on resource cards).
+    const actions = contentWrap.querySelector('.cmp-teaser__action-container');
+    if (actions && !contentCell.some((n) => n.contains(actions))) contentCell.push(actions);
 
     // Only emit a card row if it has content.
     if (image || contentCell.length) {

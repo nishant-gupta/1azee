@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html",
+  "path": "en/startseite/therapiegebiete/ri/copd",
+  "timestamp": "2026-09-30T05:36:29.390Z",
+  "title": "COPD - Symptoms, diagnosis and treatment",
+  "template": "content-landing",
+  "blocks": [
+    "in-page-nav",
+    "accordion",
+    "hero-minimal-dark-withimg",
+    "cards-light-withimg",
+    "cards-light-withimg",
+    "cards-light-withimg",
+    "columns",
+    "columns",
+    "columns",
+    "columns"
+  ]
+}

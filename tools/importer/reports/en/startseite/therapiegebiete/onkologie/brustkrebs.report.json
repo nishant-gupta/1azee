@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
+  "path": "en/startseite/therapiegebiete/onkologie/brustkrebs",
+  "timestamp": "2026-09-30T05:36:03.654Z",
+  "title": "Breast Cancer Overview: Causes, Symptoms & Therapy",
+  "template": "content-landing",
+  "blocks": [
+    "hero-minimal-dark-withimg",
+    "cards-light-withimg",
+    "columns",
+    "columns",
+    "columns"
+  ]
+}

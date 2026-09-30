@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+  "path": "en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz",
+  "timestamp": "2026-09-30T05:35:45.414Z",
+  "title": "Chronic Kidney Disease (CKD) - Symptoms, Diagnosis & Treatment",
+  "template": "content-landing",
+  "blocks": [
+    "hero-minimal-dark-withimg",
+    "cards-light-withimg",
+    "columns",
+    "columns",
+    "columns",
+    "columns"
+  ]
+}
