@@ -246,6 +246,32 @@ write('blocks.json', JSON.stringify({
   ':type': 'sheet',
 }, null, 2));
 
+/*
+ * ---- DA library sheets (site config "library" tab: Templates, Icons) ----
+ * Format per aem.live "Set up library": templates = key (shown) + value (template doc URL);
+ * icons = key (inserted as :key:, via the config row's format ":<content>:") + value (shown)
+ * + icon (preview image). One row per icons/*.svg; the previews are uploaded to DA
+ * /block-library/icons/ by tools/da/publish-library.js.
+ */
+const DA_CONTENT = 'https://content.da.live/nishant-gupta/1azee';
+const daSheet = (data) => ({
+  total: data.length, offset: 0, limit: data.length, data, ':type': 'sheet',
+});
+write('templates.json', JSON.stringify(daSheet(templateNames.map((n) => ({
+  key: titleOf(n), value: `${DA_CONTENT}/block-library/templates/${n}`,
+}))), null, 2));
+
+// Brand names keep their own spelling; everything else is derived from the file name.
+const ICON_LABELS = {
+  facebook: 'Facebook', instagram: 'Instagram', 'linked-in': 'LinkedIn', x: 'X (Twitter)', youtube: 'YouTube',
+};
+const iconLabel = (name) => ICON_LABELS[name] || name.replace(/-/g, ' ').replace(/^./, (c) => c.toUpperCase());
+const iconNames = fs.readdirSync(path.join(process.cwd(), 'icons'))
+  .filter((f) => f.endsWith('.svg')).map((f) => f.replace(/\.svg$/, '')).sort();
+write('icons.json', JSON.stringify(daSheet(iconNames.map((n) => ({
+  key: n, value: iconLabel(n), icon: `${DA_CONTENT}/block-library/icons/${n}.svg`,
+}))), null, 2));
+
 /* ---- Sidekick library (published to DA at /tools/sidekick/library.json) ---- */
 const sheet = (data) => ({
   total: data.length, offset: 0, limit: data.length, data,
