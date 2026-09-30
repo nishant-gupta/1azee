@@ -599,6 +599,13 @@ main > .section:first-of-type {
 }
 
 /* section metadata */
+
+/* the table is configuration, never content: scripts.js applies it to its section and
+   removes it; this keeps it hidden before that runs, or if it doesn't */
+main .section-metadata {
+  display: none;
+}
+
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);

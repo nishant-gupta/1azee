@@ -118,7 +118,7 @@ The AEM components used on the site, including the component list supplied for r
 
 | Component | ✔ | Pages | EDS equivalent | Standard EDS block | Status |
 |---|:---:|---:|---|---|---|
-| Container | ✔ | 122 | Section + Section Metadata; 2-/3-column wraps become Cards or Columns | not a block | 🟡 section metadata not processed yet (P7) |
+| Container | ✔ | 122 | Section + Section Metadata; 2-/3-column wraps become Cards or Columns | not a block | ✅ section metadata applied (P7 resolved) |
 | Teaser | ✔ | 101 | By style: `home-hero` → Hero; image-top in a column wrap → Cards; `text-image` → Columns; plain → default content | Hero, Cards, Columns | 🟡 Hero ✅, 3-up Cards ✅, rest to build |
 | Title | ✔ | 118 | Default-content headings | - | ✅ |
 | Button | ✔ | 122 | Bold / italic / bold+italic links; Button Group for alignment | custom Button Group | ✅ |
@@ -154,7 +154,7 @@ The 37 detected variants (38 after the catch-all split) map to 11 EDS blocks plu
 | In-Page Nav | custom | 1 | 4 | ✅ vertical built | horizontal sub-nav (List component, 31 pages) |
 | Breadcrumbs | Breadcrumbs | 1 | 122 (all) | ❌ | |
 | Header, Footer | Header, Footer | 1 each | all | ✅ built | |
-| Default content | no block | 12 | 28 | ✅ | centered section style (needs P7). Kept as type `unknown` in the catalog, so the block generator skips them |
+| Default content | no block | 12 | 28 | ✅ | centered section style (section metadata `style`). Kept as type `unknown` in the catalog, so the block generator skips them |
 
 Many image counts come in pairs because AEM renders a desktop and a mobile image for each visual. Migration keeps **one** image per visual.
 
@@ -230,7 +230,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | P4 | **Breadcrumbs missing from the migrated pages.** They are visible under the header on all 122 source pages. The catalog only caught them on one capture, and the earlier report wrongly called them an artifact | Visible gap on every page | Breadcrumbs block from the page path (part of P3) |
 | P5 | **Contact form backend.** Dynamic Form V2 builds its fields client-side from an AstraZeneca form service (a form id per locale) and posts there | Contact template (4 pages) | Decision: keep posting to the AZ service, or use an EDS / AEM Forms submission |
 | P6 | **Tabs can't hold nested blocks in DA.** The products-index tab panels contain product card grids | Tabs design | Build tabs from sections (one section per tab) |
-| P7 | `section-metadata` renders as visible "style / dark" text; the vendored `aem.js` doesn't process it. Container styles (background, centering, spacing) depend on it | Medium: visible on the homepage; blocks the Container mapping | Fix in `scripts/scripts.js` (not `aem.js`) |
+| P7 | *Resolved 2026-09-30: section metadata is applied and hidden (see 7.2)* | | |
 | P8 | **HCP self-certification** (15 campaign pages) is a compliance control | Campaign wave | Requirements: where the "I am a patient" choice leads, and how long the choice is remembered (the source sets `data-expiry-time="120"`; the unit is unconfirmed) |
 | P9 | **Login-only widgets render empty:** Master Content List (4 homepages), Social Features (98 pages), "Your Speciality" / "Your Interests" | Empty headings or placeholders if imported | Confirm drop (or rebuild behind login) |
 | P10 | FR `/produkte.html` was captured unstyled (source of 2 artifact variants) | product-overview analysis | Re-capture before migrating product-overview |
@@ -252,6 +252,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | 9 | Button-group and in-page-nav demos broken live: DA strips class attributes and keeps only block tables | Demos rewritten as block tables; `button-group` supports `small` and plain links as the Link variant |
 | 10 | Report and catalog fixes on unmerged branches | PRs #2–#5 merged; `main` has all code and tooling |
 | 11 | Block mapping: 19 variants unmapped, and the supplied AEM component list not yet assessed | **Mapped (2026-09-29)** from source evidence: Section 4, Appendices D–E |
+| P7 | `section-metadata` rendered as visible "style / dark" text wherever a page is rendered from the document (local preview, workspace view). The vendored `aem.js` `decorateSections` does not read it, so it was decorated as a missing block. Published pages were not affected: the server applies it | **Fixed (2026-09-30)** in `scripts/scripts.js` (`decorateSectionMetadata`: `style` values become section classes, other rows data attributes, the table is removed), plus a CSS guard in `styles/styles.css` that always hides `.section-metadata` |
 | P2 | Catalog still had the raw detection: 17 flagged variants (wrong or "unknown" types, duplicates, artifacts, a catch-all) | **Applied (2026-09-30)** with `tools/da/apply-block-mapping.js`: 41 type/block/class changes in `catalog/block-catalog.json`, catch-all split (3 page records re-stamped), placement check passes. Backup in `migration-work/da-publish/archive/`. Re-run the script after any catalog rebuild |
 
 ---
@@ -260,7 +261,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 
 1. **Decide how to source the Trixeo content** (P1). This decides the scope of 50 pages.
 2. ~~Apply the block mapping to the catalog (P2)~~ Done 2026-09-30. Next: generate the missing block variants from the catalog (P3). The generator builds each variant's block and class as the catalog now says.
-3. Fix section-metadata processing (P7) and add Breadcrumbs (P4). Both affect every page.
+3. Add Breadcrumbs (P4); it affects every page. (Section metadata, P7, is fixed.)
 4. Migrate **content-landing** across all 4 locales (49 pages): Hero ✅, 3-up Cards ✅, plus Columns styling, Accordion check (P11) and In-Page Nav. The 4 breast cancer pages need extra handling (no hero, key-figures cards).
 5. Build Tabs (sections-based, P6) and the product Cards option; re-capture FR `/produkte.html` (P10); migrate **product-overview**.
 6. Migrate the See the pATTRns campaign (DE/FR/IT, 15 pages): Modal for self-certification (P8), horizontal In-Page Nav, 2-up icon Cards, Kaltura Embed, campaign Hero banner.
@@ -1420,7 +1421,7 @@ Every AEM component on the 122 source pages, identified by its component name in
 
 | Component | On your list | Pages | Uses | Outside catalog | EDS target | Status | Treatment |
 |---|:---:|---:|---:|---:|---|---|---|
-| Container | ✔ | 122 | 2372 | · | Section + Section Metadata | 🟡 partial | EDS section; style classes (background, spacing) become Section Metadata. The 2- and 3-column wrap containers become Cards or Columns |
+| Container | ✔ | 122 | 2372 | · | Section + Section Metadata | ✅ built | EDS section; style classes (background, spacing) become Section Metadata. The 2- and 3-column wrap containers become Cards or Columns |
 | Teaser | ✔ | 101 | 581 | 105 | Hero / Cards / Columns / Default content | 🟡 partial | Split by style: teaser--home-hero → Hero; image-top-text-bottom in a column wrap → Cards; text-image → Columns; plain intro teaser → default content |
 | Title | ✔ | 118 | 384 | · | Default content | - | Heading (h1–h3). title--color-title-1 is the Mulberry heading colour already in the design tokens |
 | Button | ✔ | 122 | 261 | 100 | Buttons | ✅ built | Link with bold / italic / bold+italic for Primary / Secondary / Tertiary; Button Group block for alignment and grouping |

@@ -17,7 +17,7 @@
     "modal": {"label": "Modal (HCP self-certification)", "block": "modal", "standard": "Modal", "status": "to build", "note": "Show once, remember the choice; the 'patient' choice must lead away from HCP content"},
     "search": {"label": "Search", "block": "search", "standard": "Search", "status": "to build", "note": "The header has the search field; results need the Search block and a query index"},
     "default-content": {"label": "Default content", "standard": "no block", "status": "n/a", "note": "Headings, paragraphs, images, links and buttons. Centering and background come from section styles", "demo": {"path": "/en/startseite", "selector": "main .section:has-text(\"The information platform\")"}},
-    "section": {"label": "Section + Section Metadata", "standard": "no block", "status": "partial", "note": "Section metadata is not processed yet (open issue 3)"},
+    "section": {"label": "Section + Section Metadata", "standard": "no block", "status": "built", "note": "Section metadata is applied by scripts/scripts.js (style values become section classes) and always hidden"},
     "drop": {"label": "Drop", "standard": "-", "status": "n/a"},
     "blocked": {"label": "Blocked: content not public", "standard": "-", "status": "blocked"}
   },
