@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+  "path": "en/startseite/therapiegebiete/cvrm/acutecare",
+  "timestamp": "2026-09-30T04:38:24.621Z",
+  "title": "Acute Care",
+  "template": "content-landing",
+  "blocks": [
+    "hero-minimal-dark-withimg",
+    "cards-light-withimg",
+    "columns",
+    "columns",
+    "columns",
+    "columns"
+  ]
+}

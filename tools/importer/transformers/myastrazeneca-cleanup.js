@@ -16,6 +16,8 @@ export default function transform(hookName, element, payload) {
     WebImporter.DOMUtils.remove(element, [
       '#CookieReportsPanel',   // cookie consent banner/preferences modal (cleaned.html L966)
       '.megamenu-overlay',     // mobile hamburger menu overlay (cleaned.html L565)
+      '.socialFeatures',       // login-only bookmark/like widget; anonymous visitors get
+                               // "errorMessage requestToSignInContent" placeholders (block-mapping.json: drop)
     ]);
   }
 
