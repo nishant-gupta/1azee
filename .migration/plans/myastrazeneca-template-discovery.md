@@ -30,10 +30,12 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 - [x] Identify special pages: contact form (4 pages, *contact* template; form approach undecided); no commerce PDP/PLP
 
 ## Phase 3: Import Infrastructure & Content Import (in progress)
-- [x] Parsers and transformers for content-landing (`hero-minimal-dark-withimg`, `cards-light-withimg`)
+- [x] Parsers and transformers for content-landing: hero, cards, columns, accordion, in-page nav; source tables → `table`
 - [x] Import script built and bundled (`tools/importer/import-content-landing.js`)
 - [x] English homepage imported and published (CTA imported as a Primary button)
-- [x] Content published to DA with media, images verified: `tools/da/publish-content.js`
+- [x] Content published to DA with media, images verified: `tools/da/publish-content.js` (remote images get unique hashed names)
+- [x] **EN wave: 11 pages live (2026-09-30):** EN homepage and all 10 EN therapy-area pages; per-page status in the report's Section 1.1 and Appendix A
+- [ ] EN products index (needs Tabs) and contact (needs the form decision)
 - [ ] Remaining templates and locales (see "Next")
 
 ## Phase 4: Navigation & Footer ✅
@@ -54,11 +56,11 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 ---
 
 ## Next
-The full pending list (P1–P15) is in Section 7.1 of the site analysis report.
+The full pending list (P1–P17) is in Section 7.1 of the site analysis report.
 1. Decide how to source the Trixeo content (P1).
 2. Generate the missing block variants from the catalog (P3); the catalog now names each variant's block and class.
-3. Fix section-metadata processing and add Breadcrumbs (every page).
-4. Migrate **content-landing** across all locales (49 pages): style Columns, check Accordion against the source. The breast cancer pages need extra handling.
+3. Point the EDS site root at a migrated homepage (it serves the boilerplate page, P16) and add Breadcrumbs (every page).
+4. **content-landing:** EN done (11 live). Next: DE/FR/IT (38 pages) with the same importer; style Columns, check Accordion against the source.
 5. Build Tabs (sections-based) and product Cards; re-capture FR `/produkte.html`; migrate **product-overview**.
 6. Migrate the See the pATTRns campaign (15 pages): Modal (self-certification), horizontal In-Page Nav, icon Cards, Kaltura Embed.
 7. Decide the contact form backend; migrate **contact**. Migrate Trixeo once P1 is resolved.
