@@ -261,7 +261,11 @@ write('templates.json', JSON.stringify(daSheet(templateNames.map((n) => ({
   key: titleOf(n), value: `${DA_CONTENT}/block-library/templates/${n}`,
 }))), null, 2));
 
-const iconLabel = (name) => name.replace(/-/g, ' ').replace(/^./, (c) => c.toUpperCase());
+// Brand names keep their own spelling; everything else is derived from the file name.
+const ICON_LABELS = {
+  facebook: 'Facebook', instagram: 'Instagram', 'linked-in': 'LinkedIn', x: 'X (Twitter)', youtube: 'YouTube',
+};
+const iconLabel = (name) => ICON_LABELS[name] || name.replace(/-/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const iconNames = fs.readdirSync(path.join(process.cwd(), 'icons'))
   .filter((f) => f.endsWith('.svg')).map((f) => f.replace(/\.svg$/, '')).sort();
 write('icons.json', JSON.stringify(daSheet(iconNames.map((n) => ({
