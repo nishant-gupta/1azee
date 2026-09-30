@@ -10,6 +10,9 @@ import {
   loadSections,
   loadCSS,
   buildBlock,
+  readBlockConfig,
+  toCamelCase,
+  toClassName,
 } from './aem.js';
 
 if (window.trustedTypes && window.trustedTypes.createPolicy) {
@@ -162,6 +165,31 @@ export function rebaseFragmentMedia(root, fragmentUrl) {
 }
 
 /**
+ * Applies each Section Metadata table to its section and removes the table.
+ * The vendored aem.js decorateSections does not, so the table would otherwise be
+ * decorated as a block and its text ("style / dark") would render on the page.
+ * As in upstream aem.js: `style` values become section classes, other rows data attributes.
+ * @param {Element} main The container element
+ */
+function decorateSectionMetadata(main) {
+  main.querySelectorAll(':scope > .section .section-metadata').forEach((meta) => {
+    const section = meta.closest('.section');
+    Object.entries(readBlockConfig(meta)).forEach(([key, value]) => {
+      const text = [value].flat().join(',');
+      if (key === 'style') {
+        text.split(',').map((s) => toClassName(s.trim())).filter(Boolean)
+          .forEach((style) => section.classList.add(style));
+      } else {
+        section.dataset[toCamelCase(key)] = text;
+      }
+    });
+    const wrapper = meta.parentElement;
+    meta.remove();
+    if (wrapper !== section && !wrapper.children.length) wrapper.remove();
+  });
+}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
@@ -169,6 +197,7 @@ export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);
   decorateSections(main);
+  decorateSectionMetadata(main);
   decorateBlocks(main);
   decorateButtons(main);
 }
