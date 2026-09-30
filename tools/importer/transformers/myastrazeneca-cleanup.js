@@ -19,9 +19,38 @@ export default function transform(hookName, element, payload) {
       '.socialFeatures',       // login-only bookmark/like widget; anonymous visitors get
                                // "errorMessage requestToSignInContent" placeholders (block-mapping.json: drop)
     ]);
+
+    // Mark source data tables (e.g. the GOLD classification on /ri/copd) before the parsers
+    // run: block parsers emit <table> elements too, so only marked tables are converted below.
+    element.querySelectorAll('table').forEach((t) => t.setAttribute('data-source-table', ''));
+
+    // Teasers carry a desktop and a mobile rendition of the same image. Keep one: drop the
+    // mobile copy when a desktop one exists, moving its link (AEM links only the mobile
+    // copy) onto the desktop image. Teasers with only a mobile image are left as they are.
+    element.querySelectorAll('.cmp-teaser').forEach((teaser) => {
+      const desktop = teaser.querySelector('.cmp-teaser__image-desktop img');
+      const mobile = teaser.querySelector('.cmp-teaser__image-mobile');
+      if (!desktop || !mobile) return;
+      const link = mobile.querySelector('a[href]');
+      if (link && !desktop.closest('a')) {
+        const a = link.cloneNode(false);
+        desktop.replaceWith(a);
+        a.append(desktop);
+      }
+      mobile.remove();
+    });
   }
 
   if (hookName === TransformHook.afterTransform) {
+    // Source data tables -> the project's `table` block (first row = header). Left as raw
+    // tables, the importer reads the first cell as a block name ("GOLD stage" -> gold-stage)
+    // and drops the header row.
+    element.querySelectorAll('table[data-source-table]').forEach((t) => {
+      const cells = [...t.rows].map((row) => [...row.cells].map((c) => (c.childNodes.length ? [...c.childNodes] : '')));
+      if (!cells.length) { t.remove(); return; }
+      t.replaceWith(WebImporter.Blocks.createBlock(element.ownerDocument, { name: 'table', cells }));
+    });
+
     WebImporter.DOMUtils.remove(element, [
       '.languagenavigation',                             // DE/EN/FR/IT switcher (L8)
       '.experiencefragment.cmp-experiencefragment--customMenu', // header: logo, megamenu, login (L30)

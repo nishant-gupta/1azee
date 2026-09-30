@@ -69,15 +69,20 @@ var CustomImportScript = (() => {
     cardEls.forEach((card) => {
       const image = card.querySelector(".cmp-teaser__image-desktop img") || card.querySelector(".cmp-teaser__image img") || card.querySelector("img");
       const contentCell = [];
-      const title = card.querySelector('.cmp-teaser__title, h1, h2, h3, h4, h5, h6, [class*="title"]');
-      if (title) contentCell.push(title);
-      const description = card.querySelector('.cmp-teaser__description, [class*="description"]');
+      const contentWrap = card.querySelector(".cmp-teaser__content") || card;
+      const title = contentWrap.querySelector(".cmp-teaser__title, h1, h2, h3, h4, h5, h6");
+      if (title) {
+        title.querySelectorAll("p").forEach((p) => p.replaceWith(...p.childNodes));
+        contentCell.push(title);
+      }
+      const description = contentWrap.querySelector('.cmp-teaser__description, [class*="description"]');
       if (description) {
         contentCell.push(description);
       } else {
-        const contentWrap = card.querySelector(".cmp-teaser__content") || card;
         Array.from(contentWrap.querySelectorAll(":scope > p, :scope > a")).forEach((n) => contentCell.push(n));
       }
+      const actions = contentWrap.querySelector(".cmp-teaser__action-container");
+      if (actions && !contentCell.some((n) => n.contains(actions))) contentCell.push(actions);
       if (image || contentCell.length) {
         cells.push([image || "", contentCell.length ? contentCell : ""]);
       }
@@ -93,7 +98,7 @@ var CustomImportScript = (() => {
   // tools/importer/parsers/columns.js
   function parse3(element, { document: document2 }) {
     const teaser = element.querySelector(".cmp-teaser") || element;
-    const image = teaser.querySelector(".cmp-teaser__image-desktop img") || teaser.querySelector(".cmp-teaser__image img") || teaser.querySelector("img");
+    const image = teaser.querySelector(".cmp-teaser__image-desktop img") || !teaser.querySelector(".cmp-teaser__image-mobile") && teaser.querySelector("img") || null;
     const text = [];
     const title = teaser.querySelector(".cmp-teaser__title");
     if (title) {
@@ -109,9 +114,55 @@ var CustomImportScript = (() => {
       element.replaceWith(...element.childNodes);
       return;
     }
+    if (!image) {
+      text.forEach((node) => element.before(node));
+      element.remove();
+      return;
+    }
     const textFirst = element.classList.contains("teaser--text-image");
     const cells = [textFirst ? [text, image || ""] : [image || "", text]];
     const block = WebImporter.Blocks.createBlock(document2, { name: "columns", cells });
+    element.replaceWith(block);
+  }
+
+  // tools/importer/parsers/accordion.js
+  function parse4(element, { document: document2 }) {
+    const items = [...element.querySelectorAll(".cmp-accordion__item")];
+    const cells = [];
+    items.forEach((item) => {
+      const title = item.querySelector(".cmp-accordion__title") || item.querySelector(".cmp-accordion__header");
+      const panel = item.querySelector(".cmp-accordion__panel");
+      if (!title) return;
+      const content = panel ? [...panel.querySelectorAll(".cmp-text > *, .cmp-title__text, .cmp-image img, .cmp-button")].filter((el, _i, arr) => !arr.some((o) => o !== el && o.contains(el))) : [];
+      cells.push([title.textContent.replace(/\s+/g, " ").trim(), content.length ? content : ""]);
+    });
+    if (!cells.length) {
+      element.replaceWith(...element.childNodes);
+      return;
+    }
+    const block = WebImporter.Blocks.createBlock(document2, { name: "accordion", cells });
+    element.replaceWith(block);
+  }
+
+  // tools/importer/parsers/in-page-nav.js
+  function headingId(text) {
+    return text.toLowerCase().trim().replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s+/g, "-");
+  }
+  function parse5(element, { document: document2 }) {
+    const list = element.querySelector("ul, ol");
+    if (!list) {
+      element.replaceWith(...element.childNodes);
+      return;
+    }
+    const headings = [...document2.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+    list.querySelectorAll('a[href^="#"]').forEach((a) => {
+      const target = document2.getElementById(a.getAttribute("href").slice(1));
+      if (!target) return;
+      const heading = headings.find((h) => target.contains(h)) || headings.find((h) => target.compareDocumentPosition(h) & 4);
+      if (heading && heading.textContent.trim()) a.setAttribute("href", `#${headingId(heading.textContent)}`);
+    });
+    list.querySelectorAll("b, strong").forEach((b) => b.replaceWith(...b.childNodes));
+    const block = WebImporter.Blocks.createBlock(document2, { name: "in-page-nav", cells: [[list]] });
     element.replaceWith(block);
   }
 
@@ -128,8 +179,29 @@ var CustomImportScript = (() => {
         // login-only bookmark/like widget; anonymous visitors get
         // "errorMessage requestToSignInContent" placeholders (block-mapping.json: drop)
       ]);
+      element.querySelectorAll("table").forEach((t) => t.setAttribute("data-source-table", ""));
+      element.querySelectorAll(".cmp-teaser").forEach((teaser) => {
+        const desktop = teaser.querySelector(".cmp-teaser__image-desktop img");
+        const mobile = teaser.querySelector(".cmp-teaser__image-mobile");
+        if (!desktop || !mobile) return;
+        const link = mobile.querySelector("a[href]");
+        if (link && !desktop.closest("a")) {
+          const a = link.cloneNode(false);
+          desktop.replaceWith(a);
+          a.append(desktop);
+        }
+        mobile.remove();
+      });
     }
     if (hookName === TransformHook.afterTransform) {
+      element.querySelectorAll("table[data-source-table]").forEach((t) => {
+        const cells = [...t.rows].map((row) => [...row.cells].map((c) => c.childNodes.length ? [...c.childNodes] : ""));
+        if (!cells.length) {
+          t.remove();
+          return;
+        }
+        t.replaceWith(WebImporter.Blocks.createBlock(element.ownerDocument, { name: "table", cells }));
+      });
       WebImporter.DOMUtils.remove(element, [
         ".languagenavigation",
         // DE/EN/FR/IT switcher (L8)
@@ -211,9 +283,26 @@ var CustomImportScript = (() => {
     description: "General landing/overview layout: header, hero region and stacked content sections, footer.",
     urls: [
       "https://www.myastrazeneca.ch/en/startseite.html",
-      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html"
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html",
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html"
     ],
     blocks: [
+      {
+        name: "in-page-nav",
+        instances: [".text--in-page-nav-hr"]
+      },
+      {
+        name: "accordion",
+        instances: [".accordion"]
+      },
       {
         name: "hero-minimal-dark-withimg",
         instances: [".teaser--home-hero"]
@@ -268,7 +357,9 @@ var CustomImportScript = (() => {
   var parsers = {
     "hero-minimal-dark-withimg": parse,
     "cards-light-withimg": parse2,
-    columns: parse3
+    columns: parse3,
+    accordion: parse4,
+    "in-page-nav": parse5
   };
   var transformers = [
     transform,

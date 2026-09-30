@@ -5,6 +5,8 @@
 import heroMinimalDarkWithimgParser from './parsers/hero-minimal-dark-withimg.js';
 import cardsLightWithimgParser from './parsers/cards-light-withimg.js';
 import columnsParser from './parsers/columns.js';
+import accordionParser from './parsers/accordion.js';
+import inPageNavParser from './parsers/in-page-nav.js';
 
 // TRANSFORMER IMPORTS
 import cleanupTransformer from './transformers/myastrazeneca-cleanup.js';
@@ -17,8 +19,25 @@ const PAGE_TEMPLATE = {
   urls: [
     'https://www.myastrazeneca.ch/en/startseite.html',
     'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html',
+    'https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html',
   ],
   blocks: [
+    {
+      name: 'in-page-nav',
+      instances: ['.text--in-page-nav-hr'],
+    },
+    {
+      name: 'accordion',
+      instances: ['.accordion'],
+    },
     {
       name: 'hero-minimal-dark-withimg',
       instances: ['.teaser--home-hero'],
@@ -56,6 +75,8 @@ const parsers = {
   'hero-minimal-dark-withimg': heroMinimalDarkWithimgParser,
   'cards-light-withimg': cardsLightWithimgParser,
   columns: columnsParser,
+  accordion: accordionParser,
+  'in-page-nav': inPageNavParser,
 };
 
 // TRANSFORMER REGISTRY - cleanup runs first; section transformer after (adds breaks/metadata)

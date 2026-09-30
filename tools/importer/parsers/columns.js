@@ -19,10 +19,12 @@
 export default function parse(element, { document }) {
   const teaser = element.querySelector('.cmp-teaser') || element;
 
-  // Image column — prefer desktop, keep one rendition only.
+  // Image column — the desktop rendition. A teaser with only a mobile rendition shows no
+  // image on desktop (e.g. "Useful product information" on most therapy pages, whose mobile
+  // image is also 404 on the source), so it gets no image column.
   const image = teaser.querySelector('.cmp-teaser__image-desktop img')
-    || teaser.querySelector('.cmp-teaser__image img')
-    || teaser.querySelector('img');
+    || (!teaser.querySelector('.cmp-teaser__image-mobile') && teaser.querySelector('img'))
+    || null;
 
   // Text column — title, description, CTA.
   const text = [];
@@ -41,6 +43,13 @@ export default function parse(element, { document }) {
   // Empty-block guard.
   if (!text.length && !image) {
     element.replaceWith(...element.childNodes);
+    return;
+  }
+  // Nothing to put beside the text: keep it as default content, not a one-column block.
+  // (Move the nodes out first; they live inside the element being removed.)
+  if (!image) {
+    text.forEach((node) => element.before(node));
+    element.remove();
     return;
   }
 

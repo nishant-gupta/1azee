@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html",
+  "path": "en/startseite/therapiegebiete/ri/lupus",
+  "timestamp": "2026-09-30T05:36:35.325Z",
+  "title": "Lupus Insights and Treatment Guidance – For HCPs",
+  "template": "content-landing",
+  "blocks": [
+    "hero-minimal-dark-withimg",
+    "cards-light-withimg",
+    "columns",
+    "columns",
+    "columns",
+    "columns"
+  ]
+}

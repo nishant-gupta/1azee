@@ -4,11 +4,32 @@
       "name": "content-landing",
       "urls": [
         "https://www.myastrazeneca.ch/en/startseite.html",
-        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html"
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html",
+        "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html"
       ],
       "coverageGaps": [],
       "description": "Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.",
       "blocks": [
+        {
+          "name": "in-page-nav",
+          "instances": [
+            ".text--in-page-nav-hr"
+          ]
+        },
+        {
+          "name": "accordion",
+          "instances": [
+            ".accordion"
+          ]
+        },
         {
           "name": "hero-minimal-dark-withimg",
           "instances": [
