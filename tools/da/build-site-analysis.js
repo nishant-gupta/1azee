@@ -189,9 +189,9 @@ function buildAppendix(d) {
     w(`| ${t.name} | ${t.urls.length} | ${counts.map((c) => c || '·').join(' | ')} |`);
   });
   w();
-  w('### C.2 By detected block type (raw catalog)');
+  w('### C.2 By originally detected block type');
   w();
-  w('The same count by the type the automatic detector assigned. "unknown" means content the detector could not map to a named block. C.1 is the reviewed view.');
+  w('The same count by the type the automatic detector first assigned (kept in each page\'s own catalog record; the corrected types are in C.1 and in `catalog/block-catalog.json`). "unknown" means content the detector could not map to a named block.');
   w();
   const types = TYPE_ORDER.filter((ty) => !['header', 'footer'].includes(ty));
   w(`| Template | Pages | ${types.join(' | ')} |`);
@@ -262,7 +262,7 @@ function buildAppendix(d) {
       w();
       w('| Field | Value |');
       w('|---|---|');
-      w(`| Detected type | ${vType(v)} |`);
+      w(`| Catalog | type \`${v.type}\` · block ${v.type === 'unknown' ? '(default content, not generated)' : `\`${v.name}\` · ${v.variant ? `class \`${v.variant}\`` : 'default'}`} |`);
       w(`| Structure | ${esc(v.description.replace('Block variant: ', ''))} |`);
       if (ev) {
         w(`| Source components | ${esc(top(ev.comps, 8).map(([c, n]) => `${componentName(d, c)} ${n}/${ev.instances.length}`).join(', '))} |`);

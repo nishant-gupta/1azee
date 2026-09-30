@@ -18,7 +18,7 @@ Phased migration. Phase 1 produced the site catalog: templates, representative p
 - [x] Review the catalog: **templates regrouped 2026-09-29.** 33 pages moved so that translated pages share a template (21 of 46 groups were split before, 0 after). Rules: `tools/importer/template-regrouping.json`
 
 - [x] Map blocks to EDS: **reviewed 2026-09-29.** 21 source AEM components inventoried; all 430 catalogued block instances resolved in the source HTML. Result: 37 variants → 14 EDS blocks + default content (29 after merging 8 duplicates; 17 discrepancies flagged). Mapping: `tools/importer/block-mapping.json`; report Section 4, Appendices D–E
-- [ ] Apply the reviewed mapping to the catalog (split the catch-all variant, merge duplicates), then re-check
+- [x] Apply the reviewed mapping to the catalog: **done 2026-09-30** (`tools/da/apply-block-mapping.js`). 41 type/block/class changes, catch-all split into a default-content variant (38 variants), duplicates merged by shared block + class; placement check passes
 
 Templates: content-landing 49 · resource-detail 34 · product-detail 16 · campaign-subpage 12 · campaign-landing 3 · product-overview 4 · contact 4
 
@@ -56,7 +56,7 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 ## Next
 The full pending list (P1–P15) is in Section 7.1 of the site analysis report.
 1. Decide how to source the Trixeo content (P1).
-2. Review the block mapping and apply it to the catalog (P2).
+2. Generate the missing block variants from the catalog (P3); the catalog now names each variant's block and class.
 3. Fix section-metadata processing and add Breadcrumbs (every page).
 4. Migrate **content-landing** across all locales (49 pages): style Columns, check Accordion against the source. The breast cancer pages need extra handling.
 5. Build Tabs (sections-based) and product Cards; re-capture FR `/produkte.html`; migrate **product-overview**.

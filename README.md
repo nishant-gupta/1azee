@@ -47,6 +47,7 @@ Not served (`tools/da/*` is in `.hlxignore`). Run from the repo root.
 |---|---|
 | `node tools/da/publish-content.js [page …]` | Uploads pages to Document Authoring with their images, previews, publishes, and verifies that every image loads |
 | `node tools/da/inventory-source-components.js` | Inventories the AEM components on every source page and ties each catalogued block variant to them (`catalog/source-components.json`) |
+| `node tools/da/apply-block-mapping.js [--dry-run]` | Applies `tools/importer/block-mapping.json` to `catalog/block-catalog.json` (type, block, variant class; splits). Re-run after any catalog rebuild |
 | `node tools/da/capture-component-shots.js` | Screenshots source components and the built EDS blocks for the report (`catalog/component-shots/`) |
 | `node tools/da/build-site-analysis.js --publish` | Regenerates the report appendices from `catalog/` and `tools/importer/block-mapping.json`, and publishes `/docs/site-analysis` |
 | `node tools/da/apply-template-regrouping.js` | Applies the reviewed template grouping (`tools/importer/template-regrouping.json`) to the catalogs and rebuilds the catalog report. Re-run it after any catalog rebuild |

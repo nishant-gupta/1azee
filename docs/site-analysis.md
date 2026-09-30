@@ -14,7 +14,7 @@
 | Pages failed | 5, all dead links in the sitemap (HTTP 404) |
 | Locales | 4: DE 46 · FR 45 · IT 20 · EN 16 |
 | Page templates | 7 |
-| Block variants detected | 37 in the catalog → **14 EDS blocks + default content** (Section 4). 29 remain after merging 8 duplicates; 11 of those are default content. 17 variants carry a discrepancy |
+| Block variants detected | 37 detected, 38 after splitting the catch-all → **14 EDS blocks + default content** (Section 4). 30 remain after merging 8 duplicates; 12 of those are default content. 17 discrepancies found and **applied to the catalog** (2026-09-30) |
 | Source components | 21 AEM components inventoried on all 122 pages. Everything maps to a standard EDS block except In-Page Nav and Button Group (oneAZ custom) |
 | Migrated so far | English homepage (`/en/startseite`), plus global header and footer |
 | **Blocker** | The 50 Trixeo pages hide their content behind a login paywall; it is not in the public HTML (issue P1) |
@@ -110,7 +110,7 @@ Breast cancer vs. lung cancer vs. contact (EN):
 
 ## 4. Blocks
 
-**Mapping reviewed 2026-09-29.** The source site is built from AEM Sites components. Each one names itself in the served HTML (for example `Teaser`, `Tabs`, `DynamicFormV2`), which gives an exact inventory. All 122 pages were fetched, and each of the **430 catalogued block instances was resolved in the source HTML (430 of 430 found)**, so every variant is tied to the components it is made of. The reviewed decisions are recorded in `tools/importer/block-mapping.json`. Appendix D has the evidence and screenshots per block and variant; Appendix E has the per-component detail.
+**Mapping reviewed 2026-09-29.** The source site is built from AEM Sites components. Each one names itself in the served HTML (for example `Teaser`, `Tabs`, `DynamicFormV2`), which gives an exact inventory. All 122 pages were fetched, and each of the **430 catalogued block instances was resolved in the source HTML (430 of 430 found)**, so every variant is tied to the components it is made of. The reviewed decisions are recorded in `tools/importer/block-mapping.json` and were **applied to the catalog on 2026-09-30** by `tools/da/apply-block-mapping.js`. `catalog/block-catalog.json` now carries each variant's type, block and variant class, and the placement check passes. Appendix D has the evidence and screenshots per block and variant; Appendix E has the per-component detail.
 
 ### 4.1 Source components → EDS
 
@@ -140,13 +140,13 @@ The AEM components used on the site, including the component list supplied for r
 
 ### 4.2 Catalog variants → EDS blocks
 
-The 37 catalogued variants map to 11 EDS blocks plus default content. Button Group, Modal and Search come from components the catalog doesn't treat as blocks, which makes **14 EDS blocks** in total. All are standard EDS blocks except In-Page Nav and Button Group (oneAZ custom).
+The 37 detected variants (38 after the catch-all split) map to 11 EDS blocks plus default content. Button Group, Modal and Search come from components the catalog doesn't treat as blocks, which makes **14 EDS blocks** in total. All are standard EDS blocks except In-Page Nav and Button Group (oneAZ custom).
 
 | EDS target | Standard block | Variants (after merging) | Pages | Status | Options still to build |
 |---|---|---:|---:|---|---|
-| Hero (`hero-minimal-dark-withimg`) | Hero | 6 (3) | 63 | ✅ built | centered; campaign banner (image only) |
-| Cards (`cards-light-withimg`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards; bordered text cards; product cards with hover overlay |
-| Columns | Columns | 3 | 44 | 🟡 boilerplate only | text beside image; two images |
+| Hero (`hero-minimal-dark-withimg`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
+| Cards (`cards-light-withimg`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
+| Columns | Columns | 3 | 44 | 🟡 boilerplate only | text beside image (default); two images (`images`) |
 | Tabs | Tabs | 3 (1) | 4 | ❌ | |
 | Form | Form | 3 (1) | 4 | ❌ | |
 | Embed | Embed | 1 | 3 | ❌ | Kaltura handler |
@@ -154,20 +154,20 @@ The 37 catalogued variants map to 11 EDS blocks plus default content. Button Gro
 | In-Page Nav | custom | 1 | 4 | ✅ vertical built | horizontal sub-nav (List component, 31 pages) |
 | Breadcrumbs | Breadcrumbs | 1 | 122 (all) | ❌ | |
 | Header, Footer | Header, Footer | 1 each | all | ✅ built | |
-| Default content | no block | 11 | 28 | ✅ | centered section style (needs P7) |
+| Default content | no block | 12 | 28 | ✅ | centered section style (needs P7). Kept as type `unknown` in the catalog, so the block generator skips them |
 
 Many image counts come in pairs because AEM renders a desktop and a mobile image for each visual. Migration keeps **one** image per visual.
 
 ### 4.3 Discrepancies found in the catalog
 
-17 of the 37 variants are flagged in Appendix D (⚠️):
+17 of the 37 detected variants were flagged (⚠️ in Appendix D). **All are now applied to the catalog** (2026-09-30):
 
 | Kind | Variants | Finding |
 |---|---|---|
 | Real block detected as "unknown" | `v_5d7c92bb4412`, `v_bbadaab7c4b3`, `v_5a31a8c89674` (Cards); `v_6defe37a8d19`, `v_c602950f63c9` (Columns); `v_d41301689a41` (In-Page Nav); `v_bd282072e4b6` (Embed: the video was only a poster image in the capture) | The detector only names blocks it recognises; AEM teasers in column wraps weren't recognised |
 | Wrong type | `v_f90804d73a13` detected as columns → product **cards** (they sit inside the tab panels); `v_b1e664af6109` detected as hero → heading + image (default content) | |
-| Catch-all | `v_37fdc84c086b` (133 uses, 40 pages) | Mixes text-image teasers (Columns, 130 uses) with plain text blocks (default content). Split it before building parsers |
-| Duplicates | Hero `v_2ab6094d0f33` → `v_b26d6cceada2`; Cards `v_5a31a8c89674` → `v_bbadaab7c4b3`; Tabs `-1`, `-2` → `v_8ab7ece34e9a`; Form `v_c8843a7f9ec8`, `v_181661dda160` → `v_6e8c2538dd7e` | Same component and style; split by locale or layout noise |
+| Catch-all | `v_37fdc84c086b` (133 uses, 40 pages) | 130 uses are text-image teasers (Columns; 50 of them sit beside a Text component). 3 uses, the same section of *About ATTR amyloidosis* in DE/FR/IT, have no teaser: **split off** as default-content variant `v_37fdc84c086b-text` |
+| Duplicates | Hero `v_2ab6094d0f33` → `v_b26d6cceada2`; Cards `v_5a31a8c89674` → `v_bbadaab7c4b3`; Tabs `-1`, `-2` → `v_8ab7ece34e9a`; Form `v_c8843a7f9ec8`, `v_181661dda160` → `v_6e8c2538dd7e` | Same component and style; split by locale or layout noise. Merged by giving them the same block and class, so each group is built once |
 | Capture artifacts | Hero `v_42845b3e07dd`, `v_228f16fbc166` (unstyled FR `/produkte.html`) | Merge; re-capture the page |
 | Under-captured | Breadcrumbs `v_f88e29f32a0c` (found on 1 page, present on 122); List sub-nav (23 of 31 uses outside any block); Self-certification, Master Content List, Social Features, Content Paywall (not catalogued) | The catalog skips site chrome, modals and components that render empty or behind login |
 | Templates with no blocks | product-detail (16), resource-detail (34) | Content is behind the login paywall (P1) |
@@ -225,7 +225,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | # | Issue / discrepancy | Impact | Needs |
 |---|---|---|---|
 | P1 | **Trixeo content is behind a login paywall.** The 50 product-detail and resource-detail pages show only a hero, the product sub-nav and "Register or log in". The product content is not in the public HTML, so the catalog found no blocks there and these templates are grouped by their public shell only | **Blocker** for 50 of 122 pages | Decision: an export from the current AEM, a capture made with an HCP login, or defer Trixeo. Then re-analyse both templates |
-| P2 | **Catalog discrepancies not yet applied** (Section 4.3): 17 variants flagged. 1 catch-all to split (`v_37fdc84c086b`), 8 duplicates to merge, 2 capture artifacts, 9 wrong or "unknown" types. The reviewed mapping is recorded in `tools/importer/block-mapping.json`, but `catalog/block-catalog.json` still has the raw detection | Parsers built from the raw catalog would duplicate work or mis-map content | Review the mapping (Appendix D), then apply it to the catalog |
+| P2 | *Resolved 2026-09-30: the reviewed block mapping is applied to the catalog (see 7.2)* | | |
 | P3 | **Blocks to build:** Tabs, Form, Embed (Kaltura), Breadcrumbs, Modal (self-certification), Search; Columns styling; options for Hero (centered, campaign banner), Cards (2-up icon, bordered, product with hover) and In-Page Nav (horizontal sub-nav) | Blocks every template except the homepage wave | Build per template wave (Section 8) |
 | P4 | **Breadcrumbs missing from the migrated pages.** They are visible under the header on all 122 source pages. The catalog only caught them on one capture, and the earlier report wrongly called them an artifact | Visible gap on every page | Breadcrumbs block from the page path (part of P3) |
 | P5 | **Contact form backend.** Dynamic Form V2 builds its fields client-side from an AstraZeneca form service (a form id per locale) and posts there | Contact template (4 pages) | Decision: keep posting to the AZ service, or use an EDS / AEM Forms submission |
@@ -251,14 +251,15 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | 7 | Template misgroupings: 21 of 46 translated-page groups split across templates | 33 pages regrouped, 0 splits remain (Section 3.1) |
 | 9 | Button-group and in-page-nav demos broken live: DA strips class attributes and keeps only block tables | Demos rewritten as block tables; `button-group` supports `small` and plain links as the Link variant |
 | 10 | Report and catalog fixes on unmerged branches | PRs #2–#5 merged; `main` has all code and tooling |
-| 11 | Block mapping: 19 variants unmapped, and the supplied AEM component list not yet assessed | **Mapped (2026-09-29)** from source evidence: Section 4, Appendices D–E. Remaining work is P2–P4 |
+| 11 | Block mapping: 19 variants unmapped, and the supplied AEM component list not yet assessed | **Mapped (2026-09-29)** from source evidence: Section 4, Appendices D–E |
+| P2 | Catalog still had the raw detection: 17 flagged variants (wrong or "unknown" types, duplicates, artifacts, a catch-all) | **Applied (2026-09-30)** with `tools/da/apply-block-mapping.js`: 41 type/block/class changes in `catalog/block-catalog.json`, catch-all split (3 page records re-stamped), placement check passes. Backup in `migration-work/da-publish/archive/`. Re-run the script after any catalog rebuild |
 
 ---
 
 ## 8. Recommended next steps
 
 1. **Decide how to source the Trixeo content** (P1). This decides the scope of 50 pages.
-2. **Review the block mapping** (Section 4, Appendix D) and apply it to the catalog (P2): split `v_37fdc84c086b`, merge the duplicates, fix the types.
+2. ~~Apply the block mapping to the catalog (P2)~~ Done 2026-09-30. Next: generate the missing block variants from the catalog (P3). The generator builds each variant's block and class as the catalog now says.
 3. Fix section-metadata processing (P7) and add Breadcrumbs (P4). Both affect every page.
 4. Migrate **content-landing** across all 4 locales (49 pages): Hero ✅, 3-up Cards ✅, plus Columns styling, Accordion check (P11) and In-Page Nav. The 4 breast cancer pages need extra handling (no hero, key-figures cards).
 5. Build Tabs (sections-based, P6) and the product Cards option; re-capture FR `/produkte.html` (P10); migrate **product-overview**.
@@ -282,7 +283,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | Homepage page analysis | `migration-work/authoring-analysis.json`, `migration-work/page-structure.json` |
 | Block library (DA) | `/tools/sidekick/library.json`, `/block-library/blocks.json` (8 blocks, 7 templates), generated by `tools/sidekick/build-block-library.js` |
 | Block authoring guides | `blocks/<block>/README.md` and `metadata.json` (source-variant mapping) |
-| **Block mapping (reviewed decisions)** | `tools/importer/block-mapping.json`: EDS target, option, merge and discrepancy per variant; treatment per source component |
+| **Block mapping (reviewed decisions)** | `tools/importer/block-mapping.json`: EDS target, option, class, merge, split and discrepancy per variant; treatment per source component. Applied to `catalog/block-catalog.json` by `tools/da/apply-block-mapping.js` (idempotent; `--dry-run`) |
 | Source component inventory | `catalog/source-components.json`, built by `tools/da/inventory-source-components.js` (fetched source pages are cached in `migration-work/da-publish/src-pages/`) |
 | Component and EDS block screenshots | `catalog/component-shots/`, taken by `tools/da/capture-component-shots.js` (source components on the live site, EDS blocks on their demo pages) |
 | Migration plan and status | `.migration/plans/myastrazeneca-template-discovery.md` |
@@ -421,15 +422,15 @@ Each row is one analyzed page with the block variants detected on it and the EDS
 
 | # | Locale | Section | Page title | Block variants on the page | URL |
 |---:|---|---|---|---|---|
-| 1 | DE | See the pATTRns | Über ATTR Amyloidose: Verlauf & Ursachen \| See the pATTRns | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
+| 1 | DE | See the pATTRns | Über ATTR Amyloidose: Verlauf & Ursachen \| See the pATTRns | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
 | 2 | DE | See the pATTRns | ATTR Amyloidose Diagnostizieren \| See the pATTRns \| Diagnose | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
 | 3 | DE | See the pATTRns | Symptome der ATTR Amyloidose erkennen \| See the pATTRns | `v_e4409b853477` → Hero, `v_b1e664af6109` → Default content, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
 | 4 | DE | See the pATTRns | Behandlung der ATTR Amyloidose \| See the pATTRns \| Behandlung | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
-| 5 | FR | See the pATTRns | À propos de l’ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
+| 5 | FR | See the pATTRns | À propos de l’ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
 | 6 | FR | See the pATTRns | Diagnostic de l’ATTR | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
 | 7 | FR | See the pATTRns | Symptômes de l’ATTR | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_f2575cbf84b3` → Cards, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
 | 8 | FR | See the pATTRns | Traitement | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
-| 9 | IT | See the pATTRns | L’amiloidosi ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
+| 9 | IT | See the pATTRns | L’amiloidosi ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
 | 10 | IT | See the pATTRns | Diagnosi | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
 | 11 | IT | See the pATTRns | Sintomi | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
 | 12 | IT | See the pATTRns | Trattamento | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
@@ -542,9 +543,9 @@ Number of pages in each template that contain at least one variant mapped to tha
 | product-overview | 4 | 4 | 3 | · | 4 | · | · | · | · | 1 | · |
 | contact | 4 | · | · | · | · | 4 | · | · | · | · | · |
 
-### C.2 By detected block type (raw catalog)
+### C.2 By originally detected block type
 
-The same count by the type the automatic detector assigned. "unknown" means content the detector could not map to a named block. C.1 is the reviewed view.
+The same count by the type the automatic detector first assigned (kept in each page's own catalog record; the corrected types are in C.1 and in `catalog/block-catalog.json`). "unknown" means content the detector could not map to a named block.
 
 | Template | Pages | hero | cards | columns | accordion | tabs | form | breadcrumbs | unknown |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -581,7 +582,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | header |
+| Catalog | type `header` · block `header` · default |
 | Structure | header |
 | Uses | every page (global) |
 | EDS target | Header |
@@ -607,7 +608,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | footer |
+| Catalog | type `footer` · block `footer` · default |
 | Structure | footer |
 | Uses | every page (global) |
 | EDS target | Footer |
@@ -634,7 +635,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 43/43, Container 43/43, Image 43/43 |
 | Source styles | `teaser--home-hero` |
@@ -650,7 +651,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `campaign-banner` |
 | Structure | 2 images |
 | Source components | Container 17/17, Image 17/17, Teaser 15/17 |
 | Source styles | `teaser--home-hero` |
@@ -666,7 +667,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 4/4, Image 4/4 |
 | Source styles | `teaser--home-hero` |
@@ -683,7 +684,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -699,7 +700,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -716,7 +717,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` |
@@ -749,7 +750,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `cards` · block `cards-light-withimg` · default |
 | Structure | heading + text + 6 images |
 | Source components | Container 50/50, Teaser 49/50, Image 49/50, Title 9/50, Text 5/50 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--text-center` `container--3-column-wrap` `teaser--title-color-core` `teaser--text-left` |
@@ -766,7 +767,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
 | Structure | heading + text + 4 images |
 | Source components | Teaser 16/16, Container 16/16, Image 16/16 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` `container--content-center` |
@@ -783,7 +784,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
 | Structure | text + 4 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` |
@@ -800,7 +801,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | columns |
+| Catalog | type `cards` · block `cards-light-withimg` · class `product` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 10/10, Image 10/10 |
 | Uses | 10 on 3 pages |
@@ -816,7 +817,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | cards |
+| Catalog | type `cards` · block `cards-light-withimg` · class `bordered` |
 | Structure | text |
 | Source components | Teaser 1/1, Container 1/1 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` |
@@ -849,28 +850,24 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `columns` · block `columns` · default |
 | Structure | heading + text + 2 images + list |
-| Source components | Image 133/133, Teaser 130/133, Container 129/133, Text 56/133, Title 18/133 |
+| Source components | Teaser 130/130, Image 130/130, Container 126/130, Text 53/130, Title 15/130 |
 | Source styles | `teaser--text-left` `teaser--text-image` `title--color-title-1` `teaser--title-color-core` `title--mobile-center` |
-| Uses | 133 on 40 pages |
+| Uses | 130 on 40 pages |
 | Templates | content-landing (37), campaign-subpage (3) |
 | EDS target | Columns (text beside image) |
-| Note | 130 of 133 instances are text-image teasers; 56 also contain plain Text components |
-| ⚠️ Discrepancy | Catch-all: mixes Columns (teaser beside image) and plain default-content text. Split it |
+| Note | Text-image teasers (130 of 133 instances; 50 of them sit beside a Text component) |
+| ⚠️ Discrepancy | Catch-all: 3 instances (About ATTR amyloidosis, DE/FR/IT) had no teaser. Split off as v_37fdc84c086b-text |
 | Example pages | [/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html)<br>[/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html)<br>[/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html) |
 
 ![source v_37fdc84c086b](../catalog/.pages/www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_acutecare_html--d422dc19/blocks/62b4cb28.jpg)
-
-*The same variant without a teaser: plain text and image, which is default content* ([page](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html)):
-
-![source v_37fdc84c086b, instance without Teaser](../catalog/.pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--6b239aec/blocks/57dbda89.jpg)
 
 #### D.5.2 `v_6defe37a8d19`: text beside image
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `columns` · block `columns` · default |
 | Structure | text + 2 images |
 | Source components | Teaser 29/29, Container 29/29, Image 29/29 |
 | Source styles | `teaser--text-image` |
@@ -887,7 +884,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `columns` · block `columns` · class `images` |
 | Structure | 4 images |
 | Source components | Container 3/3, Image 3/3 |
 | Source styles | `container--2-column-wrap` |
@@ -920,7 +917,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | tabs |
+| Catalog | type `tabs` · block `tabs` · default |
 | Structure | heading + text + 32 CTAs + 32 images + list |
 | Source components | Tab 2/2, Teaser 2/2, Text 2/2, Container 2/2, Image 2/2 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` `text--large` `container--3-column-wrap` `tabs--sticky` |
@@ -936,7 +933,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | tabs |
+| Catalog | type `tabs` · block `tabs` · default |
 | Structure | heading + text + 28 CTAs + 28 images + list |
 | Source components | Tab 1/1, Teaser 1/1, Text 1/1, Container 1/1, Image 1/1 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` `text--large` `container--3-column-wrap` `tabs--list-items-align-left` |
@@ -953,7 +950,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | tabs |
+| Catalog | type `tabs` · block `tabs` · default |
 | Structure | heading + text + 32 CTAs + 32 images + list |
 | Source components | Tab 1/1, Teaser 1/1, Text 1/1, Container 1/1, Image 1/1 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` `text--large` `container--3-column-wrap` `tabs--list-items-align-left` |
@@ -986,7 +983,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | form |
+| Catalog | type `form` · block `form` · default |
 | Structure | text + 2 CTAs + list |
 | Source components | Dynamic Form V2 2/2, Social Features 2/2, Container 2/2, Form Container 2/2 |
 | Uses | 2 on 2 pages |
@@ -1001,7 +998,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | form |
+| Catalog | type `form` · block `form` · default |
 | Structure | text + 2 CTAs |
 | Source components | Dynamic Form V2 1/1, Container 1/1, Form Container 1/1 |
 | Uses | 1 on 1 pages |
@@ -1017,7 +1014,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | form |
+| Catalog | type `form` · block `form` · default |
 | Structure | text + 2 CTAs |
 | Source components | Dynamic Form V2 1/1, Form Container 1/1 |
 | Uses | 1 on 1 pages |
@@ -1049,7 +1046,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `embed` · block `embed` · default |
 | Structure | heading + image |
 | Source components | Embed 3/3, Container 3/3, Title 3/3 |
 | Source styles | `title--center` `title--color-title-1` |
@@ -1082,7 +1079,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | accordion |
+| Catalog | type `accordion` · block `accordion` · default |
 | Structure | heading + text + 6 CTAs |
 | Source components | Accordion 4/4, Text 4/4, Container 4/4 |
 | Source styles | `text--small` |
@@ -1118,7 +1115,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `in-page-nav` · block `in-page-nav` · default |
 | Structure | 2 CTAs + list |
 | Source components | Text 4/4, Container 4/4 |
 | Source styles | `text--link-color-title-2` `text--in-page-nav-hr` |
@@ -1151,7 +1148,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | breadcrumbs |
+| Catalog | type `breadcrumbs` · block `breadcrumbs` · default |
 | Structure | list |
 | Source components | Breadcrumb 1/1 |
 | Uses | 1 on 1 pages |
@@ -1217,7 +1214,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 | Status | - |
 | Standard block | no block |
 | Source components | Teaser, Title, Text, Image |
-| Catalog variants | 11 |
+| Catalog variants | 12 |
 | Pages | 28 |
 | Note | Headings, paragraphs, images, links and buttons. Centering and background come from section styles |
 
@@ -1229,7 +1226,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | heading + text + 1 CTAs |
 | Source components | Button 18/18, Text 18/18, Container 18/18, Title 18/18 |
 | Source styles | `title--center` `title--color-title-1` `text--center` `button--center` |
@@ -1245,7 +1242,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | 2 images |
 | Source components | Image 20/20, Container 14/20 |
 | Uses | 20 on 17 pages |
@@ -1260,7 +1257,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | image |
 | Source components | Image 26/26, Container 2/26 |
 | Uses | 26 on 6 pages |
@@ -1275,7 +1272,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | 1 CTAs |
 | Source components | Button 6/6, Container 6/6 |
 | Source styles | `button--center` |
@@ -1291,7 +1288,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | heading + 2 images |
 | Source components | Container 4/4, Image 4/4, Title 4/4 |
 | Source styles | `title--color-title-1` `title--center` |
@@ -1307,7 +1304,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | heading + text + 1 CTAs |
 | Source components | Button 8/8, Text 8/8, Container 8/8, Title 8/8 |
 | Source styles | `title--color-title-1` `button--left` |
@@ -1323,7 +1320,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | text + 1 CTAs |
 | Source components | Button 3/3, Text 3/3, Container 3/3 |
 | Source styles | `text--center` `button--center` |
@@ -1335,11 +1332,27 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 ![source v_2bed43c59a16](../catalog/.pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6940e0d5/blocks/5c339a90.jpg)
 
-#### D.15.8 `v_b25f473963c4`
+#### D.15.8 `v_37fdc84c086b-text`
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
+| Structure | 1 heading + 2 images + 1 paragraph block |
+| Source components | Text 3/3, Container 3/3, Image 3/3, Title 3/3 |
+| Source styles | `title--center` `title--color-title-1` `text--small` |
+| Uses | 3 on 3 pages |
+| Templates | campaign-subpage (3) |
+| EDS target | Default content |
+| Note | Title + text + image without a teaser (About ATTR amyloidosis, DE/FR/IT). Split from the catch-all v_37fdc84c086b (2026-09-30) |
+| Example pages | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html)<br>[/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html)<br>[/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
+
+![source v_37fdc84c086b-text](../catalog/.pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--6b239aec/blocks/57dbda89.jpg)
+
+#### D.15.9 `v_b25f473963c4`
+
+| Field | Value |
+|---|---|
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | 1 CTAs |
 | Source components | Button 3/3, Container 3/3 |
 | Source styles | `button--center` |
@@ -1351,11 +1364,11 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 ![source v_b25f473963c4](../catalog/.pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_prostata_html--b065b3ab/blocks/2d1f153b.jpg)
 
-#### D.15.9 `v_ed6c5d348ec9`
+#### D.15.10 `v_ed6c5d348ec9`
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | text + image |
 | Source components | Text 6/6, Container 6/6, Image 6/6 |
 | Source styles | `text--small` |
@@ -1367,11 +1380,11 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 ![source v_ed6c5d348ec9](../catalog/.pages/www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_acutecare_html--d422dc19/blocks/62b4caac.jpg)
 
-#### D.15.10 `v_354e0ece5414`
+#### D.15.11 `v_354e0ece5414`
 
 | Field | Value |
 |---|---|
-| Detected type | unknown |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | heading + 1 CTAs |
 | Source components | Button 1/1, Container 1/1, Title 1/1 |
 | Source styles | `title--center` `title--color-title-1` `button--center` |
@@ -1383,11 +1396,11 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 ![source v_354e0ece5414](../catalog/.pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_brustkrebs_html--e6e67409/blocks/227dac8a.jpg)
 
-#### D.15.11 `v_b1e664af6109`
+#### D.15.12 `v_b1e664af6109`
 
 | Field | Value |
 |---|---|
-| Detected type | hero |
+| Catalog | type `unknown` · block (default content, not generated) |
 | Structure | heading + 2 images |
 | Source components | Container 1/1, Image 1/1, Title 1/1 |
 | Source styles | `title--color-title-1` |
