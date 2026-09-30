@@ -51,7 +51,8 @@ Not served (`tools/da/*` is in `.hlxignore`). Run from the repo root.
 | `node tools/da/capture-component-shots.js` | Screenshots source components and the built EDS blocks for the report (`catalog/component-shots/`) |
 | `node tools/da/build-site-analysis.js --publish` | Regenerates the report appendices from `catalog/` and `tools/importer/block-mapping.json`, and publishes `/docs/site-analysis` |
 | `node tools/da/apply-template-regrouping.js` | Applies the reviewed template grouping (`tools/importer/template-regrouping.json`) to the catalogs and rebuilds the catalog report. Re-run it after any catalog rebuild |
-| `node tools/sidekick/build-block-library.js` | Regenerates the Sidekick block library: demo pages, `blocks.json`, `library.json` |
+| `node tools/sidekick/build-block-library.js` | Regenerates the Sidekick block library: demo pages, `blocks.json`, `library.json`, and the DA library sheets `templates.json` and `icons.json` (one row per `icons/*.svg`) |
+| `node tools/da/publish-library.js` | Uploads the DA library sheets and the icon previews (`/block-library/icons/`) to Document Authoring and verifies them. Run after adding or renaming icons |
 
 The block library (`/tools/sidekick/library.json`, `/block-library/…`) is Document Authoring content. Publish it with `publish-content.js` after regenerating it.
 
