@@ -4,7 +4,7 @@
   "targets": {
     "header": {"label": "Header", "block": "header", "standard": "Header (boilerplate)", "status": "built", "demo": {"path": "/block-library/accordion", "selector": "header"}},
     "footer": {"label": "Footer", "block": "footer", "standard": "Footer (boilerplate)", "status": "built", "demo": {"path": "/block-library/accordion", "selector": "footer"}},
-    "hero": {"label": "Hero", "block": "hero-minimal-dark-withimg", "standard": "Hero", "status": "built", "options": "default · centered · campaign banner (image only)", "demo": {"path": "/block-library/hero", "selector": ".hero-minimal-dark-withimg"}},
+    "hero": {"label": "Hero", "block": "hero", "standard": "Hero", "status": "built", "options": "minimal-dark (default look on this site) · centered · campaign banner (image only)", "demo": {"path": "/block-library/hero", "selector": ".hero"}},
     "cards": {"label": "Cards", "block": "cards-light-withimg", "standard": "Cards", "status": "partial", "options": "3-up image cards (built) · 2-up icon cards · bordered text cards · product cards with hover overlay", "demo": {"path": "/block-library/cards", "selector": ".cards-light-withimg"}},
     "columns": {"label": "Columns", "block": "columns", "standard": "Columns", "status": "partial", "options": "text beside image · two images", "note": "Boilerplate block; not yet styled to the source", "demo": {"path": "/block-library/columns", "selector": ".columns"}},
     "tabs": {"label": "Tabs", "block": "tabs", "standard": "Tabs", "status": "to build", "note": "Each tab holds a product card grid. DA blocks can't nest, so tabs must be built from sections (one section per tab) rather than one table"},
@@ -47,10 +47,10 @@
   "variants": {
     "header-global": {"target": "header"},
     "footer-global": {"target": "footer"},
-    "v_b26d6cceada2": {"target": "hero", "option": "default", "note": "Dark full-bleed hero (teaser--home-hero). Implemented"},
-    "v_2ab6094d0f33": {"target": "hero", "option": "default", "merge": "v_b26d6cceada2", "note": "Same source style as v_b26d6cceada2 (oncology pages); split off by layout noise"},
+    "v_b26d6cceada2": {"target": "hero", "option": "default", "note": "Dark full-bleed hero (teaser--home-hero). Implemented", "class": "minimal-dark"},
+    "v_2ab6094d0f33": {"target": "hero", "option": "default", "merge": "v_b26d6cceada2", "note": "Same source style as v_b26d6cceada2 (oncology pages); split off by layout noise", "class": "minimal-dark"},
     "v_617324728993": {"target": "hero", "option": "centered", "note": "teaser--home-hero with teaser--text-center (products index)", "class": "centered"},
-    "v_42845b3e07dd": {"target": "hero", "option": "default", "merge": "v_b26d6cceada2", "discrepancy": "Artifact of the unstyled FR /produkte.html capture"},
+    "v_42845b3e07dd": {"target": "hero", "option": "default", "merge": "v_b26d6cceada2", "discrepancy": "Artifact of the unstyled FR /produkte.html capture", "class": "minimal-dark"},
     "v_228f16fbc166": {"target": "hero", "option": "centered", "merge": "v_617324728993", "discrepancy": "Artifact of the unstyled FR /produkte.html capture", "class": "centered"},
     "v_e4409b853477": {"target": "hero", "option": "campaign banner", "note": "See the pATTRns logo banner: image only, no text", "class": "campaign-banner"},
     "v_b1e664af6109": {"target": "default-content", "discrepancy": "Detected as hero, but it is a heading plus an image"},

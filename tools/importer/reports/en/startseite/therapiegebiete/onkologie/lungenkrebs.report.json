@@ -2,11 +2,11 @@
   "status": "success",
   "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html",
   "path": "en/startseite/therapiegebiete/onkologie/lungenkrebs",
-  "timestamp": "2026-09-30T05:36:17.230Z",
+  "timestamp": "2026-10-01T08:25:55.218Z",
   "title": "Lung Cancer: Symptoms, Stages & Treatment",
   "template": "content-landing",
   "blocks": [
-    "hero-minimal-dark-withimg",
+    "hero",
     "cards-light-withimg",
     "columns",
     "columns",

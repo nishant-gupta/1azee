@@ -2,7 +2,7 @@
 /* global WebImporter */
 
 // PARSER IMPORTS
-import heroMinimalDarkWithimgParser from './parsers/hero-minimal-dark-withimg.js';
+import heroParser from './parsers/hero.js';
 import cardsLightWithimgParser from './parsers/cards-light-withimg.js';
 import columnsParser from './parsers/columns.js';
 import accordionParser from './parsers/accordion.js';
@@ -39,7 +39,7 @@ const PAGE_TEMPLATE = {
       instances: ['.accordion'],
     },
     {
-      name: 'hero-minimal-dark-withimg',
+      name: 'hero',
       instances: ['.teaser--home-hero'],
     },
     {
@@ -56,7 +56,7 @@ const PAGE_TEMPLATE = {
   ],
   sections: [
     {
-      id: '1', name: 'Hero banner', selector: ['.teaser--home-hero'], style: 'dark', blocks: ['hero-minimal-dark-withimg'], defaultContent: [],
+      id: '1', name: 'Hero banner', selector: ['.teaser--home-hero'], style: 'dark', blocks: ['hero'], defaultContent: [],
     },
     {
       id: '2', name: 'Introduction text', selector: ['.container--fixed.aem-GridColumn:nth-of-type(4) .container--tb-space-md:nth-of-type(1)'], style: null, blocks: [], defaultContent: ['.text'],
@@ -72,7 +72,7 @@ const PAGE_TEMPLATE = {
 
 // PARSER REGISTRY
 const parsers = {
-  'hero-minimal-dark-withimg': heroMinimalDarkWithimgParser,
+  hero: heroParser,
   'cards-light-withimg': cardsLightWithimgParser,
   columns: columnsParser,
   accordion: accordionParser,

@@ -60,7 +60,7 @@ const buttons = `
 const hero = `
 <div>
   <h1>Hero</h1>
-  <div class="hero-minimal-dark-withimg">
+  <div class="hero minimal-dark">
     <div><div><picture><img src="/media-da/bd29eaf8be6f754b81bee5c8a0697af0.jpg" alt=""></picture></div></div>
     <div><div><h1>Welcome to myAstraZeneca!</h1><p>Discover comprehensive information about our therapy areas and products.</p></div></div>
   </div>
@@ -214,7 +214,7 @@ fs.readdirSync(path.join(OUT, 'templates'))
 /* ---- Block details: drive both blocks.json and the library's blocks sheet ---- */
 const blockDetails = [
   {
-    name: 'Hero', path: '/block-library/hero', short: 'Full-bleed banner with background image and heading + intro overlay.', description: 'Full-bleed banner with a background image and a heading + intro overlay. Used at the top of landing pages.', variants: 'hero-minimal-dark-withimg', options: 'minimal-dark-withimg', baseBlock: 'hero', model: 'standalone',
+    name: 'Hero', path: '/block-library/hero', short: 'Full-bleed banner with background image and heading + intro overlay.', description: 'Banner with an optional background image behind a heading + intro. The layout follows the authored content (an image-only row or cell becomes the background). Variant Minimal Dark: the oneAZ dark brand banner used at the top of landing and therapy-area pages.', variants: '', options: 'minimal-dark', baseBlock: 'hero', model: 'standalone',
   },
   {
     name: 'Cards', path: '/block-library/cards', short: 'Responsive grid of cards (image, heading, description, links).', description: 'Responsive grid of cards. Each card has an image, heading, description, and an optional list of links. Implements source variant v_5d7c92bb4412 (therapy card grid, 46 pages).', variants: 'cards-light-withimg', options: 'light-withimg', baseBlock: 'cards', model: 'collection',

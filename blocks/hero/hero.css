@@ -5,33 +5,70 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
+
+  /* own stacking context, so the background image (z-index -1) stays above the block's background colour */
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 300px;
+  padding: 40px 24px;
+}
+
+/* Background image fills the block behind the content. */
+.hero .hero-image {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero .hero-image picture,
+.hero .hero-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text overlay */
+.hero .hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
 }
 
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
+  }
+}
+
+/* Minimal Dark: the oneAZ dark brand banner (Mulberry surface, light text) */
+.hero.minimal-dark {
+  padding: var(--spacing-lg) var(--spacing-x-big);
+  background-color: var(--background-core-1);
+  color: var(--text-body-2);
+}
+
+.hero.minimal-dark h1,
+.hero.minimal-dark h2,
+.hero.minimal-dark h3 {
+  color: var(--icon-light);
+}
+
+.hero.minimal-dark p {
+  color: var(--text-body-2);
+  font-size: var(--oneaz-body-large-font-size);
+  line-height: calc(var(--oneaz-body-large-line-height) / var(--oneaz-body-large-font-size));
+}
+
+@media (width >= 900px) {
+  .hero.minimal-dark {
+    min-height: 360px;
+    padding: var(--spacing-lg) var(--spacing-xxx-big);
   }
 }

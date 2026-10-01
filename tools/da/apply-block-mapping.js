@@ -7,7 +7,7 @@
  * For every variant in catalog/block-catalog.json:
  *   - type:    the mapped EDS target (default content stays "unknown": the catalog has no
  *              default-content type, and the block generator skips "unknown" on purpose)
- *   - name:    the block directory that implements the target (for example hero-minimal-dark-withimg)
+ *   - name:    the block directory that implements the target (for example cards-light-withimg)
  *   - variant: the mapping's "class" (a CSS variant class); no class = the block's default.
  *              Duplicates share name + class, which is how the catalog builds them as one.
  * A mapping "split" moves the instances that lack a source component (per

@@ -184,7 +184,7 @@ The 37 detected variants (38 after the catch-all split) map to 11 EDS blocks plu
 
 | EDS target | Standard block | Variants (after merging) | Pages | Status | Options still to build |
 |---|---|---:|---:|---|---|
-| Hero (`hero-minimal-dark-withimg`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
+| Hero (`hero`, variant `minimal-dark`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
 | Cards (`cards-light-withimg`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
 | Columns | Columns | 3 | 44 | 🟡 boilerplate only | text beside image (default); two images (`images`) |
 | Tabs | Tabs | 3 (1) | 4 | ❌ | |
@@ -216,7 +216,7 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 
 | Block | Status | Notes |
 |---|---|---|
-| `hero-minimal-dark-withimg` | ✅ Built | Default dark hero. Add *centered* and *campaign banner* options |
+| `hero` | ✅ Built | Layout follows the authored content (image-only row or cell = background, text = overlay, text-only works). Variant `minimal-dark` ("Hero (Minimal Dark)") is the oneAZ dark hero used on the site; it replaced the `hero-minimal-dark-withimg` fork, which remains only as a deprecated alias. Add *centered* and *campaign banner* options |
 | `cards-light-withimg` | 🟡 Partly built | 3-up therapy grid. Add 2-up icon, bordered text and product (hover) options |
 | `accordion` | ✅ Built | oneAZ design; native `<details>`. Import parser ✅; live on COPD (FAQ). Not yet compared visually with the source (P11) |
 | `in-page-nav` | ✅ Built (vertical) | oneAZ "Links"; implements `v_d41301689a41`. Import parser ✅ (re-points `#anchors` to EDS heading ids); live on COPD. Horizontal sub-nav option needed for the List component |
@@ -281,6 +281,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | P15 | Design questions: H4 size (spec 26px vs preview 36px); Icon-only button has CSS but no DA authoring syntax | Low | Design confirmation |
 | P16 | **The EDS site root (`/`) serves the boilerplate page** ("Home \| AEM Boilerplate", "Congrats, you are ready to go!") live. On the source, `/` redirects to the DE homepage | Public: the site root shows placeholder content | Redirect `/` to `/en/startseite` for now (redirects sheet), or to `/de/startseite` once DE is migrated; unpublish the boilerplate index |
 | P17 | **Remaining EN pages:** products index (product-overview) and contact | EN wave incomplete | Tabs (P3, P6) and the form decision (P5) |
+| P18 | **The 11 live EN pages hide their hero image** behind the Mulberry background (the fork's background image sat at `z-index: -1` without a stacking context). The image loads but isn't visible. The COPD heading also lost a space ("obstructivepulmonary") | Visible on every migrated page | Merge the `hero` variant (it fixes both, and the old block name keeps working through the alias), then re-publish the 11 pages, already re-imported as "Hero (Minimal Dark)" |
 
 ### 7.2 Resolved
 
@@ -671,10 +672,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| EDS block | `hero-minimal-dark-withimg` |
+| EDS block | `hero` |
 | Status | ✅ built |
 | Standard block | Hero |
-| Options | default · centered · campaign banner (image only) |
+| Options | minimal-dark (default look on this site) · centered · campaign banner (image only) |
 | Source components | Teaser |
 | Catalog variants | 6 (3 after merging duplicates) |
 | Pages | 63 |
@@ -687,13 +688,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 43/43, Container 43/43, Image 43/43 |
 | Source styles | `teaser--home-hero` |
 | Uses | 43 on 43 pages |
 | Templates | content-landing (40), product-overview (3) |
-| EDS target | Hero (default): implemented by `hero-minimal-dark-withimg` |
+| EDS target | Hero (default): implemented by `hero` |
 | Note | Dark full-bleed hero (teaser--home-hero). Implemented |
 | Example pages | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html)<br>[/…/produkte](https://www.myastrazeneca.ch/en/startseite/produkte.html)<br>[/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html) |
 
@@ -703,7 +704,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `campaign-banner` |
+| Catalog | type `hero` · block `hero` · class `campaign-banner` |
 | Structure | 2 images |
 | Source components | Container 17/17, Image 17/17, Teaser 15/17 |
 | Source styles | `teaser--home-hero` |
@@ -719,13 +720,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 4/4, Image 4/4 |
 | Source styles | `teaser--home-hero` |
 | Uses | 4 on 4 pages |
 | Templates | content-landing (4) |
-| EDS target | Hero (default) |
+| EDS target | Hero (default): implemented by `hero` |
 | Merge into | `v_b26d6cceada2` |
 | Note | Same source style as v_b26d6cceada2 (oncology pages); split off by layout noise |
 | Example pages | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html)<br>[/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html)<br>[/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html) |
@@ -736,7 +737,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
+| Catalog | type `hero` · block `hero` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -752,7 +753,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
+| Catalog | type `hero` · block `hero` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -769,13 +770,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` |
 | Uses | 1 on 1 pages |
 | Templates | product-overview (1) |
-| EDS target | Hero (default) |
+| EDS target | Hero (default): implemented by `hero` |
 | Merge into | `v_b26d6cceada2` |
 | ⚠️ Discrepancy | Artifact of the unstyled FR /produkte.html capture |
 | Example pages | [/…/produkte](https://www.myastrazeneca.ch/fr/startseite/produkte.html) |
