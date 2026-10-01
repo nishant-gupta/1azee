@@ -216,8 +216,8 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 
 | Block | Status | Notes |
 |---|---|---|
-| `hero` | ✅ Built | Layout follows the authored content (image-only row or cell = background, text = overlay, text-only works). Variant `minimal-dark` ("Hero (Minimal Dark)") is the oneAZ dark hero used on the site; it replaced the `hero-minimal-dark-withimg` fork, which remains only as a deprecated alias. Add *centered* and *campaign banner* options |
-| `cards` | 🟡 Partly built | Each card's layout follows the authored content (image-only cell = card image; text-only cards work). Variant `light` ("Cards (Light)") is the oneAZ 3-up grid; it replaced the `cards-light-withimg` fork, which remains only as a deprecated alias. Add 2-up icon, bordered text and product (hover) options |
+| `hero` | ✅ Built | Layout follows the authored content (image-only row or cell = background, text = overlay, text-only works). Variant `minimal-dark` ("Hero (Minimal Dark)") is the oneAZ dark hero used on the site; it replaced the `hero-minimal-dark-withimg` fork (removed). Add *centered* and *campaign banner* options |
+| `cards` | 🟡 Partly built | Each card's layout follows the authored content (image-only cell = card image; text-only cards work). Variant `light` ("Cards (Light)") is the oneAZ 3-up grid; it replaced the `cards-light-withimg` fork (removed). Add 2-up icon, bordered text and product (hover) options |
 | `accordion` | ✅ Built | oneAZ design; native `<details>`. Import parser ✅; live on COPD (FAQ). Not yet compared visually with the source (P11) |
 | `in-page-nav` | ✅ Built (vertical) | oneAZ "Links"; implements `v_d41301689a41`. Import parser ✅ (re-points `#anchors` to EDS heading ids); live on COPD. Horizontal sub-nav option needed for the List component |
 | `button-group` | ✅ Built | Options `align-left` / `align-center` / `align-right` / `small`; a plain link in a group is the Link variant |
@@ -281,7 +281,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | P15 | Design questions: H4 size (spec 26px vs preview 36px); Icon-only button has CSS but no DA authoring syntax | Low | Design confirmation |
 | P16 | **The EDS site root (`/`) serves the boilerplate page** ("Home \| AEM Boilerplate", "Congrats, you are ready to go!") live. On the source, `/` redirects to the DE homepage | Public: the site root shows placeholder content | Redirect `/` to `/en/startseite` for now (redirects sheet), or to `/de/startseite` once DE is migrated; unpublish the boilerplate index |
 | P17 | **Remaining EN pages:** products index (product-overview) and contact | EN wave incomplete | Tabs (P3, P6) and the form decision (P5) |
-| P18 | **The 11 live EN pages hide their hero image** behind the Mulberry background (the fork's background image sat at `z-index: -1` without a stacking context). The image loads but isn't visible. The COPD heading also lost a space ("obstructivepulmonary") | Visible on every migrated page | Merge the `hero` variant (it fixes both, and the old block name keeps working through the alias), then re-publish the 11 pages, already re-imported as "Hero (Minimal Dark)" and "Cards (Light)" |
+| P18 | *Resolved 2026-10-01: hero images visible on all live pages (see 7.2)* | | |
 
 ### 7.2 Resolved
 
@@ -303,6 +303,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | 16 | The *Useful product information* teaser's only image is 404 on the source, leaving a Columns block with an empty column on 7 pages | **Fixed:** a teaser without a desktop image imports as default content (text + button), as it shows on the source |
 | 17 | COPD in-page nav pointed at AEM container ids that don't survive import | **Fixed:** links re-pointed at the EDS heading ids; all 7 resolve |
 | 18 | Login-only Social Features placeholders ("errorMessage requestToSignInContent") | **Dropped** by the cleanup transformer |
+| P18 | The 11 live EN pages hid their hero image behind the Mulberry background (the fork placed it at `z-index: -1` without a stacking context); the COPD heading had lost a space | **Fixed (2026-10-01):** the forks became variants, "Hero (Minimal Dark)" and "Cards (Light)" (PRs #11, #12). The 11 pages and the library demos were re-published with them, and every hero image is visible on live. The old block folders are removed |
 | P2 | Catalog still had the raw detection: 17 flagged variants (wrong or "unknown" types, duplicates, artifacts, a catch-all) | **Applied (2026-09-30)** with `tools/da/apply-block-mapping.js`: 41 type/block/class changes in `catalog/block-catalog.json`, catch-all split (3 page records re-stamped), placement check passes. Backup in `migration-work/da-publish/archive/`. Re-run the script after any catalog rebuild |
 
 ---

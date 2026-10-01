@@ -31,4 +31,4 @@ The catalog also lists `centered` and `campaign-banner` options (products index,
 
 Implements source variant `v_b26d6cceada2` (dark home hero, 43 pages) and its duplicates as `minimal-dark`. See `metadata.json` and `tools/importer/block-mapping.json`.
 
-The former `hero-minimal-dark-withimg` block is a deprecated alias of `Hero (Minimal Dark)`, kept until all pages are re-published with the new name.
+This variant replaced the former `hero-minimal-dark-withimg` block (removed 2026-10-01 after all pages were re-published as "Hero (Minimal Dark)").
