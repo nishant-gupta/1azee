@@ -25,3 +25,60 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* Light: the oneAZ light card grid (therapy areas, key figures, resources) */
+.cards.light > ul {
+  grid-template-columns: 1fr;
+  gap: var(--spacing-x-big);
+}
+
+.cards.light > ul > li {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--forms-border-2);
+  background-color: var(--background-supporting-2);
+}
+
+.cards.light > ul > li img {
+  aspect-ratio: 3 / 2;
+}
+
+.cards.light .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin: 0;
+  padding: var(--spacing-x-big);
+  color: var(--text-body-1);
+}
+
+.cards.light .cards-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.cards.light .cards-card-body h4 {
+  color: var(--text-title-1);
+}
+
+.cards.light .cards-card-body a:any-link {
+  color: var(--text-interaction);
+}
+
+.cards.light .cards-card-body ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+@media (width >= 600px) {
+  .cards.light > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* three columns, matching the source's 3-up grids */
+@media (width >= 900px) {
+  .cards.light > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

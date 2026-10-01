@@ -17,7 +17,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const {
-  STAGE, uploadImage, publishDoc, report,
+  STAGE, curl, uploadImage, publishDoc, report,
 } = require('./publish-content.js');
 
 const ROOT = process.cwd();
@@ -86,9 +86,31 @@ function loadData() {
     if (!mapping.targets[m.target]) throw new Error(`${id}: unknown target ${m.target}`);
   });
 
+  // Migration status: pages the importer produced (it writes one report per page), checked
+  // against the admin API. A same-path page that wasn't imported (e.g. the boilerplate
+  // /index) doesn't count as a migration of the source page.
+  const eds = {};
+  templates.forEach((t) => t.urls.forEach((u) => {
+    const p = new URL(u).pathname.replace(/\.html$/, '').replace(/^\/|\/$/g, '') || 'index';
+    if (!fs.existsSync(path.join(ROOT, 'tools', 'importer', 'reports', `${p}.report.json`))) return;
+    const res = curl([`https://admin.hlx.page/status/nishant-gupta/1azee/main/${p}`]);
+    let status = {};
+    try { status = res.status === 200 ? JSON.parse(res.body()) : {}; } catch { /* unreadable */ }
+    eds[u] = { path: p, preview: status.preview?.status === 200, live: status.live?.status === 200 };
+  }));
+
   return {
-    templates, variants, pages, templateOf, instances, edsBlocks, failedUrls: [...failedUrls].sort(), mapping, source,
+    templates, variants, pages, templateOf, instances, edsBlocks, failedUrls: [...failedUrls].sort(), mapping, source, eds,
   };
+}
+
+const EDS_HOST = (live) => `https://main--1azee--nishant-gupta.aem.${live ? 'live' : 'page'}`;
+function edsCell(d, u) {
+  const e = d.eds[u];
+  if (!e) return '·';
+  if (e.live) return `✅ [live](${EDS_HOST(true)}/${e.path})`;
+  if (e.preview) return `🟡 [preview](${EDS_HOST(false)}/${e.path})`;
+  return 'imported';
 }
 
 const locale = (u) => (new URL(u).pathname.match(/^\/(de|fr|it|en)\//) || [null, '-'])[1].toUpperCase();
@@ -130,20 +152,22 @@ function buildAppendix(d) {
   w();
   w('## Appendix A: Every page, by template');
   w();
-  w('Each row is one analyzed page with the block variants detected on it and the EDS target each maps to (→). Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template.');
+  const migrated = Object.values(d.eds);
+  w(`Each row is one analyzed page with the block variants detected on it and the EDS target each maps to (→). Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template. The **EDS** column shows migration status from the admin API: ✅ live, 🟡 preview only, · not migrated yet (${migrated.filter((e) => e.live).length} live, ${migrated.filter((e) => !e.live && e.preview).length} preview only).`);
   d.templates.forEach((t, ti) => {
     w();
-    w(`### A.${ti + 1} ${t.name} (${t.urls.length} pages)`);
+    const done = t.urls.filter((u) => d.eds[u]?.live).length;
+    w(`### A.${ti + 1} ${t.name} (${t.urls.length} pages${done ? `, ${done} live on EDS` : ''})`);
     w();
     w(`*${esc(t.description)}*`);
     w();
-    w('| # | Locale | Section | Page title | Block variants on the page | URL |');
-    w('|---:|---|---|---|---|---|');
+    w('| # | Locale | Section | Page title | Block variants on the page | URL | EDS |');
+    w('|---:|---|---|---|---|---|---|');
     [...t.urls].sort().forEach((u, i) => {
       const p = d.pages[u] || {};
       const vs = [...new Set((p.blocks || []).map((b) => `\`${b.variantId}\` → ${d.mapping.targets[d.mapping.variants[b.variantId].target].label}`))].join(', ')
         || (d.source.components.ContentPaywall?.templates[t.name] ? '(none: content is behind the login paywall)' : '(none)');
-      w(`| ${i + 1} | ${locale(u)} | ${section(u)} | ${esc(p.title)} | ${esc(vs)} | [${esc(shortPath(u))}](${u}) |`);
+      w(`| ${i + 1} | ${locale(u)} | ${section(u)} | ${esc(p.title)} | ${esc(vs)} | [${esc(shortPath(u))}](${u}) | ${edsCell(d, u)} |`);
     });
   });
   w();

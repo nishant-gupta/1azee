@@ -1,6 +1,6 @@
 # myastrazeneca.ch: Site Analysis and Migration Report
 
-**Source:** https://www.myastrazeneca.ch/  ·  **Analysis date:** 2026-09-23  ·  **Updated:** 2026-09-29
+**Source:** https://www.myastrazeneca.ch/  ·  **Analysis date:** 2026-09-23  ·  **Updated:** 2026-09-30
 **Target:** AEM Edge Delivery Services, Document Authoring (`nishant-gupta/1azee`)
 
 ---
@@ -16,7 +16,7 @@
 | Page templates | 7 |
 | Block variants detected | 37 detected, 38 after splitting the catch-all → **14 EDS blocks + default content** (Section 4). 30 remain after merging 8 duplicates; 12 of those are default content. 17 discrepancies found and **applied to the catalog** (2026-09-30) |
 | Source components | 21 AEM components inventoried on all 122 pages. Everything maps to a standard EDS block except In-Page Nav and Button Group (oneAZ custom) |
-| Migrated so far | English homepage (`/en/startseite`), plus global header and footer |
+| Migrated so far | **11 EN pages live**: the EN homepage and all 10 EN therapy-area pages (Section 1.1), plus global header and footer. 2 working EN pages remain (products index, contact) |
 | **Blocker** | The 50 Trixeo pages hide their content behind a login paywall; it is not in the public HTML (issue P1) |
 
 The site is a Swiss HCP (healthcare professional) portal built on AEM Sites. The content is mostly editorial: therapy-area overviews, one product mini-site (Trixeo), and one disease-awareness campaign ("See the pATTRns"). Most pages are made of a hero and stacked text-and-image sections. Only a few pages use interactive components (tabs, accordion, forms).
@@ -29,6 +29,46 @@ The site is a Swiss HCP (healthcare professional) portal built on AEM Sites. The
 - **E:** every source AEM component and its EDS treatment, with screenshots of the components the catalog missed.
 
 Use them to review and refine the template and block groupings.
+
+### 1.1 Migration progress (EN)
+
+The EN locale is the first wave. **11 of its 13 working pages are live on EDS**; 2 EN therapy URLs are dead links on the source (Section 2.2). All migrated pages use the *content-landing* template. Per-page status for every template is in the **EDS** column of Appendix A.
+
+| Page | Template | Blocks | Status |
+|---|---|---|---|
+| Homepage | content-landing | Hero, Cards (therapy areas) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite) |
+| Acute Care | content-landing | Hero, Cards (key figures), Columns ×4 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/acutecare) |
+| Chronic kidney disease | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz) |
+| Diabetes | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/diabetes) |
+| Heart failure | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/herzinsuffizienz) |
+| Breast cancer | content-landing | Hero, Cards (key figures), Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/brustkrebs) |
+| Ovarian cancer | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/eierstockkrebs) |
+| Lung cancer | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/lungenkrebs) |
+| Asthma | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/asthma) |
+| COPD | content-landing | Hero, In-Page Nav, Cards ×3 (incl. 4 resource downloads), Columns ×4, Table ×5 (GOLD), Accordion (FAQ, 6 items) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/copd) |
+| Lupus | content-landing | Hero, Cards, Columns ×3 | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/lupus) |
+| Products index (`/en/startseite/produkte`) | product-overview | Tabs + product Cards | ❌ not migrated: needs Tabs (P3, P6) |
+| Contact (`/en/startseite/contact-us`) | contact | Form | ❌ not migrated: needs the form decision (P5) |
+| Liver cancer, Haematology | - | - | dead links on the source (404), excluded |
+
+**Checked on every migrated page:**
+- All source text is present. This was checked against the page's own content, because the importer's completeness score (41–73%) counts the stripped cookie banner, megamenu and footer.
+- The image count matches the source.
+- Every block loads and every image serves on the live site (7 per page, 14 on COPD).
+- Columns render side by side, and each page shows its own hero image.
+- On COPD, all 7 in-page nav links land on their H2 headings.
+
+**Found and fixed during this wave** (details in 7.2):
+- source data tables imported as bogus blocks
+- resource cards imported without titles
+- duplicate teaser images
+- image file-name collisions across pages
+- an empty Columns column where the source image is dead
+- the login-only Social Features placeholder
+
+Two new pending issues: **P16**, the EDS site root still serves the boilerplate page, and **P17**, the remaining EN pages.
+
+The 11 pages use 63 blocks: Hero 11, Cards 13, Columns 32, Table 5, In-Page Nav 1, Accordion 1. Styling beyond the built blocks (Columns, Cards options) is still pending (P3).
 
 ---
 
@@ -144,8 +184,8 @@ The 37 detected variants (38 after the catch-all split) map to 11 EDS blocks plu
 
 | EDS target | Standard block | Variants (after merging) | Pages | Status | Options still to build |
 |---|---|---:|---:|---|---|
-| Hero (`hero-minimal-dark-withimg`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
-| Cards (`cards-light-withimg`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
+| Hero (`hero`, variant `minimal-dark`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
+| Cards (`cards`, variant `light`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
 | Columns | Columns | 3 | 44 | 🟡 boilerplate only | text beside image (default); two images (`images`) |
 | Tabs | Tabs | 3 (1) | 4 | ❌ | |
 | Form | Form | 3 (1) | 4 | ❌ | |
@@ -176,14 +216,14 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 
 | Block | Status | Notes |
 |---|---|---|
-| `hero-minimal-dark-withimg` | ✅ Built | Default dark hero. Add *centered* and *campaign banner* options |
-| `cards-light-withimg` | 🟡 Partly built | 3-up therapy grid. Add 2-up icon, bordered text and product (hover) options |
-| `accordion` | ✅ Built | oneAZ design; native `<details>`. Not yet compared with source variant `v_4ecd3661fdd5` |
-| `in-page-nav` | ✅ Built (vertical) | oneAZ "Links"; implements `v_d41301689a41`. Horizontal sub-nav option needed for the List component |
+| `hero` | ✅ Built | Layout follows the authored content (image-only row or cell = background, text = overlay, text-only works). Variant `minimal-dark` ("Hero (Minimal Dark)") is the oneAZ dark hero used on the site; it replaced the `hero-minimal-dark-withimg` fork, which remains only as a deprecated alias. Add *centered* and *campaign banner* options |
+| `cards` | 🟡 Partly built | Each card's layout follows the authored content (image-only cell = card image; text-only cards work). Variant `light` ("Cards (Light)") is the oneAZ 3-up grid; it replaced the `cards-light-withimg` fork, which remains only as a deprecated alias. Add 2-up icon, bordered text and product (hover) options |
+| `accordion` | ✅ Built | oneAZ design; native `<details>`. Import parser ✅; live on COPD (FAQ). Not yet compared visually with the source (P11) |
+| `in-page-nav` | ✅ Built (vertical) | oneAZ "Links"; implements `v_d41301689a41`. Import parser ✅ (re-points `#anchors` to EDS heading ids); live on COPD. Horizontal sub-nav option needed for the List component |
 | `button-group` | ✅ Built | Options `align-left` / `align-center` / `align-right` / `small`; a plain link in a group is the Link variant |
-| `table` | ✅ Built | Data tables, used by this report |
+| `table` | ✅ Built | Data tables. Source `<table>`s are imported into it (cleanup transformer); live on COPD (5 GOLD tables) and used by this report |
 | `header`, `footer` | ✅ Migrated | Full 4-level megamenu (70 items); mobile drawer. Breadcrumbs not included yet |
-| `columns` | 🟡 Boilerplate | Needs styling to the source (text beside image, two images) |
+| `columns` | 🟡 Boilerplate | Import parser ✅ for text-image teasers; 32 blocks live on the EN pages. Needs styling to the source (text beside image, two images) |
 | `tabs` | ❌ Not built | Products index. Sections-based, because DA blocks can't nest cards inside tabs |
 | `form` | ❌ Not built | Contact page (P5) |
 | `embed` | ❌ Not built | Kaltura videos on 3 campaign pages |
@@ -232,13 +272,16 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | P6 | **Tabs can't hold nested blocks in DA.** The products-index tab panels contain product card grids | Tabs design | Build tabs from sections (one section per tab) |
 | P7 | *Resolved 2026-09-30: section metadata is applied and hidden (see 7.2)* | | |
 | P8 | **HCP self-certification** (15 campaign pages) is a compliance control | Campaign wave | Requirements: where the "I am a patient" choice leads, and how long the choice is remembered (the source sets `data-expiry-time="120"`; the unit is unconfirmed) |
-| P9 | **Login-only widgets render empty:** Master Content List (4 homepages), Social Features (98 pages), "Your Speciality" / "Your Interests" | Empty headings or placeholders if imported | Confirm drop (or rebuild behind login) |
+| P9 | **Login-only widgets render empty:** Master Content List (4 homepages) and "Your Speciality" / "Your Interests" (still imported as empty headings on the EN homepage). Social Features is now dropped by the importer | Empty headings on the homepage | Confirm drop (or rebuild behind login) |
 | P10 | FR `/produkte.html` was captured unstyled (source of 2 artifact variants) | product-overview analysis | Re-capture before migrating product-overview |
-| P11 | Accordion was built from the oneAZ spec and not yet compared with source variant `v_4ecd3661fdd5` | Possible visual mismatch on 4 pages | Visual critique against the source |
-| P12 | Homepage metadata image URL is malformed (`https://content/dam/...`) | Low: social preview image | Importer fix |
-| P13 | Sidekick Library panel is not visible in the DA editor | Authors can't browse blocks yet | Enable the Library plugin in the project config at tools.aem.live |
+| P11 | Accordion was built from the oneAZ spec and not yet compared with source variant `v_4ecd3661fdd5`. It is now live on COPD | Possible visual mismatch on 4 pages | Visual critique against the source |
+| P12 | Page metadata image URLs are malformed (`https://content/dam/...`), so publishing drops them | Low: no social preview image on all 11 migrated pages | Importer fix: rebuild the URL on the source host, then re-import |
+| P13 | DA library: the site config's library tab now points to existing Blocks, Templates and Icons (55) sheets (fixed 2026-09-30, PR #10), but the panel hasn't been checked in the da.live editor | Authors can't browse blocks if it doesn't work | Open a page in da.live → Library, and check Blocks, Templates and Icons |
 | P14 | Cross-locale links: the EN megamenu links to DE product pages (Section 5.1); dead sitemap links are still linked from the nav and homepage (Section 2.2) | Navigation quality | Content decision |
 | P15 | Design questions: H4 size (spec 26px vs preview 36px); Icon-only button has CSS but no DA authoring syntax | Low | Design confirmation |
+| P16 | **The EDS site root (`/`) serves the boilerplate page** ("Home \| AEM Boilerplate", "Congrats, you are ready to go!") live. On the source, `/` redirects to the DE homepage | Public: the site root shows placeholder content | Redirect `/` to `/en/startseite` for now (redirects sheet), or to `/de/startseite` once DE is migrated; unpublish the boilerplate index |
+| P17 | **Remaining EN pages:** products index (product-overview) and contact | EN wave incomplete | Tabs (P3, P6) and the form decision (P5) |
+| P18 | **The 11 live EN pages hide their hero image** behind the Mulberry background (the fork's background image sat at `z-index: -1` without a stacking context). The image loads but isn't visible. The COPD heading also lost a space ("obstructivepulmonary") | Visible on every migrated page | Merge the `hero` variant (it fixes both, and the old block name keeps working through the alias), then re-publish the 11 pages, already re-imported as "Hero (Minimal Dark)" and "Cards (Light)" |
 
 ### 7.2 Resolved
 
@@ -246,13 +289,20 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 |---|---|---|
 | 1 | Images broken on the live site: only page HTML had been uploaded to DA, so every image was `about:error` | **Fixed (2026-09-29).** Media is uploaded to DA and every image is verified on each publish. The source's own product-info image is dead (404), so it was dropped. Header/footer logos in local preview are fixed too |
 | 2 | `accordion`, `in-page-nav`, `table` code was only on a feature branch | PR #1 merged to `main` |
-| 2a | Wrong variant mapping: `cards-light-withimg` declared `v_f2575cbf84b3` instead of `v_5d7c92bb4412` | Fixed in `blocks/cards-light-withimg/metadata.json` |
+| 2a | Wrong variant mapping: `cards-light-withimg` declared `v_f2575cbf84b3` instead of `v_5d7c92bb4412` | Fixed in the block's `metadata.json` (now `blocks/cards/metadata.json`) |
 | 5 | Importer completeness score is 32% | False alarm: the metric counts cookie banner, megamenu and footer text that is deliberately stripped |
 | 7 | Template misgroupings: 21 of 46 translated-page groups split across templates | 33 pages regrouped, 0 splits remain (Section 3.1) |
 | 9 | Button-group and in-page-nav demos broken live: DA strips class attributes and keeps only block tables | Demos rewritten as block tables; `button-group` supports `small` and plain links as the Link variant |
 | 10 | Report and catalog fixes on unmerged branches | PRs #2–#5 merged; `main` has all code and tooling |
 | 11 | Block mapping: 19 variants unmapped, and the supplied AEM component list not yet assessed | **Mapped (2026-09-29)** from source evidence: Section 4, Appendices D–E |
 | P7 | `section-metadata` rendered as visible "style / dark" text wherever a page is rendered from the document (local preview, workspace view). The vendored `aem.js` `decorateSections` does not read it, so it was decorated as a missing block. Published pages were not affected: the server applies it | **Fixed (2026-09-30)** in `scripts/scripts.js` (`decorateSectionMetadata`: `style` values become section classes, other rows data attributes, the table is removed), plus a CSS guard in `styles/styles.css` that always hides `.section-metadata` |
+| 12 | Source data tables (COPD GOLD classification) were imported as blocks named after their first cell (`gold-stage`, …), dropping the header row | **Fixed (2026-09-30):** the cleanup transformer converts source `<table>`s to the `table` block |
+| 13 | Resource download cards were imported without titles and with a duplicated image: the card parser took the mobile image link as the title | **Fixed:** the title is read from the card content area; the CTA ("PDF Download") is kept |
+| 14 | Image-only teasers came in twice (desktop + mobile rendition) | **Fixed:** one rendition kept per teaser, with the link moved onto it |
+| 15 | Seven image file names are shared by different images across pages (e.g. `banner-header.jpeg` ×5), so pages would have overwritten each other's images in DA | **Fixed:** `publish-content.js` names remote images `<hash>-<file name>` and downloads them itself |
+| 16 | The *Useful product information* teaser's only image is 404 on the source, leaving a Columns block with an empty column on 7 pages | **Fixed:** a teaser without a desktop image imports as default content (text + button), as it shows on the source |
+| 17 | COPD in-page nav pointed at AEM container ids that don't survive import | **Fixed:** links re-pointed at the EDS heading ids; all 7 resolve |
+| 18 | Login-only Social Features placeholders ("errorMessage requestToSignInContent") | **Dropped** by the cleanup transformer |
 | P2 | Catalog still had the raw detection: 17 flagged variants (wrong or "unknown" types, duplicates, artifacts, a catch-all) | **Applied (2026-09-30)** with `tools/da/apply-block-mapping.js`: 41 type/block/class changes in `catalog/block-catalog.json`, catch-all split (3 page records re-stamped), placement check passes. Backup in `migration-work/da-publish/archive/`. Re-run the script after any catalog rebuild |
 
 ---
@@ -262,7 +312,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 1. **Decide how to source the Trixeo content** (P1). This decides the scope of 50 pages.
 2. ~~Apply the block mapping to the catalog (P2)~~ Done 2026-09-30. Next: generate the missing block variants from the catalog (P3). The generator builds each variant's block and class as the catalog now says.
 3. Add Breadcrumbs (P4); it affects every page. (Section metadata, P7, is fixed.)
-4. Migrate **content-landing** across all 4 locales (49 pages): Hero ✅, 3-up Cards ✅, plus Columns styling, Accordion check (P11) and In-Page Nav. The 4 breast cancer pages need extra handling (no hero, key-figures cards).
+4. **content-landing:** EN is done (11 pages live, Section 1.1). Next: DE/FR/IT (38 pages) with the same importer, then Columns styling and the Accordion check (P11). Fix the site root first (P16).
 5. Build Tabs (sections-based, P6) and the product Cards option; re-capture FR `/produkte.html` (P10); migrate **product-overview**.
 6. Migrate the See the pATTRns campaign (DE/FR/IT, 15 pages): Modal for self-certification (P8), horizontal In-Page Nav, 2-up icon Cards, Kaltura Embed, campaign Hero banner.
 7. Decide the contact form backend (P5) and migrate **contact** (4 pages).
@@ -287,6 +337,8 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | **Block mapping (reviewed decisions)** | `tools/importer/block-mapping.json`: EDS target, option, class, merge, split and discrepancy per variant; treatment per source component. Applied to `catalog/block-catalog.json` by `tools/da/apply-block-mapping.js` (idempotent; `--dry-run`) |
 | Source component inventory | `catalog/source-components.json`, built by `tools/da/inventory-source-components.js` (fetched source pages are cached in `migration-work/da-publish/src-pages/`) |
 | Component and EDS block screenshots | `catalog/component-shots/`, taken by `tools/da/capture-component-shots.js` (source components on the live site, EDS blocks on their demo pages) |
+| Import reports (one per migrated page) | `tools/importer/reports/<path>.report.json` and `import-content-landing.report.xlsx`; Appendix A's EDS column is built from these plus the admin status API |
+| DA library sheets | `/block-library/blocks.json`, `templates.json`, `icons.json` (55 icons), generated by `tools/sidekick/build-block-library.js` and uploaded by `tools/da/publish-library.js` |
 | Migration plan and status | `.migration/plans/myastrazeneca-template-discovery.md` |
 
 <!-- APPENDIX:START (generated by tools/da/build-site-analysis.js; do not edit by hand) -->
@@ -295,178 +347,178 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 
 ## Appendix A: Every page, by template
 
-Each row is one analyzed page with the block variants detected on it and the EDS target each maps to (→). Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template.
+Each row is one analyzed page with the block variants detected on it and the EDS target each maps to (→). Look up any variant ID in Appendix D to see its screenshot and details. Use this to check whether each page really belongs in its template. The **EDS** column shows migration status from the admin API: ✅ live, 🟡 preview only, · not migrated yet (11 live, 0 preview only).
 
-### A.1 content-landing (49 pages)
+### A.1 content-landing (49 pages, 11 live on EDS)
 
 *Homepage and therapy-area pages: optional hero, intro copy, therapy card grids, text and image sections.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | - | Homepage | Startseite \| MyAstraZeneca | `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/…/](https://www.myastrazeneca.ch/) |
-| 2 | DE | Homepage | Startseite \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/de/startseite](https://www.myastrazeneca.ch/de/startseite.html) |
-| 3 | DE | Therapy area | Acute Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_ed6c5d348ec9` → Default content, `v_37fdc84c086b` → Columns, `v_8630772c9b24` → Default content, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html) |
-| 4 | DE | Therapy area | Chronische Niereninsuffizienz - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
-| 5 | DE | Therapy area | Diabetes | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html) |
-| 6 | DE | Therapy area | Herzinsuffizienz - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) |
-| 7 | DE | Therapy area | Brustkrebs | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content, `v_354e0ece5414` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html) |
-| 8 | DE | Therapy area | Eierstockkrebs - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html) |
-| 9 | DE | Therapy area | Hämatologie - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html) |
-| 10 | DE | Therapy area | Lungenkrebs - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html) |
-| 11 | DE | Therapy area | Prostata-Gesundheitsinformationen & Leitfaden zum Herunterladen \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html) |
-| 12 | DE | Therapy area | Asthma - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html) |
-| 13 | DE | Therapy area | COPD - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html) |
-| 14 | DE | Therapy area | Systemischer Lupus Erythematodes - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html) |
-| 15 | EN | Homepage | Home \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html) |
-| 16 | EN | Therapy area | Acute Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_ed6c5d348ec9` → Default content, `v_37fdc84c086b` → Columns, `v_8630772c9b24` → Default content, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html) |
-| 17 | EN | Therapy area | Chronic Kidney Disease (CKD) - Symptoms, Diagnosis & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
-| 18 | EN | Therapy area | Diabetes | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html) |
-| 19 | EN | Therapy area | Heart Failure Overview: Symptoms & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) |
-| 20 | EN | Therapy area | Breast Cancer Overview: Causes, Symptoms & Therapy | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html) |
-| 21 | EN | Therapy area | Ovarian Cancer Overview: Symptoms & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html) |
-| 22 | EN | Therapy area | Lung Cancer: Symptoms, Stages & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html) |
-| 23 | EN | Therapy area | Asthma – Advances in Diagnosis and Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html) |
-| 24 | EN | Therapy area | COPD - Symptoms, diagnosis and treatment | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html) |
-| 25 | EN | Therapy area | Lupus Insights and Treatment Guidance – For HCPs | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html) |
-| 26 | FR | Homepage | Traitements du diabète, de l’asthme, de la BPCO et du cancer \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/fr/startseite](https://www.myastrazeneca.ch/fr/startseite.html) |
-| 27 | FR | Therapy area | Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
-| 28 | FR | Therapy area | Symptômes, Diagnostic et Traitement du Diabète Sucré \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html) |
-| 29 | FR | Therapy area | Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) |
-| 30 | FR | Therapy area | Cancer Du Sein – Dépistage, Tumeurs Mammaires et Traitements \| MyAstraZeneca | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html) |
-| 31 | FR | Therapy area | Cancer de l’Ovaire – Carcinome épithélial, symptômes & prise en charge \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html) |
-| 32 | FR | Therapy area | Hématologie - Leucémie Lymphoïde Chronique, Diagnostic et Traitement \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html) |
-| 33 | FR | Therapy area | Cancer du poumon: Symptômes, Diagnostic et Traitements \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html) |
-| 34 | FR | Therapy area | Prostate: Comprendre son importance et les troubles associés \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html) |
-| 35 | FR | Therapy area | Asthme: Symptômes, Diagnostic et Traitements \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html) |
-| 36 | FR | Therapy area | BPCO - Symptômes, diagnostic et prise en charge | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html) |
-| 37 | FR | Therapy area | Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html) |
-| 38 | IT | Homepage | Portale informativo per gli operatori sanitari \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/it/startseite](https://www.myastrazeneca.ch/it/startseite.html) |
-| 39 | IT | Therapy area | Comprendere l'insufficienza renale cronica \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
-| 40 | IT | Therapy area | Informazioni chiave sul diabete mellito | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html) |
-| 41 | IT | Therapy area | Insufficienza Cardiaca Cronica: Sintomi, Diagnosi, E Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) |
-| 42 | IT | Therapy area | Cancro Al Seno: Sintomi, Diagnosi, E Trattamento \| AstraZeneca | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html) |
-| 43 | IT | Therapy area | Cancro alle ovaie: Sintomi, Diagnosi, e Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html) |
-| 44 | IT | Therapy area | Leucemia linfocitica cronica (LLC) in ematologia: sintomi, diagnosi e trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html) |
-| 45 | IT | Therapy area | Cancro del polmone: Sintomi, Diagnosi, e Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html) |
-| 46 | IT | Therapy area | Prostata: Comprendere la sua importanza e i disturbi associati \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html) |
-| 47 | IT | Therapy area | Asma | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html) |
-| 48 | IT | Therapy area | BPCO - Sintomi, diagnosi e trattamento | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/copd.html) |
-| 49 | IT | Therapy area | Lupus | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | - | Homepage | Startseite \| MyAstraZeneca | `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/…/](https://www.myastrazeneca.ch/) | · |
+| 2 | DE | Homepage | Startseite \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/de/startseite](https://www.myastrazeneca.ch/de/startseite.html) | · |
+| 3 | DE | Therapy area | Acute Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_ed6c5d348ec9` → Default content, `v_37fdc84c086b` → Columns, `v_8630772c9b24` → Default content, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html) | · |
+| 4 | DE | Therapy area | Chronische Niereninsuffizienz - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) | · |
+| 5 | DE | Therapy area | Diabetes | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html) | · |
+| 6 | DE | Therapy area | Herzinsuffizienz - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) | · |
+| 7 | DE | Therapy area | Brustkrebs | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content, `v_354e0ece5414` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html) | · |
+| 8 | DE | Therapy area | Eierstockkrebs - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html) | · |
+| 9 | DE | Therapy area | Hämatologie - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html) | · |
+| 10 | DE | Therapy area | Lungenkrebs - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html) | · |
+| 11 | DE | Therapy area | Prostata-Gesundheitsinformationen & Leitfaden zum Herunterladen \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html) | · |
+| 12 | DE | Therapy area | Asthma - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html) | · |
+| 13 | DE | Therapy area | COPD - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html) | · |
+| 14 | DE | Therapy area | Systemischer Lupus Erythematodes - Symptome, Diagnose und Behandlung | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html) | · |
+| 15 | EN | Homepage | Home \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite) |
+| 16 | EN | Therapy area | Acute Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_ed6c5d348ec9` → Default content, `v_37fdc84c086b` → Columns, `v_8630772c9b24` → Default content, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/acutecare) |
+| 17 | EN | Therapy area | Chronic Kidney Disease (CKD) - Symptoms, Diagnosis & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz) |
+| 18 | EN | Therapy area | Diabetes | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/diabetes) |
+| 19 | EN | Therapy area | Heart Failure Overview: Symptoms & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/cvrm/herzinsuffizienz) |
+| 20 | EN | Therapy area | Breast Cancer Overview: Causes, Symptoms & Therapy | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/brustkrebs) |
+| 21 | EN | Therapy area | Ovarian Cancer Overview: Symptoms & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/eierstockkrebs) |
+| 22 | EN | Therapy area | Lung Cancer: Symptoms, Stages & Treatment | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/onkologie/lungenkrebs) |
+| 23 | EN | Therapy area | Asthma – Advances in Diagnosis and Care | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/asthma) |
+| 24 | EN | Therapy area | COPD - Symptoms, diagnosis and treatment | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/copd) |
+| 25 | EN | Therapy area | Lupus Insights and Treatment Guidance – For HCPs | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html) | ✅ [live](https://main--1azee--nishant-gupta.aem.live/en/startseite/therapiegebiete/ri/lupus) |
+| 26 | FR | Homepage | Traitements du diabète, de l’asthme, de la BPCO et du cancer \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/fr/startseite](https://www.myastrazeneca.ch/fr/startseite.html) | · |
+| 27 | FR | Therapy area | Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) | · |
+| 28 | FR | Therapy area | Symptômes, Diagnostic et Traitement du Diabète Sucré \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html) | · |
+| 29 | FR | Therapy area | Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) | · |
+| 30 | FR | Therapy area | Cancer Du Sein – Dépistage, Tumeurs Mammaires et Traitements \| MyAstraZeneca | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html) | · |
+| 31 | FR | Therapy area | Cancer de l’Ovaire – Carcinome épithélial, symptômes & prise en charge \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html) | · |
+| 32 | FR | Therapy area | Hématologie - Leucémie Lymphoïde Chronique, Diagnostic et Traitement \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html) | · |
+| 33 | FR | Therapy area | Cancer du poumon: Symptômes, Diagnostic et Traitements \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html) | · |
+| 34 | FR | Therapy area | Prostate: Comprendre son importance et les troubles associés \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html) | · |
+| 35 | FR | Therapy area | Asthme: Symptômes, Diagnostic et Traitements \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html) | · |
+| 36 | FR | Therapy area | BPCO - Symptômes, diagnostic et prise en charge | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html) | · |
+| 37 | FR | Therapy area | Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html) | · |
+| 38 | IT | Homepage | Portale informativo per gli operatori sanitari \| MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_6defe37a8d19` → Columns | [/it/startseite](https://www.myastrazeneca.ch/it/startseite.html) | · |
+| 39 | IT | Therapy area | Comprendere l'insufficienza renale cronica \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) | · |
+| 40 | IT | Therapy area | Informazioni chiave sul diabete mellito | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/diabetes](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html) | · |
+| 41 | IT | Therapy area | Insufficienza Cardiaca Cronica: Sintomi, Diagnosi, E Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/cvrm/herzinsuffizienz](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html) | · |
+| 42 | IT | Therapy area | Cancro Al Seno: Sintomi, Diagnosi, E Trattamento \| AstraZeneca | `v_5d7c92bb4412` → Cards, `v_8630772c9b24` → Default content | [/…/therapiegebiete/onkologie/brustkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html) | · |
+| 43 | IT | Therapy area | Cancro alle ovaie: Sintomi, Diagnosi, e Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/eierstockkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html) | · |
+| 44 | IT | Therapy area | Leucemia linfocitica cronica (LLC) in ematologia: sintomi, diagnosi e trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html) | · |
+| 45 | IT | Therapy area | Cancro del polmone: Sintomi, Diagnosi, e Trattamento \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/onkologie/lungenkrebs](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html) | · |
+| 46 | IT | Therapy area | Prostata: Comprendere la sua importanza e i disturbi associati \| MyAstraZeneca | `v_2ab6094d0f33` → Hero, `v_b25f473963c4` → Default content, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html) | · |
+| 47 | IT | Therapy area | Asma | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/asthma](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html) | · |
+| 48 | IT | Therapy area | BPCO - Sintomi, diagnosi e trattamento | `v_b26d6cceada2` → Hero, `v_d41301689a41` → In-Page Nav, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_7edce974c28a` → Default content, `v_065eb1d0161c` → Default content, `v_4ecd3661fdd5` → Accordion | [/…/therapiegebiete/ri/copd](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/copd.html) | · |
+| 49 | IT | Therapy area | Lupus | `v_b26d6cceada2` → Hero, `v_5d7c92bb4412` → Cards, `v_37fdc84c086b` → Columns, `v_6defe37a8d19` → Columns | [/…/therapiegebiete/ri/lupus](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html) | · |
 
 ### A.2 resource-detail (34 pages)
 
 *Trixeo resource document page: breadcrumb, share icons, title, short paragraphs, revision code.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | Trixeo resource doc | Dreifachtherapie und kardiopulmonale Risikofaktoren \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html) |
-| 2 | DE | Trixeo resource doc | TRIXEO Aerosphere® Anwendungsbroschüre \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html) |
-| 3 | DE | Trixeo resource doc | Anwendung von TRIXEO Aerosphere®, Symbicort® & Vannair® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html) |
-| 4 | DE | Trixeo resource doc | Checkliste für COPD-Exazerbationen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html) |
-| 5 | DE | Trixeo resource doc | COPD-Datenblatt \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-datenblatt-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-datenblatt-de.html) |
-| 6 | DE | Trixeo resource doc | COPD und Lungenkrebs \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de.html) |
-| 7 | DE | Trixeo resource doc | Die ETHOS Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de.html) |
-| 8 | DE | Trixeo resource doc | TRIXEO Aerosphere® Fachinformation \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de.html) |
-| 9 | DE | Trixeo resource doc | Die KRONOS Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de.html) |
-| 10 | DE | Trixeo resource doc | COPD und kardiovaskuläre Risiken \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de.html) |
-| 11 | DE | Trixeo resource doc | Patientenposter zu COPD \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patient-poster-copd-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patient-poster-copd-de.html) |
-| 12 | DE | Trixeo resource doc | COPD-Broschüre für Ihre Patienten \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de.html) |
-| 13 | DE | Trixeo resource doc | Präsentation zum COPD-Management in der Praxis \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-copd-now-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-de.html) |
-| 14 | DE | Trixeo resource doc | TRIXEO Aerosphere® Technologie im Überblick \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de.html) |
-| 15 | DE | Trixeo resource doc | Die SKOPOS-MAZI-Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html) |
-| 16 | DE | Trixeo resource doc | TRIXEO Aerosphere® Limitatio und Implikationen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html) |
-| 17 | DE | Trixeo resource doc | TRIXEO Aerosphere® Krankenkassenformular \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html) |
-| 18 | FR | Trixeo resource doc | Trithérapie et facteurs de risque cardiopulmonaires \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html) |
-| 19 | FR | Trixeo resource doc | Brochure d'utilisation de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html) |
-| 20 | FR | Trixeo resource doc | Utilisation de TRIXEO Aerosphere®, Symbicort® et Vannair® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html) |
-| 21 | FR | Trixeo resource doc | Check-list pour les exacerbations de la BPCO \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html) |
-| 22 | FR | Trixeo resource doc | Fiche de suivi pour la BPCO pour les patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-datenblatt-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html) |
-| 23 | FR | Trixeo resource doc | BPCO et cancer du poumon \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html) |
-| 24 | FR | Trixeo resource doc | Étude ETHOS \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html) |
-| 25 | FR | Trixeo resource doc | Information professionnelle sur TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html) |
-| 26 | FR | Trixeo resource doc | Étude KRONOS \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html) |
-| 27 | FR | Trixeo resource doc | BPCO et risques cardiovasculaires \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html) |
-| 28 | FR | Trixeo resource doc | Poster d'information BPCO pour les patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patient-poster-copd-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html) |
-| 29 | FR | Trixeo resource doc | Brochure BPCO pour vos patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html) |
-| 30 | FR | Trixeo resource doc | Présentation sur la prise en charge de la BPCO en pratique \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-copd-now-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html) |
-| 31 | FR | Trixeo resource doc | Aperçu de la technologie TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html) |
-| 32 | FR | Trixeo resource doc | Étude SKOPOS-MAZI \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html) |
-| 33 | FR | Trixeo resource doc | TRIXEO Aerosphere® : Limitatio et implications \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html) |
-| 34 | FR | Trixeo resource doc | Prise en charge TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | Trixeo resource doc | Dreifachtherapie und kardiopulmonale Risikofaktoren \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html) | · |
+| 2 | DE | Trixeo resource doc | TRIXEO Aerosphere® Anwendungsbroschüre \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html) | · |
+| 3 | DE | Trixeo resource doc | Anwendung von TRIXEO Aerosphere®, Symbicort® & Vannair® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html) | · |
+| 4 | DE | Trixeo resource doc | Checkliste für COPD-Exazerbationen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html) | · |
+| 5 | DE | Trixeo resource doc | COPD-Datenblatt \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-datenblatt-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-datenblatt-de.html) | · |
+| 6 | DE | Trixeo resource doc | COPD und Lungenkrebs \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de.html) | · |
+| 7 | DE | Trixeo resource doc | Die ETHOS Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de.html) | · |
+| 8 | DE | Trixeo resource doc | TRIXEO Aerosphere® Fachinformation \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de.html) | · |
+| 9 | DE | Trixeo resource doc | Die KRONOS Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de.html) | · |
+| 10 | DE | Trixeo resource doc | COPD und kardiovaskuläre Risiken \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de.html) | · |
+| 11 | DE | Trixeo resource doc | Patientenposter zu COPD \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patient-poster-copd-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patient-poster-copd-de.html) | · |
+| 12 | DE | Trixeo resource doc | COPD-Broschüre für Ihre Patienten \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de.html) | · |
+| 13 | DE | Trixeo resource doc | Präsentation zum COPD-Management in der Praxis \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-copd-now-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-de.html) | · |
+| 14 | DE | Trixeo resource doc | TRIXEO Aerosphere® Technologie im Überblick \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de.html) | · |
+| 15 | DE | Trixeo resource doc | Die SKOPOS-MAZI-Studie \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html) | · |
+| 16 | DE | Trixeo resource doc | TRIXEO Aerosphere® Limitatio und Implikationen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html) | · |
+| 17 | DE | Trixeo resource doc | TRIXEO Aerosphere® Krankenkassenformular \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html) | · |
+| 18 | FR | Trixeo resource doc | Trithérapie et facteurs de risque cardiopulmonaires \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html) | · |
+| 19 | FR | Trixeo resource doc | Brochure d'utilisation de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html) | · |
+| 20 | FR | Trixeo resource doc | Utilisation de TRIXEO Aerosphere®, Symbicort® et Vannair® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html) | · |
+| 21 | FR | Trixeo resource doc | Check-list pour les exacerbations de la BPCO \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html) | · |
+| 22 | FR | Trixeo resource doc | Fiche de suivi pour la BPCO pour les patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-datenblatt-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html) | · |
+| 23 | FR | Trixeo resource doc | BPCO et cancer du poumon \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html) | · |
+| 24 | FR | Trixeo resource doc | Étude ETHOS \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html) | · |
+| 25 | FR | Trixeo resource doc | Information professionnelle sur TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html) | · |
+| 26 | FR | Trixeo resource doc | Étude KRONOS \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html) | · |
+| 27 | FR | Trixeo resource doc | BPCO et risques cardiovasculaires \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html) | · |
+| 28 | FR | Trixeo resource doc | Poster d'information BPCO pour les patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patient-poster-copd-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html) | · |
+| 29 | FR | Trixeo resource doc | Brochure BPCO pour vos patients \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html) | · |
+| 30 | FR | Trixeo resource doc | Présentation sur la prise en charge de la BPCO en pratique \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-copd-now-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html) | · |
+| 31 | FR | Trixeo resource doc | Aperçu de la technologie TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html) | · |
+| 32 | FR | Trixeo resource doc | Étude SKOPOS-MAZI \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html) | · |
+| 33 | FR | Trixeo resource doc | TRIXEO Aerosphere® : Limitatio et implications \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html) | · |
+| 34 | FR | Trixeo resource doc | Prise en charge TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html) | · |
 
 ### A.3 product-detail (16 pages)
 
 *Trixeo product page: breadcrumb, product sub-navigation tabs, title, text and media sections. Includes the resources index.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | Trixeo product | TRIXEO Aerosphere® Technologie erklärt \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/aerosphere-technologie](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html) |
-| 2 | DE | Trixeo product | COPD-Management im klinischen Alltag \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/copd-management](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/copd-management.html) |
-| 3 | DE | Trixeo product | TRIXEO Aerosphere® Events und Fortbildungen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/events](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/events.html) |
-| 4 | DE | Trixeo product | TRIXEO Ressourcen für medizinisches Fachpersonal \| AstraZeneca CH | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen.html) |
-| 5 | DE | Trixeo product | TRIXEO Aerosphere® Sicherheitsprofil \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/sicherheit](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/sicherheit.html) |
-| 6 | DE | Trixeo product | TRIXEO Aerosphere® Succinct Statement \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/succinct-statement](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/succinct-statement.html) |
-| 7 | DE | Trixeo product | TRIXEO Aerosphere® im Überblick \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/uberblick](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/uberblick.html) |
-| 8 | DE | Trixeo product | Wirksamkeit von TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/wirksamkeit](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/wirksamkeit.html) |
-| 9 | FR | Trixeo product | La technologie de TRIXEO Aerosphere® expliquée \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/aerosphere-technologie](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/aerosphere-technologie.html) |
-| 10 | FR | Trixeo product | La prise en charge de la BPCO \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/copd-management](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html) |
-| 11 | FR | Trixeo product | Événements et formations de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/events](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html) |
-| 12 | FR | Trixeo product | Ressources TRIXEO pour le corps médical \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html) |
-| 13 | FR | Trixeo product | Profil de sécurité de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/sicherheit](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html) |
-| 14 | FR | Trixeo product | Information succincte sur TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/succinct-statement](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html) |
-| 15 | FR | Trixeo product | Aperçu TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/uberblick](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html) |
-| 16 | FR | Trixeo product | Efficacité de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/wirksamkeit](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | Trixeo product | TRIXEO Aerosphere® Technologie erklärt \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/aerosphere-technologie](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html) | · |
+| 2 | DE | Trixeo product | COPD-Management im klinischen Alltag \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/copd-management](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/copd-management.html) | · |
+| 3 | DE | Trixeo product | TRIXEO Aerosphere® Events und Fortbildungen \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/events](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/events.html) | · |
+| 4 | DE | Trixeo product | TRIXEO Ressourcen für medizinisches Fachpersonal \| AstraZeneca CH | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen.html) | · |
+| 5 | DE | Trixeo product | TRIXEO Aerosphere® Sicherheitsprofil \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/sicherheit](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/sicherheit.html) | · |
+| 6 | DE | Trixeo product | TRIXEO Aerosphere® Succinct Statement \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/succinct-statement](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/succinct-statement.html) | · |
+| 7 | DE | Trixeo product | TRIXEO Aerosphere® im Überblick \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/uberblick](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/uberblick.html) | · |
+| 8 | DE | Trixeo product | Wirksamkeit von TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/wirksamkeit](https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/wirksamkeit.html) | · |
+| 9 | FR | Trixeo product | La technologie de TRIXEO Aerosphere® expliquée \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/aerosphere-technologie](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/aerosphere-technologie.html) | · |
+| 10 | FR | Trixeo product | La prise en charge de la BPCO \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/copd-management](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html) | · |
+| 11 | FR | Trixeo product | Événements et formations de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/events](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html) | · |
+| 12 | FR | Trixeo product | Ressources TRIXEO pour le corps médical \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/ressourcen](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html) | · |
+| 13 | FR | Trixeo product | Profil de sécurité de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/sicherheit](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html) | · |
+| 14 | FR | Trixeo product | Information succincte sur TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/succinct-statement](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html) | · |
+| 15 | FR | Trixeo product | Aperçu TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/uberblick](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html) | · |
+| 16 | FR | Trixeo product | Efficacité de TRIXEO Aerosphere® \| MyAstraZeneca | (none: content is behind the login paywall) | [/…/produkte/trixeo/wirksamkeit](https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html) | · |
 
 ### A.4 campaign-subpage (12 pages)
 
 *See the pATTRns interior page: campaign banner, section tabs, stat boxes, diagrams, download CTAs.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | See the pATTRns | Über ATTR Amyloidose: Verlauf & Ursachen \| See the pATTRns | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
-| 2 | DE | See the pATTRns | ATTR Amyloidose Diagnostizieren \| See the pATTRns \| Diagnose | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
-| 3 | DE | See the pATTRns | Symptome der ATTR Amyloidose erkennen \| See the pATTRns | `v_e4409b853477` → Hero, `v_b1e664af6109` → Default content, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
-| 4 | DE | See the pATTRns | Behandlung der ATTR Amyloidose \| See the pATTRns \| Behandlung | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
-| 5 | FR | See the pATTRns | À propos de l’ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
-| 6 | FR | See the pATTRns | Diagnostic de l’ATTR | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
-| 7 | FR | See the pATTRns | Symptômes de l’ATTR | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_f2575cbf84b3` → Cards, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
-| 8 | FR | See the pATTRns | Traitement | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
-| 9 | IT | See the pATTRns | L’amiloidosi ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) |
-| 10 | IT | See the pATTRns | Diagnosi | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) |
-| 11 | IT | See the pATTRns | Sintomi | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) |
-| 12 | IT | See the pATTRns | Trattamento | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | See the pATTRns | Über ATTR Amyloidose: Verlauf & Ursachen \| See the pATTRns | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) | · |
+| 2 | DE | See the pATTRns | ATTR Amyloidose Diagnostizieren \| See the pATTRns \| Diagnose | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) | · |
+| 3 | DE | See the pATTRns | Symptome der ATTR Amyloidose erkennen \| See the pATTRns | `v_e4409b853477` → Hero, `v_b1e664af6109` → Default content, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) | · |
+| 4 | DE | See the pATTRns | Behandlung der ATTR Amyloidose \| See the pATTRns \| Behandlung | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) | · |
+| 5 | FR | See the pATTRns | À propos de l’ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) | · |
+| 6 | FR | See the pATTRns | Diagnostic de l’ATTR | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) | · |
+| 7 | FR | See the pATTRns | Symptômes de l’ATTR | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_f2575cbf84b3` → Cards, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) | · |
+| 8 | FR | See the pATTRns | Traitement | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) | · |
+| 9 | IT | See the pATTRns | L’amiloidosi ATTR | `v_e4409b853477` → Hero, `v_37fdc84c086b` → Columns, `v_bbadaab7c4b3` → Cards, `v_065eb1d0161c` → Default content, `v_bd282072e4b6` → Embed (Kaltura video), `v_c602950f63c9` → Columns, `v_37fdc84c086b-text` → Default content, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html) | · |
+| 10 | IT | See the pATTRns | Diagnosi | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_86957572c961` → Default content, `v_2bed43c59a16` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/diagnosis](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html) | · |
+| 11 | IT | See the pATTRns | Sintomi | `v_e4409b853477` → Hero, `v_86957572c961` → Default content, `v_7d7a8d636759` → Default content, `v_5a31a8c89674` → Cards, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/symptomes](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html) | · |
+| 12 | IT | See the pATTRns | Trattamento | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/treatement](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html) | · |
 
 ### A.5 campaign-landing (3 pages)
 
 *See the pATTRns home: campaign banner, section tabs, key visual, two teaser cards, questions band.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | See the pATTRns | Einführung in ATTR Amyloidose \| See the pATTRns | `v_e4409b853477` → Hero, `v_7d7a8d636759` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) |
-| 2 | FR | See the pATTRns | Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge \| MyAstraZeneca | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) |
-| 3 | IT | See the pATTRns | Home | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | See the pATTRns | Einführung in ATTR Amyloidose \| See the pATTRns | `v_e4409b853477` → Hero, `v_7d7a8d636759` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) | · |
+| 2 | FR | See the pATTRns | Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge \| MyAstraZeneca | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) | · |
+| 3 | IT | See the pATTRns | Home | `v_e4409b853477` → Hero, `v_065eb1d0161c` → Default content, `v_bbadaab7c4b3` → Cards, `v_cc344b0787bb` → Default content | [/…/therapiegebiete/cvrm/see-the-pattrns/home](https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html) | · |
 
 ### A.6 product-overview (4 pages)
 
 *Products index: hero banner, therapy-area tabs, product card grid, contact banner.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | Products index | Produkte - MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/de/startseite/produkte.html) |
-| 2 | EN | Products index | Overview of Medical Products – Therapeutic Areas | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a-1` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/en/startseite/produkte.html) |
-| 3 | FR | Products index | Médicaments cardiovasculaires, rénaux et métaboliques \| MyAstraZeneca | `v_f88e29f32a0c` → Breadcrumbs, `v_42845b3e07dd` → Hero, `v_8ab7ece34e9a-2` → Tabs, `v_228f16fbc166` → Hero | [/…/produkte](https://www.myastrazeneca.ch/fr/startseite/produkte.html) |
-| 4 | IT | Products index | Prodotti \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/it/startseite/produkte.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | Products index | Produkte - MyAstraZeneca | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/de/startseite/produkte.html) | · |
+| 2 | EN | Products index | Overview of Medical Products – Therapeutic Areas | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a-1` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/en/startseite/produkte.html) | · |
+| 3 | FR | Products index | Médicaments cardiovasculaires, rénaux et métaboliques \| MyAstraZeneca | `v_f88e29f32a0c` → Breadcrumbs, `v_42845b3e07dd` → Hero, `v_8ab7ece34e9a-2` → Tabs, `v_228f16fbc166` → Hero | [/…/produkte](https://www.myastrazeneca.ch/fr/startseite/produkte.html) | · |
+| 4 | IT | Products index | Prodotti \| AstraZeneca | `v_b26d6cceada2` → Hero, `v_8ab7ece34e9a` → Tabs, `v_f90804d73a13` → Cards, `v_617324728993` → Hero | [/…/produkte](https://www.myastrazeneca.ch/it/startseite/produkte.html) | · |
 
 ### A.7 contact (4 pages)
 
 *Contact page: title and enquiry form.*
 
-| # | Locale | Section | Page title | Block variants on the page | URL |
-|---:|---|---|---|---|---|
-| 1 | DE | Contact | Kontaktieren Sie uns | `v_6e8c2538dd7e` → Form | [/…/contact-us](https://www.myastrazeneca.ch/de/startseite/contact-us.html) |
-| 2 | EN | Contact | Contact us | `v_6e8c2538dd7e` → Form | [/…/contact-us](https://www.myastrazeneca.ch/en/startseite/contact-us.html) |
-| 3 | FR | Contact | Contactez-nous | `v_c8843a7f9ec8` → Form | [/…/contact-us](https://www.myastrazeneca.ch/fr/startseite/contact-us.html) |
-| 4 | IT | Contact | Contattaci | `v_181661dda160` → Form | [/…/contact-us](https://www.myastrazeneca.ch/it/startseite/contact-us.html) |
+| # | Locale | Section | Page title | Block variants on the page | URL | EDS |
+|---:|---|---|---|---|---|---|
+| 1 | DE | Contact | Kontaktieren Sie uns | `v_6e8c2538dd7e` → Form | [/…/contact-us](https://www.myastrazeneca.ch/de/startseite/contact-us.html) | · |
+| 2 | EN | Contact | Contact us | `v_6e8c2538dd7e` → Form | [/…/contact-us](https://www.myastrazeneca.ch/en/startseite/contact-us.html) | · |
+| 3 | FR | Contact | Contactez-nous | `v_c8843a7f9ec8` → Form | [/…/contact-us](https://www.myastrazeneca.ch/fr/startseite/contact-us.html) | · |
+| 4 | IT | Contact | Contattaci | `v_181661dda160` → Form | [/…/contact-us](https://www.myastrazeneca.ch/it/startseite/contact-us.html) | · |
 
 ### A.8 Excluded pages (failed analysis)
 
@@ -620,10 +672,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| EDS block | `hero-minimal-dark-withimg` |
+| EDS block | `hero` |
 | Status | ✅ built |
 | Standard block | Hero |
-| Options | default · centered · campaign banner (image only) |
+| Options | minimal-dark (default look on this site) · centered · campaign banner (image only) |
 | Source components | Teaser |
 | Catalog variants | 6 (3 after merging duplicates) |
 | Pages | 63 |
@@ -636,13 +688,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 43/43, Container 43/43, Image 43/43 |
 | Source styles | `teaser--home-hero` |
 | Uses | 43 on 43 pages |
 | Templates | content-landing (40), product-overview (3) |
-| EDS target | Hero (default): implemented by `hero-minimal-dark-withimg` |
+| EDS target | Hero (default): implemented by `hero` |
 | Note | Dark full-bleed hero (teaser--home-hero). Implemented |
 | Example pages | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html)<br>[/…/produkte](https://www.myastrazeneca.ch/en/startseite/produkte.html)<br>[/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html) |
 
@@ -652,7 +704,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `campaign-banner` |
+| Catalog | type `hero` · block `hero` · class `campaign-banner` |
 | Structure | 2 images |
 | Source components | Container 17/17, Image 17/17, Teaser 15/17 |
 | Source styles | `teaser--home-hero` |
@@ -668,13 +720,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 4/4, Image 4/4 |
 | Source styles | `teaser--home-hero` |
 | Uses | 4 on 4 pages |
 | Templates | content-landing (4) |
-| EDS target | Hero (default) |
+| EDS target | Hero (default): implemented by `hero` |
 | Merge into | `v_b26d6cceada2` |
 | Note | Same source style as v_b26d6cceada2 (oncology pages); split off by layout noise |
 | Example pages | [/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html)<br>[/…/therapiegebiete/onkologie/haematologie](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html)<br>[/…/therapiegebiete/onkologie/prostata](https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html) |
@@ -685,7 +737,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
+| Catalog | type `hero` · block `hero` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -701,7 +753,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · class `centered` |
+| Catalog | type `hero` · block `hero` · class `centered` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` `teaser--text-center` |
@@ -718,13 +770,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `hero` · block `hero-minimal-dark-withimg` · default |
+| Catalog | type `hero` · block `hero` · class `minimal-dark` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 1/1, Image 1/1 |
 | Source styles | `teaser--home-hero` |
 | Uses | 1 on 1 pages |
 | Templates | product-overview (1) |
-| EDS target | Hero (default) |
+| EDS target | Hero (default): implemented by `hero` |
 | Merge into | `v_b26d6cceada2` |
 | ⚠️ Discrepancy | Artifact of the unstyled FR /produkte.html capture |
 | Example pages | [/…/produkte](https://www.myastrazeneca.ch/fr/startseite/produkte.html) |
@@ -735,10 +787,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| EDS block | `cards-light-withimg` |
+| EDS block | `cards` |
 | Status | 🟡 partial |
 | Standard block | Cards |
-| Options | 3-up image cards (built) · 2-up icon cards · bordered text cards · product cards with hover overlay |
+| Options | light: 3-up image cards (built) · 2-up icon cards · bordered text cards · product cards with hover overlay |
 | Source components | Teaser |
 | Catalog variants | 5 (4 after merging duplicates) |
 | Pages | 63 |
@@ -751,13 +803,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · default |
+| Catalog | type `cards` · block `cards` · class `light` |
 | Structure | heading + text + 6 images |
 | Source components | Container 50/50, Teaser 49/50, Image 49/50, Title 9/50, Text 5/50 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--text-center` `container--3-column-wrap` `teaser--title-color-core` `teaser--text-left` |
 | Uses | 50 on 46 pages |
 | Templates | content-landing (46) |
-| EDS target | Cards (3-up image cards): implemented by `cards-light-withimg` |
+| EDS target | Cards (3-up image cards): implemented by `cards` |
 | Note | Therapy-area grid (container--3-column-wrap, image-top-text-bottom). Implemented |
 | ⚠️ Discrepancy | Detected as unknown |
 | Example pages | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html)<br>[/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html)<br>[/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
@@ -768,7 +820,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
+| Catalog | type `cards` · block `cards` · class `icon` |
 | Structure | heading + text + 4 images |
 | Source components | Teaser 16/16, Container 16/16, Image 16/16 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` `container--content-center` |
@@ -785,7 +837,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
+| Catalog | type `cards` · block `cards` · class `icon` |
 | Structure | text + 4 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` |
@@ -802,7 +854,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `product` |
+| Catalog | type `cards` · block `cards` · class `product` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 10/10, Image 10/10 |
 | Uses | 10 on 3 pages |
@@ -818,7 +870,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `bordered` |
+| Catalog | type `cards` · block `cards` · class `bordered` |
 | Structure | text |
 | Source components | Teaser 1/1, Container 1/1 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` |

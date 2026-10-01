@@ -2,11 +2,12 @@
   "status": "success",
   "url": "https://www.myastrazeneca.ch/en/startseite.html",
   "path": "en/startseite",
-  "timestamp": "2026-09-23T08:16:12.008Z",
+  "timestamp": "2026-10-01T08:37:52.250Z",
   "title": "Home | MyAstraZeneca",
   "template": "content-landing",
   "blocks": [
-    "hero-minimal-dark-withimg",
-    "cards-light-withimg"
+    "hero",
+    "cards",
+    "columns"
   ]
 }

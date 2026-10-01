@@ -1,5 +1,5 @@
 {
-  "variantName": "cards-light-withimg",
+  "variantName": "cards",
   "baseBlock": "cards",
   "canonicalModel": "collection",
   "visualCharacteristics": {
@@ -10,9 +10,11 @@
     "imagePattern": "header",
     "structure": "grid of cards; each card = colored top image + heading + description + link list"
   },
-  "contentPattern": "Repeating card items. Each card: an image cell (colored header illustration) followed by a body cell with a title, a description paragraph, and an optional list of indication/product links.",
+  "contentPattern": "Repeating card items, one per row. A cell with only an image becomes the card image; other cells are the body (title, description, optional links or CTA). Cards without an image are text only.",
   "usage": "Used for the 'Our therapy areas' grid on content-landing pages: a 3-up responsive grid of therapy-area cards with colored image headers.",
-  "options": [],
+  "options": [
+    "light"
+  ],
   "memberVariantIds": [
     "v_5d7c92bb4412"
   ]
