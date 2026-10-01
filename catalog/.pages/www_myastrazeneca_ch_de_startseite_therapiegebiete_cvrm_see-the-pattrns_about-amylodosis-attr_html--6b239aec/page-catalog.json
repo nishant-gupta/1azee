@@ -1,0 +1,1166 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+  "title": "Über ATTR Amyloidose: Verlauf & Ursachen | See the pATTRns",
+  "timestamp": "2026-09-23T05:33:33.183Z",
+  "duration": "12.9s",
+  "cleanup": {
+    "elementsRemoved": 5,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 525
+    },
+    "topSectionStrategy": "title",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 106,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 438,
+        "y": 34,
+        "width": 117,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 585,
+        "y": 34,
+        "width": 154,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      },
+      {
+        "type": "text",
+        "x": 205,
+        "y": 320,
+        "width": 186,
+        "height": 37
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 321,
+        "width": 70,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 396,
+        "y": 321,
+        "width": 310,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 711,
+        "y": 321,
+        "width": 91,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 807,
+        "y": 321,
+        "width": 108,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 139,
+        "y": 392,
+        "width": 1163,
+        "height": 120
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 146,
+        "y": 325,
+        "width": 38,
+        "height": 17,
+        "textLength": 4
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#c00060",
+        "backgroundColor": "#f0f0f0",
+        "x": 221,
+        "y": 325,
+        "width": 154,
+        "height": 17,
+        "textLength": 20
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 412,
+        "y": 325,
+        "width": 278,
+        "height": 17,
+        "textLength": 37
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 727,
+        "y": 325,
+        "width": 59,
+        "height": 17,
+        "textLength": 8
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 823,
+        "y": 325,
+        "width": 76,
+        "height": 17,
+        "textLength": 10
+      },
+      {
+        "tag": "span",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#f0f0f0",
+        "x": 139,
+        "y": 378,
+        "width": 1163,
+        "height": 127,
+        "textLength": 63
+      }
+    ],
+    "topSectionCropBottomY": 505,
+    "topSectionTitleRect": {
+      "x": 139,
+      "y": 378,
+      "width": 1163,
+      "height": 127,
+      "text": "Was ist ATTR Amyloidose? Ursachen, Verlauf und Krankheitsformen",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 525,
+      "width": 1440,
+      "height": 12877
+    },
+    "bodyStartY": 525,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 219,
+        "y": 553,
+        "width": 1003,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 646,
+        "width": 575,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 646,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 698,
+        "width": 561,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 884,
+        "width": 487,
+        "height": 42
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 966,
+        "width": 580,
+        "height": 224
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 966,
+        "width": 580,
+        "height": 224
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 1214,
+        "width": 532,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 1214,
+        "width": 532,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 277,
+        "y": 1266,
+        "width": 286,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 898,
+        "y": 1266,
+        "width": 245,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 249,
+        "y": 1290,
+        "width": 343,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 858,
+        "y": 1290,
+        "width": 325,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 274,
+        "y": 1314,
+        "width": 292,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 869,
+        "y": 1314,
+        "width": 303,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 868,
+        "y": 1338,
+        "width": 305,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 910,
+        "y": 1362,
+        "width": 221,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 912,
+        "y": 1386,
+        "width": 217,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 1472,
+        "width": 990,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1514,
+        "width": 1104,
+        "height": 92
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1668,
+        "width": 1180,
+        "height": 454
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 2122,
+        "width": 1180,
+        "height": 4453
+      },
+      {
+        "type": "text",
+        "x": 171,
+        "y": 6635,
+        "width": 1099,
+        "height": 80
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 6735,
+        "width": 1180,
+        "height": 664
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 7459,
+        "width": 718,
+        "height": 80
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7541,
+        "width": 1143,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7628,
+        "width": 1119,
+        "height": 32
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 7701,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 7701,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 7926,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 7926,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 222,
+        "y": 8191,
+        "width": 997,
+        "height": 80
+      },
+      {
+        "type": "text",
+        "x": 290,
+        "y": 8292,
+        "width": 860,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 360,
+        "y": 8392,
+        "width": 323,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 761,
+        "y": 8392,
+        "width": 314,
+        "height": 116
+      },
+      {
+        "type": "text",
+        "x": 189,
+        "y": 8576,
+        "width": 1062,
+        "height": 66
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 8683,
+        "width": 1180,
+        "height": 372
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 9055,
+        "width": 1180,
+        "height": 2802
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11859,
+        "width": 719,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 11921,
+        "width": 580,
+        "height": 221
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 11921,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 12166,
+        "width": 532,
+        "height": 102
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 12170,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 310,
+        "y": 12284,
+        "width": 221,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 928,
+        "y": 12284,
+        "width": 184,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 568,
+        "y": 12390,
+        "width": 304,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12432,
+        "width": 282,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12456,
+        "width": 139,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12520,
+        "width": 1128,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12566,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12592,
+        "width": 90,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12614,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12638,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12688,
+        "width": 1151,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12736,
+        "width": 1140,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12784,
+        "width": 1161,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 12832,
+        "width": 930,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 12856,
+        "width": 1009,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 12880,
+        "width": 933,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 12904,
+        "width": 904,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 12928,
+        "width": 1138,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 12950,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13000,
+        "width": 1156,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13048,
+        "width": 1150,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 13096,
+        "width": 1159,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 13120,
+        "width": 798,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 13144,
+        "width": 991,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13168,
+        "width": 1132,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13216,
+        "width": 1159,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 13264,
+        "width": 1024,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13288,
+        "width": 1154,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13334,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 13360,
+        "width": 403,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),s(sB,sB,sB,2x1,2x1,s(,),s(,),s(,),s(,),sB,2x1,s(,),2x1,s(,,),2x1,sB(,,),s(,,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(3)",
+      "rc2c3c3c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.list.list--fixed-width.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c3c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c3c3": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(3)",
+      "rc2c3c3c4": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2c3c3c5": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--2-column-wrap.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5)",
+      "rc2c3c3c6": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6)",
+      "rc2c3c3c6c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c6c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.text",
+      "rc2c3c3c7": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7)",
+      "rc2c3c3c7c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c3c7c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c3c8": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8)",
+      "rc2c3c3c8c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8) > div.cmp-container > div.title.title--center.title--color-title-1.title--b-space",
+      "rc2c3c3c8c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8) > div.cmp-container > div.video",
+      "rc2c3c3c8c2c1": "#cmp-video__player_id",
+      "rc2c3c3c8c2c2": "#cmp_video > div.cmp-video__holder > div.cmp-video__content",
+      "rc2c3c3c9": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9)",
+      "rc2c3c3c9c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c9c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9) > div.cmp-container > div.text.text--center",
+      "rc2c3c3c10": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(10)",
+      "rc2c3c3c11": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(11)",
+      "rc2c3c3c12": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(12)",
+      "rc2c3c3c12c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(12) > div.cmp-container > div.title.title--center.title--color-title-1.title--b-space",
+      "rc2c3c3c12c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(12) > div.cmp-container > div.title.title--center.title--color-title-1:nth-of-type(2)",
+      "rc2c3c3c13": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap.container--content-center.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c3c14": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14)",
+      "rc2c3c3c14c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14) > div.cmp-container > div.title.title--center.title--color-title-1.title--b-space-md",
+      "rc2c3c3c14c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14) > div.cmp-container > div.image",
+      "rc2c3c3c14c2c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c3c14c2c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c3c14c3": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(14) > div.cmp-container > div.text.text--small",
+      "rc2c3c3c15": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(15)",
+      "rc2c3c3c16": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(16)",
+      "rc2c3c3c16c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(16) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c16c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(16) > div.cmp-container > div.text.text--center",
+      "rc2c3c3c16c3": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(16) > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c3c17": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17)",
+      "rc2c3c3c17c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c3c17c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c3c17c3": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c3c17c4": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c3c17c5": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c3c17c5c1": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c3c17c5c2": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c3c17c5c3": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c3c17c5c4": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c3c17c5c5": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc2c3c3c17c5c6": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc2c3c3c17c5c7": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(7)",
+      "rc2c3c3c17c5c8": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(8)",
+      "rc2c3c3c17c5c9": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(9)",
+      "rc2c3c3c17c5c10": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(10)",
+      "rc2c3c3c17c5c11": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(11)",
+      "rc2c3c3c17c5c12": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(12)",
+      "rc2c3c3c17c5c13": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(13)",
+      "rc2c3c3c17c5c14": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(14)",
+      "rc2c3c3c17c5c15": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(15)",
+      "rc2c3c3c17c5c16": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(16)",
+      "rc2c3c3c17c5c17": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(17)",
+      "rc2c3c3c17c5c18": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(18)",
+      "rc2c3c3c17c5c19": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(19)",
+      "rc2c3c3c17c6": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc2c3c3c17c7": "#pattrns-tab2 > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(17) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(6)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "18306014",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-27ebba6300 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/18306014.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "3f3af944",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 3,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 653,
+        "width": 1440,
+        "height": 360
+      },
+      "screenshot": "blocks/3f3af944.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "3f3af963",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 11,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 1013,
+        "width": 1440,
+        "height": 466
+      },
+      "screenshot": "blocks/3f3af963.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "3f3af9a1",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(7)",
+      "bounds": {
+        "x": 0,
+        "y": 1695,
+        "width": 1440,
+        "height": 494
+      },
+      "screenshot": "blocks/3f3af9a1.jpg",
+      "variantId": "v_065eb1d0161c"
+    },
+    {
+      "id": "3f3af9c0",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 image block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 0,
+        "imageCount": 1,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + image"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(8)",
+      "bounds": {
+        "x": 0,
+        "y": 2189,
+        "width": 1440,
+        "height": 844
+      },
+      "screenshot": "blocks/3f3af9c0.jpg",
+      "variantId": "v_bd282072e4b6"
+    },
+    {
+      "id": "57dbdae6",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "4 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "4 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(11)",
+      "bounds": {
+        "x": 0,
+        "y": 3275,
+        "width": 1440,
+        "height": 265
+      },
+      "screenshot": "blocks/57dbdae6.jpg",
+      "variantId": "v_c602950f63c9"
+    },
+    {
+      "id": "57dbda89",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(14)",
+      "bounds": {
+        "x": 0,
+        "y": 3924,
+        "width": 1440,
+        "height": 544
+      },
+      "screenshot": "blocks/57dbda89.jpg",
+      "variantId": "v_37fdc84c086b-text"
+    },
+    {
+      "id": "57dbda6a",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 6,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(15)",
+      "bounds": {
+        "x": 0,
+        "y": 4468,
+        "width": 1440,
+        "height": 469
+      },
+      "screenshot": "blocks/57dbda6a.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "57dbda4b",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#pattrns-tab2 > div:nth-child(1) > div:nth-child(16)",
+      "bounds": {
+        "x": 0,
+        "y": 4937,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/57dbda4b.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

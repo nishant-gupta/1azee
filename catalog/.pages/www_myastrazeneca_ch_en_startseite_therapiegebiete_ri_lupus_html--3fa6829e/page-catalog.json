@@ -1,0 +1,889 @@
+{
+  "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html",
+  "title": "Lupus Insights and Treatment Guidance – For HCPs",
+  "timestamp": "2026-09-23T05:34:20.014Z",
+  "duration": "10.2s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/en/startseite/therapiegebiete/ri/lupus.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 311
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1207,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 94,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 326,
+        "y": 34,
+        "width": 29,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 385,
+        "y": 34,
+        "width": 39,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 250
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 156,
+        "width": 1180,
+        "height": 60
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 152,
+        "width": 1180,
+        "height": 60,
+        "textLength": 28
+      }
+    ],
+    "topSectionCropBottomY": 252,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 152,
+      "width": 1180,
+      "height": 60,
+      "text": "Systemic lupus erythematosus",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 311,
+      "width": 1440,
+      "height": 3528
+    },
+    "bodyStartY": 311,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 351,
+        "width": 836,
+        "height": 50
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 451,
+        "width": 1169,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 523,
+        "width": 1126,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 571,
+        "width": 1151,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 619,
+        "width": 1152,
+        "height": 68
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 729,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 527,
+        "y": 729,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 923,
+        "y": 729,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "text",
+        "x": 235,
+        "y": 909,
+        "width": 177,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 554,
+        "y": 909,
+        "width": 331,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 1053,
+        "y": 909,
+        "width": 127,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 166,
+        "y": 961,
+        "width": 315,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 562,
+        "y": 961,
+        "width": 317,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 960,
+        "y": 961,
+        "width": 313,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1111,
+        "width": 125,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 1111,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1161,
+        "width": 575,
+        "height": 144
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1311,
+        "width": 271,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1335,
+        "width": 231,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1359,
+        "width": 191,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1383,
+        "width": 188,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1407,
+        "width": 372,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1431,
+        "width": 200,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1455,
+        "width": 438,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1479,
+        "width": 355,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1503,
+        "width": 89,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1527,
+        "width": 337,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1575,
+        "width": 183,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1599,
+        "width": 181,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1623,
+        "width": 246,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1647,
+        "width": 194,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1683,
+        "width": 1149,
+        "height": 44
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1789,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1789,
+        "width": 119,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1841,
+        "width": 566,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1913,
+        "width": 566,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1961,
+        "width": 560,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2071,
+        "width": 299,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2099,
+        "width": 152,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2123,
+        "width": 542,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2147,
+        "width": 353,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2171,
+        "width": 884,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2195,
+        "width": 426,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2219,
+        "width": 614,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2243,
+        "width": 346,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2267,
+        "width": 1105,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2361,
+        "width": 120,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 2361,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2413,
+        "width": 565,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2509,
+        "width": 557,
+        "height": 116
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2643,
+        "width": 1163,
+        "height": 116
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2803,
+        "width": 1033,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2839,
+        "width": 79,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2879,
+        "width": 523,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2899,
+        "width": 815,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2919,
+        "width": 813,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2939,
+        "width": 1016,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2959,
+        "width": 1136,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2999,
+        "width": 697,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3019,
+        "width": 971,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3059,
+        "width": 1137,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3079,
+        "width": 1116,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3119,
+        "width": 615,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3139,
+        "width": 930,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3225,
+        "width": 443,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3307,
+        "width": 555,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3393,
+        "width": 143,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 1056,
+        "y": 3775,
+        "width": 254,
+        "height": 24
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,4x1,s(s(sB,sB),s(sB,s,s(,,,)),3x1,s(2x1,sB),s(2x1,s(,)),s(2x1,sB),s(sB,sB,s(,,,,,,,,,,)),sB,2x1,s)),s)",
+    "nodeMap": {
+      "r": "#restyle",
+      "rc1": "#restyle > div.root.container.responsivegrid",
+      "rc1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1)",
+      "rc1c3c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc1c3c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.title.title--color-title-1.title--t-space-md",
+      "rc1c3c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.socialFeatures",
+      "rc1c3c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c2c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(1)",
+      "rc1c3c2c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(2)",
+      "rc1c3c2c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(3)",
+      "rc1c3c2c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(4)",
+      "rc1c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--3-column-wrap.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left",
+      "rc1c3c4c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c5c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-left",
+      "rc1c3c5c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c5c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > div",
+      "rc1c3c5c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul",
+      "rc1c3c5c2c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(1)",
+      "rc1c3c5c2c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(2)",
+      "rc1c3c5c2c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(3)",
+      "rc1c3c5c2c2c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(4)",
+      "rc1c3c5c2c2c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(5)",
+      "rc1c3c5c2c2c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(6)",
+      "rc1c3c5c2c2c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(7)",
+      "rc1c3c5c2c2c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0 > div.cmp-text > ul > div:nth-of-type(8)",
+      "rc1c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6)",
+      "rc1c3c6c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left",
+      "rc1c3c6c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7)",
+      "rc1c3c7c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0",
+      "rc1c3c7c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(2)",
+      "rc1c3c7c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3)",
+      "rc1c3c7c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc1c3c7c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc1c3c7c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc1c3c7c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc1c3c7c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc1c3c7c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc1c3c7c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(7)",
+      "rc1c3c7c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(8)",
+      "rc1c3c7c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(9)",
+      "rc1c3c7c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(10)",
+      "rc1c3c7c3c11": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(11)",
+      "rc1c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8)",
+      "rc1c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9)",
+      "rc1c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(10)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "1648a990",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-5f80d1856d > div:nth-child(1) > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 250
+      },
+      "screenshot": "blocks/1648a990.jpg",
+      "variantId": "v_b26d6cceada2"
+    },
+    {
+      "id": "1648a952",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "3 headings + 6 images block",
+      "content": {
+        "headingCount": 3,
+        "paragraphCount": 6,
+        "imageCount": 6,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 6 images"
+      },
+      "selector": "#container-5f80d1856d > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 742,
+        "width": 1440,
+        "height": 382
+      },
+      "screenshot": "blocks/1648a952.jpg",
+      "variantId": "v_5d7c92bb4412"
+    },
+    {
+      "id": "1648a933",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list + 3 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 3,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-5f80d1856d > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 1124,
+        "width": 1440,
+        "height": 698
+      },
+      "screenshot": "blocks/1648a933.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "1648a914",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 5,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-5f80d1856d > div:nth-child(1) > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 1822,
+        "width": 1440,
+        "height": 552
+      },
+      "screenshot": "blocks/1648a914.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "1648a8f5",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 4,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-5f80d1856d > div:nth-child(1) > div:nth-child(6)",
+      "bounds": {
+        "x": 0,
+        "y": 2374,
+        "width": 1440,
+        "height": 480
+      },
+      "screenshot": "blocks/1648a8f5.jpg",
+      "variantId": "v_37fdc84c086b"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "v_b25f473963c4",
+  "name": "unknown",
+  "type": "unknown",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.247Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "1 CTAs"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"unknown\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"noimg\",\"structure\":\"1 CTAs\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "2d1f153b",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_prostata_html--b065b3ab/blocks/2d1f153b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "528c5aac",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_prostata_html--cbfa386a/blocks/528c5aac.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "4ad9d2e3",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_prostata_html--00884ad3/blocks/4ad9d2e3.jpg"
+      }
+    ],
+    "reuseCount": 3
+  }
+}

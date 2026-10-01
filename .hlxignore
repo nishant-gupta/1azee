@@ -9,3 +9,4 @@ sync-block-collection.sh
 tools/sidekick/library.json
 tools/sidekick/build-block-library.js
 tools/da/*
+catalog/**

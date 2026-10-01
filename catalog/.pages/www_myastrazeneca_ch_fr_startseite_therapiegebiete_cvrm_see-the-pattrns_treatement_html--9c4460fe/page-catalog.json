@@ -1,0 +1,707 @@
+{
+  "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+  "title": "Traitement",
+  "timestamp": "2026-09-23T05:37:52.398Z",
+  "duration": "9.4s",
+  "cleanup": {
+    "elementsRemoved": 5,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 452
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 165,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 397,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 474,
+        "y": 34,
+        "width": 100,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 604,
+        "y": 34,
+        "width": 70,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      },
+      {
+        "type": "text",
+        "x": 931,
+        "y": 320,
+        "width": 102,
+        "height": 37
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 321,
+        "width": 273,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 408,
+        "y": 321,
+        "width": 160,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 573,
+        "y": 321,
+        "width": 178,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 756,
+        "y": 321,
+        "width": 170,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 227,
+        "y": 412,
+        "width": 986,
+        "height": 40
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 146,
+        "y": 325,
+        "width": 241,
+        "height": 17,
+        "textLength": 34
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 424,
+        "y": 325,
+        "width": 128,
+        "height": 17,
+        "textLength": 18
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 589,
+        "y": 325,
+        "width": 146,
+        "height": 17,
+        "textLength": 19
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 772,
+        "y": 325,
+        "width": 138,
+        "height": 17,
+        "textLength": 20
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#c00060",
+        "backgroundColor": "#f0f0f0",
+        "x": 947,
+        "y": 325,
+        "width": 70,
+        "height": 17,
+        "textLength": 10
+      },
+      {
+        "tag": "span",
+        "fontSize": 36,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#f0f0f0",
+        "x": 227,
+        "y": 400,
+        "width": 986,
+        "height": 43,
+        "textLength": 60
+      }
+    ],
+    "topSectionCropBottomY": 442,
+    "topSectionTitleRect": {
+      "x": 227,
+      "y": 400,
+      "width": 986,
+      "height": 43,
+      "text": "L’amylose ATTR peut être traitée avec des thérapies ciblées1",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 452,
+      "width": 1440,
+      "height": 6775
+    },
+    "bodyStartY": 452,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 169,
+        "y": 513,
+        "width": 1102,
+        "height": 66
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 640,
+        "width": 1180,
+        "height": 530
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1170,
+        "width": 1180,
+        "height": 4262
+      },
+      {
+        "type": "text",
+        "x": 155,
+        "y": 5492,
+        "width": 1130,
+        "height": 120
+      },
+      {
+        "type": "text",
+        "x": 448,
+        "y": 5672,
+        "width": 544,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5714,
+        "width": 138,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 155,
+        "y": 5821,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 552,
+        "y": 5821,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 948,
+        "y": 5821,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 158,
+        "y": 5873,
+        "width": 330,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 562,
+        "y": 5873,
+        "width": 317,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 951,
+        "y": 5873,
+        "width": 331,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6004,
+        "width": 398,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6028,
+        "width": 486,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6052,
+        "width": 484,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6076,
+        "width": 484,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 6158,
+        "width": 580,
+        "height": 221
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 6158,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 6403,
+        "width": 532,
+        "height": 102
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 6407,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 201,
+        "y": 6521,
+        "width": 439,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 885,
+        "y": 6521,
+        "width": 270,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 507,
+        "y": 6647,
+        "width": 427,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6689,
+        "width": 252,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6713,
+        "width": 211,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6777,
+        "width": 1129,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6823,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6849,
+        "width": 89,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6871,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6897,
+        "width": 1161,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6945,
+        "width": 1140,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 6993,
+        "width": 798,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7017,
+        "width": 1154,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7063,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7113,
+        "width": 1149,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7185,
+        "width": 373,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),5x1B,s(sB,sB,s(,),sB,s(,),3x2(,,,),2x1,sB(,,),s(,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.list.list--fixed-width.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2c3c4c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--bgColor-supporting-1",
+      "rc2c3c4c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(2)",
+      "rc2c3c4c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3)",
+      "rc2c3c4c3c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c3c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(4)",
+      "rc2c3c4c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5)",
+      "rc2c3c4c5c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c5c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap",
+      "rc2c3c4c6c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c6c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c6c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c6c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c7": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--2-column-wrap.container--content-center",
+      "rc2c3c4c8": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8)",
+      "rc2c3c4c8c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c8c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c8c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c4c9": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9)",
+      "rc2c3c4c9c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c9c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c9c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c9c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c9c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c4c9c5c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c4c9c5c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c4c9c5c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c4c9c5c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c4c9c5c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc2c3c4c9c5c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc2c3c4c9c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "49cabca6",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-b98123c707 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/49cabca6.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "34edd34e",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 647,
+        "width": 1440,
+        "height": 610
+      },
+      "screenshot": "blocks/34edd34e.jpg",
+      "variantId": "v_065eb1d0161c"
+    },
+    {
+      "id": "34edd3ca",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 6,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(7)",
+      "bounds": {
+        "x": 0,
+        "y": 1903,
+        "width": 1440,
+        "height": 509
+      },
+      "screenshot": "blocks/34edd3ca.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "34edd3e9",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(8)",
+      "bounds": {
+        "x": 0,
+        "y": 2412,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/34edd3e9.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

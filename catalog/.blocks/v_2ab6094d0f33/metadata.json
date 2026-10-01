@@ -1,0 +1,48 @@
+{
+  "id": "v_2ab6094d0f33",
+  "name": "hero",
+  "type": "hero",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.247Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "heading + text + 2 images"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"hero\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"moderate\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"large\",\"structure\":\"heading + text + 2 images\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "40f87f29",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_prostata_html--b065b3ab/blocks/40f87f29.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+        "instanceId": "40f87f29",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_haematologie_html--699e5525/blocks/40f87f29.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "40f87f29",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_prostata_html--cbfa386a/blocks/40f87f29.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html",
+        "instanceId": "40f87f29",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_prostata_html--00884ad3/blocks/40f87f29.jpg"
+      }
+    ],
+    "reuseCount": 4
+  }
+}

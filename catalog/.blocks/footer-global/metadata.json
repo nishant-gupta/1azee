@@ -1,0 +1,28 @@
+{
+  "id": "footer-global",
+  "name": "footer",
+  "type": "footer",
+  "canonicalModel": "configuration",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:32:18.126Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/",
+    "discoveredDuring": "global-footer-capture"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "complexity": "simple",
+    "density": "moderate"
+  },
+  "knownSignatures": [],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/",
+        "instanceId": "footer-global",
+        "screenshot": ".pages/_global/footer.jpg"
+      }
+    ],
+    "reuseCount": 1
+  }
+}

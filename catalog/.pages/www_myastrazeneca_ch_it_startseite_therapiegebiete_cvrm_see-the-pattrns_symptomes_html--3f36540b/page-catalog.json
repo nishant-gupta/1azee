@@ -1,0 +1,773 @@
+{
+  "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+  "title": "Sintomi",
+  "timestamp": "2026-09-23T05:39:05.627Z",
+  "duration": "12.2s",
+  "cleanup": {
+    "elementsRemoved": 5,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 325
+    },
+    "topSectionStrategy": "hero",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 115,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 347,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 424,
+        "y": 34,
+        "width": 117,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 571,
+        "y": 34,
+        "width": 50,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      }
+    ],
+    "topSectionTextElements": [],
+    "topSectionCropBottomY": 308,
+    "topSectionTitleRect": null,
+    "bodyBounds": {
+      "x": 0,
+      "y": 325,
+      "width": 1440,
+      "height": 16498
+    },
+    "bodyStartY": 325,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 363,
+        "y": 325,
+        "width": 82,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 325,
+        "width": 70,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 205,
+        "y": 325,
+        "width": 153,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 450,
+        "y": 325,
+        "width": 88,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 543,
+        "y": 325,
+        "width": 111,
+        "height": 32
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 412,
+        "width": 1180,
+        "height": 609
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1021,
+        "width": 1180,
+        "height": 2603
+      },
+      {
+        "type": "text",
+        "x": 309,
+        "y": 3704,
+        "width": 823,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 3824,
+        "width": 1180,
+        "height": 1071
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 4895,
+        "width": 1180,
+        "height": 6510
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11407,
+        "width": 487,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11491,
+        "width": 293,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 222,
+        "y": 11573,
+        "width": 997,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11615,
+        "width": 660,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 192,
+        "y": 11724,
+        "width": 263,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 602,
+        "y": 11724,
+        "width": 237,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 1002,
+        "y": 11724,
+        "width": 228,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 175,
+        "y": 11748,
+        "width": 296,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 606,
+        "y": 11748,
+        "width": 229,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 181,
+        "y": 11879,
+        "width": 1078,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 11959,
+        "width": 1180,
+        "height": 679
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 12638,
+        "width": 1180,
+        "height": 2601
+      },
+      {
+        "type": "text",
+        "x": 280,
+        "y": 15319,
+        "width": 881,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 15361,
+        "width": 854,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 15443,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 15443,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 179,
+        "y": 15694,
+        "width": 483,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 759,
+        "y": 15694,
+        "width": 523,
+        "height": 68
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 15852,
+        "width": 580,
+        "height": 221
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 15852,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 16097,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 16101,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 276,
+        "y": 16185,
+        "width": 289,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 880,
+        "y": 16185,
+        "width": 280,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 543,
+        "y": 16291,
+        "width": 355,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16333,
+        "width": 212,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16357,
+        "width": 110,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16421,
+        "width": 1159,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16491,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16517,
+        "width": 172,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16539,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16563,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16613,
+        "width": 1155,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16661,
+        "width": 1166,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 16709,
+        "width": 940,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 16733,
+        "width": 1014,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16755,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16781,
+        "width": 418,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),sB,s(s(,),sB,s(,),sB,s(,),3x1,s(,),s(,),2x1,2x1,sB(,,),s(,,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.list.list--fixed-width.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2c3c4c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(1)",
+      "rc2c3c4c1c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(1) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c1c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(1) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2)",
+      "rc2c3c4c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3)",
+      "rc2c3c4c3c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image",
+      "rc2c3c4c3c1c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c3c1c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c3c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.text.text--small",
+      "rc2c3c4c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(4)",
+      "rc2c3c4c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5)",
+      "rc2c3c4c5c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c5c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c6": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap",
+      "rc2c3c4c7": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(7)",
+      "rc2c3c4c7c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(7) > div.cmp-container > div.title.title--center.title--color-title-1.title--b-space-md",
+      "rc2c3c4c7c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(7) > div.cmp-container > div.image",
+      "rc2c3c4c7c2c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(7) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c7c2c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(7) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c8": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8)",
+      "rc2c3c4c8c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c8c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c9": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap:nth-of-type(9)",
+      "rc2c3c4c10": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap:nth-of-type(10)",
+      "rc2c3c4c11": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(11)",
+      "rc2c3c4c11c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(11) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c11c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(11) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c11c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(11) > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c4c12": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12)",
+      "rc2c3c4c12c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c12c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c12c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c12c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c12c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c4c12c5c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c4c12c5c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c4c12c5c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c4c12c5c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c4c12c5c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc2c3c4c12c6": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc2c3c4c12c7": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(12) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(6)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "5f5a9629",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-86665051b6 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/5f5a9629.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "65aa2652",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 419,
+        "width": 1440,
+        "height": 689
+      },
+      "screenshot": "blocks/65aa2652.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "65aa26af",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 CTA block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "1 CTAs"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 2403,
+        "width": 1440,
+        "height": 82
+      },
+      "screenshot": "blocks/65aa26af.jpg",
+      "variantId": "v_86957572c961"
+    },
+    {
+      "id": "65aa270c",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + 2 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(7)",
+      "bounds": {
+        "x": 0,
+        "y": 2791,
+        "width": 1440,
+        "height": 839
+      },
+      "screenshot": "blocks/65aa270c.jpg",
+      "variantId": "v_7d7a8d636759"
+    },
+    {
+      "id": "65aa274a",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "text + 4 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(9)",
+      "bounds": {
+        "x": 0,
+        "y": 3774,
+        "width": 1440,
+        "height": 409
+      },
+      "screenshot": "blocks/65aa274a.jpg",
+      "variantId": "v_5a31a8c89674"
+    },
+    {
+      "id": "4f9aa4f0",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 6,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(10)",
+      "bounds": {
+        "x": 0,
+        "y": 4183,
+        "width": 1440,
+        "height": 439
+      },
+      "screenshot": "blocks/4f9aa4f0.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "4f9aa50f",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(11)",
+      "bounds": {
+        "x": 0,
+        "y": 4622,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/4f9aa50f.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

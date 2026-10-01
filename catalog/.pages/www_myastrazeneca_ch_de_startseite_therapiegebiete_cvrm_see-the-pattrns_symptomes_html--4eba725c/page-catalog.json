@@ -1,0 +1,814 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+  "title": "Symptome der ATTR Amyloidose erkennen | See the pATTRns",
+  "timestamp": "2026-09-23T05:33:31.646Z",
+  "duration": "11.7s",
+  "cleanup": {
+    "elementsRemoved": 5,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 552
+    },
+    "topSectionStrategy": "title",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 106,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 438,
+        "y": 34,
+        "width": 117,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 585,
+        "y": 34,
+        "width": 278,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      },
+      {
+        "type": "text",
+        "x": 396,
+        "y": 320,
+        "width": 310,
+        "height": 37
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 321,
+        "width": 70,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 205,
+        "y": 321,
+        "width": 186,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 711,
+        "y": 321,
+        "width": 91,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 807,
+        "y": 321,
+        "width": 108,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 432,
+        "width": 998,
+        "height": 120
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 146,
+        "y": 325,
+        "width": 38,
+        "height": 17,
+        "textLength": 4
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 221,
+        "y": 325,
+        "width": 154,
+        "height": 17,
+        "textLength": 20
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#c00060",
+        "backgroundColor": "#f0f0f0",
+        "x": 412,
+        "y": 325,
+        "width": 278,
+        "height": 17,
+        "textLength": 37
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 727,
+        "y": 325,
+        "width": 59,
+        "height": 17,
+        "textLength": 8
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 823,
+        "y": 325,
+        "width": 76,
+        "height": 17,
+        "textLength": 10
+      },
+      {
+        "tag": "span",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 418,
+        "width": 998,
+        "height": 127,
+        "textLength": 70
+      }
+    ],
+    "topSectionCropBottomY": 545,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 418,
+      "width": 998,
+      "height": 127,
+      "text": "Welche Symptome zeigen sich bei einer Transthyretin (ATTR) Amyloidose?",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 552,
+      "width": 1440,
+      "height": 16681
+    },
+    "bodyStartY": 552,
+    "bodyPlaceholders": [
+      {
+        "type": "image",
+        "x": 130,
+        "y": 572,
+        "width": 1180,
+        "height": 606
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1178,
+        "width": 1180,
+        "height": 2694
+      },
+      {
+        "type": "text",
+        "x": 238,
+        "y": 3952,
+        "width": 964,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 4072,
+        "width": 1180,
+        "height": 1071
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 5143,
+        "width": 1180,
+        "height": 6616
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11761,
+        "width": 567,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11845,
+        "width": 311,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 216,
+        "y": 11927,
+        "width": 1009,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 11969,
+        "width": 781,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 174,
+        "y": 12078,
+        "width": 299,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 595,
+        "y": 12078,
+        "width": 250,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 1004,
+        "y": 12078,
+        "width": 225,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 187,
+        "y": 12102,
+        "width": 272,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 183,
+        "y": 12233,
+        "width": 1074,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 12313,
+        "width": 1180,
+        "height": 680
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 12993,
+        "width": 1180,
+        "height": 2847
+      },
+      {
+        "type": "text",
+        "x": 336,
+        "y": 15920,
+        "width": 769,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 15962,
+        "width": 1065,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 16044,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 16044,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 16293,
+        "width": 532,
+        "height": 72
+      },
+      {
+        "type": "text",
+        "x": 167,
+        "y": 16295,
+        "width": 507,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 16477,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 16477,
+        "width": 532,
+        "height": 102
+      },
+      {
+        "type": "text",
+        "x": 328,
+        "y": 16595,
+        "width": 184,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 911,
+        "y": 16595,
+        "width": 219,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 568,
+        "y": 16701,
+        "width": 304,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16743,
+        "width": 282,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16767,
+        "width": 139,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16831,
+        "width": 1167,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16901,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16927,
+        "width": 90,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16949,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 16973,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 17023,
+        "width": 1150,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 17071,
+        "width": 1161,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 17119,
+        "width": 930,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 17143,
+        "width": 1009,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 17165,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 17191,
+        "width": 403,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),s(sB,s(,),sB,s(,),sB,s(,),3x1,s(,),s(,),2x1,2x1,sB(,,),s(,,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(3)",
+      "rc2c3c3c1": "#pattrns-tab3 > div.list.list--fixed-width",
+      "rc2c3c3c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2)",
+      "rc2c3c3c2c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2) > div.cmp-container > div.title.title--color-title-1.title--tb-space",
+      "rc2c3c3c2c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2) > div.cmp-container > div.image",
+      "rc2c3c3c2c2c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c3c2c2c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(2) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c3c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3)",
+      "rc2c3c3c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(4)",
+      "rc2c3c3c4c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(4) > div.cmp-container > div.image",
+      "rc2c3c3c4c1c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(4) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c3c4c1c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(4) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c3c4c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(4) > div.cmp-container > div.text.text--small",
+      "rc2c3c3c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(5)",
+      "rc2c3c3c6": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(6)",
+      "rc2c3c3c6c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(6) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c6c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(6) > div.cmp-container > div.text.text--center",
+      "rc2c3c3c7": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap",
+      "rc2c3c3c8": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8)",
+      "rc2c3c3c8c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.title.title--center.title--color-title-1.title--b-space-md",
+      "rc2c3c3c8c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.image",
+      "rc2c3c3c8c2c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c3c8c2c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(8) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c3c9": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(9)",
+      "rc2c3c3c9c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(9) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c9c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(9) > div.cmp-container > div.text.text--center",
+      "rc2c3c3c10": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap:nth-of-type(10)",
+      "rc2c3c3c11": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap:nth-of-type(11)",
+      "rc2c3c3c12": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(12)",
+      "rc2c3c3c12c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(12) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c3c12c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(12) > div.cmp-container > div.text.text--center",
+      "rc2c3c3c12c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(12) > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c3c13": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13)",
+      "rc2c3c3c13c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c3c13c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c3c13c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c3c13c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c3c13c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c3c13c5c1": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c3c13c5c2": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c3c13c5c3": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c3c13c5c4": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c3c13c5c5": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc2c3c3c13c6": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc2c3c3c13c7": "#pattrns-tab3 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(13) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(6)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "4220afd6",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-96d29c40b9 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/4220afd6.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "65aa2671",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + 2 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 419,
+        "width": 1440,
+        "height": 846
+      },
+      "screenshot": "blocks/65aa2671.jpg",
+      "variantId": "v_b1e664af6109"
+    },
+    {
+      "id": "65aa26ce",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 CTA block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "1 CTAs"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 2559,
+        "width": 1440,
+        "height": 82
+      },
+      "screenshot": "blocks/65aa26ce.jpg",
+      "variantId": "v_86957572c961"
+    },
+    {
+      "id": "65aa272b",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + 2 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(8)",
+      "bounds": {
+        "x": 0,
+        "y": 2947,
+        "width": 1440,
+        "height": 840
+      },
+      "screenshot": "blocks/65aa272b.jpg",
+      "variantId": "v_7d7a8d636759"
+    },
+    {
+      "id": "4f9aa4f0",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "text + 4 images"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(10)",
+      "bounds": {
+        "x": 0,
+        "y": 3932,
+        "width": 1440,
+        "height": 409
+      },
+      "screenshot": "blocks/4f9aa4f0.jpg",
+      "variantId": "v_5a31a8c89674"
+    },
+    {
+      "id": "4f9aa52e",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#pattrns-tab3 > div:nth-child(12)",
+      "bounds": {
+        "x": 0,
+        "y": 4589,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/4f9aa52e.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

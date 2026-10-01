@@ -1,0 +1,12 @@
+{
+  "approved_merges": [],
+  "renames": [
+    { "id": "template-5", "new_name": "content-landing", "description": "General landing/overview layout: header, hero region and stacked content sections, footer. Covers homepage, section overviews and therapy-area landing pages." },
+    { "id": "template-3", "new_name": "resource-detail", "description": "Simple single-column content page for resource/document detail and contact pages: heading, body copy and an optional embedded form or download link." },
+    { "id": "template-11", "new_name": "product-detail", "description": "Product sub-page layout with hero, alternating text/media columns and supporting content sections." },
+    { "id": "template-6", "new_name": "campaign-subpage", "description": "Campaign micro-site interior page: hero banner followed by multiple stacked feature/content blocks." },
+    { "id": "template-12", "new_name": "campaign-landing", "description": "Campaign micro-site landing page: hero banner with a small number of introductory content blocks." },
+    { "id": "template-10", "new_name": "product-overview", "description": "Product overview/index layout with hero, tabbed navigation and a grid of column-based promo cards." },
+    { "id": "template-13", "new_name": "campaign-landing-alt", "description": "Campaign landing variant with hero banner and introductory content blocks in an alternate arrangement." }
+  ]
+}

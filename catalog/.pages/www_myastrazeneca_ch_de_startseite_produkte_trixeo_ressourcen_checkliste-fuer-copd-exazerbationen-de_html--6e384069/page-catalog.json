@@ -1,0 +1,242 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html",
+  "title": "Checkliste für COPD-Exazerbationen | MyAstraZeneca",
+  "timestamp": "2026-09-23T05:32:42.514Z",
+  "duration": "8.3s",
+  "cleanup": {
+    "elementsRemoved": 10,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 375
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1283,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 62,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 317,
+        "y": 34,
+        "width": 46,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 393,
+        "y": 34,
+        "width": 78,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 501,
+        "y": 34,
+        "width": 347,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 103,
+        "width": 1165,
+        "height": 120
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 239,
+        "width": 1165,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 265,
+        "width": 1080,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 311,
+        "width": 1165,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 337,
+        "width": 917,
+        "height": 20
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 109,
+        "width": 1165,
+        "height": 120,
+        "textLength": 69
+      },
+      {
+        "tag": "p",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#303030",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 259,
+        "width": 1165,
+        "height": 48,
+        "textLength": 183
+      },
+      {
+        "tag": "p",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#303030",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 331,
+        "width": 1165,
+        "height": 24,
+        "textLength": 124
+      }
+    ],
+    "topSectionCropBottomY": 355,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 109,
+      "width": 1165,
+      "height": 120,
+      "text": "COPD-Exazerbation erkennen: Checkliste für Patientinnen und Patienten",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 375,
+      "width": 1440,
+      "height": 525
+    },
+    "bodyStartY": 375,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 1190,
+        "y": 377,
+        "width": 120,
+        "height": 15
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(s,5x1,s(s,s(sB,s(,,,)),sB)),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div:nth-of-type(1)",
+      "rc1c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.socialFeatures",
+      "rc1c3c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core",
+      "rc1c3c2c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div:nth-of-type(1)",
+      "rc1c3c2c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description",
+      "rc1c3c2c2c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description > div:nth-of-type(1)",
+      "rc1c3c2c2c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description > div:nth-of-type(2)",
+      "rc1c3c2c2c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description > div:nth-of-type(3)",
+      "rc1c3c2c2c4": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left.teaser--pretitle-core > div.cmp-teaser > div.cmp-teaser__content > div.cmp-teaser__description > div:nth-of-type(4)",
+      "rc1c3c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--right.text--small",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": []
+}
