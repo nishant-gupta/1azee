@@ -41,28 +41,38 @@ var CustomImportScript = (() => {
     default: () => import_content_landing_default
   });
 
-  // tools/importer/parsers/hero-minimal-dark-withimg.js
+  // tools/importer/parsers/hero.js
   function parse(element, { document: document2 }) {
-    const bgImage = element.querySelector(".cmp-teaser__image-desktop img") || element.querySelector(".cmp-teaser__image img") || element.querySelector('img[class*="background"], img[class*="hero-bg"]') || element.querySelector("img");
-    const title = element.querySelector('.cmp-teaser__title, h1, h2, [class*="title"]');
-    const description = element.querySelector('.cmp-teaser__description, p.hero-description, [class*="description"], [class*="subtitle"]');
-    const ctaLinks = Array.from(element.querySelectorAll(".cmp-teaser__action-link, a.cta, a.button, .cmp-teaser__content a"));
+    const bgImage = element.querySelector(".cmp-teaser__image-desktop img") || element.querySelector(".cmp-teaser__image img") || element.querySelector("img");
+    const sourceTitle = element.querySelector(".cmp-teaser__title, h1, h2");
+    let title = null;
+    if (sourceTitle) {
+      title = document2.createElement(/^H[1-6]$/.test(sourceTitle.tagName) ? sourceTitle.tagName : "h1");
+      const lines = [...sourceTitle.querySelectorAll(":scope > p")];
+      if (lines.length) {
+        lines.forEach((p, i) => {
+          if (i) title.append(document2.createElement("br"));
+          title.append(...p.childNodes);
+        });
+      } else {
+        title.append(...sourceTitle.childNodes);
+      }
+    }
+    const description = element.querySelector(".cmp-teaser__description");
+    const ctaLinks = [...element.querySelectorAll(".cmp-teaser__action-link")];
     if (!title && !description && !bgImage) {
       element.replaceWith(...element.childNodes);
       return;
     }
     const cells = [];
     if (bgImage) cells.push([bgImage]);
-    const contentCell = [];
-    if (title) contentCell.push(title);
-    if (description) contentCell.push(description);
-    contentCell.push(...ctaLinks);
-    if (contentCell.length) cells.push([contentCell]);
-    const block = WebImporter.Blocks.createBlock(document2, { name: "hero-minimal-dark-withimg", cells });
+    const content = [title, description, ...ctaLinks].filter(Boolean);
+    if (content.length) cells.push([content]);
+    const block = WebImporter.Blocks.createBlock(document2, { name: "hero", variants: ["minimal-dark"], cells });
     element.replaceWith(block);
   }
 
-  // tools/importer/parsers/cards-light-withimg.js
+  // tools/importer/parsers/cards.js
   function parse2(element, { document: document2 }) {
     const cardEls = Array.from(element.querySelectorAll(":scope > .cmp-container > .teaser, :scope .teaser")).filter((el, _i, arr) => !arr.some((other) => other !== el && other.contains(el)));
     const cells = [];
@@ -91,7 +101,7 @@ var CustomImportScript = (() => {
       element.replaceWith(...element.childNodes);
       return;
     }
-    const block = WebImporter.Blocks.createBlock(document2, { name: "cards-light-withimg", cells });
+    const block = WebImporter.Blocks.createBlock(document2, { name: "cards", variants: ["light"], cells });
     element.replaceWith(block);
   }
 
@@ -304,11 +314,11 @@ var CustomImportScript = (() => {
         instances: [".accordion"]
       },
       {
-        name: "hero-minimal-dark-withimg",
+        name: "hero",
         instances: [".teaser--home-hero"]
       },
       {
-        name: "cards-light-withimg",
+        name: "cards",
         instances: [".container--3-column-wrap"]
       },
       {
@@ -325,7 +335,7 @@ var CustomImportScript = (() => {
         name: "Hero banner",
         selector: [".teaser--home-hero"],
         style: "dark",
-        blocks: ["hero-minimal-dark-withimg"],
+        blocks: ["hero"],
         defaultContent: []
       },
       {
@@ -341,7 +351,7 @@ var CustomImportScript = (() => {
         name: "Our therapy areas",
         selector: [".container--3-column-wrap"],
         style: null,
-        blocks: ["cards-light-withimg"],
+        blocks: ["cards"],
         defaultContent: []
       },
       {
@@ -355,8 +365,8 @@ var CustomImportScript = (() => {
     ]
   };
   var parsers = {
-    "hero-minimal-dark-withimg": parse,
-    "cards-light-withimg": parse2,
+    hero: parse,
+    cards: parse2,
     columns: parse3,
     accordion: parse4,
     "in-page-nav": parse5

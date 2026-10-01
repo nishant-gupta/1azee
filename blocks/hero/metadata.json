@@ -1,5 +1,5 @@
 {
-  "variantName": "hero-minimal-dark-withimg",
+  "variantName": "hero",
   "baseBlock": "hero",
   "canonicalModel": "standalone",
   "visualCharacteristics": {
@@ -10,8 +10,14 @@
     "imagePattern": "background",
     "structure": "full-bleed background image with heading + short text overlay"
   },
-  "contentPattern": "Two rows: a background image, then a content overlay with an H1 heading and a short supporting paragraph.",
+  "contentPattern": "An optional background image (its own row or cell, or inline with the text) and a text overlay with an H1 heading and a short supporting paragraph. Layout follows the authored content.",
   "usage": "Homepage/landing hero on content-landing pages: dark full-bleed banner with a background illustration and a minimal heading + intro overlay.",
-  "options": [],
-  "memberVariantIds": ["v_b26d6cceada2"]
+  "options": [
+    "minimal-dark"
+  ],
+  "memberVariantIds": [
+    "v_b26d6cceada2",
+    "v_2ab6094d0f33",
+    "v_42845b3e07dd"
+  ]
 }

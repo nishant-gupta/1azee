@@ -31,13 +31,13 @@
           ]
         },
         {
-          "name": "hero-minimal-dark-withimg",
+          "name": "hero",
           "instances": [
             ".teaser--home-hero"
           ]
         },
         {
-          "name": "cards-light-withimg",
+          "name": "cards",
           "instances": [
             ".container--3-column-wrap"
           ]
@@ -60,7 +60,7 @@
           ],
           "style": "dark",
           "blocks": [
-            "hero-minimal-dark-withimg"
+            "hero"
           ],
           "defaultContent": []
         },
@@ -84,7 +84,7 @@
           ],
           "style": null,
           "blocks": [
-            "cards-light-withimg"
+            "cards"
           ],
           "defaultContent": []
         },

@@ -60,7 +60,7 @@ const buttons = `
 const hero = `
 <div>
   <h1>Hero</h1>
-  <div class="hero-minimal-dark-withimg">
+  <div class="hero minimal-dark">
     <div><div><picture><img src="/media-da/bd29eaf8be6f754b81bee5c8a0697af0.jpg" alt=""></picture></div></div>
     <div><div><h1>Welcome to myAstraZeneca!</h1><p>Discover comprehensive information about our therapy areas and products.</p></div></div>
   </div>
@@ -71,7 +71,7 @@ const hero = `
 const cards = `
 <div>
   <h1>Cards</h1>
-  <div class="cards-light-withimg">
+  <div class="cards light">
     <div>
       <div><picture><img src="/media-da/d008c3e74962f38051bd94dae1f3a50a.jpg" alt=""></picture></div>
       <div><h4>Cardiovascular, Renal and Metabolism (CVRM)</h4><p>Short description of the therapy area.</p><p><a href="#">Learn more</a></p></div>
@@ -214,10 +214,10 @@ fs.readdirSync(path.join(OUT, 'templates'))
 /* ---- Block details: drive both blocks.json and the library's blocks sheet ---- */
 const blockDetails = [
   {
-    name: 'Hero', path: '/block-library/hero', short: 'Full-bleed banner with background image and heading + intro overlay.', description: 'Full-bleed banner with a background image and a heading + intro overlay. Used at the top of landing pages.', variants: 'hero-minimal-dark-withimg', options: 'minimal-dark-withimg', baseBlock: 'hero', model: 'standalone',
+    name: 'Hero', path: '/block-library/hero', short: 'Full-bleed banner with background image and heading + intro overlay.', description: 'Banner with an optional background image behind a heading + intro. The layout follows the authored content (an image-only row or cell becomes the background). Variant Minimal Dark: the oneAZ dark brand banner used at the top of landing and therapy-area pages.', variants: '', options: 'minimal-dark', baseBlock: 'hero', model: 'standalone',
   },
   {
-    name: 'Cards', path: '/block-library/cards', short: 'Responsive grid of cards (image, heading, description, links).', description: 'Responsive grid of cards. Each card has an image, heading, description, and an optional list of links. Implements source variant v_5d7c92bb4412 (therapy card grid, 46 pages).', variants: 'cards-light-withimg', options: 'light-withimg', baseBlock: 'cards', model: 'collection',
+    name: 'Cards', path: '/block-library/cards', short: 'Responsive grid of cards (image, heading, description, links).', description: 'Responsive grid of cards, one per row: an image-only cell becomes the card image, other cells the body (heading, description, links). Cards without an image are text only. Variant Light: the oneAZ light card grid (therapy areas, key figures, resources), 3 columns on desktop.', variants: '', options: 'light', baseBlock: 'cards', model: 'collection',
   },
   {
     name: 'Columns', path: '/block-library/columns', short: 'Multi-column side-by-side content layout.', description: 'Multi-column layout for placing content side by side. Column count follows the number of cells authored per row.', variants: '', options: '', baseBlock: 'columns', model: 'standalone',

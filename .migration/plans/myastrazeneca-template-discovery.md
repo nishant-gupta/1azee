@@ -56,7 +56,7 @@ Templates: content-landing 49 · resource-detail 34 · product-detail 16 · camp
 ---
 
 ## Next
-The full pending list (P1–P17) is in Section 7.1 of the site analysis report.
+The full pending list (P1–P18) is in Section 7.1 of the site analysis report.
 1. Decide how to source the Trixeo content (P1).
 2. Generate the missing block variants from the catalog (P3); the catalog now names each variant's block and class.
 3. Point the EDS site root at a migrated homepage (it serves the boilerplate page, P16) and add Breadcrumbs (every page).
