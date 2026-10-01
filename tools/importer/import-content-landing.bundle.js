@@ -72,7 +72,7 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
-  // tools/importer/parsers/cards-light-withimg.js
+  // tools/importer/parsers/cards.js
   function parse2(element, { document: document2 }) {
     const cardEls = Array.from(element.querySelectorAll(":scope > .cmp-container > .teaser, :scope .teaser")).filter((el, _i, arr) => !arr.some((other) => other !== el && other.contains(el)));
     const cells = [];
@@ -101,7 +101,7 @@ var CustomImportScript = (() => {
       element.replaceWith(...element.childNodes);
       return;
     }
-    const block = WebImporter.Blocks.createBlock(document2, { name: "cards-light-withimg", cells });
+    const block = WebImporter.Blocks.createBlock(document2, { name: "cards", variants: ["light"], cells });
     element.replaceWith(block);
   }
 
@@ -318,7 +318,7 @@ var CustomImportScript = (() => {
         instances: [".teaser--home-hero"]
       },
       {
-        name: "cards-light-withimg",
+        name: "cards",
         instances: [".container--3-column-wrap"]
       },
       {
@@ -351,7 +351,7 @@ var CustomImportScript = (() => {
         name: "Our therapy areas",
         selector: [".container--3-column-wrap"],
         style: null,
-        blocks: ["cards-light-withimg"],
+        blocks: ["cards"],
         defaultContent: []
       },
       {
@@ -366,7 +366,7 @@ var CustomImportScript = (() => {
   };
   var parsers = {
     hero: parse,
-    "cards-light-withimg": parse2,
+    cards: parse2,
     columns: parse3,
     accordion: parse4,
     "in-page-nav": parse5

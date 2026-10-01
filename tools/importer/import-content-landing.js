@@ -3,7 +3,7 @@
 
 // PARSER IMPORTS
 import heroParser from './parsers/hero.js';
-import cardsLightWithimgParser from './parsers/cards-light-withimg.js';
+import cardsParser from './parsers/cards.js';
 import columnsParser from './parsers/columns.js';
 import accordionParser from './parsers/accordion.js';
 import inPageNavParser from './parsers/in-page-nav.js';
@@ -43,7 +43,7 @@ const PAGE_TEMPLATE = {
       instances: ['.teaser--home-hero'],
     },
     {
-      name: 'cards-light-withimg',
+      name: 'cards',
       instances: ['.container--3-column-wrap'],
     },
     {
@@ -62,7 +62,7 @@ const PAGE_TEMPLATE = {
       id: '2', name: 'Introduction text', selector: ['.container--fixed.aem-GridColumn:nth-of-type(4) .container--tb-space-md:nth-of-type(1)'], style: null, blocks: [], defaultContent: ['.text'],
     },
     {
-      id: '3', name: 'Our therapy areas', selector: ['.container--3-column-wrap'], style: null, blocks: ['cards-light-withimg'], defaultContent: [],
+      id: '3', name: 'Our therapy areas', selector: ['.container--3-column-wrap'], style: null, blocks: ['cards'], defaultContent: [],
     },
     {
       id: '4', name: 'Useful product information', selector: ['.container--fixed.container--tb-space-md'], style: null, blocks: [], defaultContent: ['.text', '.button'],
@@ -73,7 +73,7 @@ const PAGE_TEMPLATE = {
 // PARSER REGISTRY
 const parsers = {
   hero: heroParser,
-  'cards-light-withimg': cardsLightWithimgParser,
+  cards: cardsParser,
   columns: columnsParser,
   accordion: accordionParser,
   'in-page-nav': inPageNavParser,

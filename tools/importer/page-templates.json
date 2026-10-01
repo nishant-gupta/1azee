@@ -37,7 +37,7 @@
           ]
         },
         {
-          "name": "cards-light-withimg",
+          "name": "cards",
           "instances": [
             ".container--3-column-wrap"
           ]
@@ -84,7 +84,7 @@
           ],
           "style": null,
           "blocks": [
-            "cards-light-withimg"
+            "cards"
           ],
           "defaultContent": []
         },

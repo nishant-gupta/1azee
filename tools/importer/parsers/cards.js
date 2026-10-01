@@ -1,9 +1,10 @@
 /* eslint-disable */
 /* global WebImporter */
 /**
- * Parser for cards-light-withimg. Base: cards.
+ * Parser for cards (variant: light). Base: cards.
  * Source: https://www.myastrazeneca.ch/en/startseite.html (.container--3-column-wrap)
- * Generated: 2026-09-23
+ * Catalog variant: v_5d7c92bb4412 (block-mapping.json)
+ * Generated: 2026-09-23, reworked 2026-10-01 (was the cards-light-withimg fork)
  *
  * Library structure (2 columns, multiple rows):
  *   Row 1: block name
@@ -64,6 +65,6 @@ export default function parse(element, { document }) {
     return;
   }
 
-  const block = WebImporter.Blocks.createBlock(document, { name: 'cards-light-withimg', cells });
+  const block = WebImporter.Blocks.createBlock(document, { name: 'cards', variants: ['light'], cells });
   element.replaceWith(block);
 }

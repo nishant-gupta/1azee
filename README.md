@@ -30,12 +30,12 @@ Each block with an authoring guide has a `README.md` in its folder; `metadata.js
 |---|---|
 | `header`, `footer` | Global navigation (4-level megamenu, search, language switcher) and footer, loaded from `/nav` and `/footer` |
 | `hero` | Banner with a background image; layout follows the authored content. Variant `minimal-dark` (`Hero (Minimal Dark)`) is the oneAZ dark hero used on the site. `hero-minimal-dark-withimg` is a deprecated alias of it |
-| `cards-light-withimg` | Therapy-area card grid |
+| `cards` | Card grid; each card's layout follows the authored content (image-only cell = card image). Variant `light` (`Cards (Light)`) is the oneAZ card grid used on the site. `cards-light-withimg` is a deprecated alias of it |
 | `accordion` | oneAZ collapsible sections |
 | `in-page-nav` | oneAZ Links / In-Page Nav |
 | `button-group` | oneAZ button groups (buttons themselves are styled in `styles/styles.css`) |
 | `table` | Data tables |
-| `cards`, `columns`, `fragment` | Boilerplate blocks |
+| `columns`, `fragment` | Boilerplate blocks |
 
 Design tokens (color, type scale, spacing) are in `styles/styles.css`; fonts in `styles/fonts.css` and `fonts/`.
 

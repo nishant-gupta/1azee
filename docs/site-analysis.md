@@ -185,7 +185,7 @@ The 37 detected variants (38 after the catch-all split) map to 11 EDS blocks plu
 | EDS target | Standard block | Variants (after merging) | Pages | Status | Options still to build |
 |---|---|---:|---:|---|---|
 | Hero (`hero`, variant `minimal-dark`) | Hero | 6 (3) | 63 | ✅ built | `centered`; `campaign-banner` (image only) |
-| Cards (`cards-light-withimg`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
+| Cards (`cards`, variant `light`) | Cards | 5 (4) | 63 | 🟡 3-up image cards built | 2-up icon cards (`icon`); bordered text cards (`bordered`); product cards with hover overlay (`product`) |
 | Columns | Columns | 3 | 44 | 🟡 boilerplate only | text beside image (default); two images (`images`) |
 | Tabs | Tabs | 3 (1) | 4 | ❌ | |
 | Form | Form | 3 (1) | 4 | ❌ | |
@@ -217,7 +217,7 @@ Many image counts come in pairs because AEM renders a desktop and a mobile image
 | Block | Status | Notes |
 |---|---|---|
 | `hero` | ✅ Built | Layout follows the authored content (image-only row or cell = background, text = overlay, text-only works). Variant `minimal-dark` ("Hero (Minimal Dark)") is the oneAZ dark hero used on the site; it replaced the `hero-minimal-dark-withimg` fork, which remains only as a deprecated alias. Add *centered* and *campaign banner* options |
-| `cards-light-withimg` | 🟡 Partly built | 3-up therapy grid. Add 2-up icon, bordered text and product (hover) options |
+| `cards` | 🟡 Partly built | Each card's layout follows the authored content (image-only cell = card image; text-only cards work). Variant `light` ("Cards (Light)") is the oneAZ 3-up grid; it replaced the `cards-light-withimg` fork, which remains only as a deprecated alias. Add 2-up icon, bordered text and product (hover) options |
 | `accordion` | ✅ Built | oneAZ design; native `<details>`. Import parser ✅; live on COPD (FAQ). Not yet compared visually with the source (P11) |
 | `in-page-nav` | ✅ Built (vertical) | oneAZ "Links"; implements `v_d41301689a41`. Import parser ✅ (re-points `#anchors` to EDS heading ids); live on COPD. Horizontal sub-nav option needed for the List component |
 | `button-group` | ✅ Built | Options `align-left` / `align-center` / `align-right` / `small`; a plain link in a group is the Link variant |
@@ -281,7 +281,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 | P15 | Design questions: H4 size (spec 26px vs preview 36px); Icon-only button has CSS but no DA authoring syntax | Low | Design confirmation |
 | P16 | **The EDS site root (`/`) serves the boilerplate page** ("Home \| AEM Boilerplate", "Congrats, you are ready to go!") live. On the source, `/` redirects to the DE homepage | Public: the site root shows placeholder content | Redirect `/` to `/en/startseite` for now (redirects sheet), or to `/de/startseite` once DE is migrated; unpublish the boilerplate index |
 | P17 | **Remaining EN pages:** products index (product-overview) and contact | EN wave incomplete | Tabs (P3, P6) and the form decision (P5) |
-| P18 | **The 11 live EN pages hide their hero image** behind the Mulberry background (the fork's background image sat at `z-index: -1` without a stacking context). The image loads but isn't visible. The COPD heading also lost a space ("obstructivepulmonary") | Visible on every migrated page | Merge the `hero` variant (it fixes both, and the old block name keeps working through the alias), then re-publish the 11 pages, already re-imported as "Hero (Minimal Dark)" |
+| P18 | **The 11 live EN pages hide their hero image** behind the Mulberry background (the fork's background image sat at `z-index: -1` without a stacking context). The image loads but isn't visible. The COPD heading also lost a space ("obstructivepulmonary") | Visible on every migrated page | Merge the `hero` variant (it fixes both, and the old block name keeps working through the alias), then re-publish the 11 pages, already re-imported as "Hero (Minimal Dark)" and "Cards (Light)" |
 
 ### 7.2 Resolved
 
@@ -289,7 +289,7 @@ Ordered by impact. P-numbers are referenced from Section 4 and Appendices D–E.
 |---|---|---|
 | 1 | Images broken on the live site: only page HTML had been uploaded to DA, so every image was `about:error` | **Fixed (2026-09-29).** Media is uploaded to DA and every image is verified on each publish. The source's own product-info image is dead (404), so it was dropped. Header/footer logos in local preview are fixed too |
 | 2 | `accordion`, `in-page-nav`, `table` code was only on a feature branch | PR #1 merged to `main` |
-| 2a | Wrong variant mapping: `cards-light-withimg` declared `v_f2575cbf84b3` instead of `v_5d7c92bb4412` | Fixed in `blocks/cards-light-withimg/metadata.json` |
+| 2a | Wrong variant mapping: `cards-light-withimg` declared `v_f2575cbf84b3` instead of `v_5d7c92bb4412` | Fixed in the block's `metadata.json` (now `blocks/cards/metadata.json`) |
 | 5 | Importer completeness score is 32% | False alarm: the metric counts cookie banner, megamenu and footer text that is deliberately stripped |
 | 7 | Template misgroupings: 21 of 46 translated-page groups split across templates | 33 pages regrouped, 0 splits remain (Section 3.1) |
 | 9 | Button-group and in-page-nav demos broken live: DA strips class attributes and keeps only block tables | Demos rewritten as block tables; `button-group` supports `small` and plain links as the Link variant |
@@ -787,10 +787,10 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| EDS block | `cards-light-withimg` |
+| EDS block | `cards` |
 | Status | 🟡 partial |
 | Standard block | Cards |
-| Options | 3-up image cards (built) · 2-up icon cards · bordered text cards · product cards with hover overlay |
+| Options | light: 3-up image cards (built) · 2-up icon cards · bordered text cards · product cards with hover overlay |
 | Source components | Teaser |
 | Catalog variants | 5 (4 after merging duplicates) |
 | Pages | 63 |
@@ -803,13 +803,13 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · default |
+| Catalog | type `cards` · block `cards` · class `light` |
 | Structure | heading + text + 6 images |
 | Source components | Container 50/50, Teaser 49/50, Image 49/50, Title 9/50, Text 5/50 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--text-center` `container--3-column-wrap` `teaser--title-color-core` `teaser--text-left` |
 | Uses | 50 on 46 pages |
 | Templates | content-landing (46) |
-| EDS target | Cards (3-up image cards): implemented by `cards-light-withimg` |
+| EDS target | Cards (3-up image cards): implemented by `cards` |
 | Note | Therapy-area grid (container--3-column-wrap, image-top-text-bottom). Implemented |
 | ⚠️ Discrepancy | Detected as unknown |
 | Example pages | [/en/startseite](https://www.myastrazeneca.ch/en/startseite.html)<br>[/…/therapiegebiete/cvrm/acutecare](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html)<br>[/…/therapiegebiete/cvrm/chronischeniereninsuffizienz](https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html) |
@@ -820,7 +820,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
+| Catalog | type `cards` · block `cards` · class `icon` |
 | Structure | heading + text + 4 images |
 | Source components | Teaser 16/16, Container 16/16, Image 16/16 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` `container--content-center` |
@@ -837,7 +837,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `icon` |
+| Catalog | type `cards` · block `cards` · class `icon` |
 | Structure | text + 4 images |
 | Source components | Teaser 3/3, Container 3/3, Image 3/3 |
 | Source styles | `teaser--image-top-text-bottom` `container--2-column-wrap` |
@@ -854,7 +854,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `product` |
+| Catalog | type `cards` · block `cards` · class `product` |
 | Structure | heading + text + 2 images |
 | Source components | Teaser 10/10, Image 10/10 |
 | Uses | 10 on 3 pages |
@@ -870,7 +870,7 @@ Grouped by the EDS block each catalogued variant maps to (reviewed mapping: `too
 
 | Field | Value |
 |---|---|
-| Catalog | type `cards` · block `cards-light-withimg` · class `bordered` |
+| Catalog | type `cards` · block `cards` · class `bordered` |
 | Structure | text |
 | Source components | Teaser 1/1, Container 1/1 |
 | Source styles | `teaser--image-top-text-bottom` `teaser--border-base` |
