@@ -1,0 +1,173 @@
+{
+  "id": "v_6defe37a8d19",
+  "name": "unknown",
+  "type": "unknown",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.232Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "text + 2 images"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"unknown\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"large\",\"structure\":\"text + 2 images\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/",
+        "instanceId": "290a86bb",
+        "screenshot": ".pages/www_myastrazeneca_ch--c9b7217c/blocks/290a86bb.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite.html",
+        "instanceId": "290a86bb",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_html--f1e0c16b/blocks/290a86bb.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html",
+        "instanceId": "79b45f24",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_acutecare_html--3ab26ca7/blocks/79b45f24.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "instanceId": "134fe6f2",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--306dccc0/blocks/134fe6f2.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html",
+        "instanceId": "23d1a595",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_diabetes_html--6dd2d4d0/blocks/23d1a595.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "instanceId": "7b5fd91e",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--6e5e9de7/blocks/7b5fd91e.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "instanceId": "6670a75",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_eierstockkrebs_html--80db1543/blocks/6670a75.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html",
+        "instanceId": "223f7827",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_haematologie_html--9f1f75e8/blocks/223f7827.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "instanceId": "1ae0029b",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_lungenkrebs_html--683ca2da/blocks/1ae0029b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html",
+        "instanceId": "6e410075",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_ri_asthma_html--9583e682/blocks/6e410075.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html",
+        "instanceId": "5b3f632b",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_ri_lupus_html--b41b4cc4/blocks/5b3f632b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+        "instanceId": "c1b8293",
+        "screenshot": ".pages/www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_acutecare_html--d422dc19/blocks/c1b8293.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+        "instanceId": "171d21d6",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_html--a683569a/blocks/171d21d6.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "instanceId": "2d8efa9d",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--99e40668/blocks/2d8efa9d.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "instanceId": "1ac6aecf",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_diabetes_html--c94d06ef/blocks/1ac6aecf.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "instanceId": "bf8353f",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--fd7254f2/blocks/bf8353f.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "instanceId": "7c20d434",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_eierstockkrebs_html--d58cff43/blocks/7c20d434.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "instanceId": "269af78b",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_lungenkrebs_html--9cf20529/blocks/269af78b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html",
+        "instanceId": "7d126e82",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_ri_asthma_html--818f65a7/blocks/7d126e82.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
+        "instanceId": "1b31e697",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_ri_lupus_html--9dde4eba/blocks/1b31e697.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite.html",
+        "instanceId": "206b9d34",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_html--4cb11950/blocks/206b9d34.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "instanceId": "59dc5537",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--9d2f95d1/blocks/59dc5537.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html",
+        "instanceId": "47528026",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_diabetes_html--cb6bcc25/blocks/47528026.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "instanceId": "2513d873",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--f4f41309/blocks/2513d873.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "instanceId": "3b212136",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_eierstockkrebs_html--d6965133/blocks/3b212136.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html",
+        "instanceId": "38e7441e",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_haematologie_html--a0b75d8c/blocks/38e7441e.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "instanceId": "3b1fe6e9",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_lungenkrebs_html--c8cbb233/blocks/3b1fe6e9.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html",
+        "instanceId": "75eb7996",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_ri_asthma_html--7c095b41/blocks/75eb7996.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html",
+        "instanceId": "6693777a",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_ri_lupus_html--8b19992e/blocks/6693777a.jpg"
+      }
+    ],
+    "reuseCount": 29
+  }
+}

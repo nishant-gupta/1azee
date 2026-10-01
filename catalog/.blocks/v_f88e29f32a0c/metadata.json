@@ -1,0 +1,33 @@
+{
+  "id": "v_f88e29f32a0c",
+  "name": "breadcrumbs",
+  "type": "breadcrumbs",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.259Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "moderate",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "list"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"breadcrumbs\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"moderate\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"noimg\",\"structure\":\"list\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+        "instanceId": "62ae0a80",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_produkte_html--ee1c829d/blocks/62ae0a80.jpg"
+      }
+    ],
+    "reuseCount": 1
+  }
+}

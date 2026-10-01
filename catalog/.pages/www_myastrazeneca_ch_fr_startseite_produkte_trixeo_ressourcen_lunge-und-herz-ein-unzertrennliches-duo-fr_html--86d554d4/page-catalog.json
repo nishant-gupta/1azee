@@ -1,0 +1,229 @@
+{
+  "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html",
+  "title": "BPCO et risques cardiovasculaires | MyAstraZeneca",
+  "timestamp": "2026-09-23T05:40:08.314Z",
+  "duration": "7.8s",
+  "cleanup": {
+    "elementsRemoved": 10,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 350
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1283,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 58,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 290,
+        "y": 34,
+        "width": 46,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 366,
+        "y": 34,
+        "width": 77,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 473,
+        "y": 34,
+        "width": 332,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 81,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1193,
+        "y": 191,
+        "width": 117,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 225,
+        "width": 754,
+        "height": 120
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 12,
+        "fontWeight": 400,
+        "fontFamily": "inter-medium",
+        "color": "#303030",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 185,
+        "width": 1180,
+        "height": 20,
+        "textLength": 16
+      },
+      {
+        "tag": "span",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 217,
+        "width": 754,
+        "height": 127,
+        "textLength": 45
+      }
+    ],
+    "topSectionCropBottomY": 341,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 217,
+      "width": 754,
+      "height": 127,
+      "text": "BPCO et risque d'événements cardiovasculaires",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 350,
+      "width": 1440,
+      "height": 550
+    },
+    "bodyStartY": 350,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 383,
+        "width": 1153,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 455,
+        "width": 1154,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 527,
+        "width": 994,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 575,
+        "width": 967,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(s,5x1,s(s,s(sB,sB,s(,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div:nth-of-type(1)",
+      "rc1c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c2c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--right.text--small",
+      "rc1c3c2c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--color-title-1.title--b-space",
+      "rc1c3c2c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text:nth-of-type(3)",
+      "rc1c3c2c3c1": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text:nth-of-type(3) > div.cmp-text > div:nth-of-type(1)",
+      "rc1c3c2c3c2": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text:nth-of-type(3) > div.cmp-text > div:nth-of-type(2)",
+      "rc1c3c2c3c3": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text:nth-of-type(3) > div.cmp-text > div:nth-of-type(3)",
+      "rc1c3c2c3c4": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text:nth-of-type(3) > div.cmp-text > div:nth-of-type(4)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div:nth-of-type(1) > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": []
+}

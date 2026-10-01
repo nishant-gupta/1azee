@@ -1,0 +1,43 @@
+{
+  "id": "v_c602950f63c9",
+  "name": "unknown",
+  "type": "unknown",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.246Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "4 images"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"unknown\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"large\",\"structure\":\"4 images\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "57dbdae6",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--6b239aec/blocks/57dbdae6.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "57dbdb05",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--b7b04513/blocks/57dbdb05.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "57dbdb05",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--a85b21b7/blocks/57dbdb05.jpg"
+      }
+    ],
+    "reuseCount": 3
+  }
+}

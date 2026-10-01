@@ -1,0 +1,380 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+  "title": "Prostata-Gesundheitsinformationen & Leitfaden zum Herunterladen | MyAstraZeneca",
+  "timestamp": "2026-09-23T05:33:36.205Z",
+  "duration": "10.1s",
+  "cleanup": {
+    "elementsRemoved": 3,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/therapiegebiete/onkologie/prostata.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 249
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 106,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 34,
+        "width": 66,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 457,
+        "y": 34,
+        "width": 53,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 188
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 125,
+        "width": 1180,
+        "height": 60
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 121,
+        "width": 1180,
+        "height": 60,
+        "textLength": 8
+      }
+    ],
+    "topSectionCropBottomY": 221,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 121,
+      "width": 1180,
+      "height": 60,
+      "text": "Prostata",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 249,
+      "width": 1440,
+      "height": 1982
+    },
+    "bodyStartY": 249,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 289,
+        "width": 878,
+        "height": 50
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 377,
+        "width": 1167,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 549,
+        "width": 262,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 611,
+        "width": 1180,
+        "height": 664
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1275,
+        "width": 1180,
+        "height": 664
+      },
+      {
+        "type": "text",
+        "x": 568,
+        "y": 1999,
+        "width": 304,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 579,
+        "y": 2057,
+        "width": 282,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2097,
+        "width": 139,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2177,
+        "width": 173,
+        "height": 15
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(3x1,4x1,s(s(sB,sB),s(sB,sB,sB,s(,)),sB(sB,sB,sB),sB)),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.root.container.responsivegrid",
+      "rc1c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.teaser.teaser--home-hero.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c1c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.teaser.teaser--home-hero.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.teaser.teaser--home-hero.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--color-title-1",
+      "rc1c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid.container--tb-space",
+      "rc1c3c2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid.container--fixed.container--tb-space-md",
+      "rc1c3c2c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image",
+      "rc1c3c2c4c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc1c3c2c4c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc1c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc1c3c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--center",
+      "rc1c3c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div:nth-of-type(3)",
+      "rc1c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "40f87f29",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 4,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "moderate",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "div.teaser.teaser--home-hero",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 188
+      },
+      "screenshot": "blocks/40f87f29.jpg",
+      "variantId": "v_2ab6094d0f33"
+    },
+    {
+      "id": "2d1f153b",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 CTA block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "1 CTAs"
+      },
+      "selector": "#container-fa77f4bedf > div:nth-child(3)",
+      "bounds": {
+        "x": 130,
+        "y": 560,
+        "width": 1180,
+        "height": 122
+      },
+      "screenshot": "blocks/2d1f153b.jpg",
+      "variantId": "v_b25f473963c4"
+    },
+    {
+      "id": "2d1f155a",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-fa77f4bedf > div:nth-child(4)",
+      "bounds": {
+        "x": 130,
+        "y": 682,
+        "width": 1180,
+        "height": 664
+      },
+      "screenshot": "blocks/2d1f155a.jpg",
+      "variantId": "v_065eb1d0161c"
+    },
+    {
+      "id": "1341fe39",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#container-a01c07586e > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 1386,
+        "width": 1440,
+        "height": 178
+      },
+      "screenshot": "blocks/1341fe39.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

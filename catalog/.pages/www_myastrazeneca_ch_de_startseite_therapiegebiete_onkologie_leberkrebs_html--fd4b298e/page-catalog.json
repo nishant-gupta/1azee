@@ -1,0 +1,14 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/leberkrebs.html",
+  "timestamp": "2026-09-23T05:39:40.724Z",
+  "error": {
+    "isError": true,
+    "type": "HTTP_404",
+    "detected": "HTTP status 404",
+    "confidence": "high",
+    "message": "HTTP_404 - Page appears to be an error page (detected: \"HTTP status 404\")"
+  },
+  "cleanup": null,
+  "template": null,
+  "blocks": []
+}

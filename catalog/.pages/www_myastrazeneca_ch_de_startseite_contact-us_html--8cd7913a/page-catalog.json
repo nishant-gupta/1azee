@@ -1,0 +1,228 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/contact-us.html",
+  "title": "Kontaktieren Sie uns",
+  "timestamp": "2026-09-23T05:32:18.922Z",
+  "duration": "8.7s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/contact-us.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 151
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1207,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 133,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 503,
+        "y": 101,
+        "width": 434,
+        "height": 50
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 46,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#ffffff",
+        "x": 503,
+        "y": 94,
+        "width": 434,
+        "height": 56,
+        "textLength": 20
+      }
+    ],
+    "topSectionCropBottomY": 147,
+    "topSectionTitleRect": {
+      "x": 503,
+      "y": 94,
+      "width": 434,
+      "height": 56,
+      "text": "Kontaktieren Sie uns",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 151,
+      "width": 1440,
+      "height": 1028
+    },
+    "bodyStartY": 151,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 617,
+        "y": 169,
+        "width": 206,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 207,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 207,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 207,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "form",
+        "x": 130,
+        "y": 239,
+        "width": 1180,
+        "height": 900
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,2x1,s(sB,sB,s(s,s(,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.root.container.responsivegrid",
+      "rc1c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc1c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--center",
+      "rc1c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.container.responsivegrid.container--fixed",
+      "rc1c3c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.dynamicformv2",
+      "rc1c3c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.dynamicformv2 > div:nth-of-type(1)",
+      "rc1c3c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.dynamicformv2 > div.cmp-dynamicform.form-container.cmp-dynamicform-v2.mycontactuscss123",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "2x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "2f40bf85",
+      "type": "form",
+      "confidence": "high",
+      "description": "2 CTAs + form + 1 list block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 7,
+        "imageCount": 0,
+        "buttonCount": 2,
+        "linkCount": 2,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": true,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "text + 2 CTAs + list"
+      },
+      "selector": "#container-5eb42484d2 > div:nth-child(3)",
+      "bounds": {
+        "x": 130,
+        "y": 260,
+        "width": 1180,
+        "height": 932
+      },
+      "screenshot": "blocks/2f40bf85.jpg",
+      "variantId": "v_6e8c2538dd7e"
+    }
+  ]
+}

@@ -14,3 +14,13 @@ helix-importer-ui
 migration-work/navigation-validation/
 migration-work/footer-validation/
 migration-work/da-publish/
+
+# catalog/ (site analysis data): commit the data (JSON) only. Screenshots, the visual
+# report bundle and logs stay local. These rules also override the workspace's local
+# .git/info/exclude entry for /catalog.
+!/catalog/
+/catalog/**
+!/catalog/**/
+!/catalog/**/*.json
+# the cataloguing tool's run config (machine-specific absolute paths)
+/catalog/.catalog-config.json

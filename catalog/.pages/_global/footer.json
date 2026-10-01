@@ -1,0 +1,19 @@
+{
+  "detected": true,
+  "selector": "div.experiencefragment.cmp-experiencefragment--footerSocial",
+  "bounds": {
+    "x": 0,
+    "y": 1815,
+    "width": 1440,
+    "height": 249
+  },
+  "complexity": "simple",
+  "effort": "low",
+  "estimatedHours": "1",
+  "features": [
+    "legal-section",
+    "contact-info"
+  ],
+  "columnCount": 1,
+  "linkCount": 8
+}

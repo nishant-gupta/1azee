@@ -43,6 +43,8 @@ Design tokens (color, type scale, spacing) are in `styles/styles.css`; fonts in 
 
 Not served (`tools/da/*` is in `.hlxignore`). Run from the repo root.
 
+**Site catalog (`catalog/`).** The analysis data is in git: the template and block catalogs, one `page-catalog.json` per analyzed page, the source-component inventory, the URL inventories and the review decisions (JSON only, about 5 MB). The tools below read and write it. Screenshots, the visual report bundle (`template-catalog-report-bundle.zip`) and logs stay local and are not committed (see `.gitignore`); the report tools need the screenshots to rebuild image thumbnails. `catalog/` is in `.hlxignore`, so none of it is served.
+
 | Command | What it does |
 |---|---|
 | `node tools/da/publish-content.js [page …]` | Uploads pages to Document Authoring with their images, previews, publishes, and verifies that every image loads |

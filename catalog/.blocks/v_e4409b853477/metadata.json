@@ -1,0 +1,103 @@
+{
+  "id": "v_e4409b853477",
+  "name": "hero",
+  "type": "hero",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.246Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "2 images"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"hero\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"large\",\"structure\":\"2 images\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "18306014",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--6b239aec/blocks/18306014.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "5e1d7646",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6940e0d5/blocks/5e1d7646.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "instanceId": "609fa240",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--7fa80632/blocks/609fa240.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "4220afd6",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--4eba725c/blocks/4220afd6.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "instanceId": "34dba50a",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--b6d21923/blocks/34dba50a.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "7c79dd4",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--b7b04513/blocks/7c79dd4.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "3def8a3b",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--7155c935/blocks/3def8a3b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "instanceId": "58b68384",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--e0dc1618/blocks/58b68384.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "68f9475d",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--91f9a284/blocks/68f9475d.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "instanceId": "49cabca6",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--9c4460fe/blocks/49cabca6.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "instanceId": "244a0550",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--a85b21b7/blocks/244a0550.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "6d0f383f",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6195c7ea/blocks/6d0f383f.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "instanceId": "16d66969",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--edb7f45b/blocks/16d66969.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "5f5a9629",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--3f36540b/blocks/5f5a9629.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "instanceId": "9f5f859",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--518f60d1/blocks/9f5f859.jpg"
+      }
+    ],
+    "reuseCount": 15
+  }
+}

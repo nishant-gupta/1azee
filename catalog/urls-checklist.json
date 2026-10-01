@@ -1,0 +1,1034 @@
+{
+  "analysis-urls-checklist": {
+    "captured": "2026-09-23T05:32:06.932Z",
+    "totalPages": 127,
+    "statusBreakdown": {
+      "marked": 0,
+      "analyzed": 122,
+      "failed": 5
+    },
+    "pages": {
+      "https://www.myastrazeneca.ch/": {
+        "url": "https://www.myastrazeneca.ch/",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:18.122Z",
+        "slug": "www_myastrazeneca_ch--c9b7217c",
+        "title": "Startseite | MyAstraZeneca",
+        "blockCount": 2
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:19.310Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_html--71e7356f",
+        "title": "Produkte - MyAstraZeneca",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/de/startseite/contact-us.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/contact-us.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:18.951Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_contact-us_html--8cd7913a",
+        "title": "Kontaktieren Sie uns",
+        "blockCount": 1
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:20.082Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_html--739994b0",
+        "title": "TRIXEO Ressourcen für medizinisches Fachpersonal | AstraZeneca CH",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/aerosphere-technologie.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:22.537Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_aerosphere-technologie_html--4979dd00",
+        "title": "TRIXEO Aerosphere® Technologie erklärt | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/copd-management.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/copd-management.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:27.711Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_copd-management_html--2e413b18",
+        "title": "COPD-Management im klinischen Alltag | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/events.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/events.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:28.863Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_events_html--7bcd7427",
+        "title": "TRIXEO Aerosphere® Events und Fortbildungen | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/sicherheit.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/sicherheit.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:29.286Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_sicherheit_html--1a6079fc",
+        "title": "TRIXEO Aerosphere® Sicherheitsprofil | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/succinct-statement.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/succinct-statement.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:29.777Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_succinct-statement_html--f952990e",
+        "title": "TRIXEO Aerosphere® Succinct Statement | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/uberblick.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/uberblick.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:32.656Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_uberblick_html--9fdc030e",
+        "title": "TRIXEO Aerosphere® im Überblick | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/wirksamkeit.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/wirksamkeit.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:37.610Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_wirksamkeit_html--68e7154f",
+        "title": "Wirksamkeit von TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:38.440Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-de_html--afe3575e",
+        "title": "Dreifachtherapie und kardiopulmonale Risikofaktoren | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:39.087Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_anwendungsbroschuere-trixeo-aerosphere-de_html--7843128b",
+        "title": "TRIXEO Aerosphere® Anwendungsbroschüre | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:39.404Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_anwendungskarte-trixeo-aerosphere-de_html--568184c2",
+        "title": "Anwendung von TRIXEO Aerosphere®, Symbicort® & Vannair® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:42.545Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_checkliste-fuer-copd-exazerbationen-de_html--6e384069",
+        "title": "Checkliste für COPD-Exazerbationen | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-datenblatt-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-datenblatt-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:47.167Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_copd-datenblatt-de_html--638adbe0",
+        "title": "COPD-Datenblatt | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:47.887Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_copd-und-lungenkrebs-de_html--05f5ce5e",
+        "title": "COPD und Lungenkrebs | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:48.845Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_ethos-studienzusammenfassung-de_html--2f21923f",
+        "title": "Die ETHOS Studie | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:49.088Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_fachinformation-von-trixeo-aerosphere-de_html--a34b36d9",
+        "title": "TRIXEO Aerosphere® Fachinformation | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:52.264Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_kronos-studienzusammenfassung-de_html--05e101ce",
+        "title": "Die KRONOS Studie | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:56.685Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_lunge-und-herz-ein-unzertrennliches-duo-de_html--6985c3dc",
+        "title": "COPD und kardiovaskuläre Risiken | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patient-poster-copd-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patient-poster-copd-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:57.484Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_patient-poster-copd-de_html--336d10c9",
+        "title": "Patientenposter zu COPD | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:58.937Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_patientenbroschure-zur-copd-de_html--826bbcfa",
+        "title": "COPD-Broschüre für Ihre Patienten | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:32:59.162Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_slide-deck-copd-now-de_html--7e8d6d46",
+        "title": "Präsentation zum COPD-Management in der Praxis | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:02.199Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_slide-deck-trixeo-aerosphere-technologie-de_html--a8ea3172",
+        "title": "TRIXEO Aerosphere® Technologie im Überblick | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:06.353Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_studienzusammenfassung-skopos-mazi-de_html--c45ec1b4",
+        "title": "Die SKOPOS-MAZI-Studie | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:07.242Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_trixeo-aerosphere-factsheet-zur-limitatio-de_html--b209ba1f",
+        "title": "TRIXEO Aerosphere® Limitatio und Implikationen | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-de.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:08.475Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_produkte_trixeo_ressourcen_trixeo-aerosphere-kranken-kassenformular-de_html--36479e1f",
+        "title": "TRIXEO Aerosphere® Krankenkassenformular | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:11.324Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--306dccc0",
+        "title": "Chronische Niereninsuffizienz - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:16.368Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_acutecare_html--3ab26ca7",
+        "title": "Acute Care",
+        "blockCount": 10
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/diabetes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:18.418Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_diabetes_html--6dd2d4d0",
+        "title": "Diabetes",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:18.768Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--6e5e9de7",
+        "title": "Herzinsuffizienz - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:19.935Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--7fa80632",
+        "title": "Einführung in ATTR Amyloidose | See the pATTRns",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:24.595Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6940e0d5",
+        "title": "ATTR Amyloidose Diagnostizieren | See the pATTRns | Diagnose",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:28.574Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--b6d21923",
+        "title": "Behandlung der ATTR Amyloidose | See the pATTRns | Behandlung",
+        "blockCount": 3
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:31.684Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--4eba725c",
+        "title": "Symptome der ATTR Amyloidose erkennen | See the pATTRns",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:33.277Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--6b239aec",
+        "title": "Über ATTR Amyloidose: Verlauf & Ursachen | See the pATTRns",
+        "blockCount": 9
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/leberkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/leberkrebs.html",
+        "status": "failed",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_leberkrebs_html--fd4b298e",
+        "title": null,
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:39:40.750Z",
+        "pageStatus": "HTTP_404"
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/prostata.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:36.241Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_prostata_html--b065b3ab",
+        "title": "Prostata-Gesundheitsinformationen & Leitfaden zum Herunterladen | MyAstraZeneca",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:39.297Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_brustkrebs_html--e6e67409",
+        "title": "Brustkrebs",
+        "blockCount": 8
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:41.356Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_haematologie_html--9f1f75e8",
+        "title": "Hämatologie - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:43.777Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_lungenkrebs_html--683ca2da",
+        "title": "Lungenkrebs - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:45.080Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_eierstockkrebs_html--80db1543",
+        "title": "Eierstockkrebs - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/lupus.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:48.570Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_ri_lupus_html--b41b4cc4",
+        "title": "Systemischer Lupus Erythematodes - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/copd.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:59.623Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_ri_copd_html--b5fa1f5e",
+        "title": "COPD - Symptome, Diagnose und Behandlung",
+        "blockCount": 15
+      },
+      "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/ri/asthma.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:54.049Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_therapiegebiete_ri_asthma_html--9583e682",
+        "title": "Asthma - Symptome, Diagnose und Behandlung",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/en/startseite/produkte.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/produkte.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:55.163Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_produkte_html--96d99f3e",
+        "title": "Overview of Medical Products – Therapeutic Areas",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/contact-us.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/contact-us.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:33:55.477Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_contact-us_html--9f317070",
+        "title": "Contact us",
+        "blockCount": 1
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:01.589Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--5acd3aea",
+        "title": "Chronic Kidney Disease (CKD) - Symptoms, Diagnosis & Treatment",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:08.796Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_acutecare_html--d422dc19",
+        "title": "Acute Care",
+        "blockCount": 10
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/diabetes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:07.789Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_diabetes_html--159e2e1a",
+        "title": "Diabetes",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:08.170Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--cc70be5e",
+        "title": "Heart Failure Overview: Symptoms & Treatment",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/leberkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/leberkrebs.html",
+        "status": "failed",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_leberkrebs_html--247a8edf",
+        "title": null,
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:39:45.016Z",
+        "pageStatus": "HTTP_404"
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/haematologie.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/haematologie.html",
+        "status": "failed",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_haematologie_html--3013c702",
+        "title": null,
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:39:49.363Z",
+        "pageStatus": "HTTP_404"
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:17.036Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_brustkrebs_html--35a4007b",
+        "title": "Breast Cancer Overview: Causes, Symptoms & Therapy",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:17.661Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_eierstockkrebs_html--1635dc27",
+        "title": "Ovarian Cancer Overview: Symptoms & Treatment",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:18.867Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_lungenkrebs_html--da366f38",
+        "title": "Lung Cancer: Symptoms, Stages & Treatment",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/lupus.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:20.068Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_ri_lupus_html--3fa6829e",
+        "title": "Lupus Insights and Treatment Guidance – For HCPs",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/copd.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:26.839Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_ri_copd_html--03db88aa",
+        "title": "COPD - Symptoms, diagnosis and treatment",
+        "blockCount": 14
+      },
+      "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/ri/asthma.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:28.152Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_therapiegebiete_ri_asthma_html--39de4b3f",
+        "title": "Asthma – Advances in Diagnosis and Care",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:30.323Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_html--ee1c829d",
+        "title": "Médicaments cardiovasculaires, rénaux et métaboliques | MyAstraZeneca",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/contact-us.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:05.122Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_contact-us_html--cfe2c492",
+        "title": "Contactez-nous",
+        "blockCount": 1
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/uberblick.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:49.538Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_uberblick_html--10ebd707",
+        "title": "Aperçu TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/aerosphere-technologie.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/aerosphere-technologie.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:56.237Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_aerosphere-technologie_html--8d1e3240",
+        "title": "La technologie de TRIXEO Aerosphere® expliquée | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/copd-management.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:04.175Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_copd-management_html--b7f987d6",
+        "title": "La prise en charge de la BPCO | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/events.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:34:51.753Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_events_html--17aef8fb",
+        "title": "Événements et formations de TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:23.536Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_html--e10e94b1",
+        "title": "Ressources TRIXEO pour le corps médical | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/sicherheit.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:12.243Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_sicherheit_html--1dc61937",
+        "title": "Profil de sécurité de TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/succinct-statement.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:24.858Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_succinct-statement_html--48807db0",
+        "title": "Information succincte sur TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/wirksamkeit.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:31.857Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_wirksamkeit_html--6933c12e",
+        "title": "Efficacité de TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:33.678Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_3-molekuele-der-dreifachtherapie-gegen-kardiopulmonales-risiko-fr_html--560883c2",
+        "title": "Trithérapie et facteurs de risque cardiopulmonaires | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungsbroschuere-trixeo-aerosphere-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:12.866Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_anwendungsbroschuere-trixeo-aerosphere-fr_html--ab114e08",
+        "title": "Brochure d'utilisation de TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/anwendungskarte-trixeo-aerosphere-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:58.783Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_anwendungskarte-trixeo-aerosphere-fr_html--240e4c64",
+        "title": "Utilisation de TRIXEO Aerosphere®, Symbicort® et Vannair® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/checkliste-fuer-copd-exazerbationen-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:35:43.581Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_checkliste-fuer-copd-exazerbationen-fr_html--5e5f4acb",
+        "title": "Check-list pour les exacerbations de la BPCO | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-datenblatt-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:13.638Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_copd-datenblatt-fr_html--1477daf4",
+        "title": "Fiche de suivi pour la BPCO pour les patients | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/copd-und-lungenkrebs-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:01.382Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_copd-und-lungenkrebs-fr_html--31a6528d",
+        "title": "BPCO et cancer du poumon | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/ethos-studienzusammenfassung-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:02.666Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_ethos-studienzusammenfassung-fr_html--9ba00ef5",
+        "title": "Étude ETHOS | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/fachinformation-von-trixeo-aerosphere-fr.html",
+        "status": "analyzed",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_fachinformation-von-trixeo-aerosphere-fr_html--d7437e02",
+        "title": "Information professionnelle sur TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:39:58.886Z"
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/kronos-studienzusammenfassung-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:52.506Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_kronos-studienzusammenfassung-fr_html--a2ffb562",
+        "title": "Étude KRONOS | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/lunge-und-herz-ein-unzertrennliches-duo-fr.html",
+        "status": "analyzed",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_lunge-und-herz-ein-unzertrennliches-duo-fr_html--86d554d4",
+        "title": "BPCO et risques cardiovasculaires | MyAstraZeneca",
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:40:08.356Z"
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patient-poster-copd-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:01.728Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_patient-poster-copd-fr_html--db0aad87",
+        "title": "Poster d'information BPCO pour les patients | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/patientenbroschure-zur-copd-fr.html",
+        "status": "analyzed",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_patientenbroschure-zur-copd-fr_html--edd04c53",
+        "title": "Brochure BPCO pour vos patients | MyAstraZeneca",
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:40:17.806Z"
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-copd-now-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:36:59.023Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_slide-deck-copd-now-fr_html--c997bdce",
+        "title": "Présentation sur la prise en charge de la BPCO en pratique | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/slide-deck-trixeo-aerosphere-technologie-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:07.719Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_slide-deck-trixeo-aerosphere-technologie-fr_html--5dde1d68",
+        "title": "Aperçu de la technologie TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/studienzusammenfassung-skopos-mazi-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:17.937Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_studienzusammenfassung-skopos-mazi-fr_html--3d65b160",
+        "title": "Étude SKOPOS-MAZI | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-factsheet-zur-limitatio-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:21.456Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_trixeo-aerosphere-factsheet-zur-limitatio-fr_html--45a78220",
+        "title": "TRIXEO Aerosphere® : Limitatio et implications | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/produkte/trixeo/ressourcen/trixeo-aerosphere-kranken-kassenformular-fr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:30.238Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_produkte_trixeo_ressourcen_trixeo-aerosphere-kranken-kassenformular-fr_html--e328d3b5",
+        "title": "Prise en charge TRIXEO Aerosphere® | MyAstraZeneca",
+        "blockCount": 0
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:32.507Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--99e40668",
+        "title": "Insuffisance Rénale Chronique (IRC) Informations - MyAstrazeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/diabetes.html",
+        "status": "analyzed",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_diabetes_html--c94d06ef",
+        "title": "Symptômes, Diagnostic et Traitement du Diabète Sucré | MyAstraZeneca",
+        "blockCount": 6,
+        "analyzedAt": "2026-09-23T05:40:29.011Z"
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:59.410Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--fd7254f2",
+        "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:02.744Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--e0dc1618",
+        "title": "Amylose à transthyrétine (ATTR-CM) – Diagnostic et prise en charge | MyAstraZeneca",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:26.805Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--7155c935",
+        "title": "Diagnostic de l’ATTR",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:37:52.436Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--9c4460fe",
+        "title": "Traitement",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:05.796Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--91f9a284",
+        "title": "Symptômes de l’ATTR",
+        "blockCount": 8
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:12.977Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--b7b04513",
+        "title": "À propos de l’ATTR",
+        "blockCount": 9
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/leberkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/leberkrebs.html",
+        "status": "failed",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_leberkrebs_html--6ee8cbd7",
+        "title": null,
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:40:33.409Z",
+        "pageStatus": "HTTP_404"
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/prostata.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:16.030Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_prostata_html--cbfa386a",
+        "title": "Prostate: Comprendre son importance et les troubles associés | MyAstraZeneca",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:19.918Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_brustkrebs_html--aa26dc00",
+        "title": "Cancer Du Sein – Dépistage, Tumeurs Mammaires et Traitements | MyAstraZeneca",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/haematologie.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:24.287Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_haematologie_html--699e5525",
+        "title": "Hématologie - Leucémie Lymphoïde Chronique, Diagnostic et Traitement | MyAstraZeneca",
+        "blockCount": 5
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:27.122Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_lungenkrebs_html--9cf20529",
+        "title": "Cancer du poumon: Symptômes, Diagnostic et Traitements | MyAstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:31.840Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_eierstockkrebs_html--d58cff43",
+        "title": "Cancer de l’Ovaire – Carcinome épithélial, symptômes & prise en charge | MyAstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/lupus.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:36.179Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_ri_lupus_html--9dde4eba",
+        "title": "Lupus Érythémateux Systémique: Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/copd.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:47.260Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_ri_copd_html--8d31f642",
+        "title": "BPCO - Symptômes, diagnostic et prise en charge",
+        "blockCount": 15
+      },
+      "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/ri/asthma.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:39.587Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_therapiegebiete_ri_asthma_html--818f65a7",
+        "title": "Asthme: Symptômes, Diagnostic et Traitements | MyAstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/produkte.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/produkte.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:43.523Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_produkte_html--c90fefd4",
+        "title": "Prodotti | AstraZeneca",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/it/startseite/contact-us.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/contact-us.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:42.948Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_contact-us_html--ace3238e",
+        "title": "Contattaci",
+        "blockCount": 1
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/chronischeniereninsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:48.726Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_chronischeniereninsuffizienz_html--9d2f95d1",
+        "title": "Comprendere l'insufficienza renale cronica | AstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/diabetes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:51.838Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_diabetes_html--cb6bcc25",
+        "title": "Informazioni chiave sul diabete mellito",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:55.582Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_herzinsuffizienz_html--f4f41309",
+        "title": "Insufficienza Cardiaca Cronica: Sintomi, Diagnosi, E Trattamento | AstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:38:55.720Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_home_html--edb7f45b",
+        "title": "Home",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:00.323Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6195c7ea",
+        "title": "Diagnosi",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:00.557Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_treatement_html--518f60d1",
+        "title": "Trattamento",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:05.663Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--3f36540b",
+        "title": "Sintomi",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/about-amylodosis-attr.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:09.823Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_about-amylodosis-attr_html--a85b21b7",
+        "title": "L’amiloidosi ATTR",
+        "blockCount": 9
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/leberkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/leberkrebs.html",
+        "status": "failed",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_leberkrebs_html--5f41bb8f",
+        "title": null,
+        "blockCount": 0,
+        "analyzedAt": "2026-09-23T05:40:37.712Z",
+        "pageStatus": "HTTP_404"
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/prostata.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:11.872Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_prostata_html--00884ad3",
+        "title": "Prostata: Comprendere la sua importanza e i disturbi associati | MyAstraZeneca",
+        "blockCount": 4
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:14.538Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_brustkrebs_html--1d01cbcd",
+        "title": "Cancro Al Seno: Sintomi, Diagnosi, E Trattamento | AstraZeneca",
+        "blockCount": 7
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/haematologie.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:13.596Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_haematologie_html--a0b75d8c",
+        "title": "Leucemia linfocitica cronica (LLC) in ematologia: sintomi, diagnosi e trattamento | AstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/lungenkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:18.089Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_lungenkrebs_html--c8cbb233",
+        "title": "Cancro del polmone: Sintomi, Diagnosi, e Trattamento | AstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/eierstockkrebs.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:22.293Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_eierstockkrebs_html--d6965133",
+        "title": "Cancro alle ovaie: Sintomi, Diagnosi, e Trattamento | AstraZeneca",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:24.442Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_ri_lupus_html--8b19992e",
+        "title": "Lupus",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/copd.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/copd.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:33.332Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_ri_copd_html--8461eb0b",
+        "title": "BPCO - Sintomi, diagnosi e trattamento",
+        "blockCount": 15
+      },
+      "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/asthma.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:27.347Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_therapiegebiete_ri_asthma_html--7c095b41",
+        "title": "Asma",
+        "blockCount": 6
+      },
+      "https://www.myastrazeneca.ch/de/startseite.html": {
+        "url": "https://www.myastrazeneca.ch/de/startseite.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:29.539Z",
+        "slug": "www_myastrazeneca_ch_de_startseite_html--f1e0c16b",
+        "title": "Startseite | MyAstraZeneca",
+        "blockCount": 3
+      },
+      "https://www.myastrazeneca.ch/fr/startseite.html": {
+        "url": "https://www.myastrazeneca.ch/fr/startseite.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:33.486Z",
+        "slug": "www_myastrazeneca_ch_fr_startseite_html--a683569a",
+        "title": "Traitements du diabète, de l’asthme, de la BPCO et du cancer | MyAstraZeneca",
+        "blockCount": 3
+      },
+      "https://www.myastrazeneca.ch/it/startseite.html": {
+        "url": "https://www.myastrazeneca.ch/it/startseite.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:35.259Z",
+        "slug": "www_myastrazeneca_ch_it_startseite_html--4cb11950",
+        "title": "Portale informativo per gli operatori sanitari | MyAstraZeneca",
+        "blockCount": 3
+      },
+      "https://www.myastrazeneca.ch/en/startseite.html": {
+        "url": "https://www.myastrazeneca.ch/en/startseite.html",
+        "status": "analyzed",
+        "analyzedAt": "2026-09-23T05:39:37.716Z",
+        "slug": "www_myastrazeneca_ch_en_startseite_html--3b773d1a",
+        "title": "Home | MyAstraZeneca",
+        "blockCount": 2
+      }
+    }
+  }
+}

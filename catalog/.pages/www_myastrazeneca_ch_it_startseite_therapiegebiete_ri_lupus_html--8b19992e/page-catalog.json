@@ -1,0 +1,944 @@
+{
+  "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/ri/lupus.html",
+  "title": "Lupus",
+  "timestamp": "2026-09-23T05:39:24.352Z",
+  "duration": "10.9s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/it/startseite/therapiegebiete/ri/lupus.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 311
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1207,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 115,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 347,
+        "y": 34,
+        "width": 29,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 406,
+        "y": 34,
+        "width": 183,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 250
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 156,
+        "width": 1180,
+        "height": 60
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 152,
+        "width": 1180,
+        "height": 60,
+        "textLength": 27
+      }
+    ],
+    "topSectionCropBottomY": 252,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 152,
+      "width": 1180,
+      "height": 60,
+      "text": "Lupus eritematoso sistemico",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 311,
+      "width": 1440,
+      "height": 3730
+    },
+    "bodyStartY": 311,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 351,
+        "width": 712,
+        "height": 50
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 401,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 451,
+        "width": 1172,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 523,
+        "width": 1139,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 571,
+        "width": 1142,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 619,
+        "width": 1163,
+        "height": 92
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 753,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 527,
+        "y": 753,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 923,
+        "y": 753,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "text",
+        "x": 244,
+        "y": 933,
+        "width": 158,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 551,
+        "y": 933,
+        "width": 339,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 1053,
+        "y": 933,
+        "width": 127,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 983,
+        "width": 339,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 962,
+        "y": 985,
+        "width": 309,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 563,
+        "y": 1019,
+        "width": 314,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1169,
+        "width": 92,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 1169,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1221,
+        "width": 559,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1317,
+        "width": 379,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1345,
+        "width": 295,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1369,
+        "width": 284,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1393,
+        "width": 144,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1417,
+        "width": 252,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1441,
+        "width": 466,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1465,
+        "width": 209,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1489,
+        "width": 420,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1513,
+        "width": 373,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1537,
+        "width": 105,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1561,
+        "width": 519,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1585,
+        "width": 192,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1609,
+        "width": 190,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1633,
+        "width": 223,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1657,
+        "width": 229,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1693,
+        "width": 1164,
+        "height": 44
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1799,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1799,
+        "width": 113,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1851,
+        "width": 558,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1921,
+        "width": 575,
+        "height": 72
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1993,
+        "width": 575,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2097,
+        "width": 1090,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2125,
+        "width": 144,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2149,
+        "width": 454,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2173,
+        "width": 333,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2197,
+        "width": 840,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2221,
+        "width": 466,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2245,
+        "width": 721,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2269,
+        "width": 350,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2293,
+        "width": 1112,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2387,
+        "width": 143,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 2387,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2439,
+        "width": 570,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2535,
+        "width": 570,
+        "height": 140
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2693,
+        "width": 1180,
+        "height": 120
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2855,
+        "width": 1028,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2891,
+        "width": 78,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2931,
+        "width": 523,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2951,
+        "width": 815,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2971,
+        "width": 812,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2991,
+        "width": 1016,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3011,
+        "width": 1086,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3051,
+        "width": 697,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3071,
+        "width": 1064,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3111,
+        "width": 1137,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3131,
+        "width": 1116,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3171,
+        "width": 615,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 3191,
+        "width": 930,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3277,
+        "width": 482,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 3357,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3359,
+        "width": 516,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3407,
+        "width": 484,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3595,
+        "width": 117,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 1056,
+        "y": 3977,
+        "width": 254,
+        "height": 24
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,4x1,s(s(sB,sB),s(sB,s,s(,,,)),3x1,s(2x1,sB),s(2x1,s(,)),s(2x1,sB),s(sB,sB,s(,,,,,,,,,,)),sB,2x1,s)),s)",
+    "nodeMap": {
+      "r": "#restyle",
+      "rc1": "#restyle > div.root.container.responsivegrid",
+      "rc1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1)",
+      "rc1c3c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc1c3c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.title.title--color-title-1.title--t-space-md",
+      "rc1c3c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.socialFeatures",
+      "rc1c3c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c2c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(1)",
+      "rc1c3c2c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(2)",
+      "rc1c3c2c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(3)",
+      "rc1c3c2c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(4)",
+      "rc1c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--3-column-wrap.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left",
+      "rc1c3c4c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c5c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-left",
+      "rc1c3c5c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c5c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div",
+      "rc1c3c5c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul",
+      "rc1c3c5c2c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(1)",
+      "rc1c3c5c2c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(2)",
+      "rc1c3c5c2c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(3)",
+      "rc1c3c5c2c2c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(4)",
+      "rc1c3c5c2c2c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(5)",
+      "rc1c3c5c2c2c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(6)",
+      "rc1c3c5c2c2c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(7)",
+      "rc1c3c5c2c2c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(8)",
+      "rc1c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6)",
+      "rc1c3c6c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left",
+      "rc1c3c6c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7)",
+      "rc1c3c7c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0",
+      "rc1c3c7c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(2)",
+      "rc1c3c7c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3)",
+      "rc1c3c7c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc1c3c7c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc1c3c7c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc1c3c7c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc1c3c7c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc1c3c7c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc1c3c7c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(7)",
+      "rc1c3c7c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(8)",
+      "rc1c3c7c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(9)",
+      "rc1c3c7c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(10)",
+      "rc1c3c7c3c11": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(11)",
+      "rc1c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8)",
+      "rc1c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9)",
+      "rc1c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(10)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "66937872",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 250
+      },
+      "screenshot": "blocks/66937872.jpg",
+      "variantId": "v_b26d6cceada2"
+    },
+    {
+      "id": "66937834",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "3 headings + 6 images block",
+      "content": {
+        "headingCount": 3,
+        "paragraphCount": 6,
+        "imageCount": 6,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 6 images"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 766,
+        "width": 1440,
+        "height": 416
+      },
+      "screenshot": "blocks/66937834.jpg",
+      "variantId": "v_5d7c92bb4412"
+    },
+    {
+      "id": "66937815",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 4,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 1182,
+        "width": 1440,
+        "height": 650
+      },
+      "screenshot": "blocks/66937815.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "669377f6",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 5,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 1832,
+        "width": 1440,
+        "height": 568
+      },
+      "screenshot": "blocks/669377f6.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "669377d7",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 4,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(6)",
+      "bounds": {
+        "x": 0,
+        "y": 2400,
+        "width": 1440,
+        "height": 506
+      },
+      "screenshot": "blocks/669377d7.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "6693777a",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 2,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "text + 2 images"
+      },
+      "selector": "#container-3588f6834f > div:nth-child(1) > div:nth-child(9)",
+      "bounds": {
+        "x": 0,
+        "y": 3370,
+        "width": 1440,
+        "height": 360
+      },
+      "screenshot": "blocks/6693777a.jpg",
+      "variantId": "v_6defe37a8d19"
+    }
+  ]
+}

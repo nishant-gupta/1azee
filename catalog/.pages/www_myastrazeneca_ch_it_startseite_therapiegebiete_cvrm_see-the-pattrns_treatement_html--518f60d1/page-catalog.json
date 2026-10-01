@@ -1,0 +1,715 @@
+{
+  "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+  "title": "Trattamento",
+  "timestamp": "2026-09-23T05:39:00.520Z",
+  "duration": "10.3s",
+  "cleanup": {
+    "elementsRemoved": 5,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/it/startseite/therapiegebiete/cvrm/see-the-pattrns/treatement.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 452
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 42,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 202,
+        "y": 34,
+        "width": 115,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 347,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 424,
+        "y": 34,
+        "width": 117,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 571,
+        "y": 34,
+        "width": 79,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      },
+      {
+        "type": "text",
+        "x": 543,
+        "y": 320,
+        "width": 111,
+        "height": 37
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 321,
+        "width": 70,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 205,
+        "y": 321,
+        "width": 153,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 363,
+        "y": 321,
+        "width": 82,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 450,
+        "y": 321,
+        "width": 88,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 252,
+        "y": 412,
+        "width": 936,
+        "height": 40
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 146,
+        "y": 325,
+        "width": 38,
+        "height": 17,
+        "textLength": 4
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 221,
+        "y": 325,
+        "width": 121,
+        "height": 17,
+        "textLength": 17
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 379,
+        "y": 325,
+        "width": 50,
+        "height": 17,
+        "textLength": 7
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#303030",
+        "backgroundColor": "#f0f0f0",
+        "x": 466,
+        "y": 325,
+        "width": 56,
+        "height": 17,
+        "textLength": 8
+      },
+      {
+        "tag": "span",
+        "fontSize": 14,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#c00060",
+        "backgroundColor": "#f0f0f0",
+        "x": 559,
+        "y": 325,
+        "width": 79,
+        "height": 17,
+        "textLength": 11
+      },
+      {
+        "tag": "span",
+        "fontSize": 36,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#f0f0f0",
+        "x": 252,
+        "y": 400,
+        "width": 936,
+        "height": 43,
+        "textLength": 58
+      }
+    ],
+    "topSectionCropBottomY": 442,
+    "topSectionTitleRect": {
+      "x": 252,
+      "y": 400,
+      "width": 936,
+      "height": 43,
+      "text": "È possibile trattare l’amiloidosi ATTR con terapie mirate1",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 452,
+      "width": 1440,
+      "height": 6664
+    },
+    "bodyStartY": 452,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 148,
+        "y": 513,
+        "width": 1144,
+        "height": 66
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 640,
+        "width": 1180,
+        "height": 561
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1201,
+        "width": 1180,
+        "height": 4144
+      },
+      {
+        "type": "text",
+        "x": 172,
+        "y": 5405,
+        "width": 1096,
+        "height": 120
+      },
+      {
+        "type": "text",
+        "x": 390,
+        "y": 5585,
+        "width": 660,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5627,
+        "width": 138,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 155,
+        "y": 5734,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 552,
+        "y": 5734,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 948,
+        "y": 5734,
+        "width": 337,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 168,
+        "y": 5786,
+        "width": 310,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 554,
+        "y": 5786,
+        "width": 332,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 957,
+        "y": 5786,
+        "width": 319,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5917,
+        "width": 372,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5941,
+        "width": 490,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5965,
+        "width": 398,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 5989,
+        "width": 488,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 6071,
+        "width": 580,
+        "height": 221
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 6071,
+        "width": 580,
+        "height": 225
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 6316,
+        "width": 532,
+        "height": 102
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 6320,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 201,
+        "y": 6434,
+        "width": 439,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 895,
+        "y": 6434,
+        "width": 250,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 543,
+        "y": 6560,
+        "width": 355,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6602,
+        "width": 212,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6626,
+        "width": 110,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6690,
+        "width": 1151,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6712,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6738,
+        "width": 172,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6760,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6786,
+        "width": 1161,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6834,
+        "width": 1140,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 6882,
+        "width": 798,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6906,
+        "width": 1154,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 6952,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7002,
+        "width": 1149,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7048,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 7074,
+        "width": 418,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),sB,s(sB,sB,s(,),sB,s(,),3x2(,,,),2x1,sB(,,),s(,,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.list.list--fixed-width.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2c3c4c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--bgColor-supporting-1",
+      "rc2c3c4c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(2)",
+      "rc2c3c4c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3)",
+      "rc2c3c4c3c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c3c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(3) > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(4)",
+      "rc2c3c4c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5)",
+      "rc2c3c4c5c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c5c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md:nth-of-type(5) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap",
+      "rc2c3c4c6c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c6c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c6c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c6c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--3-column-wrap > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c7": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--2-column-wrap.container--content-center",
+      "rc2c3c4c8": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8)",
+      "rc2c3c4c8c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c8c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div.text.text--center",
+      "rc2c3c4c8c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1:nth-of-type(8) > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c4c9": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9)",
+      "rc2c3c4c9c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c9c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c9c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c9c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c9c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c4c9c5c1": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c4c9c5c2": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c4c9c5c3": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c4c9c5c4": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c4c9c5c5": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc2c3c4c9c5c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc2c3c4c9c6": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc2c3c4c9c7": "#pattrns-tab5 > div.container.responsivegrid.container--fixed.container--tb-space:nth-of-type(9) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(6)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "9f5f859",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-17d4994ff7 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/9f5f859.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "34edd34e",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 647,
+        "width": 1440,
+        "height": 641
+      },
+      "screenshot": "blocks/34edd34e.jpg",
+      "variantId": "v_065eb1d0161c"
+    },
+    {
+      "id": "34edd3ca",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 2,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 6,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(7)",
+      "bounds": {
+        "x": 0,
+        "y": 1934,
+        "width": 1440,
+        "height": 509
+      },
+      "screenshot": "blocks/34edd3ca.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "34edd3e9",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#pattrns-tab5 > div:nth-child(8)",
+      "bounds": {
+        "x": 0,
+        "y": 2443,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/34edd3e9.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

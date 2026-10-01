@@ -1,0 +1,385 @@
+{
+  "url": "https://www.myastrazeneca.ch/en/startseite.html",
+  "title": "Home | MyAstraZeneca",
+  "timestamp": "2026-09-23T05:39:37.680Z",
+  "duration": "8.8s",
+  "cleanup": {
+    "elementsRemoved": 3,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/en/startseite.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 275
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1207,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 29,
+        "width": 1440,
+        "height": 245
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 86,
+        "width": 1180,
+        "height": 60
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 165,
+        "width": 544,
+        "height": 49
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 86,
+        "width": 1180,
+        "height": 60,
+        "textLength": 25
+      },
+      {
+        "tag": "p",
+        "fontSize": 18,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 162,
+        "width": 577,
+        "height": 56,
+        "textLength": 72
+      }
+    ],
+    "topSectionCropBottomY": 258,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 86,
+      "width": 1180,
+      "height": 60,
+      "text": "Welcome to myAstraZeneca!",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 275,
+      "width": 1440,
+      "height": 1552
+    },
+    "bodyStartY": 275,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 332,
+        "width": 409,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 372,
+        "width": 1123,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 454,
+        "width": 294,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 534,
+        "width": 387,
+        "height": 131
+      },
+      {
+        "type": "image",
+        "x": 527,
+        "y": 534,
+        "width": 387,
+        "height": 132
+      },
+      {
+        "type": "image",
+        "x": 923,
+        "y": 534,
+        "width": 387,
+        "height": 132
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 689,
+        "width": 339,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 563,
+        "y": 690,
+        "width": 314,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 974,
+        "y": 690,
+        "width": 286,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 551,
+        "y": 740,
+        "width": 339,
+        "height": 264
+      },
+      {
+        "type": "text",
+        "x": 951,
+        "y": 742,
+        "width": 330,
+        "height": 164
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 773,
+        "width": 339,
+        "height": 240
+      },
+      {
+        "type": "text",
+        "x": 947,
+        "y": 908,
+        "width": 339,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 1024,
+        "y": 934,
+        "width": 186,
+        "height": 140
+      },
+      {
+        "type": "text",
+        "x": 692,
+        "y": 1006,
+        "width": 57,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 230,
+        "y": 1039,
+        "width": 188,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1213,
+        "width": 443,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1295,
+        "width": 555,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1381,
+        "width": 143,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 1062,
+        "y": 1763,
+        "width": 248,
+        "height": 24
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,s,s(s(sB,sB),s(s(,),sB,3x1,sB,2x1),s)),s)",
+    "nodeMap": {
+      "r": "#restyle",
+      "rc1": "#restyle > div.root.container.responsivegrid",
+      "rc1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1)",
+      "rc1c3c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc1c3c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--tb-space-md:nth-of-type(1)",
+      "rc1c3c2c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--tb-space-md:nth-of-type(1) > div.cmp-container > div.text:nth-of-type(1)",
+      "rc1c3c2c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--tb-space-md:nth-of-type(1) > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid:nth-of-type(2)",
+      "rc1c3c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--tb-space-md.container--3-column-wrap",
+      "rc1c3c2c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--fixed:nth-of-type(4)",
+      "rc1c3c2c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.container.responsivegrid.container--fixed.container--tb-space-md",
+      "rc1c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc3",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "14d60be3",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-bddcdc961b > div:nth-child(1) > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 86,
+        "width": 1440,
+        "height": 245
+      },
+      "screenshot": "blocks/14d60be3.jpg",
+      "variantId": "v_b26d6cceada2"
+    },
+    {
+      "id": "72f39286",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "3 headings + 6 images block",
+      "content": {
+        "headingCount": 3,
+        "paragraphCount": 10,
+        "imageCount": 6,
+        "buttonCount": 0,
+        "linkCount": 12,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 6 images"
+      },
+      "selector": "#container-79e28dc6ab > div:nth-child(3)",
+      "bounds": {
+        "x": 130,
+        "y": 551,
+        "width": 1180,
+        "height": 679
+      },
+      "screenshot": "blocks/72f39286.jpg",
+      "variantId": "v_5d7c92bb4412"
+    }
+  ]
+}

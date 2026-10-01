@@ -1,0 +1,800 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/haematologie.html",
+  "title": "Hämatologie - Symptome, Diagnose und Behandlung",
+  "timestamp": "2026-09-23T05:33:41.319Z",
+  "duration": "11.2s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/therapiegebiete/onkologie/haematologie.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 311
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 106,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 34,
+        "width": 66,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 457,
+        "y": 34,
+        "width": 81,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 250
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 156,
+        "width": 1180,
+        "height": 60
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 130,
+        "y": 152,
+        "width": 1180,
+        "height": 60,
+        "textLength": 11
+      }
+    ],
+    "topSectionCropBottomY": 252,
+    "topSectionTitleRect": {
+      "x": 130,
+      "y": 152,
+      "width": 1180,
+      "height": 60,
+      "text": "Hämatologie",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 311,
+      "width": 1440,
+      "height": 3311
+    },
+    "bodyStartY": 311,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 130,
+        "y": 351,
+        "width": 1075,
+        "height": 100
+      },
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 451,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 451,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 451,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 501,
+        "width": 1118,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 549,
+        "width": 1142,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 597,
+        "width": 1155,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 693,
+        "width": 1119,
+        "height": 68
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 803,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 527,
+        "y": 803,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 923,
+        "y": 803,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "text",
+        "x": 263,
+        "y": 983,
+        "width": 121,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 635,
+        "y": 983,
+        "width": 169,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 1032,
+        "y": 983,
+        "width": 169,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 1033,
+        "width": 339,
+        "height": 72
+      },
+      {
+        "type": "text",
+        "x": 565,
+        "y": 1035,
+        "width": 311,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 949,
+        "y": 1035,
+        "width": 334,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1209,
+        "width": 125,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 1209,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 1259,
+        "width": 575,
+        "height": 192
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1457,
+        "width": 207,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1481,
+        "width": 105,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1505,
+        "width": 111,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1529,
+        "width": 141,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1553,
+        "width": 277,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1577,
+        "width": 234,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1601,
+        "width": 182,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1625,
+        "width": 209,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1649,
+        "width": 46,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 1673,
+        "width": 113,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1767,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1767,
+        "width": 111,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 735,
+        "y": 1819,
+        "width": 555,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 755,
+        "y": 1895,
+        "width": 532,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 755,
+        "y": 1943,
+        "width": 520,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 755,
+        "y": 1991,
+        "width": 547,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2109,
+        "width": 142,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 2109,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2161,
+        "width": 543,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2233,
+        "width": 559,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2431,
+        "width": 1126,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2487,
+        "width": 87,
+        "height": 16
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2528,
+        "width": 750,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2548,
+        "width": 1104,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2568,
+        "width": 966,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2608,
+        "width": 1156,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2648,
+        "width": 1148,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2688,
+        "width": 913,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2728,
+        "width": 662,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2748,
+        "width": 894,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 2768,
+        "width": 1061,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2858,
+        "width": 524,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 735,
+        "y": 2938,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2940,
+        "width": 551,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 2988,
+        "width": 553,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 3176,
+        "width": 167,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 1063,
+        "y": 3558,
+        "width": 247,
+        "height": 24
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(3x1,4x1,s(s(sB,sB),s(sB,s,s(,,,)),3x1,2x1,2x1,2x1,s(sB,sB,s(,,,,,,,,)),sB,2x1,s)),s)",
+    "nodeMap": {
+      "r": "#restyle",
+      "rc1": "#restyle > div.root.container.responsivegrid",
+      "rc1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1)",
+      "rc1c3c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc1c3c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.title.title--color-title-1.title--t-space-md",
+      "rc1c3c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.socialFeatures",
+      "rc1c3c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c2c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(1)",
+      "rc1c3c2c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(2)",
+      "rc1c3c2c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(3)",
+      "rc1c3c2c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(4)",
+      "rc1c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--3-column-wrap.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc1c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6)",
+      "rc1c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7)",
+      "rc1c3c7c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0",
+      "rc1c3c7c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(2)",
+      "rc1c3c7c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3)",
+      "rc1c3c7c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc1c3c7c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc1c3c7c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc1c3c7c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc1c3c7c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc1c3c7c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc1c3c7c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(7)",
+      "rc1c3c7c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(8)",
+      "rc1c3c7c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(9)",
+      "rc1c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8)",
+      "rc1c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9)",
+      "rc1c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(10)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "223f772f",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 250
+      },
+      "screenshot": "blocks/223f772f.jpg",
+      "variantId": "v_b26d6cceada2"
+    },
+    {
+      "id": "223f776d",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "3 headings + 6 images block",
+      "content": {
+        "headingCount": 3,
+        "paragraphCount": 6,
+        "imageCount": 6,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 6 images"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 816,
+        "width": 1440,
+        "height": 406
+      },
+      "screenshot": "blocks/223f776d.jpg",
+      "variantId": "v_5d7c92bb4412"
+    },
+    {
+      "id": "223f778c",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list + 2 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 1222,
+        "width": 1440,
+        "height": 578
+      },
+      "screenshot": "blocks/223f778c.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "223f77ab",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 1 list + 2 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 1,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images + list"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 1800,
+        "width": 1440,
+        "height": 322
+      },
+      "screenshot": "blocks/223f77ab.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "223f77ca",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 3 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 3,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(6)",
+      "bounds": {
+        "x": 0,
+        "y": 2122,
+        "width": 1440,
+        "height": 360
+      },
+      "screenshot": "blocks/223f77ca.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "223f7827",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 2,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "text + 2 images"
+      },
+      "selector": "#container-a840af836c > div:nth-child(1) > div:nth-child(9)",
+      "bounds": {
+        "x": 0,
+        "y": 2951,
+        "width": 1440,
+        "height": 360
+      },
+      "screenshot": "blocks/223f7827.jpg",
+      "variantId": "v_6defe37a8d19"
+    }
+  ]
+}

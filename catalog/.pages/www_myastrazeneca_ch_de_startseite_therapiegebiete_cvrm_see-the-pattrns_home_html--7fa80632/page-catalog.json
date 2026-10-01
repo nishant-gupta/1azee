@@ -1,0 +1,541 @@
+{
+  "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+  "title": "Einführung in ATTR Amyloidose | See the pATTRns",
+  "timestamp": "2026-09-23T05:33:19.898Z",
+  "duration": "9.9s",
+  "cleanup": {
+    "elementsRemoved": 11,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/de/startseite/therapiegebiete/cvrm/see-the-pattrns/home.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 325
+    },
+    "topSectionStrategy": "hero",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1234,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1261,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1287,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 34,
+        "width": 65,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 225,
+        "y": 34,
+        "width": 106,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 361,
+        "y": 34,
+        "width": 47,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 438,
+        "y": 34,
+        "width": 117,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 585,
+        "y": 34,
+        "width": 38,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 251
+      }
+    ],
+    "topSectionTextElements": [],
+    "topSectionCropBottomY": 308,
+    "topSectionTitleRect": null,
+    "bodyBounds": {
+      "x": 0,
+      "y": 325,
+      "width": 1440,
+      "height": 4600
+    },
+    "bodyStartY": 325,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 1182,
+        "y": 352,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1228,
+        "y": 352,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 352,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 432,
+        "width": 70,
+        "height": 37
+      },
+      {
+        "type": "text",
+        "x": 205,
+        "y": 433,
+        "width": 186,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 396,
+        "y": 433,
+        "width": 310,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 711,
+        "y": 433,
+        "width": 91,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 807,
+        "y": 433,
+        "width": 108,
+        "height": 36
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 544,
+        "width": 1086,
+        "height": 120
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 684,
+        "width": 1180,
+        "height": 567
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 1251,
+        "width": 1180,
+        "height": 2636
+      },
+      {
+        "type": "image",
+        "x": 130,
+        "y": 3947,
+        "width": 580,
+        "height": 182
+      },
+      {
+        "type": "image",
+        "x": 730,
+        "y": 3947,
+        "width": 580,
+        "height": 182
+      },
+      {
+        "type": "text",
+        "x": 154,
+        "y": 4153,
+        "width": 532,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 754,
+        "y": 4153,
+        "width": 532,
+        "height": 102
+      },
+      {
+        "type": "text",
+        "x": 167,
+        "y": 4239,
+        "width": 507,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 763,
+        "y": 4273,
+        "width": 514,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 195,
+        "y": 4359,
+        "width": 451,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 783,
+        "y": 4359,
+        "width": 475,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 568,
+        "y": 4465,
+        "width": 304,
+        "height": 40
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4507,
+        "width": 282,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4531,
+        "width": 139,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4595,
+        "width": 350,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4617,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4643,
+        "width": 90,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4665,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4689,
+        "width": 1180,
+        "height": 48
+      },
+      {
+        "type": "text",
+        "x": 150,
+        "y": 4739,
+        "width": 1024,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4763,
+        "width": 1119,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4811,
+        "width": 1151,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4857,
+        "width": 1180,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 130,
+        "y": 4883,
+        "width": 403,
+        "height": 20
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s,s(3x1,5x1,s(s,s(sB,s),s,s(sB,s(,),2x1,sB(,,),s(,,,,,,)))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+      "rc2": "body > div.root.container.responsivegrid",
+      "rc2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc2c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc2c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.experiencefragment.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc2c3c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc2c3c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc2c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4)",
+      "rc2c3c4c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.list.list--fixed-width.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--color-title-1.title--tb-space",
+      "rc2c3c4c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image",
+      "rc2c3c4c2c2c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(1)",
+      "rc2c3c4c2c2c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.image > div.cmp-image > div:nth-of-type(2)",
+      "rc2c3c4c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--2-column-wrap.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12",
+      "rc2c3c4c4c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc2c3c4c4c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--center",
+      "rc2c3c4c4c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.container--bgColor-supporting-1.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div:nth-of-type(3)",
+      "rc2c3c4c5": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5)",
+      "rc2c3c4c5c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(1)",
+      "rc2c3c4c5c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(2)",
+      "rc2c3c4c5c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(3)",
+      "rc2c3c4c5c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(4)",
+      "rc2c3c4c5c5": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > ol",
+      "rc2c3c4c5c5c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc2c3c4c5c5c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc2c3c4c5c5c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc2c3c4c5c5c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc2c3c4c5c6": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(5)",
+      "rc2c3c4c5c7": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(4) > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(5) > div.cmp-container > div.text.text--small > div.cmp-text > div:nth-of-type(6)",
+      "rc3": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.cmp-experiencefragment.cmp-experiencefragment--self-certification",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "3x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "5x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc5",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "609fa240",
+      "type": "hero",
+      "confidence": "high",
+      "description": "2 images block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "2 images"
+      },
+      "selector": "#container-08b53a4706 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1440,
+        "height": 251
+      },
+      "screenshot": "blocks/609fa240.jpg",
+      "variantId": "v_e4409b853477"
+    },
+    {
+      "id": "1a20676c",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 0,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + 2 images"
+      },
+      "selector": "#container-9bff55dfc6 > div:nth-child(1) > div:nth-child(2)",
+      "bounds": {
+        "x": 0,
+        "y": 531,
+        "width": 1440,
+        "height": 807
+      },
+      "screenshot": "blocks/1a20676c.jpg",
+      "variantId": "v_7d7a8d636759"
+    },
+    {
+      "id": "1a20678b",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 headings + 4 images block",
+      "content": {
+        "headingCount": 2,
+        "paragraphCount": 4,
+        "imageCount": 4,
+        "buttonCount": 0,
+        "linkCount": 6,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 4 images"
+      },
+      "selector": "#container-9bff55dfc6 > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 1338,
+        "width": 1440,
+        "height": 518
+      },
+      "screenshot": "blocks/1a20678b.jpg",
+      "variantId": "v_bbadaab7c4b3"
+    },
+    {
+      "id": "1a2067aa",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 1 CTA + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 0,
+        "buttonCount": 1,
+        "linkCount": 1,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "light",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "heading + text + 1 CTAs"
+      },
+      "selector": "#container-9bff55dfc6 > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 1856,
+        "width": 1440,
+        "height": 146
+      },
+      "screenshot": "blocks/1a2067aa.jpg",
+      "variantId": "v_cc344b0787bb"
+    }
+  ]
+}

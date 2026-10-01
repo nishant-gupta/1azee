@@ -1,0 +1,343 @@
+{
+  "url": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+  "title": "Contactez-nous",
+  "timestamp": "2026-09-23T05:35:04.718Z",
+  "duration": "39.1s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/fr/startseite/contact-us.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1225
+    },
+    "topSectionStrategy": "title+hero",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1246,
+        "y": 9,
+        "width": 28,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1301,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1327,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 34,
+        "width": 41,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 241,
+        "y": 34,
+        "width": 98,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 599,
+        "y": 101,
+        "width": 322,
+        "height": 50
+      },
+      {
+        "type": "text",
+        "x": 635,
+        "y": 169,
+        "width": 251,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 1222,
+        "y": 247,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1268,
+        "y": 247,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1314,
+        "y": 247,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "form",
+        "x": 170,
+        "y": 319,
+        "width": 1180,
+        "height": 900
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "span",
+        "fontSize": 46,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#900060",
+        "backgroundColor": "#ffffff",
+        "x": 600,
+        "y": 94,
+        "width": 322,
+        "height": 56,
+        "textLength": 14
+      },
+      {
+        "tag": "p",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#303030",
+        "backgroundColor": "#ffffff",
+        "x": 170,
+        "y": 163,
+        "width": 1180,
+        "height": 24,
+        "textLength": 33
+      },
+      {
+        "tag": "span",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "fontFamily": "inter-medium",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 232,
+        "y": 339,
+        "width": 6,
+        "height": 15,
+        "textLength": 1
+      },
+      {
+        "tag": "span",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "fontFamily": "inter-medium",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 208,
+        "y": 470,
+        "width": 6,
+        "height": 15,
+        "textLength": 1
+      },
+      {
+        "tag": "span",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "fontFamily": "inter-medium",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 221,
+        "y": 601,
+        "width": 6,
+        "height": 15,
+        "textLength": 1
+      },
+      {
+        "tag": "span",
+        "fontSize": 12,
+        "fontWeight": 700,
+        "fontFamily": "inter-medium",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 308,
+        "y": 732,
+        "width": 6,
+        "height": 15,
+        "textLength": 1
+      },
+      {
+        "tag": "label",
+        "fontSize": 16,
+        "fontWeight": 700,
+        "fontFamily": "inter-medium",
+        "color": "#303030",
+        "backgroundColor": "#ffffff",
+        "x": 170,
+        "y": 859,
+        "width": 1180,
+        "height": 20,
+        "textLength": 32
+      },
+      {
+        "tag": "a",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 188,
+        "y": 1043,
+        "width": 160,
+        "height": 20,
+        "textLength": 20
+      },
+      {
+        "tag": "a",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-regular",
+        "color": "#c00060",
+        "backgroundColor": "#ffffff",
+        "x": 188,
+        "y": 1089,
+        "width": 201,
+        "height": 20,
+        "textLength": 28
+      },
+      {
+        "tag": "span",
+        "fontSize": 16,
+        "fontWeight": 400,
+        "fontFamily": "inter-bold",
+        "color": "#f0f0f0",
+        "backgroundColor": "#c00060",
+        "x": 729,
+        "y": 1164,
+        "width": 63,
+        "height": 20,
+        "textLength": 7
+      }
+    ],
+    "topSectionCropBottomY": 1215,
+    "topSectionTitleRect": {
+      "x": 600,
+      "y": 94,
+      "width": 322,
+      "height": 56,
+      "text": "Contactez-nous",
+      "fontWeight": 400,
+      "color": "rgb(131, 0, 81)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 1225,
+      "width": 1440,
+      "height": 34
+    },
+    "bodyStartY": 1225,
+    "bodyPlaceholders": []
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,2x1,s(sB,sB,s,s(s,sB))),s)",
+    "nodeMap": {
+      "r": "body",
+      "rc1": "body > div.root.container.responsivegrid",
+      "rc1c1": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.title.title--center.title--color-title-1",
+      "rc1c3c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--center",
+      "rc1c3c3": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.container.responsivegrid.container--fixed.container--tb-space-md",
+      "rc1c3c4": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.dynamicformv2",
+      "rc1c3c4c1": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.dynamicformv2 > div:nth-of-type(1)",
+      "rc1c3c4c2": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.dynamicformv2 > div.cmp-dynamicform.form-container.cmp-dynamicform-v2.mycontactuscss123",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "2x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "body > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "4651dca2",
+      "type": "form",
+      "confidence": "high",
+      "description": "2 CTAs + form block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 7,
+        "imageCount": 0,
+        "buttonCount": 2,
+        "linkCount": 2,
+        "listCount": 0,
+        "childCount": 13,
+        "hasForm": true,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "dense",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "noimg",
+        "structure": "text + 2 CTAs"
+      },
+      "selector": "div.dynamicformv2",
+      "bounds": {
+        "x": 170,
+        "y": 372,
+        "width": 1180,
+        "height": 900
+      },
+      "screenshot": "blocks/4651dca2.jpg",
+      "variantId": "v_c8843a7f9ec8"
+    }
+  ]
+}

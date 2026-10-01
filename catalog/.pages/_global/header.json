@@ -1,0 +1,21 @@
+{
+  "detected": true,
+  "selector": "div.experiencefragment.cmp-experiencefragment--customMenu",
+  "bounds": {
+    "x": 0,
+    "y": 29,
+    "width": 1440,
+    "height": 57
+  },
+  "complexity": "advanced",
+  "effort": "very-high",
+  "estimatedHours": "16-32",
+  "features": [
+    "dropdowns",
+    "mega-menu",
+    "search",
+    "user-account",
+    "mobile-toggle"
+  ],
+  "linkCount": 48
+}

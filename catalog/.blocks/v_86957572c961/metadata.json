@@ -1,0 +1,58 @@
+{
+  "id": "v_86957572c961",
+  "name": "unknown",
+  "type": "unknown",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.246Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "1 CTAs"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"unknown\",\"visualChars\":{\"colorScheme\":\"light\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"noimg\",\"structure\":\"1 CTAs\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "4d4bfda9",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6940e0d5/blocks/4d4bfda9.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "65aa26ce",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--4eba725c/blocks/65aa26ce.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "4d4bfda9",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--7155c935/blocks/4d4bfda9.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "65aa26af",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--91f9a284/blocks/65aa26af.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/diagnosis.html",
+        "instanceId": "4d4bfda9",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_diagnosis_html--6195c7ea/blocks/4d4bfda9.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/cvrm/see-the-pattrns/symptomes.html",
+        "instanceId": "65aa26af",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_cvrm_see-the-pattrns_symptomes_html--3f36540b/blocks/65aa26af.jpg"
+      }
+    ],
+    "reuseCount": 6
+  }
+}

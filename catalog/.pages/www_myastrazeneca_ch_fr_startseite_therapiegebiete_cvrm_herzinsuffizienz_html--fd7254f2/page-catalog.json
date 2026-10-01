@@ -1,0 +1,782 @@
+{
+  "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+  "title": "Insuffisance Cardiaque : Symptômes, Diagnostic et Traitement | MyAstraZeneca",
+  "timestamp": "2026-09-23T05:37:59.266Z",
+  "duration": "34.6s",
+  "cleanup": {
+    "elementsRemoved": 9,
+    "types": [
+      "overlay",
+      "popup"
+    ],
+    "cookieConsentDismissed": false
+  },
+  "fingerprints": {
+    "urlPattern": "/fr/startseite/therapiegebiete/cvrm/herzinsuffizienz.html",
+    "topSectionBounds": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 325
+    },
+    "topSectionStrategy": "title+container",
+    "topSectionPlaceholders": [
+      {
+        "type": "text",
+        "x": 1246,
+        "y": 9,
+        "width": 28,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1274,
+        "y": 9,
+        "width": 27,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1301,
+        "y": 9,
+        "width": 26,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 1327,
+        "y": 9,
+        "width": 23,
+        "height": 12
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 34,
+        "width": 41,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 241,
+        "y": 34,
+        "width": 166,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 437,
+        "y": 34,
+        "width": 46,
+        "height": 17
+      },
+      {
+        "type": "text",
+        "x": 513,
+        "y": 34,
+        "width": 144,
+        "height": 17
+      },
+      {
+        "type": "image",
+        "x": 0,
+        "y": 61,
+        "width": 1440,
+        "height": 264
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 163,
+        "width": 1180,
+        "height": 60
+      }
+    ],
+    "topSectionTextElements": [
+      {
+        "tag": "p",
+        "fontSize": 56,
+        "fontWeight": 400,
+        "fontFamily": "lexia",
+        "color": "#f0f0f0",
+        "backgroundColor": "#ffffff",
+        "x": 170,
+        "y": 159,
+        "width": 1180,
+        "height": 60,
+        "textLength": 22
+      }
+    ],
+    "topSectionCropBottomY": 259,
+    "topSectionTitleRect": {
+      "x": 170,
+      "y": 159,
+      "width": 1180,
+      "height": 60,
+      "text": "Insuffisance cardiaque",
+      "fontWeight": 400,
+      "color": "rgb(255, 255, 255)"
+    },
+    "bodyBounds": {
+      "x": 0,
+      "y": 325,
+      "width": 1440,
+      "height": 3186
+    },
+    "bodyStartY": 325,
+    "bodyPlaceholders": [
+      {
+        "type": "text",
+        "x": 170,
+        "y": 365,
+        "width": 665,
+        "height": 50
+      },
+      {
+        "type": "text",
+        "x": 1222,
+        "y": 415,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1268,
+        "y": 415,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 1314,
+        "y": 415,
+        "width": 36,
+        "height": 32
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 465,
+        "width": 1152,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 513,
+        "width": 1160,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 561,
+        "width": 1151,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 609,
+        "width": 1168,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 657,
+        "width": 1153,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 685,
+        "width": 797,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 709,
+        "width": 861,
+        "height": 20
+      },
+      {
+        "type": "image",
+        "x": 170,
+        "y": 783,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 567,
+        "y": 783,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "image",
+        "x": 964,
+        "y": 783,
+        "width": 387,
+        "height": 156
+      },
+      {
+        "type": "text",
+        "x": 307,
+        "y": 963,
+        "width": 114,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 707,
+        "y": 963,
+        "width": 106,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 1075,
+        "y": 963,
+        "width": 164,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 605,
+        "y": 1013,
+        "width": 310,
+        "height": 24
+      },
+      {
+        "type": "text",
+        "x": 212,
+        "y": 1015,
+        "width": 303,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 998,
+        "y": 1015,
+        "width": 318,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 1189,
+        "width": 461,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 775,
+        "y": 1189,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 1239,
+        "width": 575,
+        "height": 168
+      },
+      {
+        "type": "image",
+        "x": 170,
+        "y": 1529,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 775,
+        "y": 1529,
+        "width": 127,
+        "height": 34
+      },
+      {
+        "type": "text",
+        "x": 775,
+        "y": 1581,
+        "width": 566,
+        "height": 164
+      },
+      {
+        "type": "text",
+        "x": 775,
+        "y": 1747,
+        "width": 575,
+        "height": 72
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 1821,
+        "width": 1164,
+        "height": 44
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 1927,
+        "width": 128,
+        "height": 34
+      },
+      {
+        "type": "image",
+        "x": 775,
+        "y": 1927,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 1979,
+        "width": 549,
+        "height": 92
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2073,
+        "width": 575,
+        "height": 120
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2209,
+        "width": 1146,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2321,
+        "width": 1168,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2377,
+        "width": 70,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2417,
+        "width": 875,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2437,
+        "width": 875,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2457,
+        "width": 918,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2477,
+        "width": 1103,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2497,
+        "width": 811,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2537,
+        "width": 767,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2557,
+        "width": 1149,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2597,
+        "width": 860,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2617,
+        "width": 1141,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2637,
+        "width": 1111,
+        "height": 35
+      },
+      {
+        "type": "text",
+        "x": 190,
+        "y": 2677,
+        "width": 1035,
+        "height": 15
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2747,
+        "width": 569,
+        "height": 40
+      },
+      {
+        "type": "image",
+        "x": 775,
+        "y": 2827,
+        "width": 575,
+        "height": 280
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2829,
+        "width": 515,
+        "height": 68
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 2901,
+        "width": 532,
+        "height": 20
+      },
+      {
+        "type": "text",
+        "x": 170,
+        "y": 3065,
+        "width": 204,
+        "height": 42
+      },
+      {
+        "type": "text",
+        "x": 1093,
+        "y": 3447,
+        "width": 257,
+        "height": 24
+      }
+    ]
+  },
+  "skeleton": {
+    "signature": "s(s(4x1,4x1,s(s(sB,sB),s(sB,s,s(,,,,,)),3x1,2x1,s(2x1,sB),s(2x1,sB),s(sB,sB,s(,,,,,,,,,,)),sB,2x1,s)),s)",
+    "nodeMap": {
+      "r": "#restyle",
+      "rc1": "#restyle > div.root.container.responsivegrid",
+      "rc1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+      "rc1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+      "rc1c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+      "rc1c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1)",
+      "rc1c3c1c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__image",
+      "rc1c3c1c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(1) > div.cmp-container > div.teaser.teaser--home-hero > div.cmp-teaser > div.cmp-teaser__content",
+      "rc1c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2)",
+      "rc1c3c2c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.title.title--color-title-1.title--t-space-md",
+      "rc1c3c2c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.socialFeatures",
+      "rc1c3c2c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0",
+      "rc1c3c2c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(1)",
+      "rc1c3c2c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(2)",
+      "rc1c3c2c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(3)",
+      "rc1c3c2c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(4)",
+      "rc1c3c2c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > div:nth-of-type(5)",
+      "rc1c3c2c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul",
+      "rc1c3c2c3c6c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(1)",
+      "rc1c3c2c3c6c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(2) > div.cmp-container > div.text.text--b-space-0 > div.cmp-text > ul > div:nth-of-type(2)",
+      "rc1c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.container--3-column-wrap.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space-md.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space.aem-GridColumn.aem-GridColumn--default--12",
+      "rc1c3c5c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.teaser.teaser--text-left",
+      "rc1c3c5c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--desktop-tb-space.aem-GridColumn.aem-GridColumn--default--12 > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6)",
+      "rc1c3c6c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.teaser.teaser--text-image.teaser--text-left",
+      "rc1c3c6c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(6) > div.cmp-container > div.text.text--b-space-0.text--t-space-0",
+      "rc1c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7)",
+      "rc1c3c7c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(1)",
+      "rc1c3c7c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small:nth-of-type(2)",
+      "rc1c3c7c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3)",
+      "rc1c3c7c3c1": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(1)",
+      "rc1c3c7c3c2": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(2)",
+      "rc1c3c7c3c3": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(3)",
+      "rc1c3c7c3c4": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(4)",
+      "rc1c3c7c3c5": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(5)",
+      "rc1c3c7c3c6": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(6)",
+      "rc1c3c7c3c7": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(7)",
+      "rc1c3c7c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(8)",
+      "rc1c3c7c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(9)",
+      "rc1c3c7c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(10)",
+      "rc1c3c7c3c11": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(7) > div.cmp-container > div.text.text--small.text--b-space-0.text--t-space-0:nth-of-type(3) > div.cmp-text > ol > div:nth-of-type(11)",
+      "rc1c3c8": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(8)",
+      "rc1c3c9": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.container--tb-space-md.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(9)",
+      "rc1c3c10": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid > div.cmp-container > div.aem-Grid.aem-Grid--12.aem-Grid--default--12 > div.container.responsivegrid.container--fixed.aem-GridColumn.aem-GridColumn--default--12:nth-of-type(10)",
+      "rc2": "#CookieReportsPanel"
+    },
+    "sections": [
+      {
+        "id": "rc1",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.languagenavigation",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc2",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.breadcrumb",
+        "layout": "4x1",
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc3",
+        "selector": "#restyle > div.root.container.responsivegrid > div.cmp-container > div.container.responsivegrid",
+        "layout": null,
+        "hasBg": false,
+        "hint": "block"
+      },
+      {
+        "id": "rc4",
+        "selector": "#CookieReportsPanel",
+        "layout": null,
+        "hasBg": false,
+        "hint": "default-content"
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "bf83637",
+      "type": "hero",
+      "confidence": "high",
+      "description": "1 heading + 2 images + 1 paragraph block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 1,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(1)",
+      "bounds": {
+        "x": 0,
+        "y": 114,
+        "width": 1521,
+        "height": 264
+      },
+      "screenshot": "blocks/bf83637.jpg",
+      "variantId": "v_b26d6cceada2"
+    },
+    {
+      "id": "bf835f9",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "3 headings + 6 images block",
+      "content": {
+        "headingCount": 3,
+        "paragraphCount": 6,
+        "imageCount": 6,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 6 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(3)",
+      "bounds": {
+        "x": 0,
+        "y": 796,
+        "width": 1521,
+        "height": 406
+      },
+      "screenshot": "blocks/bf835f9.jpg",
+      "variantId": "v_5d7c92bb4412"
+    },
+    {
+      "id": "bf835da",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(4)",
+      "bounds": {
+        "x": 0,
+        "y": 1202,
+        "width": 1521,
+        "height": 360
+      },
+      "screenshot": "blocks/bf835da.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "bf835bb",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 4,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(5)",
+      "bounds": {
+        "x": 0,
+        "y": 1562,
+        "width": 1521,
+        "height": 378
+      },
+      "screenshot": "blocks/bf835bb.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "bf8359c",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "1 heading + 2 images block",
+      "content": {
+        "headingCount": 1,
+        "paragraphCount": 4,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 0,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "heading + text + 2 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(6)",
+      "bounds": {
+        "x": 0,
+        "y": 1940,
+        "width": 1521,
+        "height": 432
+      },
+      "screenshot": "blocks/bf8359c.jpg",
+      "variantId": "v_37fdc84c086b"
+    },
+    {
+      "id": "bf8353f",
+      "type": "unknown",
+      "confidence": "low",
+      "description": "2 images + 2 paragraphs block",
+      "content": {
+        "headingCount": 0,
+        "paragraphCount": 2,
+        "imageCount": 2,
+        "buttonCount": 0,
+        "linkCount": 2,
+        "listCount": 0,
+        "childCount": 1,
+        "hasForm": false,
+        "hasVideo": false
+      },
+      "visualChars": {
+        "colorScheme": "dark",
+        "density": "minimal",
+        "hasBackgroundImage": false,
+        "hasGrid": false,
+        "imagePattern": "large",
+        "structure": "text + 2 images"
+      },
+      "selector": "#container-c789a40c87 > div:nth-child(1) > div:nth-child(9)",
+      "bounds": {
+        "x": 0,
+        "y": 2840,
+        "width": 1521,
+        "height": 360
+      },
+      "screenshot": "blocks/bf8353f.jpg",
+      "variantId": "v_6defe37a8d19"
+    }
+  ]
+}

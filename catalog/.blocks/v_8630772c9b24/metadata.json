@@ -1,0 +1,58 @@
+{
+  "id": "v_8630772c9b24",
+  "name": "unknown",
+  "type": "unknown",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.245Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "large",
+    "structure": "image"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"unknown\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"minimal\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"large\",\"structure\":\"image\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/cvrm/acutecare.html",
+        "instanceId": "79b45ec7",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_cvrm_acutecare_html--3ab26ca7/blocks/79b45ec7.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/de/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "instanceId": "7cc4d9ce",
+        "screenshot": ".pages/www_myastrazeneca_ch_de_startseite_therapiegebiete_onkologie_brustkrebs_html--e6e67409/blocks/7cc4d9ce.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/cvrm/acutecare.html",
+        "instanceId": "c1b82f0",
+        "screenshot": ".pages/www_myastrazeneca_ch_en_startseite_therapiegebiete_cvrm_acutecare_html--d422dc19/blocks/c1b82f0.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/en/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "instanceId": "20ca56b2",
+        "screenshot": ".pages/www_myastrazeneca_ch_en_startseite_therapiegebiete_onkologie_brustkrebs_html--35a4007b/blocks/20ca56b2.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "instanceId": "62caef6b",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_therapiegebiete_onkologie_brustkrebs_html--aa26dc00/blocks/62caef6b.jpg"
+      },
+      {
+        "url": "https://www.myastrazeneca.ch/it/startseite/therapiegebiete/onkologie/brustkrebs.html",
+        "instanceId": "4ce64b67",
+        "screenshot": ".pages/www_myastrazeneca_ch_it_startseite_therapiegebiete_onkologie_brustkrebs_html--1d01cbcd/blocks/4ce64b67.jpg"
+      }
+    ],
+    "reuseCount": 6
+  }
+}

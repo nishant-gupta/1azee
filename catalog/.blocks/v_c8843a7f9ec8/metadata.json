@@ -1,0 +1,33 @@
+{
+  "id": "v_c8843a7f9ec8",
+  "name": "form",
+  "type": "form",
+  "canonicalModel": "standalone",
+  "version": "1.0.0",
+  "created": "2026-09-23T05:42:58.259Z",
+  "sourceContext": {
+    "originUrl": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+    "discoveredDuring": "site-scope-analysis"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "dense",
+    "hasBackgroundImage": false,
+    "hasGrid": false,
+    "imagePattern": "noimg",
+    "structure": "text + 2 CTAs"
+  },
+  "knownSignatures": [
+    "{\"canonicalModel\":\"standalone\",\"type\":\"form\",\"visualChars\":{\"colorScheme\":\"dark\",\"density\":\"dense\",\"hasBackgroundImage\":false,\"hasGrid\":false,\"imagePattern\":\"noimg\",\"structure\":\"text + 2 CTAs\"}}"
+  ],
+  "usage": {
+    "pagesUsing": [
+      {
+        "url": "https://www.myastrazeneca.ch/fr/startseite/contact-us.html",
+        "instanceId": "4651dca2",
+        "screenshot": ".pages/www_myastrazeneca_ch_fr_startseite_contact-us_html--cfe2c492/blocks/4651dca2.jpg"
+      }
+    ],
+    "reuseCount": 1
+  }
+}
