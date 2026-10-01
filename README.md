@@ -29,8 +29,8 @@ Each block with an authoring guide has a `README.md` in its folder; `metadata.js
 | Block | Purpose |
 |---|---|
 | `header`, `footer` | Global navigation (4-level megamenu, search, language switcher) and footer, loaded from `/nav` and `/footer` |
-| `hero` | Banner with a background image; layout follows the authored content. Variant `minimal-dark` (`Hero (Minimal Dark)`) is the oneAZ dark hero used on the site. `hero-minimal-dark-withimg` is a deprecated alias of it |
-| `cards` | Card grid; each card's layout follows the authored content (image-only cell = card image). Variant `light` (`Cards (Light)`) is the oneAZ card grid used on the site. `cards-light-withimg` is a deprecated alias of it |
+| `hero` | Banner with a background image; layout follows the authored content. Variant `minimal-dark` (`Hero (Minimal Dark)`) is the oneAZ dark hero used on the site. (It replaced the `hero-minimal-dark-withimg` fork.) |
+| `cards` | Card grid; each card's layout follows the authored content (image-only cell = card image). Variant `light` (`Cards (Light)`) is the oneAZ card grid used on the site. (It replaced the `cards-light-withimg` fork.) |
 | `accordion` | oneAZ collapsible sections |
 | `in-page-nav` | oneAZ Links / In-Page Nav |
 | `button-group` | oneAZ button groups (buttons themselves are styled in `styles/styles.css`) |

@@ -28,4 +28,4 @@ The catalog also lists `icon` (2-up icon cards), `bordered` (text cards) and `pr
 
 Implements source variant `v_5d7c92bb4412` (the 3-up teaser grid, 46 pages) as `light`. See `metadata.json` and `tools/importer/block-mapping.json`.
 
-The former `cards-light-withimg` block is a deprecated alias of `Cards (Light)`, kept until all pages are re-published with the new name.
+This variant replaced the former `cards-light-withimg` block (removed 2026-10-01 after all pages were re-published as "Cards (Light)").

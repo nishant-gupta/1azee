@@ -1,7 +1,0 @@
-/* Deprecated alias of the hero block's minimal-dark variant (see hero-minimal-dark-withimg.js). */
-@import url('../hero/hero.css');
-
-.hero-minimal-dark-withimg-container .hero-minimal-dark-withimg-wrapper {
-  max-width: unset;
-  padding: 0;
-}
